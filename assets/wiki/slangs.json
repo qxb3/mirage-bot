@@ -1,0 +1,57 @@
+[
+    {
+        "slang": "pz",
+        "name": "Protection zone",
+        "description": "It's a tile where you can't be attacked by mobs and players, You can usually find these in entrance of zones"
+    },
+    {
+        "slang": "pt",
+        "name": "Party",
+        "description": "You will usually read these when people are finding / wanting to join a party"
+    },
+    {
+        "slang": "gz",
+        "name": "Congratz",
+        "description": "It's when you or others level up the level or the stats"
+    },
+    {
+        "slang": "aoe",
+        "name": "Area of effect",
+        "description": "It means the abilities that cause certain effects in large areas, such as explotions"
+    },
+    {
+        "slang": "ws",
+        "name": "Water slimes",
+        "description": "It's the name of a mob located in level 45 zone"
+    },
+    {
+        "slang": "pker",
+        "name": "Player killer",
+        "description": "It's when a player kiling players for no reason"
+    },
+    {
+        "slang": "pk",
+        "name": "Player kill",
+        "description": "It's when you or others accidentaly or intentionally kill someone"
+    },
+    {
+        "slang": "kos",
+        "name": "Kill on sight",
+        "description": "It's when a specific player or guild is hunting you"
+    },
+    {
+        "slang": "ks",
+        "name": "Kill steal",
+        "description": "It's when you or others accidentaly or intentionally hit your or his mob"
+    },
+    {
+        "slang": "h1",
+        "name": "Hell1",
+        "description": "It's a level 25 zone located in imps"
+    },
+    {
+        "slang": "h2",
+        "name": "Hell2",
+        "description": "It's a level 35 zone located in imps"
+    }
+]
