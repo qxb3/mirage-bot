@@ -17,6 +17,10 @@ client.on('ready', () => {
     
     new WokCommands(client, {
         commandDir: path.join(__dirname, './commands'),
+        testServers: [
+            '811195710065082378', //Tools server
+            '586118235280244736' //Filipino mirage server
+        ]
     }).setDefaultPrefix('?')
 })
 

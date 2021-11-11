@@ -1,21 +1,24 @@
 const { MessageEmbed } = require('discord.js')
 
-const Slang = require('../../command_arguments/wiki/slang')
+const Slang = require('../command_arguments/wiki/slang')
 const slang = new Slang()
 
-const Vocations = require('../../command_arguments/wiki/vocations')
+const Vocations = require('../command_arguments/wiki/vocations')
 const vocations = new Vocations()
+
+const Enchantments = require('../command_arguments/wiki/enchantments')
+const enchantments = new Enchantments()
 
 module.exports = {
     category: 'Wiki command',
-    description: 'A useful information wiki about the game.',
+    description: 'A useful information wiki about in the game.',
 
     callback: async ({  message, args, prefix }) => { 
         const username = message.author.username
         const tag = `#${message.author.discriminator}`
         const avatar = `https://cdn.discordapp.com/avatars/${message.author.id}/${message.author.avatar}.png`
 
-        const availableWiki = ['slang', 'vocations']
+        const availableWiki = ['Slang', 'Vocations', 'Enchantments']
         let wiki = ''
         availableWiki.forEach(data => {
             wiki += `❯ ${data}\n`
@@ -41,6 +44,12 @@ module.exports = {
             case 'vocation':
             case 'vocations':
                 await vocations.run(username + tag, avatar, message, args[1], prefix)
+                break
+            case 'enchant':
+            case 'enchants':
+            case 'enchantment':
+            case 'enchantments':
+                await enchantments.run(username + tag, avatar, message, args[1], prefix)
                 break
         }
     }
