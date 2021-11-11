@@ -14,6 +14,11 @@ const client = new Client({
 
 client.on('ready', () => {
     console.log("The bot is running")
+
+    client.user.setActivity({
+        type: 'WATCHING',
+        name: `${client.guilds.cache.size} Servers!!`
+    })
     
     new WokCommands(client, {
         commandDir: path.join(__dirname, './commands'),

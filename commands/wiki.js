@@ -1,4 +1,5 @@
 const { MessageEmbed } = require('discord.js')
+const ignoreCase = require('ignore-case')
 
 const Slang = require('../command_arguments/wiki/slang')
 const slang = new Slang()
@@ -10,8 +11,9 @@ const Enchantments = require('../command_arguments/wiki/enchantments')
 const enchantments = new Enchantments()
 
 module.exports = {
-    category: 'Wiki command',
-    description: 'A useful information wiki about in the game.',
+    category: 'Information',
+    description: 'A useful wiki about stuff in the game.',
+    expectedArgs: '<category> [optional args]',
 
     callback: async ({  message, args, prefix }) => { 
         const username = message.author.username
@@ -24,7 +26,7 @@ module.exports = {
             wiki += `❯ ${data}\n`
         })
 
-        if (args[0] == undefined) {
+        if (args[0] == undefined || (args[0] != undefined && ignoreCase.equals(args[0], 'list'))) {
             const embed = new MessageEmbed()
                 .setAuthor(username + tag, avatar)
                 .setTitle('\nAvailable wikis:')

@@ -7,8 +7,6 @@ module.exports = {
     category: 'Items command',
     description: 'A useful list of items in the game',
 
-    testOnly: true,
-
     callback: async ({  message, args, prefix }) => { 
         const username = message.author.username
         const tag = `#${message.author.discriminator}`
