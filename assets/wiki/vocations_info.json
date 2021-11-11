@@ -8,7 +8,7 @@
       "Sycthe",
       "Mace"
     ],
-    "description": "Melee weapons and heavy armour High defence and hitpoints make you a difficult target to bring down. Choose between swords, clubs, shields and two handed axes. Use sword, axe/scythe and club to attack.",
+    "description": "High defence and hitpoints make you a difficult target to bring down. Choose between swords, clubs, shields and two handed axes.",
     "initial_resistance": [
       "Physical: 10%"
     ]
@@ -19,7 +19,7 @@
       "Bow",
       "Arrow"
     ],
-    "description": "Ranged weapons and medium armour Consistent ranged damage and good survivability makes you an excellent addition to any party. You are a master of the bow. Use arrows to attack with the bow.",
+    "description": "Consistent ranged damage and good survivability makes you an excellent addition to any party. You are a master of the bow.",
     "initial_resistance": [
       "Nature (Poison): 10%"
     ]
@@ -30,7 +30,7 @@
       "Staff",
       "Tomes"
     ],
-    "description": "Offensive spells and light armour Low health but high ranged damage makes you a real glass cannon. Runes allow you to do massive bursts of damage and heal allies. You wield the elements. Uses pots of mana to attack with the staff and can use support and attack runes.",
+    "description": "Low health but high ranged damage makes you a real glass cannon. Runes allow you to do massive bursts of damage. You wield the elements.",
     "initial_resistance": [
       "Fire: 15%",
       "Ice: 15%",
@@ -44,7 +44,7 @@
     "weapons": [
       "Rod"
     ],
-    "description": "Support spells and light armour This is a new class focused specifically around bringing support utility to the game. The Shaman has no instant offensive spells, instead bringing self heal, targeted heal, and mass heal to the table. In addition healing runes are no longer sold by Char and instead must be crafted by Shamans – I am certain this will cause outrage on launch but am confident once people get up to speed there will be fortunes to be made on the player market by business minded rune sellers.",
+    "description": "Powerful support healing spells make you a great asset to any team. Runes allow you to deal sustained nature damage and heal allies.",
     "initial_resistance": [
       "Physical: 15%",
       "Nature (Poison): 15%",
