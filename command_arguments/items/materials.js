@@ -24,6 +24,7 @@ module.exports = class Slang {
                     new MessageEmbed()
                         .setAuthor(author, avatar)
                         .addField('Available - Materials', list)
+                        .setColor('DARK_RED')
                 ]
             })
         }
@@ -42,10 +43,11 @@ module.exports = class Slang {
                         embeds: [
                             new MessageEmbed()
                                 .setAuthor(author, avatar)
-                            .addFields([
-                                { name: '❯ Name', value: data.name },
-                                { name: 'Dropped from', value: droppedFrom }
-                            ])
+                                .addFields([
+                                    { name: '❯ Name', value: data.name },
+                                    { name: 'Dropped from', value: droppedFrom }
+                                ])
+                                .setColor('DARK_RED')
                         ]
                     })
                 }
@@ -58,6 +60,7 @@ module.exports = class Slang {
                             .setAuthor(author, avatar)
                             .setDescription(`Bro, are you drunk? What the hell is ${material}\n`)
                             .addField('❯ Usage', `${prefix}items materials <material>\n${prefix}items materials list - To list all available materials`)
+                            .setColor('DARK_RED')
                     ]
                 })
             }

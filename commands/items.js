@@ -29,6 +29,7 @@ module.exports = {
                     { name: 'Categories', value: categories },
                     { name: 'Usage', value: `${prefix}items <category>` }
                 ])
+                .setColor('DARK_RED')
         } else if (category != undefined && ignoreCase.equals(category, 'list')) {
             return new MessageEmbed()
                 .setAuthor(username + tag, avatar)
@@ -36,6 +37,7 @@ module.exports = {
                     { name: 'Categories', value: categories },
                     { name: 'Usage', value: `${prefix}items <category>` }
                 ])
+                .setColor('DARK_RED')
         }
 
         args.shift()
