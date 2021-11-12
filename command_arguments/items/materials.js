@@ -2,7 +2,7 @@ const { MessageEmbed } = require('discord.js')
 const ignoreCase = require('ignore-case')
 const fs = require('fs')
 
-module.exports = class Slang {
+module.exports = class Materials {
     constructor() {}
 
     async run(author, avatar, message, material, prefix) {
