@@ -1,4 +1,4 @@
-require('dotenv').config()
+if (process.env.PORT) require('dotenv').config()
 const { Client, Intents } = require('discord.js')
 
 const path = require('path')
@@ -17,14 +17,13 @@ client.on('ready', () => {
 
     client.user.setActivity({
         type: 'WATCHING',
-        name: `${client.guilds.cache.size} Servers!!`
+        name: `On ${client.guilds.cache.size} Servers!!`
     })
     
     new WokCommands(client, {
         commandDir: path.join(__dirname, './commands'),
         testServers: [
             '811195710065082378', //Tools server
-            '586118235280244736' //Filipino mirage server
         ]
     }).setDefaultPrefix('?')
 })
