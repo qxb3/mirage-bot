@@ -1,5 +1,195 @@
 [
     {
-
+        "name": "Troll fur",
+        "dropped_from": [
+            "Trolls"
+        ]
+    },
+    {
+        "name": "Metal plate",
+        "dropped_from": [
+            "Troll Knights",
+            "Imp Knights",
+            "Imps"
+        ]
+    },
+    {
+        "name": "Giant toe",
+        "dropped_from": [
+            "Cyclops",
+            "Deerstalkers",
+            "Felwalkers"
+        ]
+    },
+    {
+        "name": "Giant eye",
+        "dropped_from": [
+            "Cyclops",
+            "Deerstalkers",
+            "Felwalkers"
+        ]
+    },
+    {
+        "name": "Spider leg",
+        "dropped_from": [
+            "Spiders"
+        ]
+    },
+    {
+        "name": "Mandible",
+        "dropped_from": [
+            "Spiders",
+            "Widows"
+        ]
+    },
+    {
+        "name": "Widow leg",
+        "dropped_from": [
+            "Widows"
+        ]
+    },
+    {
+        "name": "Red scale",
+        "dropped_from": [
+            "FireWyrms"
+        ]
+    },
+    {
+        "name": "Green goo",
+        "dropped_from": [
+            "Slimes"
+        ]
+    },
+    {
+        "name": "Branch",
+        "dropped_from": [
+            "Defillers",
+            "Slimes"
+        ]
+    },
+    {
+        "name": "Ponytail",
+        "dropped_from": [
+            "Felwalkers"
+        ]
+    },
+    {
+        "name": "Red tail",
+        "dropped_from": [
+            "Harbringers"
+        ]
+    },
+    {
+        "name": "Cloth",
+        "dropped_from": [
+            "Orc mages"
+        ]
+    },
+    {
+        "name": "Broken staff",
+        "dropped_from": [
+            "Orc mages"
+        ]
+    },
+    {
+        "name": "Green leather",
+        "dropped_from": [
+            "Orc mages"
+        ]
+    },
+    {
+        "name": "Blue tail",
+        "dropped_from": [
+            "Imps"
+        ]
+    },
+    {
+        "name": "Blue ear",
+        "dropped_from": [
+            "Imps"
+        ]
+    },
+    {
+        "name": "Hoof",
+        "dropped_from": [
+            "Imps",
+            "Minotaurs",
+            "Behemoths"
+        ]
+    },
+    {
+        "name": "Red goo",
+        "dropped_from": [
+            "Fire slimes"
+        ]
+    },
+    {
+        "name": "Minotaur horn",
+        "dropped_from": [
+            "Minotaurs"
+        ]
+    },
+    {
+        "name": "Blue goo",
+        "dropped_from": [
+            "Ice slimes"
+        ]
+    },
+    {
+        "name": "Ice shard",
+        "dropped_from": [
+            "Ice slimes"
+        ]
+    },
+    {
+        "name": "Ectoplasm",
+        "dropped_from": [
+            "Ghosts"
+        ]
+    },
+    {
+        "name": "Giant horn",
+        "dropped_from": [
+            "Behemoths"
+        ]
+    },
+    {
+        "name": "Bone",
+        "dropped_from": [
+            "Revenants"
+        ]
+    },
+    {
+        "name": "Skull",
+        "dropped_from": [
+            "Revenants"
+        ]
+    },
+    {
+        "name": "Molten core",
+        "dropped_from": [
+            "Demons",
+            "Fire slimes",
+            "FireWyrms"
+        ]
+    },
+    {
+        "name": "Razor claw",
+        "dropped_from": [
+            "Hellbounds"
+        ]
+    },
+    {
+        "name": "Cursed teeth",
+        "dropped_from": [
+            "Shamblers",
+            "Shadows"
+        ]
+    },
+    {
+        "name": "Cursed eye",
+        "dropped_from": [
+            "Shadows"
+        ]
     }
 ]

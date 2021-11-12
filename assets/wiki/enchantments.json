@@ -4,11 +4,11 @@
         "enchanter": "Parker",
         "location": "Spider cave",
         "materials_required": [
-            "Helmet: Cursed eye (Drops by shadow)",
-            "Chest: Widow leg (Drops by widow)",
-            "Boots: Green goo (Drops by slime)",
-            "Gloves: Spider leg (Drops by spider)",
-            "Weapon: Mandible (Drops by spider / widow)"
+            "Helmet: Cursed eye (Dropped By: Shadow)",
+            "Chest: Widow leg (Dropped By: Widow)",
+            "Boots: Green goo (Dropped By: Slime)",
+            "Gloves: Spider leg (Dropped By: Spider)",
+            "Weapon: Mandible (Dropped By: Spider, Widow)"
         ]
     },
     {
@@ -16,11 +16,11 @@
         "enchanter": "Hog",
         "location": "Cyclops",
         "materials_required": [
-            "Helmet: Blue ear (Drops by Imps)",
-            "Chest: Broken staff (Drops by orc mage, Sorcerer, Troll mage)",
-            "Boots: Razor Claws (Drops by Hellbound)",
-            "Gloves: Minotaur horn (Drops by Minotaur)",
-            "Weapon: Ice shards (Ghost)"
+            "Helmet: Blue ear (Dropped By: Imps)",
+            "Chest: Broken staff (Dropped By: Orc mage, Sorcerer, TrollMage)",
+            "Boots: Razor Claws (Dropped By: Hellbound)",
+            "Gloves: Minotaur horn (Dropped By: Minotaur)",
+            "Weapon: Ice shards (Dropped by: Ghost)"
         ]
     },
     {
@@ -28,11 +28,11 @@
         "enchanter": "Marshlands",
         "location": "Slime",
         "materials_required": [
-            "Helmet: Red goo (Drops by Fire slime)",
-            "Chest: Red tail (Drops by Harbringer)",
-            "Boots: Skull (Drops by Revenant)",
-            "Gloves: Red scales (Drops by Fire wyrms)",
-            "Weapon: Molten core (Drops by Fire wyrms, Fire slime, Demon)"
+            "Helmet: Red goo (Dropped By: FireSlime)",
+            "Chest: Red tail (Dropped By: Harbringer)",
+            "Boots: Skull (Dropped By: Revenant)",
+            "Gloves: Red scales (Dropped By: FireWyrms)",
+            "Weapon: Molten core (Dropped By: FireWyrms, FireSlime, Demon)"
         ]
     },
     {
@@ -40,11 +40,11 @@
         "enchanter": "Shell",
         "location": "Fortress",
         "materials_required": [
-            "Helmet: Branch (Drops by Defiller)",
-            "Chest: Demon bone (Drops by Demon)",
-            "Boots: Troll fur (Drops by Trolls)",
-            "Gloves: Imp tail (Drops by Imps)",
-            "Weapon: Ectoplasm (Drops by Ghost)"
+            "Helmet: Branch (Dropped By: Defiller)",
+            "Chest: Demon bone (Dropped By: Demon)",
+            "Boots: Troll fur (Dropped By: Trolls)",
+            "Gloves: Imp tail (Dropped By: Imps)",
+            "Weapon: Ectoplasm (Dropped By: Ghost)"
         ]
     },
     {
@@ -52,10 +52,10 @@
         "enchanter": "Squidge",
         "location": "Inferno (H2)",
         "materials_required": [
-            "Helmet: Bone (Drops by Revenant)",
-            "Chest: Hoof (Drops by Imps)",
-            "Boots: Green leather (Drops by Orc mage)",
-            "Gloves: Ponytail (Drops by Felwalker)"
+            "Helmet: Bone (Dropped By: Revenant)",
+            "Chest: Hoof (Dropped By: Imps)",
+            "Boots: Green leather (Dropped By: OrcMage)",
+            "Gloves: Ponytail (Dropped By: Felwalker)"
         ]
     },
     {
@@ -63,10 +63,10 @@
         "enchanter": "Harvey",
         "location": "Inferno (H2)",
         "materials_required": [
-            "Helmet: Metal plate (Drops by Imp knight, Trollwarlord, Orc)",
-            "Chest: Behemoth horn (Drops by Behemoth)",
-            "Boots: Blue goo (Drops by Ice slime)",
-            "Gloves: Giant eye (Drops by Cycs, Deerstalkers, Felwalkers)"
+            "Helmet: Metal plate (Dropped By: Imp Knight, TrollWarlord, Orc)",
+            "Chest: Behemoth horn (Dropped By: Behemoth)",
+            "Boots: Blue goo (Dropped By: Ice Slime)",
+            "Gloves: Giant eye (Dropped By: Cycs, Deerstalkers, Felwalkers)"
         ]
     }
 ]

@@ -1,4 +1,5 @@
 const { MessageEmbed } = require('discord.js')
+const ignoreCase = require('ignore-case')
 
 const Materials = require('../command_arguments/items/materials')
 const materials = new Materials()
@@ -12,26 +13,37 @@ module.exports = {
         const tag = `#${message.author.discriminator}`
         const avatar = `https://cdn.discordapp.com/avatars/${message.author.id}/${message.author.avatar}.png`
 
-        const availableItemCategories = ['Materials']
+        const category = args[0]
+
+        const availableItemCategories = ['Weapons (X)', 'Armours (X)', 'Gloves (X)', 'Boots (X)', 'Materials (Y)', 'Foods (X)']
         let categories = ''
         availableItemCategories.forEach(data => {
-            categories += `❯ ${data}\n`
+            categories += `• ${data}\n`
         })
 
-        if (args[0] == undefined) {
-            const embed = new MessageEmbed()
+        if (category == undefined) {
+            return new MessageEmbed()
                 .setAuthor(username + tag, avatar)
-                .setTitle('\nAvailable categories:')
-                .setDescription(`${categories}\n\nHint: ${prefix}items <category>`)
-                .setColor('DARK_RED')
-
-            return embed
+                .setDescription(`Error! Invalid <category>`)
+                .addFields([
+                    { name: 'Categories', value: categories },
+                    { name: 'Usage', value: `${prefix}items <category>` }
+                ])
+        } else if (category != undefined && ignoreCase.equals(category, 'list')) {
+            return new MessageEmbed()
+                .setAuthor(username + tag, avatar)
+                .addFields([
+                    { name: 'Categories', value: categories },
+                    { name: 'Usage', value: `${prefix}items <category>` }
+                ])
         }
 
-        switch(args[0].toLowerCase()) {
+        args.shift()
+        const material = args.join(' ')
+
+        switch(category) {
             case 'materials':
-            case 'mats':
-                return 'Material test'
+                materials.run(username + tag, avatar, message, material, prefix)
                 break
         }
     }

@@ -1,6 +1,6 @@
 const { MessageEmbed } = require('discord.js')
-const fs = require('fs')
 const ignoreCase = require('ignore-case')
+const fs = require('fs')
 
 module.exports = class Slang {
     constructor() {}
