@@ -10,14 +10,18 @@
         "name": "Apple",
         "time": "2",
         "monsters": [
-            "ThiefHunterWild Soldier"
+            "Thief",
+            "Hunter",
+            "Wild Soldier"
         ]
     },
     {
         "name": "Carrot",
         "time": "2",
         "monsters": [
-            "Giant SlugBanditOrc Warrior"
+            "Giant Slug",
+            "Bandit",
+            "Orc Warrior"
         ]
     },
     {
@@ -31,7 +35,8 @@
         "name": "Cherries",
         "time": "2",
         "monsters": [
-            "DefilerMinotaur"
+            "Defiler",
+            "Minotaur"
         ]
     },
     {
@@ -45,42 +50,55 @@
         "name": "Grapes",
         "time": "2",
         "monsters": [
-            "OrcOrc Warrior"
+            "Orc",
+            "Orc Warrior"
         ]
     },
     {
         "name": "Tomato",
         "time": "2",
         "monsters": [
-            "Giant SlugOrc Mage"
+            "Giant Slug",
+            "Orc Mage"
         ]
     },
     {
         "name": "Mushroom",
         "time": "2",
         "monsters": [
-            "ImpImp RangerImp KnightImp MageBehemothBloodseekerSlimespitterShambler"
+            "Imp",
+            "Imp Ranger",
+            "Imp Knight",
+            "Imp Mage",
+            "Behemoth",
+            "Bloodseeker",
+            "Slimespitter",
+            "Shambler"
         ]
     },
     {
         "name": "Candy Cane",
         "time": "3",
         "monsters": [
-            "Unobtainable"
+            "Unobtainable - Only two of them on the game (Lakipaska and Freedomplz) liam sell it to them for 1g"
         ]
     },
     {
         "name": "Meat",
         "time": "5",
         "monsters": [
-            "TrollTroll MageTroll RangerTroll Knight"
+            "Troll",
+            "Troll Mage",
+            "Troll Ranger",
+            "Troll Knight"
         ]
     },
     {
         "name": "Turnip",
         "time": "7",
         "monsters": [
-            "ImpFire Slime"
+            "Imp",
+            "Fire Slime"
         ]
     },
     {
@@ -94,21 +112,29 @@
         "name": "Tough Meat",
         "time": "8",
         "monsters": [
-            "CyclopsDeerstalkerFirewyrmFelwalkerDefiler"
+            "Cyclops",
+            "Deerstalker",
+            "Firewyrm",
+            "Felwalker",
+            "Defiler"
         ]
     },
     {
         "name": "Pie",
         "time": "30",
         "monsters": [
-            "HarbingerMinotaurHeroNecromancerPriestess"
+            "Harbinger",
+            "Minotaur",
+            "Hero",
+            "Necromancer",
+            "Priestess"
         ]
     },
     {
         "name": "Magic Candy",
         "time": "100",
         "monsters": [
-            "Unobtainable"
+            "?"
         ]
     }
 ]
