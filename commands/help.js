@@ -5,10 +5,7 @@ module.exports = {
     category: 'Help',
     description: 'Help command for the bot',
 
-    callback: async ({ message, prefix }) => {
-        const username = message.author.username
-        const tag = `#${message.author.discriminator}`
-        const avatar = `https://cdn.discordapp.com/avatars/${message.author.id}/${message.author.avatar}.png`
+    callback: async ({ prefix }) => {
 
         const help = JSON.parse(Buffer.from(fs.readFileSync(process.env.PWD + '/assets/help.json').toString()))
         let wiki = ''
@@ -21,9 +18,9 @@ module.exports = {
             items += `• ${prefix + data}\n`
         })
 
-        let help = ''
+        let h = ''
         help.help.commands.forEach(data => {
-            help += `• ${prefix + data}\n`
+            h += `• ${prefix + data}\n`
         })
 
         const embed = new MessageEmbed()
@@ -31,7 +28,7 @@ module.exports = {
             .addFields([
                 { name: '❯ Wiki', value: wiki },
                 { name: '❯ Items', value: items },
-                { name: '❯ Help', value: help }
+                { name: '❯ Help', value: h }
             ])
             .setColor('BLUE')
 
