@@ -102,7 +102,7 @@ module.exports = {
                     })
 
                     let monsters = ''
-                    weapon.drops_from.forEach(monster => {
+                    weapon.monsters.forEach(monster => {
                         monsters += `• ${monster}\n`
                     })
 
