@@ -1,188 +1,166 @@
 [
     {
-        "name": "Cheese",
+        "name": "Weak Potion",
         "effects": [
-            "Health: +2",
-            "Mana: +6.67"
+            "Health: +50",
+            "Mana: +25"
         ],
         "monsters": [
-            "Rat"
+            "Unobtainable - You can only get these by creating a new character"
         ]
     },
     {
-        "name": "Apple",
+        "name": "Health Vial",
         "effects": [
-            "Health: +2",
-            "Mana: +6.67"
+            "Health: +200",
+            "Mana: +0"
         ],
         "monsters": [
-            "Thief",
-            "Hunter",
-            "Wild Soldier"
-        ]
-    },
-    {
-        "name": "Carrot",
-        "effects": [
-            "Health: +2",
-            "Mana: +6.67"
-        ],
-        "monsters": [
-            "Giant Slug",
-            "Bandit",
-            "Orc Warrior"
-        ]
-    },
-    {
-        "name": "Banana",
-        "effects": [
-            "Health: +2",
-            "Mana: +6.67"
-        ],
-        "monsters": [
-            "Orc Worker"
-        ]
-    },
-    {
-        "name": "Cherries",
-        "effects": [
-            "Health: +2",
-            "Mana: +6.67"
-        ],
-        "monsters": [
+            "Troll Warlord",
+            "Cyclops",
+            "Spider",
+            "Deerstalker",
+            "Widow",
+            "Firewyrm",
+            "Slime",
+            "Felwalker",
             "Defiler",
-            "Minotaur"
-        ]
-    },
-    {
-        "name": "Egg",
-        "effects": [
-            "Health: +2",
-            "Mana: +6.67"
-        ],
-        "monsters": [
-            "Sorcerer"
-        ]
-    },
-    {
-        "name": "Grapes",
-        "effects": [
-            "Health: +2",
-            "Mana: +6.67"
-        ],
-        "monsters": [
-            "Orc",
-            "Orc Warrior"
-        ]
-    },
-    {
-        "name": "Tomato",
-        "effects": [
-            "Health: +2",
-            "Mana: +6.67"
-        ],
-        "monsters": [
-            "Giant Slug",
-            "Orc Mage"
-        ]
-    },
-    {
-        "name": "Mushroom",
-        "effects": [
-            "Health: +2",
-            "Mana: +6.67"
-        ],
-        "monsters": [
-            "Imp",
             "Imp Ranger",
             "Imp Knight",
             "Imp Mage",
-            "Behemoth",
-            "Bloodseeker",
-            "Slimespitter",
-            "Shambler"
-        ]
-    },
-    {
-        "name": "Candy Cane",
-        "effects": [
-            "Health: +3",
-            "Mana: +30.00"
-        ],
-        "monsters": [
-            "Unobtainable - Only two of it in the game (Lakipaska, Freedomplz) Liam sell it to them for 1g"
-        ]
-    },
-    {
-        "name": "Meat",
-        "effects": [
-            "Health: +5",
-            "Mana: +5.00"
-        ],
-        "monsters": [
-            "Troll",
-            "Troll Mage",
-            "Troll Ranger",
-            "Troll Knight"
-        ]
-    },
-    {
-        "name": "Turnip",
-        "effects": [
-            "Health: +7",
-            "Mana: +14.00"
-        ],
-        "monsters": [
-            "Imp",
-            "Fire Slime"
-        ]
-    },
-    {
-        "name": "Biscot",
-        "effects": [
-            "Health: +7",
-            "Mana: +17.50"
-        ],
-        "monsters": [
-            "Angry Biscottsman"
-        ]
-    },
-    {
-        "name": "Tough Meat",
-        "effects": [
-            "Health: +8",
-            "Mana: +5.33"
-        ],
-        "monsters": [
-            "Cyclops",
-            "Deerstalker",
-            "Firewyrm",
-            "Felwalker",
-            "Defiler"
-        ]
-    },
-    {
-        "name": "Pie",
-        "effects": [
-            "Health: +30",
-            "Mana: +30.00"
-        ],
-        "monsters": [
             "Harbinger",
-            "Minotaur",
-            "Hero",
-            "Necromancer",
-            "Priestess"
+            "Fire Slime",
+            "Ice Slime",
+            "Behemoth"
         ]
     },
     {
-        "name": "Magic Candy",
+        "name": "Health Flask",
         "effects": [
-            "Health: +100",
-            "Mana: +500.00"
+            "Health: +350",
+            "Mana: +0"
         ],
         "monsters": [
-            "?"
+            "Ghost",
+            "Minotaur",
+            "Giant Slug",
+            "Ice Slime",
+            "Behemoth",
+            "Revenant",
+            "Sorcerer",
+            "DemonShadow"
+        ]
+    },
+    {
+        "name": "Health Bottle",
+        "effects": [
+            "Health: +500",
+            "Mana: +0"
+        ],
+        "monsters": [
+            "Potions store"
+        ]
+    },
+    {
+        "name": "Health Flagon",
+        "effects": [
+            "Health: +750",
+            "Mana: +0"
+        ],
+        "monsters": [
+            "Potions store"
+        ]
+    },
+    {
+        "name": "Mana Vial",
+        "effects": [
+            "Health: +0",
+            "Mana: +100"
+        ],
+        "monsters": [
+            "Widow",
+            "Slime",
+            "Felwalker"
+        ]
+    },
+    {
+        "name": "Mana Flask",
+        "effects": [
+            "Health: +0",
+            "Mana: +200"
+        ],
+        "monsters": [
+            "Potions store"
+        ]
+    },
+    {
+        "name": "Mana Bottle",
+        "effects": [
+            "Health: +0",
+            "Mana: +300"
+        ],
+        "monsters": [
+            "Potions store"
+        ]
+    },
+    {
+        "name": "Mana Flagon",
+        "effects": [
+            "Health: +0",
+            "Mana: +400"
+        ],
+        "monsters": [
+            "Potions store"
+        ]
+    },
+    {
+        "name": "Mana Ewer",
+        "effects": [
+            "Health: +0",
+            "Mana: +500"
+        ],
+        "monsters": [
+            "Potions store"
+        ]
+    },
+    {
+        "name": "Mead",
+        "effects": [
+            "Health: +0",
+            "Mana: +0"
+        ],
+        "monsters": [
+            "Bar"
+        ]
+    },
+    {
+        "name": "Wine",
+        "effects": [
+            "Health: +0",
+            "Mana: +0"
+        ],
+        "monsters": [
+            "Bar"
+        ]
+    },
+    {
+        "name": "Water",
+        "effects": [
+            "Health: +0",
+            "Mana: +0"
+        ],
+        "monsters": [
+            "Bar"
+        ]
+    },
+    {
+        "name": "Ale",
+        "effects": [
+            "Health: +0",
+            "Mana: +0"
+        ],
+        "monsters": [
+            "Hunter"
         ]
     }
 ]
