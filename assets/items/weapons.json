@@ -8,7 +8,7 @@
             "Maximum stat: 3"
         ],
         "drops_from": [
-            ""
+            "Troll Knight"
         ],
         "type": "Sword"
     },
@@ -21,7 +21,7 @@
             "Maximum stat: 6"
         ],
         "drops_from": [
-            ""
+            "Spider"
         ],
         "type": "Sword"
     },
@@ -34,7 +34,7 @@
             "Maximum stat: 9"
         ],
         "drops_from": [
-            ""
+            "Felwalker"
         ],
         "type": "Sword"
     },
@@ -47,7 +47,7 @@
             "Maximum stat: 12"
         ],
         "drops_from": [
-            ""
+            "Harbinger"
         ],
         "type": "Sword"
     },
@@ -60,7 +60,7 @@
             "Maximum stat: 15"
         ],
         "drops_from": [
-            ""
+            "Behemoth"
         ],
         "type": "Sword"
     },
@@ -73,7 +73,7 @@
             "Maximum stat: 18"
         ],
         "drops_from": [
-            ""
+            "Hellhound"
         ],
         "type": "Sword"
     },
@@ -86,7 +86,7 @@
             "Maximum stat: 21"
         ],
         "drops_from": [
-            ""
+            "Orc Warrior"
         ],
         "type": "Sword"
     },
@@ -99,7 +99,7 @@
             "Maximum stat: 24"
         ],
         "drops_from": [
-            ""
+            "Hero"
         ],
         "type": "Sword"
     },
@@ -164,7 +164,7 @@
             "Maximum stat: 3"
         ],
         "drops_from": [
-            ""
+            "Troll Mage"
         ],
         "type": "Staff"
     },
@@ -177,7 +177,7 @@
             "Maximum stat: 6"
         ],
         "drops_from": [
-            ""
+            "Widow"
         ],
         "type": "Staff"
     },
@@ -190,7 +190,7 @@
             "Maximum stat: 9"
         ],
         "drops_from": [
-            ""
+            "Felwalker"
         ],
         "type": "Staff"
     },
@@ -203,7 +203,7 @@
             "Maximum stat: 12"
         ],
         "drops_from": [
-            ""
+            "Imp Mage"
         ],
         "type": "Staff"
     },
@@ -216,7 +216,7 @@
             "Maximum stat: 15"
         ],
         "drops_from": [
-            ""
+            "Ice Slime"
         ],
         "type": "Staff"
     },
@@ -229,7 +229,7 @@
             "Maximum stat: 18"
         ],
         "drops_from": [
-            ""
+            "Demon"
         ],
         "type": "Staff"
     },
@@ -242,7 +242,7 @@
             "Maximum stat: 21"
         ],
         "drops_from": [
-            ""
+            "Orc Mage"
         ],
         "type": "Staff"
     },
@@ -255,7 +255,7 @@
             "Maximum stat: 24"
         ],
         "drops_from": [
-            ""
+            "Necromancer"
         ],
         "type": "Staff"
     },
@@ -281,7 +281,7 @@
             "Maximum stat: 9"
         ],
         "drops_from": [
-            ""
+            "Troll Mage"
         ],
         "type": "Spellbook"
     },
@@ -294,7 +294,7 @@
             "Maximum stat: 12"
         ],
         "drops_from": [
-            ""
+            "Troll Warlord"
         ],
         "type": "Spellbook"
     },
@@ -307,7 +307,7 @@
             "Maximum stat: 15"
         ],
         "drops_from": [
-            ""
+            "Firewyrm"
         ],
         "type": "Spellbook"
     },
@@ -320,7 +320,7 @@
             "Maximum stat: 18"
         ],
         "drops_from": [
-            ""
+            "Harbinger"
         ],
         "type": "Spellbook"
     },
@@ -333,7 +333,7 @@
             "Maximum stat: 21"
         ],
         "drops_from": [
-            ""
+            "Ice Slime"
         ],
         "type": "Spellbook"
     },
@@ -346,7 +346,7 @@
             "Maximum stat: 24"
         ],
         "drops_from": [
-            ""
+            "Sorcerer"
         ],
         "type": "Spellbook"
     },
@@ -359,7 +359,7 @@
             "Maximum stat: 27"
         ],
         "drops_from": [
-            ""
+            "Orc Warrior"
         ],
         "type": "Spellbook"
     },
@@ -372,7 +372,7 @@
             "Maximum stat: 30"
         ],
         "drops_from": [
-            ""
+            "Hero"
         ],
         "type": "Spellbook"
     },
@@ -411,7 +411,7 @@
             "Maximum stat: 3"
         ],
         "drops_from": [
-            ""
+            "Troll Knight"
         ],
         "type": "Shield"
     },
@@ -424,7 +424,7 @@
             "Maximum stat: 6"
         ],
         "drops_from": [
-            ""
+            "Troll Warlord"
         ],
         "type": "Shield"
     },
@@ -437,7 +437,7 @@
             "Maximum stat: 9"
         ],
         "drops_from": [
-            ""
+            "Firewyrm"
         ],
         "type": "Shield"
     },
@@ -450,7 +450,7 @@
             "Maximum stat: 12"
         ],
         "drops_from": [
-            ""
+            "Imp KnightMinotaurGiant Slug"
         ],
         "type": "Shield"
     },
@@ -463,7 +463,7 @@
             "Maximum stat: 15"
         ],
         "drops_from": [
-            ""
+            "Behemoth"
         ],
         "type": "Shield"
     },
@@ -476,7 +476,7 @@
             "Maximum stat: 18"
         ],
         "drops_from": [
-            ""
+            "Shadow"
         ],
         "type": "Shield"
     },
@@ -489,7 +489,7 @@
             "Maximum stat: 21"
         ],
         "drops_from": [
-            ""
+            "Wild Soldier"
         ],
         "type": "Shield"
     },
@@ -528,7 +528,7 @@
             "Maximum stat: 3"
         ],
         "drops_from": [
-            ""
+            "Troll Mage"
         ],
         "type": "Rod"
     },
@@ -541,7 +541,7 @@
             "Maximum stat: 6"
         ],
         "drops_from": [
-            ""
+            "Widow"
         ],
         "type": "Rod"
     },
@@ -554,7 +554,7 @@
             "Maximum stat: 9"
         ],
         "drops_from": [
-            ""
+            "Felwalker"
         ],
         "type": "Rod"
     },
@@ -567,7 +567,7 @@
             "Maximum stat: 12"
         ],
         "drops_from": [
-            ""
+            "Imp Mage"
         ],
         "type": "Rod"
     },
@@ -580,7 +580,7 @@
             "Maximum stat: 15"
         ],
         "drops_from": [
-            ""
+            "Ice Slime"
         ],
         "type": "Rod"
     },
@@ -593,7 +593,7 @@
             "Maximum stat: 18"
         ],
         "drops_from": [
-            ""
+            "Demon"
         ],
         "type": "Rod"
     },
@@ -606,7 +606,7 @@
             "Maximum stat: 21"
         ],
         "drops_from": [
-            ""
+            "Orc Mage"
         ],
         "type": "Rod"
     },
@@ -619,7 +619,7 @@
             "Maximum stat: 24"
         ],
         "drops_from": [
-            ""
+            "Necromancer"
         ],
         "type": "Rod"
     },
@@ -684,7 +684,7 @@
             "Maximum stat: 3"
         ],
         "drops_from": [
-            ""
+            "Troll Warlord"
         ],
         "type": "Mace"
     },
@@ -697,7 +697,7 @@
             "Maximum stat: 6"
         ],
         "drops_from": [
-            ""
+            "Cyclops"
         ],
         "type": "Mace"
     },
@@ -710,7 +710,7 @@
             "Maximum stat: 9"
         ],
         "drops_from": [
-            ""
+            "Defiler"
         ],
         "type": "Mace"
     },
@@ -723,7 +723,7 @@
             "Maximum stat: 12"
         ],
         "drops_from": [
-            ""
+            "Imp Knight"
         ],
         "type": "Mace"
     },
@@ -736,7 +736,7 @@
             "Maximum stat: 15"
         ],
         "drops_from": [
-            ""
+            "Minotaur"
         ],
         "type": "Mace"
     },
@@ -749,7 +749,7 @@
             "Maximum stat: 18"
         ],
         "drops_from": [
-            ""
+            "Demon"
         ],
         "type": "Mace"
     },
@@ -762,7 +762,7 @@
             "Maximum stat: 21"
         ],
         "drops_from": [
-            ""
+            "Bandit"
         ],
         "type": "Mace"
     },
@@ -788,7 +788,7 @@
             "Maximum stat: 0"
         ],
         "drops_from": [
-            ""
+            "Das Bug"
         ],
         "type": "Mace"
     },
@@ -840,7 +840,7 @@
             "Maximum stat: 3"
         ],
         "drops_from": [
-            ""
+            "Troll Ranger"
         ],
         "type": "Bow"
     },
@@ -853,7 +853,7 @@
             "Maximum stat: 6"
         ],
         "drops_from": [
-            ""
+            "Deerstalker"
         ],
         "type": "Bow"
     },
@@ -866,7 +866,7 @@
             "Maximum stat: 9"
         ],
         "drops_from": [
-            ""
+            "Defiler"
         ],
         "type": "Bow"
     },
@@ -879,7 +879,7 @@
             "Maximum stat: 12"
         ],
         "drops_from": [
-            ""
+            "Imp Ranger"
         ],
         "type": "Bow"
     },
@@ -892,7 +892,7 @@
             "Maximum stat: 15"
         ],
         "drops_from": [
-            ""
+            "Fire Slime"
         ],
         "type": "Bow"
     },
@@ -905,7 +905,7 @@
             "Maximum stat: 18"
         ],
         "drops_from": [
-            ""
+            "Demon"
         ],
         "type": "Bow"
     },
@@ -918,7 +918,7 @@
             "Maximum stat: 21"
         ],
         "drops_from": [
-            ""
+            "Hunter"
         ],
         "type": "Bow"
     },
@@ -931,7 +931,7 @@
             "Maximum stat: 24"
         ],
         "drops_from": [
-            ""
+            "Priestess"
         ],
         "type": "Bow"
     },
@@ -970,7 +970,7 @@
             "Maximum stat: 6"
         ],
         "drops_from": [
-            ""
+            "Troll Warlord"
         ],
         "type": "Axe"
     },
@@ -983,7 +983,7 @@
             "Maximum stat: 12"
         ],
         "drops_from": [
-            ""
+            "Spider"
         ],
         "type": "Axe"
     },
@@ -996,7 +996,7 @@
             "Maximum stat: 18"
         ],
         "drops_from": [
-            ""
+            "Slime"
         ],
         "type": "Axe"
     },
@@ -1009,7 +1009,7 @@
             "Maximum stat: 24"
         ],
         "drops_from": [
-            ""
+            "Harbinger"
         ],
         "type": "Axe"
     },
@@ -1022,7 +1022,7 @@
             "Maximum stat: 30"
         ],
         "drops_from": [
-            ""
+            "Behemoth"
         ],
         "type": "Axe"
     },
@@ -1035,7 +1035,7 @@
             "Maximum stat: 36"
         ],
         "drops_from": [
-            ""
+            "Orc"
         ],
         "type": "Axe"
     },
@@ -1048,7 +1048,7 @@
             "Maximum stat: 42"
         ],
         "drops_from": [
-            ""
+            "Orc Berzerk"
         ],
         "type": "Axe"
     },
@@ -1087,7 +1087,7 @@
             "Maximum stat: 0"
         ],
         "drops_from": [
-            ""
+            "Troll Ranger"
         ],
         "type": "Ammunition"
     },
@@ -1113,7 +1113,7 @@
             "Maximum stat: 10"
         ],
         "drops_from": [
-            ""
+            "Deerstalker"
         ],
         "type": "Ammunition"
     },
@@ -1139,7 +1139,7 @@
             "Maximum stat: 20"
         ],
         "drops_from": [
-            ""
+            "Imp Ranger"
         ],
         "type": "Ammunition"
     },
@@ -1165,7 +1165,7 @@
             "Maximum stat: 30"
         ],
         "drops_from": [
-            ""
+            "Hunter"
         ],
         "type": "Ammunition"
     },
@@ -1191,7 +1191,7 @@
             "Maximum stat: 35"
         ],
         "drops_from": [
-            ""
+            "Bloodseeker"
         ],
         "type": "Ammunition"
     },
@@ -1204,7 +1204,7 @@
             "Maximum stat: 40"
         ],
         "drops_from": [
-            ""
+            "Priestess"
         ],
         "type": "Ammunition"
     }
