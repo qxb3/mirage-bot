@@ -52,7 +52,7 @@ module.exports = {
 
                     let weapons = ''
                     vocation.weapons.forEach(weapon => {
-                        weapons += `• {weapon}`
+                        weapons += `• ${weapon}\n`
                     })
 
                     let initialResistance = ''
