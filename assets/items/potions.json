@@ -16,7 +16,9 @@
             "Mana: +6.67"
         ],
         "monsters": [
-            "ThiefHunterWild Soldier"
+            "Thief",
+            "Hunter",
+            "Wild Soldier"
         ]
     },
     {
@@ -26,7 +28,9 @@
             "Mana: +6.67"
         ],
         "monsters": [
-            "Giant SlugBanditOrc Warrior"
+            "Giant Slug",
+            "Bandit",
+            "Orc Warrior"
         ]
     },
     {
@@ -46,7 +50,8 @@
             "Mana: +6.67"
         ],
         "monsters": [
-            "DefilerMinotaur"
+            "Defiler",
+            "Minotaur"
         ]
     },
     {
@@ -66,7 +71,8 @@
             "Mana: +6.67"
         ],
         "monsters": [
-            "OrcOrc Warrior"
+            "Orc",
+            "Orc Warrior"
         ]
     },
     {
@@ -76,7 +82,8 @@
             "Mana: +6.67"
         ],
         "monsters": [
-            "Giant SlugOrc Mage"
+            "Giant Slug",
+            "Orc Mage"
         ]
     },
     {
@@ -86,7 +93,14 @@
             "Mana: +6.67"
         ],
         "monsters": [
-            "ImpImp RangerImp KnightImp MageBehemothBloodseekerSlimespitterShambler"
+            "Imp",
+            "Imp Ranger",
+            "Imp Knight",
+            "Imp Mage",
+            "Behemoth",
+            "Bloodseeker",
+            "Slimespitter",
+            "Shambler"
         ]
     },
     {
@@ -96,7 +110,7 @@
             "Mana: +30.00"
         ],
         "monsters": [
-            "Unobtainable"
+            "Unobtainable - Only two of it in the game (Lakipaska, Freedomplz) Liam sell it to them for 1g"
         ]
     },
     {
@@ -106,7 +120,10 @@
             "Mana: +5.00"
         ],
         "monsters": [
-            "TrollTroll MageTroll RangerTroll Knight"
+            "Troll",
+            "Troll Mage",
+            "Troll Ranger",
+            "Troll Knight"
         ]
     },
     {
@@ -116,7 +133,8 @@
             "Mana: +14.00"
         ],
         "monsters": [
-            "ImpFire Slime"
+            "Imp",
+            "Fire Slime"
         ]
     },
     {
@@ -136,7 +154,11 @@
             "Mana: +5.33"
         ],
         "monsters": [
-            "CyclopsDeerstalkerFirewyrmFelwalkerDefiler"
+            "Cyclops",
+            "Deerstalker",
+            "Firewyrm",
+            "Felwalker",
+            "Defiler"
         ]
     },
     {
@@ -146,7 +168,11 @@
             "Mana: +30.00"
         ],
         "monsters": [
-            "HarbingerMinotaurHeroNecromancerPriestess"
+            "Harbinger",
+            "Minotaur",
+            "Hero",
+            "Necromancer",
+            "Priestess"
         ]
     },
     {
@@ -156,7 +182,7 @@
             "Mana: +500.00"
         ],
         "monsters": [
-            "Unobtainable"
+            "?"
         ]
     }
 ]

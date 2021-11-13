@@ -8,7 +8,9 @@
             "Maximum stat: 2"
         ],
         "monsters": [
-            "Troll MageTroll RangerTroll Knight"
+            "Troll Mage",
+            "Troll Ranger",
+            "Troll Knight"
         ],
         "type": "Ring"
     },
@@ -34,7 +36,9 @@
             "Maximum stat: 4"
         ],
         "monsters": [
-            "CyclopsSpiderDeerstalker"
+            "Cyclops",
+            "Spider",
+            "Deerstalker"
         ],
         "type": "Ring"
     },
@@ -229,7 +233,7 @@
             "Maximum stat: 16"
         ],
         "monsters": [
-            "Unobtainable"
+            "Mana fury"
         ],
         "type": "Necklace"
     },
@@ -242,7 +246,8 @@
             "Maximum stat: 0"
         ],
         "monsters": [
-            "TrollTroll Mage"
+            "Troll",
+            "Troll Mage"
         ],
         "type": "Helmet"
     },
@@ -281,7 +286,8 @@
             "Maximum stat: 3"
         ],
         "monsters": [
-            "Troll MageTroll Warlord"
+            "Troll Mage",
+            "Troll Warlord"
         ],
         "type": "Helmet"
     },
@@ -424,7 +430,8 @@
             "Maximum stat: 15"
         ],
         "monsters": [
-            "Fire SlimeGiant Slug"
+            "Fire Slime",
+            "Giant Slug"
         ],
         "type": "Helmet"
     },
@@ -567,7 +574,7 @@
             "Maximum stat: 27"
         ],
         "monsters": [
-            "Unobtainable"
+            "Mana fury"
         ],
         "type": "Helmet"
     },
@@ -580,7 +587,7 @@
             "Maximum stat: 27"
         ],
         "monsters": [
-            "Unobtainable"
+            "Frost fury"
         ],
         "type": "Helmet"
     },
@@ -593,7 +600,7 @@
             "Maximum stat: 27"
         ],
         "monsters": [
-            "Unobtainable"
+            "?"
         ],
         "type": "Helmet"
     },
@@ -853,7 +860,7 @@
             "Maximum stat: 21"
         ],
         "monsters": [
-            "Unobtainable"
+            "?"
         ],
         "type": "Gloves"
     },
@@ -918,7 +925,7 @@
             "Maximum stat: 27"
         ],
         "monsters": [
-            "Unobtainable"
+            "?"
         ],
         "type": "Gloves"
     },
@@ -931,7 +938,7 @@
             "Maximum stat: 27"
         ],
         "monsters": [
-            "Unobtainable"
+            "?"
         ],
         "type": "Gloves"
     },
@@ -944,7 +951,7 @@
             "Maximum stat: 27"
         ],
         "monsters": [
-            "Unobtainable"
+            "?"
         ],
         "type": "Gloves"
     },
@@ -1282,7 +1289,7 @@
             "Maximum stat: 27"
         ],
         "monsters": [
-            "Unobtainable"
+            "?"
         ],
         "type": "Chest"
     },
@@ -1295,7 +1302,7 @@
             "Maximum stat: 27"
         ],
         "monsters": [
-            "Unobtainable"
+            "?"
         ],
         "type": "Chest"
     },
@@ -1308,7 +1315,7 @@
             "Maximum stat: 27"
         ],
         "monsters": [
-            "Unobtainable"
+            "?"
         ],
         "type": "Chest"
     },
@@ -1568,7 +1575,8 @@
             "Maximum stat: 21"
         ],
         "monsters": [
-            "Giant WaspShadow"
+            "Giant Wasp",
+            "Shadow"
         ],
         "type": "Boots"
     },
@@ -1594,7 +1602,7 @@
             "Maximum stat: 24"
         ],
         "monsters": [
-            "Unobtainable"
+            "?"
         ],
         "type": "Boots"
     },
@@ -1633,7 +1641,7 @@
             "Maximum stat: 27"
         ],
         "monsters": [
-            "Unobtainable"
+            "?"
         ],
         "type": "Boots"
     },
@@ -1646,7 +1654,7 @@
             "Maximum stat: 27"
         ],
         "monsters": [
-            "Unobtainable"
+            "?"
         ],
         "type": "Boots"
     },
@@ -1659,7 +1667,7 @@
             "Maximum stat: 27"
         ],
         "monsters": [
-            "Unobtainable"
+            "?"
         ],
         "type": "Boots"
     }
