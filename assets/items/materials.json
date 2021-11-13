@@ -2,14 +2,14 @@
     {
         "name": "Blank Rune",
         "price": "5",
-        "drops_from": [
+        "monsters": [
             ""
         ]
     },
     {
         "name": "Troll Fur",
         "price": "50",
-        "drops_from": [
+        "monsters": [
             "Troll",
             "Troll Mage",
             "Troll Ranger",
@@ -20,21 +20,21 @@
     {
         "name": "Mandible",
         "price": "100",
-        "drops_from": [
+        "monsters": [
             "SpiderWidow"
         ]
     },
     {
         "name": "Spider Leg",
         "price": "100",
-        "drops_from": [
+        "monsters": [
             "Spider"
         ]
     },
     {
         "name": "Giant Toe",
         "price": "100",
-        "drops_from": [
+        "monsters": [
             "Cyclops",
             "Deerstalker",
             "Felwalker"
@@ -43,14 +43,14 @@
     {
         "name": "Widow Leg",
         "price": "150",
-        "drops_from": [
+        "monsters": [
             "Widow"
         ]
     },
     {
         "name": "Blue Tail",
         "price": "150",
-        "drops_from": [
+        "monsters": [
             "ImpImp Ranger",
             "Imp Knight",
             "Imp Mage"
@@ -59,7 +59,7 @@
     {
         "name": "Hoof",
         "price": "150",
-        "drops_from": [
+        "monsters": [
             "ImpImp Ranger",
             "Imp Knight",
             "Harbinger",
@@ -70,7 +70,7 @@
     {
         "name": "Giant Eye",
         "price": "150",
-        "drops_from": [
+        "monsters": [
             "Deerstalker",
             "Felwalker"
         ]
@@ -78,7 +78,7 @@
     {
         "name": "Green Goo",
         "price": "150",
-        "drops_from": [
+        "monsters": [
             "Slime",
             "Giant Slug",
             "Giant Wasp"
@@ -87,21 +87,21 @@
     {
         "name": "Red Scales",
         "price": "150",
-        "drops_from": [
+        "monsters": [
             "Firewyrm"
         ]
     },
     {
         "name": "Ponytail",
         "price": "200",
-        "drops_from": [
+        "monsters": [
             "Felwalker"
         ]
     },
     {
         "name": "Metal Plate",
         "price": "200",
-        "drops_from": [
+        "monsters": [
             "Troll Knight",
             "Troll Warlord",
             "Imp Knight",
@@ -111,14 +111,14 @@
     {
         "name": "Ectoplasm",
         "price": "200",
-        "drops_from": [
+        "monsters": [
             "Ghost"
         ]
     },
     {
         "name": "Broken Staff",
         "price": "200",
-        "drops_from": [
+        "monsters": [
             "Troll Mage",
             "Imp Mage",
             "Sorcerer",
@@ -129,7 +129,7 @@
     {
         "name": "Blue Ear",
         "price": "200",
-        "drops_from": [
+        "monsters": [
             "Imp Ranger",
             "Imp Knight",
             "Imp Mage"
@@ -138,28 +138,28 @@
     {
         "name": "Blue Goo",
         "price": "200",
-        "drops_from": [
+        "monsters": [
             "Ice Slime"
         ]
     },
     {
         "name": "Red Goo",
         "price": "200",
-        "drops_from": [
+        "monsters": [
             "Fire Slime"
         ]
     },
     {
         "name": "Branch",
         "price": "250",
-        "drops_from": [
+        "monsters": [
             "Defiler"
         ]
     },
     {
         "name": "Green Leather",
         "price": "250",
-        "drops_from": [
+        "monsters": [
             "Orc",
             "Orc Berzerk",
             "Orc Worker",
@@ -169,56 +169,56 @@
     {
         "name": "Crab Claw",
         "price": "250",
-        "drops_from": [
+        "monsters": [
             "Crab"
         ]
     },
     {
         "name": "Red Tail",
         "price": "500",
-        "drops_from": [
+        "monsters": [
             "Harbinger"
         ]
     },
     {
         "name": "Ice Shard",
         "price": "500",
-        "drops_from": [
+        "monsters": [
             "Ice Slime"
         ]
     },
     {
         "name": "Bone",
         "price": "500",
-        "drops_from": [
+        "monsters": [
             "Revenant"
         ]
     },
     {
         "name": "Minotaur Horn",
         "price": "600",
-        "drops_from": [
+        "monsters": [
             "Minotaur"
         ]
     },
     {
         "name": "Skull",
         "price": "750",
-        "drops_from": [
+        "monsters": [
             "Revenant"
         ]
     },
     {
         "name": "Giant Horn",
         "price": "1000",
-        "drops_from": [
+        "monsters": [
             "Behemoth"
         ]
     },
     {
         "name": "Molten Core",
         "price": "1500",
-        "drops_from": [
+        "monsters": [
             "Firewyrm",
             "Harbinger",
             "Fire Slime",
@@ -228,35 +228,35 @@
     {
         "name": "Razor Claws",
         "price": "1500",
-        "drops_from": [
+        "monsters": [
             "Hellhound"
         ]
     },
     {
         "name": "Demon Bone",
         "price": "2000",
-        "drops_from": [
+        "monsters": [
             "Demon"
         ]
     },
     {
         "name": "Wasp Stinger",
         "price": "3000",
-        "drops_from": [
+        "monsters": [
             "Giant Wasp"
         ]
     },
     {
         "name": "Wasp Wing",
         "price": "3000",
-        "drops_from": [
+        "monsters": [
             "Giant Wasp"
         ]
     },
     {
         "name": "Human Ear",
         "price": "3000",
-        "drops_from": [
+        "monsters": [
             "Thief",
             "Sorcerer",
             "Bandit",
@@ -270,14 +270,14 @@
     {
         "name": "Cursed Eye",
         "price": "5000",
-        "drops_from": [
+        "monsters": [
             "Shadow"
         ]
     },
     {
         "name": "Cursed Teeth",
         "price": "5000",
-        "drops_from": [
+        "monsters": [
             "Bloodseeker",
             "Slimespitter",
             "Shambler"

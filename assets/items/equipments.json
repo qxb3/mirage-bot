@@ -1,0 +1,1666 @@
+[
+    {
+        "name": "Broken Ring",
+        "requirements": "Level 0",
+        "stats": [
+            "Armour: 0",
+            "Minumum stat: 1",
+            "Maximum stat: 2"
+        ],
+        "monsters": [
+            "Troll MageTroll RangerTroll Knight"
+        ],
+        "type": "Ring"
+    },
+    {
+        "name": "Liam's Blessing",
+        "requirements": "Level 0",
+        "stats": [
+            "Armour: 0",
+            "Minumum stat: 0",
+            "Maximum stat: 0"
+        ],
+        "monsters": [
+            "Das Bug"
+        ],
+        "type": "Ring"
+    },
+    {
+        "name": "Plain Ring",
+        "requirements": "Level 5",
+        "stats": [
+            "Armour: 0",
+            "Minumum stat: 2",
+            "Maximum stat: 4"
+        ],
+        "monsters": [
+            "CyclopsSpiderDeerstalker"
+        ],
+        "type": "Ring"
+    },
+    {
+        "name": "Dragon Ring",
+        "requirements": "Level 10",
+        "stats": [
+            "Armour: 0",
+            "Minumum stat: 3",
+            "Maximum stat: 6"
+        ],
+        "monsters": [
+            "Slime"
+        ],
+        "type": "Ring"
+    },
+    {
+        "name": "Gold Ring",
+        "requirements": "Level 20",
+        "stats": [
+            "Armour: 0",
+            "Minumum stat: 4",
+            "Maximum stat: 8"
+        ],
+        "monsters": [
+            "Imp"
+        ],
+        "type": "Ring"
+    },
+    {
+        "name": "Burning Ring",
+        "requirements": "Level 30",
+        "stats": [
+            "Armour: 0",
+            "Minumum stat: 5",
+            "Maximum stat: 10"
+        ],
+        "monsters": [
+            "Harbinger"
+        ],
+        "type": "Ring"
+    },
+    {
+        "name": "Elven Ring",
+        "requirements": "Level 40",
+        "stats": [
+            "Armour: 0",
+            "Minumum stat: 6",
+            "Maximum stat: 12"
+        ],
+        "monsters": [
+            "Ghost"
+        ],
+        "type": "Ring"
+    },
+    {
+        "name": "Crystal Ring",
+        "requirements": "Level 50",
+        "stats": [
+            "Armour: 0",
+            "Minumum stat: 7",
+            "Maximum stat: 14"
+        ],
+        "monsters": [
+            "Orc"
+        ],
+        "type": "Ring"
+    },
+    {
+        "name": "Mana Stone",
+        "requirements": "Level 60",
+        "stats": [
+            "Armour: 0",
+            "Minumum stat: 8",
+            "Maximum stat: 16"
+        ],
+        "monsters": [
+            "Orc Warrior"
+        ],
+        "type": "Ring"
+    },
+    {
+        "name": "Amber Ring",
+        "requirements": "Level 70",
+        "stats": [
+            "Armour: 0",
+            "Minumum stat: 9",
+            "Maximum stat: 18"
+        ],
+        "monsters": [
+            "Hero"
+        ],
+        "type": "Ring"
+    },
+    {
+        "name": "Tarnished Necklace",
+        "requirements": "Level 5",
+        "stats": [
+            "Armour: 0",
+            "Minumum stat: 1",
+            "Maximum stat: 2"
+        ],
+        "monsters": [
+            "Troll Warlord"
+        ],
+        "type": "Necklace"
+    },
+    {
+        "name": "Ancient Necklace",
+        "requirements": "Level 10",
+        "stats": [
+            "Armour: 0",
+            "Minumum stat: 2",
+            "Maximum stat: 4"
+        ],
+        "monsters": [
+            "Firewyrm"
+        ],
+        "type": "Necklace"
+    },
+    {
+        "name": "Dragon Necklace",
+        "requirements": "Level 20",
+        "stats": [
+            "Armour: 0",
+            "Minumum stat: 3",
+            "Maximum stat: 6"
+        ],
+        "monsters": [
+            "Slime"
+        ],
+        "type": "Necklace"
+    },
+    {
+        "name": "Jeweled Necklace",
+        "requirements": "Level 30",
+        "stats": [
+            "Armour: 0",
+            "Minumum stat: 4",
+            "Maximum stat: 8"
+        ],
+        "monsters": [
+            "Imp Mage"
+        ],
+        "type": "Necklace"
+    },
+    {
+        "name": "Heroic Amulet",
+        "requirements": "Level 40",
+        "stats": [
+            "Armour: 0",
+            "Minumum stat: 5",
+            "Maximum stat: 10"
+        ],
+        "monsters": [
+            "Ice Slime"
+        ],
+        "type": "Necklace"
+    },
+    {
+        "name": "Power Amulet",
+        "requirements": "Level 50",
+        "stats": [
+            "Armour: 0",
+            "Minumum stat: 6",
+            "Maximum stat: 12"
+        ],
+        "monsters": [
+            "Hellhound"
+        ],
+        "type": "Necklace"
+    },
+    {
+        "name": "Demon Tooth",
+        "requirements": "Level 60",
+        "stats": [
+            "Armour: 0",
+            "Minumum stat: 7",
+            "Maximum stat: 14"
+        ],
+        "monsters": [
+            "Bandit"
+        ],
+        "type": "Necklace"
+    },
+    {
+        "name": "Hellborn Amulet",
+        "requirements": "Level 70",
+        "stats": [
+            "Armour: 0",
+            "Minumum stat: 8",
+            "Maximum stat: 16"
+        ],
+        "monsters": [
+            "Unobtainable"
+        ],
+        "type": "Necklace"
+    },
+    {
+        "name": "Bandana",
+        "requirements": "Level 0",
+        "stats": [
+            "Armour: 1",
+            "Minumum stat: 0",
+            "Maximum stat: 0"
+        ],
+        "monsters": [
+            "TrollTroll Mage"
+        ],
+        "type": "Helmet"
+    },
+    {
+        "name": "Sturdy Helmet",
+        "requirements": "Level 5",
+        "stats": [
+            "Armour: 1",
+            "Minumum stat: 1",
+            "Maximum stat: 3"
+        ],
+        "monsters": [
+            "Troll Knight"
+        ],
+        "type": "Helmet"
+    },
+    {
+        "name": "Ranger Cap",
+        "requirements": "Level 5",
+        "stats": [
+            "Armour: 1",
+            "Minumum stat: 1",
+            "Maximum stat: 3"
+        ],
+        "monsters": [
+            "Troll Ranger"
+        ],
+        "type": "Helmet"
+    },
+    {
+        "name": "Novice Cap",
+        "requirements": "Level 5",
+        "stats": [
+            "Armour: 1",
+            "Minumum stat: 1",
+            "Maximum stat: 3"
+        ],
+        "monsters": [
+            "Troll MageTroll Warlord"
+        ],
+        "type": "Helmet"
+    },
+    {
+        "name": "Iron Helmet",
+        "requirements": "Level 10",
+        "stats": [
+            "Armour: 1",
+            "Minumum stat: 2",
+            "Maximum stat: 6"
+        ],
+        "monsters": [
+            "Widow"
+        ],
+        "type": "Helmet"
+    },
+    {
+        "name": "Linothorax Helmet",
+        "requirements": "Level 10",
+        "stats": [
+            "Armour: 1",
+            "Minumum stat: 2",
+            "Maximum stat: 6"
+        ],
+        "monsters": [
+            "Spider"
+        ],
+        "type": "Helmet"
+    },
+    {
+        "name": "Traveller's Hat",
+        "requirements": "Level 10",
+        "stats": [
+            "Armour: 1",
+            "Minumum stat: 2",
+            "Maximum stat: 6"
+        ],
+        "monsters": [
+            "Cyclops"
+        ],
+        "type": "Helmet"
+    },
+    {
+        "name": "Copper Helmet",
+        "requirements": "Level 20",
+        "stats": [
+            "Armour: 2",
+            "Minumum stat: 3",
+            "Maximum stat: 9"
+        ],
+        "monsters": [
+            "Firewyrm"
+        ],
+        "type": "Helmet"
+    },
+    {
+        "name": "Flaming Hood",
+        "requirements": "Level 20",
+        "stats": [
+            "Armour: 1",
+            "Minumum stat: 3",
+            "Maximum stat: 9"
+        ],
+        "monsters": [
+            "Defiler"
+        ],
+        "type": "Helmet"
+    },
+    {
+        "name": "Heroic Hat",
+        "requirements": "Level 20",
+        "stats": [
+            "Armour: 2",
+            "Minumum stat: 3",
+            "Maximum stat: 9"
+        ],
+        "monsters": [
+            "Defiler"
+        ],
+        "type": "Helmet"
+    },
+    {
+        "name": "Plate Helmet",
+        "requirements": "Level 30",
+        "stats": [
+            "Armour: 3",
+            "Minumum stat: 4",
+            "Maximum stat: 12"
+        ],
+        "monsters": [
+            "Imp Ranger"
+        ],
+        "type": "Helmet"
+    },
+    {
+        "name": "Sulphur Mask",
+        "requirements": "Level 30",
+        "stats": [
+            "Armour: 2",
+            "Minumum stat: 4",
+            "Maximum stat: 12"
+        ],
+        "monsters": [
+            "Imp"
+        ],
+        "type": "Helmet"
+    },
+    {
+        "name": "Tin Helmet",
+        "requirements": "Level 30",
+        "stats": [
+            "Armour: 2",
+            "Minumum stat: 4",
+            "Maximum stat: 12"
+        ],
+        "monsters": [
+            "Imp Mage"
+        ],
+        "type": "Helmet"
+    },
+    {
+        "name": "Chain Helmet",
+        "requirements": "Level 40",
+        "stats": [
+            "Armour: 4",
+            "Minumum stat: 5",
+            "Maximum stat: 15"
+        ],
+        "monsters": [
+            "Ghost"
+        ],
+        "type": "Helmet"
+    },
+    {
+        "name": "Nernai Hat",
+        "requirements": "Level 40",
+        "stats": [
+            "Armour: 2",
+            "Minumum stat: 5",
+            "Maximum stat: 15"
+        ],
+        "monsters": [
+            "Fire SlimeGiant Slug"
+        ],
+        "type": "Helmet"
+    },
+    {
+        "name": "Soldier Helmet",
+        "requirements": "Level 40",
+        "stats": [
+            "Armour: 3",
+            "Minumum stat: 5",
+            "Maximum stat: 15"
+        ],
+        "monsters": [
+            "Fire Slime"
+        ],
+        "type": "Helmet"
+    },
+    {
+        "name": "Silver Helmet",
+        "requirements": "Level 50",
+        "stats": [
+            "Armour: 5",
+            "Minumum stat: 6",
+            "Maximum stat: 18"
+        ],
+        "monsters": [
+            "Sorcerer"
+        ],
+        "type": "Helmet"
+    },
+    {
+        "name": "Wizard Hood",
+        "requirements": "Level 50",
+        "stats": [
+            "Armour: 2",
+            "Minumum stat: 6",
+            "Maximum stat: 18"
+        ],
+        "monsters": [
+            "Revenant"
+        ],
+        "type": "Helmet"
+    },
+    {
+        "name": "Elven Hat",
+        "requirements": "Level 50",
+        "stats": [
+            "Armour: 3",
+            "Minumum stat: 6",
+            "Maximum stat: 18"
+        ],
+        "monsters": [
+            "Revenant"
+        ],
+        "type": "Helmet"
+    },
+    {
+        "name": "Platinum Helmet",
+        "requirements": "Level 60",
+        "stats": [
+            "Armour: 6",
+            "Minumum stat: 7",
+            "Maximum stat: 21"
+        ],
+        "monsters": [
+            "Wild Soldier"
+        ],
+        "type": "Helmet"
+    },
+    {
+        "name": "Indigo Hat",
+        "requirements": "Level 60",
+        "stats": [
+            "Armour: 3",
+            "Minumum stat: 7",
+            "Maximum stat: 21"
+        ],
+        "monsters": [
+            "Bandit"
+        ],
+        "type": "Helmet"
+    },
+    {
+        "name": "Pearl Helmet",
+        "requirements": "Level 60",
+        "stats": [
+            "Armour: 4",
+            "Minumum stat: 7",
+            "Maximum stat: 21"
+        ],
+        "monsters": [
+            "Orc Worker"
+        ],
+        "type": "Helmet"
+    },
+    {
+        "name": "Emerald Helmet",
+        "requirements": "Level 70",
+        "stats": [
+            "Armour: 7",
+            "Minumum stat: 8",
+            "Maximum stat: 24"
+        ],
+        "monsters": [
+            "Priestess"
+        ],
+        "type": "Helmet"
+    },
+    {
+        "name": "Arnisium Hat",
+        "requirements": "Level 70",
+        "stats": [
+            "Armour: 3",
+            "Minumum stat: 8",
+            "Maximum stat: 24"
+        ],
+        "monsters": [
+            "Slimespitter"
+        ],
+        "type": "Helmet"
+    },
+    {
+        "name": "Spiked Helmet",
+        "requirements": "Level 70",
+        "stats": [
+            "Armour: 4",
+            "Minumum stat: 8",
+            "Maximum stat: 24"
+        ],
+        "monsters": [
+            "Bloodseeker"
+        ],
+        "type": "Helmet"
+    },
+    {
+        "name": "Granite Helmet",
+        "requirements": "Level 80",
+        "stats": [
+            "Armour: 8",
+            "Minumum stat: 9",
+            "Maximum stat: 27"
+        ],
+        "monsters": [
+            "Unobtainable"
+        ],
+        "type": "Helmet"
+    },
+    {
+        "name": "Crystal Mask",
+        "requirements": "Level 80",
+        "stats": [
+            "Armour: 3",
+            "Minumum stat: 9",
+            "Maximum stat: 27"
+        ],
+        "monsters": [
+            "Unobtainable"
+        ],
+        "type": "Helmet"
+    },
+    {
+        "name": "Sentinel Helmet",
+        "requirements": "Level 80",
+        "stats": [
+            "Armour: 5",
+            "Minumum stat: 9",
+            "Maximum stat: 27"
+        ],
+        "monsters": [
+            "Unobtainable"
+        ],
+        "type": "Helmet"
+    },
+    {
+        "name": "Old Gloves",
+        "requirements": "Level 0",
+        "stats": [
+            "Armour: 1",
+            "Minumum stat: 0",
+            "Maximum stat: 0"
+        ],
+        "monsters": [
+            "Troll"
+        ],
+        "type": "Gloves"
+    },
+    {
+        "name": "Ragged Gloves",
+        "requirements": "Level 5",
+        "stats": [
+            "Armour: 1",
+            "Minumum stat: 1",
+            "Maximum stat: 3"
+        ],
+        "monsters": [
+            "Troll Mage"
+        ],
+        "type": "Gloves"
+    },
+    {
+        "name": "Sturdy Gloves",
+        "requirements": "Level 5",
+        "stats": [
+            "Armour: 1",
+            "Minumum stat: 1",
+            "Maximum stat: 3"
+        ],
+        "monsters": [
+            "Troll Knight"
+        ],
+        "type": "Gloves"
+    },
+    {
+        "name": "Ranger Gloves",
+        "requirements": "Level 5",
+        "stats": [
+            "Armour: 1",
+            "Minumum stat: 1",
+            "Maximum stat: 3"
+        ],
+        "monsters": [
+            "Troll Ranger"
+        ],
+        "type": "Gloves"
+    },
+    {
+        "name": "Traveller's Gloves",
+        "requirements": "Level 10",
+        "stats": [
+            "Armour: 1",
+            "Minumum stat: 2",
+            "Maximum stat: 6"
+        ],
+        "monsters": [
+            "Spider"
+        ],
+        "type": "Gloves"
+    },
+    {
+        "name": "Linothorax Gloves",
+        "requirements": "Level 10",
+        "stats": [
+            "Armour: 1",
+            "Minumum stat: 2",
+            "Maximum stat: 6"
+        ],
+        "monsters": [
+            "Cyclops"
+        ],
+        "type": "Gloves"
+    },
+    {
+        "name": "Iron Gloves",
+        "requirements": "Level 10",
+        "stats": [
+            "Armour: 1",
+            "Minumum stat: 2",
+            "Maximum stat: 6"
+        ],
+        "monsters": [
+            "Spider"
+        ],
+        "type": "Gloves"
+    },
+    {
+        "name": "Copper Gloves",
+        "requirements": "Level 20",
+        "stats": [
+            "Armour: 2",
+            "Minumum stat: 3",
+            "Maximum stat: 9"
+        ],
+        "monsters": [
+            "Defiler"
+        ],
+        "type": "Gloves"
+    },
+    {
+        "name": "Flaming Gloves",
+        "requirements": "Level 20",
+        "stats": [
+            "Armour: 1",
+            "Minumum stat: 3",
+            "Maximum stat: 9"
+        ],
+        "monsters": [
+            "Slime"
+        ],
+        "type": "Gloves"
+    },
+    {
+        "name": "Heroic Gloves",
+        "requirements": "Level 20",
+        "stats": [
+            "Armour: 2",
+            "Minumum stat: 3",
+            "Maximum stat: 9"
+        ],
+        "monsters": [
+            "Felwalker"
+        ],
+        "type": "Gloves"
+    },
+    {
+        "name": "Plate Gloves",
+        "requirements": "Level 30",
+        "stats": [
+            "Armour: 3",
+            "Minumum stat: 4",
+            "Maximum stat: 12"
+        ],
+        "monsters": [
+            "Imp"
+        ],
+        "type": "Gloves"
+    },
+    {
+        "name": "Sulphur Gloves",
+        "requirements": "Level 30",
+        "stats": [
+            "Armour: 2",
+            "Minumum stat: 4",
+            "Maximum stat: 12"
+        ],
+        "monsters": [
+            "Imp Knight"
+        ],
+        "type": "Gloves"
+    },
+    {
+        "name": "Tin Gloves",
+        "requirements": "Level 30",
+        "stats": [
+            "Armour: 2",
+            "Minumum stat: 4",
+            "Maximum stat: 12"
+        ],
+        "monsters": [
+            "Imp Knight"
+        ],
+        "type": "Gloves"
+    },
+    {
+        "name": "Chain Gloves",
+        "requirements": "Level 40",
+        "stats": [
+            "Armour: 4",
+            "Minumum stat: 5",
+            "Maximum stat: 15"
+        ],
+        "monsters": [
+            "Fire Slime"
+        ],
+        "type": "Gloves"
+    },
+    {
+        "name": "Nernai Gloves",
+        "requirements": "Level 40",
+        "stats": [
+            "Armour: 2",
+            "Minumum stat: 5",
+            "Maximum stat: 15"
+        ],
+        "monsters": [
+            "Ice Slime"
+        ],
+        "type": "Gloves"
+    },
+    {
+        "name": "Silver Gloves",
+        "requirements": "Level 50",
+        "stats": [
+            "Armour: 5",
+            "Minumum stat: 6",
+            "Maximum stat: 18"
+        ],
+        "monsters": [
+            "Hellhound"
+        ],
+        "type": "Gloves"
+    },
+    {
+        "name": "Caster Gloves",
+        "requirements": "Level 50",
+        "stats": [
+            "Armour: 2",
+            "Minumum stat: 6",
+            "Maximum stat: 18"
+        ],
+        "monsters": [
+            "Orc"
+        ],
+        "type": "Gloves"
+    },
+    {
+        "name": "Elven Gloves",
+        "requirements": "Level 50",
+        "stats": [
+            "Armour: 3",
+            "Minumum stat: 6",
+            "Maximum stat: 18"
+        ],
+        "monsters": [
+            "Sorcerer"
+        ],
+        "type": "Gloves"
+    },
+    {
+        "name": "Platinum Gloves",
+        "requirements": "Level 60",
+        "stats": [
+            "Armour: 6",
+            "Minumum stat: 7",
+            "Maximum stat: 21"
+        ],
+        "monsters": [
+            "Orc Worker"
+        ],
+        "type": "Gloves"
+    },
+    {
+        "name": "Indigo Gloves",
+        "requirements": "Level 60",
+        "stats": [
+            "Armour: 3",
+            "Minumum stat: 7",
+            "Maximum stat: 21"
+        ],
+        "monsters": [
+            "Unobtainable"
+        ],
+        "type": "Gloves"
+    },
+    {
+        "name": "Pearl Gloves",
+        "requirements": "Level 60",
+        "stats": [
+            "Armour: 4",
+            "Minumum stat: 7",
+            "Maximum stat: 21"
+        ],
+        "monsters": [
+            "Thief"
+        ],
+        "type": "Gloves"
+    },
+    {
+        "name": "Emerald Gloves",
+        "requirements": "Level 70",
+        "stats": [
+            "Armour: 7",
+            "Minumum stat: 8",
+            "Maximum stat: 24"
+        ],
+        "monsters": [
+            "Bloodseeker"
+        ],
+        "type": "Gloves"
+    },
+    {
+        "name": "Arnisium Gloves",
+        "requirements": "Level 70",
+        "stats": [
+            "Armour: 3",
+            "Minumum stat: 8",
+            "Maximum stat: 24"
+        ],
+        "monsters": [
+            "Shambler"
+        ],
+        "type": "Gloves"
+    },
+    {
+        "name": "Spiked Gloves",
+        "requirements": "Level 70",
+        "stats": [
+            "Armour: 4",
+            "Minumum stat: 8",
+            "Maximum stat: 24"
+        ],
+        "monsters": [
+            "Slimespitter"
+        ],
+        "type": "Gloves"
+    },
+    {
+        "name": "Granite Gloves",
+        "requirements": "Level 80",
+        "stats": [
+            "Armour: 8",
+            "Minumum stat: 9",
+            "Maximum stat: 27"
+        ],
+        "monsters": [
+            "Unobtainable"
+        ],
+        "type": "Gloves"
+    },
+    {
+        "name": "Crystal Gloves",
+        "requirements": "Level 80",
+        "stats": [
+            "Armour: 3",
+            "Minumum stat: 9",
+            "Maximum stat: 27"
+        ],
+        "monsters": [
+            "Unobtainable"
+        ],
+        "type": "Gloves"
+    },
+    {
+        "name": "Sentinel Gloves",
+        "requirements": "Level 80",
+        "stats": [
+            "Armour: 5",
+            "Minumum stat: 9",
+            "Maximum stat: 27"
+        ],
+        "monsters": [
+            "Unobtainable"
+        ],
+        "type": "Gloves"
+    },
+    {
+        "name": "Cloth Shirt",
+        "requirements": "Level 0",
+        "stats": [
+            "Armour: 1",
+            "Minumum stat: 0",
+            "Maximum stat: 0"
+        ],
+        "monsters": [
+            "TrollTroll Warlord"
+        ],
+        "type": "Chest"
+    },
+    {
+        "name": "Ragged Cloak",
+        "requirements": "Level 5",
+        "stats": [
+            "Armour: 1",
+            "Minumum stat: 1",
+            "Maximum stat: 3"
+        ],
+        "monsters": [
+            "Troll Mage"
+        ],
+        "type": "Chest"
+    },
+    {
+        "name": "Leather Vest",
+        "requirements": "Level 5",
+        "stats": [
+            "Armour: 1",
+            "Minumum stat: 1",
+            "Maximum stat: 3"
+        ],
+        "monsters": [
+            "Troll Ranger"
+        ],
+        "type": "Chest"
+    },
+    {
+        "name": "Belted Armour",
+        "requirements": "Level 5",
+        "stats": [
+            "Armour: 1",
+            "Minumum stat: 1",
+            "Maximum stat: 3"
+        ],
+        "monsters": [
+            "Troll Knight"
+        ],
+        "type": "Chest"
+    },
+    {
+        "name": "Traveller's Gown",
+        "requirements": "Level 10",
+        "stats": [
+            "Armour: 1",
+            "Minumum stat: 2",
+            "Maximum stat: 6"
+        ],
+        "monsters": [
+            "Deerstalker"
+        ],
+        "type": "Chest"
+    },
+    {
+        "name": "Linothorax Chest",
+        "requirements": "Level 10",
+        "stats": [
+            "Armour: 1",
+            "Minumum stat: 2",
+            "Maximum stat: 6"
+        ],
+        "monsters": [
+            "Widow"
+        ],
+        "type": "Chest"
+    },
+    {
+        "name": "Iron Armour",
+        "requirements": "Level 10",
+        "stats": [
+            "Armour: 2",
+            "Minumum stat: 2",
+            "Maximum stat: 6"
+        ],
+        "monsters": [
+            "Cyclops"
+        ],
+        "type": "Chest"
+    },
+    {
+        "name": "Copper Armour",
+        "requirements": "Level 20",
+        "stats": [
+            "Armour: 2",
+            "Minumum stat: 3",
+            "Maximum stat: 9"
+        ],
+        "monsters": [
+            "Slime"
+        ],
+        "type": "Chest"
+    },
+    {
+        "name": "Heroic Cloak",
+        "requirements": "Level 20",
+        "stats": [
+            "Armour: 2",
+            "Minumum stat: 3",
+            "Maximum stat: 9"
+        ],
+        "monsters": [
+            "Firewyrm"
+        ],
+        "type": "Chest"
+    },
+    {
+        "name": "Flaming Cape",
+        "requirements": "Level 20",
+        "stats": [
+            "Armour: 1",
+            "Minumum stat: 3",
+            "Maximum stat: 9"
+        ],
+        "monsters": [
+            "Felwalker"
+        ],
+        "type": "Chest"
+    },
+    {
+        "name": "Plate Armour",
+        "requirements": "Level 30",
+        "stats": [
+            "Armour: 3",
+            "Minumum stat: 4",
+            "Maximum stat: 12"
+        ],
+        "monsters": [
+            "Imp Knight"
+        ],
+        "type": "Chest"
+    },
+    {
+        "name": "Sulphur Robe",
+        "requirements": "Level 30",
+        "stats": [
+            "Armour: 2",
+            "Minumum stat: 4",
+            "Maximum stat: 12"
+        ],
+        "monsters": [
+            "Imp Mage"
+        ],
+        "type": "Chest"
+    },
+    {
+        "name": "Tin Armour",
+        "requirements": "Level 30",
+        "stats": [
+            "Armour: 2",
+            "Minumum stat: 4",
+            "Maximum stat: 12"
+        ],
+        "monsters": [
+            "Imp Ranger"
+        ],
+        "type": "Chest"
+    },
+    {
+        "name": "Chain Armour",
+        "requirements": "Level 40",
+        "stats": [
+            "Armour: 4",
+            "Minumum stat: 5",
+            "Maximum stat: 15"
+        ],
+        "monsters": [
+            "MinotaurGiant Slug"
+        ],
+        "type": "Chest"
+    },
+    {
+        "name": "Nernai Vest",
+        "requirements": "Level 40",
+        "stats": [
+            "Armour: 2",
+            "Minumum stat: 5",
+            "Maximum stat: 15"
+        ],
+        "monsters": [
+            "Ghost"
+        ],
+        "type": "Chest"
+    },
+    {
+        "name": "Soldier Armour",
+        "requirements": "Level 40",
+        "stats": [
+            "Armour: 3",
+            "Minumum stat: 5",
+            "Maximum stat: 15"
+        ],
+        "monsters": [
+            "Harbinger"
+        ],
+        "type": "Chest"
+    },
+    {
+        "name": "Silver Armour",
+        "requirements": "Level 50",
+        "stats": [
+            "Armour: 5",
+            "Minumum stat: 6",
+            "Maximum stat: 18"
+        ],
+        "monsters": [
+            "Revenant"
+        ],
+        "type": "Chest"
+    },
+    {
+        "name": "Caster Robe",
+        "requirements": "Level 50",
+        "stats": [
+            "Armour: 2",
+            "Minumum stat: 6",
+            "Maximum stat: 18"
+        ],
+        "monsters": [
+            "Hellhound"
+        ],
+        "type": "Chest"
+    },
+    {
+        "name": "Elven Shirt",
+        "requirements": "Level 50",
+        "stats": [
+            "Armour: 3",
+            "Minumum stat: 6",
+            "Maximum stat: 18"
+        ],
+        "monsters": [
+            "Behemoth"
+        ],
+        "type": "Chest"
+    },
+    {
+        "name": "Platinum Armour",
+        "requirements": "Level 60",
+        "stats": [
+            "Armour: 6",
+            "Minumum stat: 7",
+            "Maximum stat: 21"
+        ],
+        "monsters": [
+            "Shadow"
+        ],
+        "type": "Chest"
+    },
+    {
+        "name": "Indigo Cape",
+        "requirements": "Level 60",
+        "stats": [
+            "Armour: 3",
+            "Minumum stat: 7",
+            "Maximum stat: 21"
+        ],
+        "monsters": [
+            "Hunter"
+        ],
+        "type": "Chest"
+    },
+    {
+        "name": "Pearl Armour",
+        "requirements": "Level 60",
+        "stats": [
+            "Armour: 4",
+            "Minumum stat: 7",
+            "Maximum stat: 21"
+        ],
+        "monsters": [
+            "Shadow"
+        ],
+        "type": "Chest"
+    },
+    {
+        "name": "Emerald Armour",
+        "requirements": "Level 70",
+        "stats": [
+            "Armour: 7",
+            "Minumum stat: 8",
+            "Maximum stat: 24"
+        ],
+        "monsters": [
+            "Shambler"
+        ],
+        "type": "Chest"
+    },
+    {
+        "name": "Arnisium Vest",
+        "requirements": "Level 70",
+        "stats": [
+            "Armour: 3",
+            "Minumum stat: 8",
+            "Maximum stat: 24"
+        ],
+        "monsters": [
+            "Unobtainable"
+        ],
+        "type": "Chest"
+    },
+    {
+        "name": "Spiked Armour",
+        "requirements": "Level 70",
+        "stats": [
+            "Armour: 4",
+            "Minumum stat: 8",
+            "Maximum stat: 24"
+        ],
+        "monsters": [
+            "Orc Berzerk"
+        ],
+        "type": "Chest"
+    },
+    {
+        "name": "Granite Armour",
+        "requirements": "Level 80",
+        "stats": [
+            "Armour: 8",
+            "Minumum stat: 9",
+            "Maximum stat: 27"
+        ],
+        "monsters": [
+            "Unobtainable"
+        ],
+        "type": "Chest"
+    },
+    {
+        "name": "Crystal Cape",
+        "requirements": "Level 80",
+        "stats": [
+            "Armour: 3",
+            "Minumum stat: 9",
+            "Maximum stat: 27"
+        ],
+        "monsters": [
+            "Unobtainable"
+        ],
+        "type": "Chest"
+    },
+    {
+        "name": "Sentinel Armour",
+        "requirements": "Level 80",
+        "stats": [
+            "Armour: 5",
+            "Minumum stat: 9",
+            "Maximum stat: 27"
+        ],
+        "monsters": [
+            "Unobtainable"
+        ],
+        "type": "Chest"
+    },
+    {
+        "name": "Sandals",
+        "requirements": "Level 0",
+        "stats": [
+            "Armour: 1",
+            "Minumum stat: 0",
+            "Maximum stat: 0"
+        ],
+        "monsters": [
+            "Troll"
+        ],
+        "type": "Boots"
+    },
+    {
+        "name": "Sturdy Boots",
+        "requirements": "Level 5",
+        "stats": [
+            "Armour: 1",
+            "Minumum stat: 1",
+            "Maximum stat: 3"
+        ],
+        "monsters": [
+            "Troll Knight"
+        ],
+        "type": "Boots"
+    },
+    {
+        "name": "Steady Boots",
+        "requirements": "Level 5",
+        "stats": [
+            "Armour: 1",
+            "Minumum stat: 1",
+            "Maximum stat: 3"
+        ],
+        "monsters": [
+            "Troll Ranger"
+        ],
+        "type": "Boots"
+    },
+    {
+        "name": "Ragged Shoes",
+        "requirements": "Level 5",
+        "stats": [
+            "Armour: 1",
+            "Minumum stat: 1",
+            "Maximum stat: 3"
+        ],
+        "monsters": [
+            "Troll Mage"
+        ],
+        "type": "Boots"
+    },
+    {
+        "name": "Linothorax Boots",
+        "requirements": "Level 10",
+        "stats": [
+            "Armour: 1",
+            "Minumum stat: 2",
+            "Maximum stat: 6"
+        ],
+        "monsters": [
+            "Deerstalker"
+        ],
+        "type": "Boots"
+    },
+    {
+        "name": "Traveller's Boots",
+        "requirements": "Level 10",
+        "stats": [
+            "Armour: 1",
+            "Minumum stat: 2",
+            "Maximum stat: 6"
+        ],
+        "monsters": [
+            "Widow"
+        ],
+        "type": "Boots"
+    },
+    {
+        "name": "Iron Boots",
+        "requirements": "Level 10",
+        "stats": [
+            "Armour: 1",
+            "Minumum stat: 2",
+            "Maximum stat: 6"
+        ],
+        "monsters": [
+            "Deerstalker"
+        ],
+        "type": "Boots"
+    },
+    {
+        "name": "Heroic Boots",
+        "requirements": "Level 20",
+        "stats": [
+            "Armour: 2",
+            "Minumum stat: 3",
+            "Maximum stat: 9"
+        ],
+        "monsters": [
+            "Slime"
+        ],
+        "type": "Boots"
+    },
+    {
+        "name": "Copper Boots",
+        "requirements": "Level 20",
+        "stats": [
+            "Armour: 2",
+            "Minumum stat: 3",
+            "Maximum stat: 9"
+        ],
+        "monsters": [
+            "Felwalker"
+        ],
+        "type": "Boots"
+    },
+    {
+        "name": "Flaming Boots",
+        "requirements": "Level 20",
+        "stats": [
+            "Armour: 1",
+            "Minumum stat: 3",
+            "Maximum stat: 9"
+        ],
+        "monsters": [
+            "Firewyrm"
+        ],
+        "type": "Boots"
+    },
+    {
+        "name": "Plate Boots",
+        "requirements": "Level 30",
+        "stats": [
+            "Armour: 3",
+            "Minumum stat: 4",
+            "Maximum stat: 12"
+        ],
+        "monsters": [
+            "Imp Mage"
+        ],
+        "type": "Boots"
+    },
+    {
+        "name": "Sulphur Shoes",
+        "requirements": "Level 30",
+        "stats": [
+            "Armour: 2",
+            "Minumum stat: 4",
+            "Maximum stat: 12"
+        ],
+        "monsters": [
+            "Imp Ranger"
+        ],
+        "type": "Boots"
+    },
+    {
+        "name": "Tin Boots",
+        "requirements": "Level 30",
+        "stats": [
+            "Armour: 2",
+            "Minumum stat: 4",
+            "Maximum stat: 12"
+        ],
+        "monsters": [
+            "Imp"
+        ],
+        "type": "Boots"
+    },
+    {
+        "name": "Chain Boots",
+        "requirements": "Level 40",
+        "stats": [
+            "Armour: 4",
+            "Minumum stat: 5",
+            "Maximum stat: 15"
+        ],
+        "monsters": [
+            "Ice Slime"
+        ],
+        "type": "Boots"
+    },
+    {
+        "name": "Nernai Boots",
+        "requirements": "Level 40",
+        "stats": [
+            "Armour: 2",
+            "Minumum stat: 5",
+            "Maximum stat: 15"
+        ],
+        "monsters": [
+            "Minotaur"
+        ],
+        "type": "Boots"
+    },
+    {
+        "name": "Silver Boots",
+        "requirements": "Level 50",
+        "stats": [
+            "Armour: 5",
+            "Minumum stat: 6",
+            "Maximum stat: 18"
+        ],
+        "monsters": [
+            "Orc"
+        ],
+        "type": "Boots"
+    },
+    {
+        "name": "Caster Boots",
+        "requirements": "Level 50",
+        "stats": [
+            "Armour: 2",
+            "Minumum stat: 6",
+            "Maximum stat: 18"
+        ],
+        "monsters": [
+            "Behemoth"
+        ],
+        "type": "Boots"
+    },
+    {
+        "name": "Elven Boots",
+        "requirements": "Level 50",
+        "stats": [
+            "Armour: 3",
+            "Minumum stat: 6",
+            "Maximum stat: 18"
+        ],
+        "monsters": [
+            "Hellhound"
+        ],
+        "type": "Boots"
+    },
+    {
+        "name": "Platinum Boots",
+        "requirements": "Level 60",
+        "stats": [
+            "Armour: 6",
+            "Minumum stat: 7",
+            "Maximum stat: 21"
+        ],
+        "monsters": [
+            "Giant Wasp"
+        ],
+        "type": "Boots"
+    },
+    {
+        "name": "Indigo Sandals",
+        "requirements": "Level 60",
+        "stats": [
+            "Armour: 3",
+            "Minumum stat: 7",
+            "Maximum stat: 21"
+        ],
+        "monsters": [
+            "Giant WaspShadow"
+        ],
+        "type": "Boots"
+    },
+    {
+        "name": "Pearl Boots",
+        "requirements": "Level 60",
+        "stats": [
+            "Armour: 4",
+            "Minumum stat: 7",
+            "Maximum stat: 21"
+        ],
+        "monsters": [
+            "Orc Mage"
+        ],
+        "type": "Boots"
+    },
+    {
+        "name": "Emerald Boots",
+        "requirements": "Level 70",
+        "stats": [
+            "Armour: 7",
+            "Minumum stat: 8",
+            "Maximum stat: 24"
+        ],
+        "monsters": [
+            "Unobtainable"
+        ],
+        "type": "Boots"
+    },
+    {
+        "name": "Arnisium Boots",
+        "requirements": "Level 70",
+        "stats": [
+            "Armour: 3",
+            "Minumum stat: 8",
+            "Maximum stat: 24"
+        ],
+        "monsters": [
+            "Orc Berzerk"
+        ],
+        "type": "Boots"
+    },
+    {
+        "name": "Spiked Boots",
+        "requirements": "Level 70",
+        "stats": [
+            "Armour: 4",
+            "Minumum stat: 8",
+            "Maximum stat: 24"
+        ],
+        "monsters": [
+            "Necromancer"
+        ],
+        "type": "Boots"
+    },
+    {
+        "name": "Granite Boots",
+        "requirements": "Level 80",
+        "stats": [
+            "Armour: 8",
+            "Minumum stat: 9",
+            "Maximum stat: 27"
+        ],
+        "monsters": [
+            "Unobtainable"
+        ],
+        "type": "Boots"
+    },
+    {
+        "name": "Crystal Boots",
+        "requirements": "Level 80",
+        "stats": [
+            "Armour: 3",
+            "Minumum stat: 9",
+            "Maximum stat: 27"
+        ],
+        "monsters": [
+            "Unobtainable"
+        ],
+        "type": "Boots"
+    },
+    {
+        "name": "Sentinel Boots",
+        "requirements": "Level 80",
+        "stats": [
+            "Armour: 5",
+            "Minumum stat: 9",
+            "Maximum stat: 27"
+        ],
+        "monsters": [
+            "Unobtainable"
+        ],
+        "type": "Boots"
+    }
+]

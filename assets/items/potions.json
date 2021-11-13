@@ -1,0 +1,162 @@
+[
+    {
+        "name": "Cheese",
+        "effects": [
+            "Health: +2",
+            "Mana: +6.67"
+        ],
+        "monsters": [
+            "Rat"
+        ]
+    },
+    {
+        "name": "Apple",
+        "effects": [
+            "Health: +2",
+            "Mana: +6.67"
+        ],
+        "monsters": [
+            "ThiefHunterWild Soldier"
+        ]
+    },
+    {
+        "name": "Carrot",
+        "effects": [
+            "Health: +2",
+            "Mana: +6.67"
+        ],
+        "monsters": [
+            "Giant SlugBanditOrc Warrior"
+        ]
+    },
+    {
+        "name": "Banana",
+        "effects": [
+            "Health: +2",
+            "Mana: +6.67"
+        ],
+        "monsters": [
+            "Orc Worker"
+        ]
+    },
+    {
+        "name": "Cherries",
+        "effects": [
+            "Health: +2",
+            "Mana: +6.67"
+        ],
+        "monsters": [
+            "DefilerMinotaur"
+        ]
+    },
+    {
+        "name": "Egg",
+        "effects": [
+            "Health: +2",
+            "Mana: +6.67"
+        ],
+        "monsters": [
+            "Sorcerer"
+        ]
+    },
+    {
+        "name": "Grapes",
+        "effects": [
+            "Health: +2",
+            "Mana: +6.67"
+        ],
+        "monsters": [
+            "OrcOrc Warrior"
+        ]
+    },
+    {
+        "name": "Tomato",
+        "effects": [
+            "Health: +2",
+            "Mana: +6.67"
+        ],
+        "monsters": [
+            "Giant SlugOrc Mage"
+        ]
+    },
+    {
+        "name": "Mushroom",
+        "effects": [
+            "Health: +2",
+            "Mana: +6.67"
+        ],
+        "monsters": [
+            "ImpImp RangerImp KnightImp MageBehemothBloodseekerSlimespitterShambler"
+        ]
+    },
+    {
+        "name": "Candy Cane",
+        "effects": [
+            "Health: +3",
+            "Mana: +30.00"
+        ],
+        "monsters": [
+            "Unobtainable"
+        ]
+    },
+    {
+        "name": "Meat",
+        "effects": [
+            "Health: +5",
+            "Mana: +5.00"
+        ],
+        "monsters": [
+            "TrollTroll MageTroll RangerTroll Knight"
+        ]
+    },
+    {
+        "name": "Turnip",
+        "effects": [
+            "Health: +7",
+            "Mana: +14.00"
+        ],
+        "monsters": [
+            "ImpFire Slime"
+        ]
+    },
+    {
+        "name": "Biscot",
+        "effects": [
+            "Health: +7",
+            "Mana: +17.50"
+        ],
+        "monsters": [
+            "Angry Biscottsman"
+        ]
+    },
+    {
+        "name": "Tough Meat",
+        "effects": [
+            "Health: +8",
+            "Mana: +5.33"
+        ],
+        "monsters": [
+            "CyclopsDeerstalkerFirewyrmFelwalkerDefiler"
+        ]
+    },
+    {
+        "name": "Pie",
+        "effects": [
+            "Health: +30",
+            "Mana: +30.00"
+        ],
+        "monsters": [
+            "HarbingerMinotaurHeroNecromancerPriestess"
+        ]
+    },
+    {
+        "name": "Magic Candy",
+        "effects": [
+            "Health: +100",
+            "Mana: +500.00"
+        ],
+        "monsters": [
+            "Unobtainable"
+        ]
+    }
+]

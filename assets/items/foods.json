@@ -1,0 +1,114 @@
+[
+    {
+        "name": "Cheese",
+        "time": "2",
+        "monsters": [
+            "Rat"
+        ]
+    },
+    {
+        "name": "Apple",
+        "time": "2",
+        "monsters": [
+            "ThiefHunterWild Soldier"
+        ]
+    },
+    {
+        "name": "Carrot",
+        "time": "2",
+        "monsters": [
+            "Giant SlugBanditOrc Warrior"
+        ]
+    },
+    {
+        "name": "Banana",
+        "time": "2",
+        "monsters": [
+            "Orc Worker"
+        ]
+    },
+    {
+        "name": "Cherries",
+        "time": "2",
+        "monsters": [
+            "DefilerMinotaur"
+        ]
+    },
+    {
+        "name": "Egg",
+        "time": "2",
+        "monsters": [
+            "Sorcerer"
+        ]
+    },
+    {
+        "name": "Grapes",
+        "time": "2",
+        "monsters": [
+            "OrcOrc Warrior"
+        ]
+    },
+    {
+        "name": "Tomato",
+        "time": "2",
+        "monsters": [
+            "Giant SlugOrc Mage"
+        ]
+    },
+    {
+        "name": "Mushroom",
+        "time": "2",
+        "monsters": [
+            "ImpImp RangerImp KnightImp MageBehemothBloodseekerSlimespitterShambler"
+        ]
+    },
+    {
+        "name": "Candy Cane",
+        "time": "3",
+        "monsters": [
+            "Unobtainable"
+        ]
+    },
+    {
+        "name": "Meat",
+        "time": "5",
+        "monsters": [
+            "TrollTroll MageTroll RangerTroll Knight"
+        ]
+    },
+    {
+        "name": "Turnip",
+        "time": "7",
+        "monsters": [
+            "ImpFire Slime"
+        ]
+    },
+    {
+        "name": "Biscot",
+        "time": "7",
+        "monsters": [
+            "Angry Biscottsman"
+        ]
+    },
+    {
+        "name": "Tough Meat",
+        "time": "8",
+        "monsters": [
+            "CyclopsDeerstalkerFirewyrmFelwalkerDefiler"
+        ]
+    },
+    {
+        "name": "Pie",
+        "time": "30",
+        "monsters": [
+            "HarbingerMinotaurHeroNecromancerPriestess"
+        ]
+    },
+    {
+        "name": "Magic Candy",
+        "time": "100",
+        "monsters": [
+            "Unobtainable"
+        ]
+    }
+]

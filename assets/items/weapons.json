@@ -7,7 +7,7 @@
             "Minumum stat: 1",
             "Maximum stat: 3"
         ],
-        "drops_from": [
+        "monsters": [
             "Troll Knight"
         ],
         "type": "Sword"
@@ -20,7 +20,7 @@
             "Minumum stat: 2",
             "Maximum stat: 6"
         ],
-        "drops_from": [
+        "monsters": [
             "Spider"
         ],
         "type": "Sword"
@@ -33,7 +33,7 @@
             "Minumum stat: 3",
             "Maximum stat: 9"
         ],
-        "drops_from": [
+        "monsters": [
             "Felwalker"
         ],
         "type": "Sword"
@@ -46,7 +46,7 @@
             "Minumum stat: 4",
             "Maximum stat: 12"
         ],
-        "drops_from": [
+        "monsters": [
             "Harbinger"
         ],
         "type": "Sword"
@@ -59,7 +59,7 @@
             "Minumum stat: 5",
             "Maximum stat: 15"
         ],
-        "drops_from": [
+        "monsters": [
             "Behemoth"
         ],
         "type": "Sword"
@@ -72,7 +72,7 @@
             "Minumum stat: 6",
             "Maximum stat: 18"
         ],
-        "drops_from": [
+        "monsters": [
             "Hellhound"
         ],
         "type": "Sword"
@@ -85,7 +85,7 @@
             "Minumum stat: 7",
             "Maximum stat: 21"
         ],
-        "drops_from": [
+        "monsters": [
             "Orc Warrior"
         ],
         "type": "Sword"
@@ -98,7 +98,7 @@
             "Minumum stat: 8",
             "Maximum stat: 24"
         ],
-        "drops_from": [
+        "monsters": [
             "Hero"
         ],
         "type": "Sword"
@@ -111,7 +111,7 @@
             "Minumum stat: 9",
             "Maximum stat: 27"
         ],
-        "drops_from": [
+        "monsters": [
             "Unobtainable"
         ],
         "type": "Sword"
@@ -124,7 +124,7 @@
             "Minumum stat: 0",
             "Maximum stat: 0"
         ],
-        "drops_from": [
+        "monsters": [
             "Unobtainable"
         ],
         "type": "Staff"
@@ -137,7 +137,7 @@
             "Minumum stat: 0",
             "Maximum stat: 0"
         ],
-        "drops_from": [
+        "monsters": [
             "Unobtainable"
         ],
         "type": "Staff"
@@ -150,7 +150,7 @@
             "Minumum stat: 0",
             "Maximum stat: 0"
         ],
-        "drops_from": [
+        "monsters": [
             "Unobtainable"
         ],
         "type": "Staff"
@@ -163,7 +163,7 @@
             "Minumum stat: 1",
             "Maximum stat: 3"
         ],
-        "drops_from": [
+        "monsters": [
             "Troll Mage"
         ],
         "type": "Staff"
@@ -176,7 +176,7 @@
             "Minumum stat: 2",
             "Maximum stat: 6"
         ],
-        "drops_from": [
+        "monsters": [
             "Widow"
         ],
         "type": "Staff"
@@ -189,7 +189,7 @@
             "Minumum stat: 3",
             "Maximum stat: 9"
         ],
-        "drops_from": [
+        "monsters": [
             "Felwalker"
         ],
         "type": "Staff"
@@ -202,7 +202,7 @@
             "Minumum stat: 4",
             "Maximum stat: 12"
         ],
-        "drops_from": [
+        "monsters": [
             "Imp Mage"
         ],
         "type": "Staff"
@@ -215,7 +215,7 @@
             "Minumum stat: 5",
             "Maximum stat: 15"
         ],
-        "drops_from": [
+        "monsters": [
             "Ice Slime"
         ],
         "type": "Staff"
@@ -228,7 +228,7 @@
             "Minumum stat: 6",
             "Maximum stat: 18"
         ],
-        "drops_from": [
+        "monsters": [
             "Demon"
         ],
         "type": "Staff"
@@ -241,7 +241,7 @@
             "Minumum stat: 7",
             "Maximum stat: 21"
         ],
-        "drops_from": [
+        "monsters": [
             "Orc Mage"
         ],
         "type": "Staff"
@@ -254,7 +254,7 @@
             "Minumum stat: 8",
             "Maximum stat: 24"
         ],
-        "drops_from": [
+        "monsters": [
             "Necromancer"
         ],
         "type": "Staff"
@@ -267,7 +267,7 @@
             "Minumum stat: 9",
             "Maximum stat: 27"
         ],
-        "drops_from": [
+        "monsters": [
             "Unobtainable"
         ],
         "type": "Staff"
@@ -280,7 +280,7 @@
             "Minumum stat: 3",
             "Maximum stat: 9"
         ],
-        "drops_from": [
+        "monsters": [
             "Troll Mage"
         ],
         "type": "Spellbook"
@@ -293,7 +293,7 @@
             "Minumum stat: 4",
             "Maximum stat: 12"
         ],
-        "drops_from": [
+        "monsters": [
             "Troll Warlord"
         ],
         "type": "Spellbook"
@@ -306,7 +306,7 @@
             "Minumum stat: 5",
             "Maximum stat: 15"
         ],
-        "drops_from": [
+        "monsters": [
             "Firewyrm"
         ],
         "type": "Spellbook"
@@ -319,7 +319,7 @@
             "Minumum stat: 6",
             "Maximum stat: 18"
         ],
-        "drops_from": [
+        "monsters": [
             "Harbinger"
         ],
         "type": "Spellbook"
@@ -332,7 +332,7 @@
             "Minumum stat: 7",
             "Maximum stat: 21"
         ],
-        "drops_from": [
+        "monsters": [
             "Ice Slime"
         ],
         "type": "Spellbook"
@@ -345,7 +345,7 @@
             "Minumum stat: 8",
             "Maximum stat: 24"
         ],
-        "drops_from": [
+        "monsters": [
             "Sorcerer"
         ],
         "type": "Spellbook"
@@ -358,7 +358,7 @@
             "Minumum stat: 9",
             "Maximum stat: 27"
         ],
-        "drops_from": [
+        "monsters": [
             "Orc Warrior"
         ],
         "type": "Spellbook"
@@ -371,7 +371,7 @@
             "Minumum stat: 10",
             "Maximum stat: 30"
         ],
-        "drops_from": [
+        "monsters": [
             "Hero"
         ],
         "type": "Spellbook"
@@ -384,7 +384,7 @@
             "Minumum stat: 11",
             "Maximum stat: 33"
         ],
-        "drops_from": [
+        "monsters": [
             "Unobtainable"
         ],
         "type": "Spellbook"
@@ -397,7 +397,7 @@
             "Minumum stat: 0",
             "Maximum stat: 0"
         ],
-        "drops_from": [
+        "monsters": [
             "Unobtainable"
         ],
         "type": "Shield"
@@ -410,7 +410,7 @@
             "Minumum stat: 1",
             "Maximum stat: 3"
         ],
-        "drops_from": [
+        "monsters": [
             "Troll Knight"
         ],
         "type": "Shield"
@@ -423,7 +423,7 @@
             "Minumum stat: 2",
             "Maximum stat: 6"
         ],
-        "drops_from": [
+        "monsters": [
             "Troll Warlord"
         ],
         "type": "Shield"
@@ -436,7 +436,7 @@
             "Minumum stat: 3",
             "Maximum stat: 9"
         ],
-        "drops_from": [
+        "monsters": [
             "Firewyrm"
         ],
         "type": "Shield"
@@ -449,7 +449,7 @@
             "Minumum stat: 4",
             "Maximum stat: 12"
         ],
-        "drops_from": [
+        "monsters": [
             "Imp KnightMinotaurGiant Slug"
         ],
         "type": "Shield"
@@ -462,7 +462,7 @@
             "Minumum stat: 5",
             "Maximum stat: 15"
         ],
-        "drops_from": [
+        "monsters": [
             "Behemoth"
         ],
         "type": "Shield"
@@ -475,7 +475,7 @@
             "Minumum stat: 6",
             "Maximum stat: 18"
         ],
-        "drops_from": [
+        "monsters": [
             "Shadow"
         ],
         "type": "Shield"
@@ -488,7 +488,7 @@
             "Minumum stat: 7",
             "Maximum stat: 21"
         ],
-        "drops_from": [
+        "monsters": [
             "Wild Soldier"
         ],
         "type": "Shield"
@@ -501,7 +501,7 @@
             "Minumum stat: 8",
             "Maximum stat: 24"
         ],
-        "drops_from": [
+        "monsters": [
             "Unobtainable"
         ],
         "type": "Shield"
@@ -514,7 +514,7 @@
             "Minumum stat: 0",
             "Maximum stat: 0"
         ],
-        "drops_from": [
+        "monsters": [
             "Unobtainable"
         ],
         "type": "Rod"
@@ -527,7 +527,7 @@
             "Minumum stat: 1",
             "Maximum stat: 3"
         ],
-        "drops_from": [
+        "monsters": [
             "Troll Mage"
         ],
         "type": "Rod"
@@ -540,7 +540,7 @@
             "Minumum stat: 2",
             "Maximum stat: 6"
         ],
-        "drops_from": [
+        "monsters": [
             "Widow"
         ],
         "type": "Rod"
@@ -553,7 +553,7 @@
             "Minumum stat: 3",
             "Maximum stat: 9"
         ],
-        "drops_from": [
+        "monsters": [
             "Felwalker"
         ],
         "type": "Rod"
@@ -566,7 +566,7 @@
             "Minumum stat: 4",
             "Maximum stat: 12"
         ],
-        "drops_from": [
+        "monsters": [
             "Imp Mage"
         ],
         "type": "Rod"
@@ -579,7 +579,7 @@
             "Minumum stat: 5",
             "Maximum stat: 15"
         ],
-        "drops_from": [
+        "monsters": [
             "Ice Slime"
         ],
         "type": "Rod"
@@ -592,7 +592,7 @@
             "Minumum stat: 6",
             "Maximum stat: 18"
         ],
-        "drops_from": [
+        "monsters": [
             "Demon"
         ],
         "type": "Rod"
@@ -605,7 +605,7 @@
             "Minumum stat: 7",
             "Maximum stat: 21"
         ],
-        "drops_from": [
+        "monsters": [
             "Orc Mage"
         ],
         "type": "Rod"
@@ -618,7 +618,7 @@
             "Minumum stat: 8",
             "Maximum stat: 24"
         ],
-        "drops_from": [
+        "monsters": [
             "Necromancer"
         ],
         "type": "Rod"
@@ -631,7 +631,7 @@
             "Minumum stat: 9",
             "Maximum stat: 27"
         ],
-        "drops_from": [
+        "monsters": [
             "Unobtainable"
         ],
         "type": "Rod"
@@ -644,7 +644,7 @@
             "Minumum stat: 0",
             "Maximum stat: 0"
         ],
-        "drops_from": [
+        "monsters": [
             "Unobtainable"
         ],
         "type": "Mace"
@@ -657,7 +657,7 @@
             "Minumum stat: 0",
             "Maximum stat: 0"
         ],
-        "drops_from": [
+        "monsters": [
             "Unobtainable"
         ],
         "type": "Mace"
@@ -670,7 +670,7 @@
             "Minumum stat: 0",
             "Maximum stat: 0"
         ],
-        "drops_from": [
+        "monsters": [
             "Unobtainable"
         ],
         "type": "Mace"
@@ -683,7 +683,7 @@
             "Minumum stat: 1",
             "Maximum stat: 3"
         ],
-        "drops_from": [
+        "monsters": [
             "Troll Warlord"
         ],
         "type": "Mace"
@@ -696,7 +696,7 @@
             "Minumum stat: 2",
             "Maximum stat: 6"
         ],
-        "drops_from": [
+        "monsters": [
             "Cyclops"
         ],
         "type": "Mace"
@@ -709,7 +709,7 @@
             "Minumum stat: 3",
             "Maximum stat: 9"
         ],
-        "drops_from": [
+        "monsters": [
             "Defiler"
         ],
         "type": "Mace"
@@ -722,7 +722,7 @@
             "Minumum stat: 4",
             "Maximum stat: 12"
         ],
-        "drops_from": [
+        "monsters": [
             "Imp Knight"
         ],
         "type": "Mace"
@@ -735,7 +735,7 @@
             "Minumum stat: 5",
             "Maximum stat: 15"
         ],
-        "drops_from": [
+        "monsters": [
             "Minotaur"
         ],
         "type": "Mace"
@@ -748,7 +748,7 @@
             "Minumum stat: 6",
             "Maximum stat: 18"
         ],
-        "drops_from": [
+        "monsters": [
             "Demon"
         ],
         "type": "Mace"
@@ -761,7 +761,7 @@
             "Minumum stat: 7",
             "Maximum stat: 21"
         ],
-        "drops_from": [
+        "monsters": [
             "Bandit"
         ],
         "type": "Mace"
@@ -774,7 +774,7 @@
             "Minumum stat: 8",
             "Maximum stat: 24"
         ],
-        "drops_from": [
+        "monsters": [
             "Unobtainable"
         ],
         "type": "Mace"
@@ -787,7 +787,7 @@
             "Minumum stat: 0",
             "Maximum stat: 0"
         ],
-        "drops_from": [
+        "monsters": [
             "Das Bug"
         ],
         "type": "Mace"
@@ -800,7 +800,7 @@
             "Minumum stat: 0",
             "Maximum stat: 0"
         ],
-        "drops_from": [
+        "monsters": [
             "Unobtainable"
         ],
         "type": "Bow"
@@ -813,7 +813,7 @@
             "Minumum stat: 0",
             "Maximum stat: 0"
         ],
-        "drops_from": [
+        "monsters": [
             "Unobtainable"
         ],
         "type": "Bow"
@@ -826,7 +826,7 @@
             "Minumum stat: 0",
             "Maximum stat: 0"
         ],
-        "drops_from": [
+        "monsters": [
             "Unobtainable"
         ],
         "type": "Bow"
@@ -839,7 +839,7 @@
             "Minumum stat: 1",
             "Maximum stat: 3"
         ],
-        "drops_from": [
+        "monsters": [
             "Troll Ranger"
         ],
         "type": "Bow"
@@ -852,7 +852,7 @@
             "Minumum stat: 2",
             "Maximum stat: 6"
         ],
-        "drops_from": [
+        "monsters": [
             "Deerstalker"
         ],
         "type": "Bow"
@@ -865,7 +865,7 @@
             "Minumum stat: 3",
             "Maximum stat: 9"
         ],
-        "drops_from": [
+        "monsters": [
             "Defiler"
         ],
         "type": "Bow"
@@ -878,7 +878,7 @@
             "Minumum stat: 4",
             "Maximum stat: 12"
         ],
-        "drops_from": [
+        "monsters": [
             "Imp Ranger"
         ],
         "type": "Bow"
@@ -891,7 +891,7 @@
             "Minumum stat: 5",
             "Maximum stat: 15"
         ],
-        "drops_from": [
+        "monsters": [
             "Fire Slime"
         ],
         "type": "Bow"
@@ -904,7 +904,7 @@
             "Minumum stat: 6",
             "Maximum stat: 18"
         ],
-        "drops_from": [
+        "monsters": [
             "Demon"
         ],
         "type": "Bow"
@@ -917,7 +917,7 @@
             "Minumum stat: 7",
             "Maximum stat: 21"
         ],
-        "drops_from": [
+        "monsters": [
             "Hunter"
         ],
         "type": "Bow"
@@ -930,7 +930,7 @@
             "Minumum stat: 8",
             "Maximum stat: 24"
         ],
-        "drops_from": [
+        "monsters": [
             "Priestess"
         ],
         "type": "Bow"
@@ -943,7 +943,7 @@
             "Minumum stat: 9",
             "Maximum stat: 27"
         ],
-        "drops_from": [
+        "monsters": [
             "Unobtainable"
         ],
         "type": "Bow"
@@ -956,7 +956,7 @@
             "Minumum stat: 0",
             "Maximum stat: 0"
         ],
-        "drops_from": [
+        "monsters": [
             "Unobtainable"
         ],
         "type": "Axe"
@@ -969,7 +969,7 @@
             "Minumum stat: 2",
             "Maximum stat: 6"
         ],
-        "drops_from": [
+        "monsters": [
             "Troll Warlord"
         ],
         "type": "Axe"
@@ -982,7 +982,7 @@
             "Minumum stat: 4",
             "Maximum stat: 12"
         ],
-        "drops_from": [
+        "monsters": [
             "Spider"
         ],
         "type": "Axe"
@@ -995,7 +995,7 @@
             "Minumum stat: 6",
             "Maximum stat: 18"
         ],
-        "drops_from": [
+        "monsters": [
             "Slime"
         ],
         "type": "Axe"
@@ -1008,7 +1008,7 @@
             "Minumum stat: 8",
             "Maximum stat: 24"
         ],
-        "drops_from": [
+        "monsters": [
             "Harbinger"
         ],
         "type": "Axe"
@@ -1021,7 +1021,7 @@
             "Minumum stat: 10",
             "Maximum stat: 30"
         ],
-        "drops_from": [
+        "monsters": [
             "Behemoth"
         ],
         "type": "Axe"
@@ -1034,7 +1034,7 @@
             "Minumum stat: 12",
             "Maximum stat: 36"
         ],
-        "drops_from": [
+        "monsters": [
             "Orc"
         ],
         "type": "Axe"
@@ -1047,7 +1047,7 @@
             "Minumum stat: 14",
             "Maximum stat: 42"
         ],
-        "drops_from": [
+        "monsters": [
             "Orc Berzerk"
         ],
         "type": "Axe"
@@ -1060,7 +1060,7 @@
             "Minumum stat: 16",
             "Maximum stat: 48"
         ],
-        "drops_from": [
+        "monsters": [
             "Unobtainable"
         ],
         "type": "Axe"
@@ -1073,7 +1073,7 @@
             "Minumum stat: 0",
             "Maximum stat: 0"
         ],
-        "drops_from": [
+        "monsters": [
             "Unobtainable"
         ],
         "type": "Ammunition"
@@ -1086,7 +1086,7 @@
             "Minumum stat: 0",
             "Maximum stat: 0"
         ],
-        "drops_from": [
+        "monsters": [
             "Troll Ranger"
         ],
         "type": "Ammunition"
@@ -1099,7 +1099,7 @@
             "Minumum stat: 5",
             "Maximum stat: 5"
         ],
-        "drops_from": [
+        "monsters": [
             "Unobtainable"
         ],
         "type": "Ammunition"
@@ -1112,7 +1112,7 @@
             "Minumum stat: 10",
             "Maximum stat: 10"
         ],
-        "drops_from": [
+        "monsters": [
             "Deerstalker"
         ],
         "type": "Ammunition"
@@ -1125,7 +1125,7 @@
             "Minumum stat: 15",
             "Maximum stat: 15"
         ],
-        "drops_from": [
+        "monsters": [
             "Unobtainable"
         ],
         "type": "Ammunition"
@@ -1138,7 +1138,7 @@
             "Minumum stat: 20",
             "Maximum stat: 20"
         ],
-        "drops_from": [
+        "monsters": [
             "Imp Ranger"
         ],
         "type": "Ammunition"
@@ -1151,7 +1151,7 @@
             "Minumum stat: 25",
             "Maximum stat: 25"
         ],
-        "drops_from": [
+        "monsters": [
             "Unobtainable"
         ],
         "type": "Ammunition"
@@ -1164,7 +1164,7 @@
             "Minumum stat: 30",
             "Maximum stat: 30"
         ],
-        "drops_from": [
+        "monsters": [
             "Hunter"
         ],
         "type": "Ammunition"
@@ -1177,7 +1177,7 @@
             "Minumum stat: 200",
             "Maximum stat: 200"
         ],
-        "drops_from": [
+        "monsters": [
             "Unobtainable"
         ],
         "type": "Ammunition"
@@ -1190,7 +1190,7 @@
             "Minumum stat: 35",
             "Maximum stat: 35"
         ],
-        "drops_from": [
+        "monsters": [
             "Bloodseeker"
         ],
         "type": "Ammunition"
@@ -1203,7 +1203,7 @@
             "Minumum stat: 40",
             "Maximum stat: 40"
         ],
-        "drops_from": [
+        "monsters": [
             "Priestess"
         ],
         "type": "Ammunition"
