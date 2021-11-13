@@ -9,7 +9,9 @@
   "items": {
     "commands": [
       "weapons",
-      "materials"
+      "equipments",
+      "materials",
+      "scrolls"
     ]
   }
 }
