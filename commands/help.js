@@ -2,6 +2,9 @@ const { MessageEmbed } = require('discord.js')
 const fs = require('fs')
 
 module.exports = {
+    category: 'Help',
+    description: 'Help command for the bot',
+
     callback: async ({ message, prefix }) => {
         const username = message.author.username
         const tag = `#${message.author.discriminator}`
@@ -10,12 +13,12 @@ module.exports = {
         const help = JSON.parse(Buffer.from(fs.readFileSync(process.env.PWD + '/assets/help.json').toString()))
         let wiki = ''
         help.wiki.commands.forEach(data => {
-            wiki += `${data}\n`
+            wiki += `• ${prefix + data}\n`
         })
 
         let items = ''
         help.items.commands.forEach(data => {
-            items += `${data}\n`
+            items += `• ${prefix + data}\n`
         })
 
         const embed = new MessageEmbed()
@@ -24,7 +27,7 @@ module.exports = {
                 { name: '❯ Wiki', value: wiki },
                 { name: '❯ Items', value: items }
             ])
-            .setColor('DARK_RED')
+            .setColor('BLUE')
 
         return embed
     }

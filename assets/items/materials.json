@@ -1,195 +1,286 @@
 [
     {
-        "name": "Troll fur",
-        "dropped_from": [
-            "Trolls"
+        "name": "Blank Rune",
+        "price": "5",
+        "drops_from": [
+            ""
         ]
     },
     {
-        "name": "Metal plate",
-        "dropped_from": [
-            "Troll Knights",
-            "Imp Knights",
-            "Imps"
-        ]
-    },
-    {
-        "name": "Giant toe",
-        "dropped_from": [
-            "Cyclops",
-            "Deerstalkers",
-            "Felwalkers"
-        ]
-    },
-    {
-        "name": "Giant eye",
-        "dropped_from": [
-            "Cyclops",
-            "Deerstalkers",
-            "Felwalkers"
-        ]
-    },
-    {
-        "name": "Spider leg",
-        "dropped_from": [
-            "Spiders"
+        "name": "Troll Fur",
+        "price": "50",
+        "drops_from": [
+            "Troll",
+            "Troll Mage",
+            "Troll Ranger",
+            "Troll Knight",
+            "Troll Warlord"
         ]
     },
     {
         "name": "Mandible",
-        "dropped_from": [
-            "Spiders",
-            "Widows"
+        "price": "100",
+        "drops_from": [
+            "SpiderWidow"
         ]
     },
     {
-        "name": "Widow leg",
-        "dropped_from": [
-            "Widows"
+        "name": "Spider Leg",
+        "price": "100",
+        "drops_from": [
+            "Spider"
         ]
     },
     {
-        "name": "Red scale",
-        "dropped_from": [
-            "FireWyrms"
+        "name": "Giant Toe",
+        "price": "100",
+        "drops_from": [
+            "Cyclops",
+            "Deerstalker",
+            "Felwalker"
         ]
     },
     {
-        "name": "Green goo",
-        "dropped_from": [
-            "Slimes"
+        "name": "Widow Leg",
+        "price": "150",
+        "drops_from": [
+            "Widow"
         ]
     },
     {
-        "name": "Branch",
-        "dropped_from": [
-            "Defillers",
-            "Slimes"
-        ]
-    },
-    {
-        "name": "Ponytail",
-        "dropped_from": [
-            "Felwalkers"
-        ]
-    },
-    {
-        "name": "Red tail",
-        "dropped_from": [
-            "Harbringers"
-        ]
-    },
-    {
-        "name": "Cloth",
-        "dropped_from": [
-            "Orc mages"
-        ]
-    },
-    {
-        "name": "Broken staff",
-        "dropped_from": [
-            "Orc mages"
-        ]
-    },
-    {
-        "name": "Green leather",
-        "dropped_from": [
-            "Orc mages"
-        ]
-    },
-    {
-        "name": "Blue tail",
-        "dropped_from": [
-            "Imps"
-        ]
-    },
-    {
-        "name": "Blue ear",
-        "dropped_from": [
-            "Imps"
+        "name": "Blue Tail",
+        "price": "150",
+        "drops_from": [
+            "ImpImp Ranger",
+            "Imp Knight",
+            "Imp Mage"
         ]
     },
     {
         "name": "Hoof",
-        "dropped_from": [
-            "Imps",
-            "Minotaurs",
-            "Behemoths"
+        "price": "150",
+        "drops_from": [
+            "ImpImp Ranger",
+            "Imp Knight",
+            "Harbinger",
+            "Minotaur",
+            "Behemoth"
         ]
     },
     {
-        "name": "Red goo",
-        "dropped_from": [
-            "Fire slimes"
+        "name": "Giant Eye",
+        "price": "150",
+        "drops_from": [
+            "Deerstalker",
+            "Felwalker"
         ]
     },
     {
-        "name": "Minotaur horn",
-        "dropped_from": [
-            "Minotaurs"
+        "name": "Green Goo",
+        "price": "150",
+        "drops_from": [
+            "Slime",
+            "Giant Slug",
+            "Giant Wasp"
         ]
     },
     {
-        "name": "Blue goo",
-        "dropped_from": [
-            "Ice slimes"
+        "name": "Red Scales",
+        "price": "150",
+        "drops_from": [
+            "Firewyrm"
         ]
     },
     {
-        "name": "Ice shard",
-        "dropped_from": [
-            "Ice slimes"
+        "name": "Ponytail",
+        "price": "200",
+        "drops_from": [
+            "Felwalker"
+        ]
+    },
+    {
+        "name": "Metal Plate",
+        "price": "200",
+        "drops_from": [
+            "Troll Knight",
+            "Troll Warlord",
+            "Imp Knight",
+            "Orc WarriorHero"
         ]
     },
     {
         "name": "Ectoplasm",
-        "dropped_from": [
-            "Ghosts"
+        "price": "200",
+        "drops_from": [
+            "Ghost"
         ]
     },
     {
-        "name": "Giant horn",
-        "dropped_from": [
-            "Behemoths"
+        "name": "Broken Staff",
+        "price": "200",
+        "drops_from": [
+            "Troll Mage",
+            "Imp Mage",
+            "Sorcerer",
+            "Orc Mage",
+            "Necromancer"
+        ]
+    },
+    {
+        "name": "Blue Ear",
+        "price": "200",
+        "drops_from": [
+            "Imp Ranger",
+            "Imp Knight",
+            "Imp Mage"
+        ]
+    },
+    {
+        "name": "Blue Goo",
+        "price": "200",
+        "drops_from": [
+            "Ice Slime"
+        ]
+    },
+    {
+        "name": "Red Goo",
+        "price": "200",
+        "drops_from": [
+            "Fire Slime"
+        ]
+    },
+    {
+        "name": "Branch",
+        "price": "250",
+        "drops_from": [
+            "Defiler"
+        ]
+    },
+    {
+        "name": "Green Leather",
+        "price": "250",
+        "drops_from": [
+            "Orc",
+            "Orc Berzerk",
+            "Orc Worker",
+            "Orc Warrior"
+        ]
+    },
+    {
+        "name": "Crab Claw",
+        "price": "250",
+        "drops_from": [
+            "Crab"
+        ]
+    },
+    {
+        "name": "Red Tail",
+        "price": "500",
+        "drops_from": [
+            "Harbinger"
+        ]
+    },
+    {
+        "name": "Ice Shard",
+        "price": "500",
+        "drops_from": [
+            "Ice Slime"
         ]
     },
     {
         "name": "Bone",
-        "dropped_from": [
-            "Revenants"
+        "price": "500",
+        "drops_from": [
+            "Revenant"
+        ]
+    },
+    {
+        "name": "Minotaur Horn",
+        "price": "600",
+        "drops_from": [
+            "Minotaur"
         ]
     },
     {
         "name": "Skull",
-        "dropped_from": [
-            "Revenants"
+        "price": "750",
+        "drops_from": [
+            "Revenant"
         ]
     },
     {
-        "name": "Molten core",
-        "dropped_from": [
-            "Demons",
-            "Fire slimes",
-            "FireWyrms"
+        "name": "Giant Horn",
+        "price": "1000",
+        "drops_from": [
+            "Behemoth"
         ]
     },
     {
-        "name": "Razor claw",
-        "dropped_from": [
-            "Hellbounds"
+        "name": "Molten Core",
+        "price": "1500",
+        "drops_from": [
+            "Firewyrm",
+            "Harbinger",
+            "Fire Slime",
+            "Demon"
         ]
     },
     {
-        "name": "Cursed teeth",
-        "dropped_from": [
-            "Shamblers",
-            "Shadows"
+        "name": "Razor Claws",
+        "price": "1500",
+        "drops_from": [
+            "Hellhound"
         ]
     },
     {
-        "name": "Cursed eye",
-        "dropped_from": [
-            "Shadows"
+        "name": "Demon Bone",
+        "price": "2000",
+        "drops_from": [
+            "Demon"
+        ]
+    },
+    {
+        "name": "Wasp Stinger",
+        "price": "3000",
+        "drops_from": [
+            "Giant Wasp"
+        ]
+    },
+    {
+        "name": "Wasp Wing",
+        "price": "3000",
+        "drops_from": [
+            "Giant Wasp"
+        ]
+    },
+    {
+        "name": "Human Ear",
+        "price": "3000",
+        "drops_from": [
+            "Thief",
+            "Sorcerer",
+            "Bandit",
+            "Hunter",
+            "Wild Soldier",
+            "Hero",
+            "Necromancer",
+            "Priestess"
+        ]
+    },
+    {
+        "name": "Cursed Eye",
+        "price": "5000",
+        "drops_from": [
+            "Shadow"
+        ]
+    },
+    {
+        "name": "Cursed Teeth",
+        "price": "5000",
+        "drops_from": [
+            "Bloodseeker",
+            "Slimespitter",
+            "Shambler"
         ]
     }
 ]

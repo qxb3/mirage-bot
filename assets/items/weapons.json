@@ -1,0 +1,1211 @@
+[
+    {
+        "name": "Primitive Sword",
+        "requirements": "15 Melee",
+        "stats": [
+            "Attack: 4",
+            "Minumum stat: 1",
+            "Maximum stat: 3"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Sword"
+    },
+    {
+        "name": "Spiked Sword",
+        "requirements": "20 Melee",
+        "stats": [
+            "Attack: 5",
+            "Minumum stat: 2",
+            "Maximum stat: 6"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Sword"
+    },
+    {
+        "name": "Knight Sword",
+        "requirements": "30 Melee",
+        "stats": [
+            "Attack: 6",
+            "Minumum stat: 3",
+            "Maximum stat: 9"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Sword"
+    },
+    {
+        "name": "Elven Sword",
+        "requirements": "40 Melee",
+        "stats": [
+            "Attack: 7",
+            "Minumum stat: 4",
+            "Maximum stat: 12"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Sword"
+    },
+    {
+        "name": "Paladin Sword",
+        "requirements": "50 Melee",
+        "stats": [
+            "Attack: 8",
+            "Minumum stat: 5",
+            "Maximum stat: 15"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Sword"
+    },
+    {
+        "name": "Talon",
+        "requirements": "60 Melee",
+        "stats": [
+            "Attack: 9",
+            "Minumum stat: 6",
+            "Maximum stat: 18"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Sword"
+    },
+    {
+        "name": "Vindicator",
+        "requirements": "70 Melee",
+        "stats": [
+            "Attack: 10",
+            "Minumum stat: 7",
+            "Maximum stat: 21"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Sword"
+    },
+    {
+        "name": "Banisher",
+        "requirements": "80 Melee",
+        "stats": [
+            "Attack: 11",
+            "Minumum stat: 8",
+            "Maximum stat: 24"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Sword"
+    },
+    {
+        "name": "Midnight",
+        "requirements": "90 Melee",
+        "stats": [
+            "Attack: 12",
+            "Minumum stat: 9",
+            "Maximum stat: 27"
+        ],
+        "drops_from": [
+            "Unobtainable"
+        ],
+        "type": "Sword"
+    },
+    {
+        "name": "Warped Staff",
+        "requirements": "0 Magic",
+        "stats": [
+            "Attack: 3",
+            "Minumum stat: 0",
+            "Maximum stat: 0"
+        ],
+        "drops_from": [
+            "Unobtainable"
+        ],
+        "type": "Staff"
+    },
+    {
+        "name": "Training Staff",
+        "requirements": "0 Magic",
+        "stats": [
+            "Attack: 1",
+            "Minumum stat: 0",
+            "Maximum stat: 0"
+        ],
+        "drops_from": [
+            "Unobtainable"
+        ],
+        "type": "Staff"
+    },
+    {
+        "name": "Godman's Staff",
+        "requirements": "0 Magic",
+        "stats": [
+            "Attack: 6",
+            "Minumum stat: 0",
+            "Maximum stat: 0"
+        ],
+        "drops_from": [
+            "Unobtainable"
+        ],
+        "type": "Staff"
+    },
+    {
+        "name": "Amber Staff",
+        "requirements": "15 Magic",
+        "stats": [
+            "Attack: 4",
+            "Minumum stat: 1",
+            "Maximum stat: 3"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Staff"
+    },
+    {
+        "name": "Crystal Staff",
+        "requirements": "20 Magic",
+        "stats": [
+            "Attack: 5",
+            "Minumum stat: 2",
+            "Maximum stat: 6"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Staff"
+    },
+    {
+        "name": "Spirit Staff",
+        "requirements": "30 Magic",
+        "stats": [
+            "Attack: 6",
+            "Minumum stat: 3",
+            "Maximum stat: 9"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Staff"
+    },
+    {
+        "name": "Fire Staff",
+        "requirements": "40 Magic",
+        "stats": [
+            "Attack: 7",
+            "Minumum stat: 4",
+            "Maximum stat: 12"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Staff"
+    },
+    {
+        "name": "Golden Staff",
+        "requirements": "50 Magic",
+        "stats": [
+            "Attack: 8",
+            "Minumum stat: 5",
+            "Maximum stat: 15"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Staff"
+    },
+    {
+        "name": "Nightmare Staff",
+        "requirements": "60 Magic",
+        "stats": [
+            "Attack: 9",
+            "Minumum stat: 6",
+            "Maximum stat: 18"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Staff"
+    },
+    {
+        "name": "Mana Staff",
+        "requirements": "70 Magic",
+        "stats": [
+            "Attack: 10",
+            "Minumum stat: 7",
+            "Maximum stat: 21"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Staff"
+    },
+    {
+        "name": "Truth",
+        "requirements": "80 Magic",
+        "stats": [
+            "Attack: 11",
+            "Minumum stat: 8",
+            "Maximum stat: 24"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Staff"
+    },
+    {
+        "name": "Purity",
+        "requirements": "90 Magic",
+        "stats": [
+            "Attack: 12",
+            "Minumum stat: 9",
+            "Maximum stat: 27"
+        ],
+        "drops_from": [
+            "Unobtainable"
+        ],
+        "type": "Staff"
+    },
+    {
+        "name": "Novice's Notes",
+        "requirements": "0 Magic",
+        "stats": [
+            "Attack: 0",
+            "Minumum stat: 3",
+            "Maximum stat: 9"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Spellbook"
+    },
+    {
+        "name": "Old Spellbook",
+        "requirements": "15 Magic",
+        "stats": [
+            "Attack: 0",
+            "Minumum stat: 4",
+            "Maximum stat: 12"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Spellbook"
+    },
+    {
+        "name": "Fire Tome",
+        "requirements": "20 Magic",
+        "stats": [
+            "Attack: 0",
+            "Minumum stat: 5",
+            "Maximum stat: 15"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Spellbook"
+    },
+    {
+        "name": "Molten Tome",
+        "requirements": "30 Magic",
+        "stats": [
+            "Attack: 0",
+            "Minumum stat: 6",
+            "Maximum stat: 18"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Spellbook"
+    },
+    {
+        "name": "Forest Tome",
+        "requirements": "40 Magic",
+        "stats": [
+            "Attack: 0",
+            "Minumum stat: 7",
+            "Maximum stat: 21"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Spellbook"
+    },
+    {
+        "name": "Spirit Tome",
+        "requirements": "50 Magic",
+        "stats": [
+            "Attack: 0",
+            "Minumum stat: 8",
+            "Maximum stat: 24"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Spellbook"
+    },
+    {
+        "name": "Mana Tome",
+        "requirements": "60 Magic",
+        "stats": [
+            "Attack: 0",
+            "Minumum stat: 9",
+            "Maximum stat: 27"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Spellbook"
+    },
+    {
+        "name": "Poison Tome",
+        "requirements": "70 Magic",
+        "stats": [
+            "Attack: 0",
+            "Minumum stat: 10",
+            "Maximum stat: 30"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Spellbook"
+    },
+    {
+        "name": "Ice Tome",
+        "requirements": "80 Magic",
+        "stats": [
+            "Attack: 0",
+            "Minumum stat: 11",
+            "Maximum stat: 33"
+        ],
+        "drops_from": [
+            "Unobtainable"
+        ],
+        "type": "Spellbook"
+    },
+    {
+        "name": "Wooden Shield",
+        "requirements": "0 Defence",
+        "stats": [
+            "Attack: 0",
+            "Minumum stat: 0",
+            "Maximum stat: 0"
+        ],
+        "drops_from": [
+            "Unobtainable"
+        ],
+        "type": "Shield"
+    },
+    {
+        "name": "Reinforced Shield",
+        "requirements": "15 Defence",
+        "stats": [
+            "Attack: 0",
+            "Minumum stat: 1",
+            "Maximum stat: 3"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Shield"
+    },
+    {
+        "name": "Copper Shield",
+        "requirements": "20 Defence",
+        "stats": [
+            "Attack: 0",
+            "Minumum stat: 2",
+            "Maximum stat: 6"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Shield"
+    },
+    {
+        "name": "Plate Shield",
+        "requirements": "30 Defence",
+        "stats": [
+            "Attack: 0",
+            "Minumum stat: 3",
+            "Maximum stat: 9"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Shield"
+    },
+    {
+        "name": "Soldier Shield",
+        "requirements": "40 Defence",
+        "stats": [
+            "Attack: 0",
+            "Minumum stat: 4",
+            "Maximum stat: 12"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Shield"
+    },
+    {
+        "name": "Silver Shield",
+        "requirements": "50 Defence",
+        "stats": [
+            "Attack: 0",
+            "Minumum stat: 5",
+            "Maximum stat: 15"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Shield"
+    },
+    {
+        "name": "Platinum Shield",
+        "requirements": "60 Defence",
+        "stats": [
+            "Attack: 0",
+            "Minumum stat: 6",
+            "Maximum stat: 18"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Shield"
+    },
+    {
+        "name": "Emerald Shield",
+        "requirements": "70 Defence",
+        "stats": [
+            "Attack: 0",
+            "Minumum stat: 7",
+            "Maximum stat: 21"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Shield"
+    },
+    {
+        "name": "Granite Shield",
+        "requirements": "80 Defence",
+        "stats": [
+            "Attack: 0",
+            "Minumum stat: 8",
+            "Maximum stat: 24"
+        ],
+        "drops_from": [
+            "Unobtainable"
+        ],
+        "type": "Shield"
+    },
+    {
+        "name": "Cracked Rod",
+        "requirements": "0 Magic",
+        "stats": [
+            "Attack: 3",
+            "Minumum stat: 0",
+            "Maximum stat: 0"
+        ],
+        "drops_from": [
+            "Unobtainable"
+        ],
+        "type": "Rod"
+    },
+    {
+        "name": "Nature Rod",
+        "requirements": "15 Magic",
+        "stats": [
+            "Attack: 4",
+            "Minumum stat: 1",
+            "Maximum stat: 3"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Rod"
+    },
+    {
+        "name": "Earth Rod",
+        "requirements": "20 Magic",
+        "stats": [
+            "Attack: 5",
+            "Minumum stat: 2",
+            "Maximum stat: 6"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Rod"
+    },
+    {
+        "name": "Jungle Rod",
+        "requirements": "30 Magic",
+        "stats": [
+            "Attack: 6",
+            "Minumum stat: 3",
+            "Maximum stat: 9"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Rod"
+    },
+    {
+        "name": "Dead Rod",
+        "requirements": "40 Magic",
+        "stats": [
+            "Attack: 7",
+            "Minumum stat: 4",
+            "Maximum stat: 12"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Rod"
+    },
+    {
+        "name": "Emerald Rod",
+        "requirements": "50 Magic",
+        "stats": [
+            "Attack: 8",
+            "Minumum stat: 5",
+            "Maximum stat: 15"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Rod"
+    },
+    {
+        "name": "Life Rod",
+        "requirements": "60 Magic",
+        "stats": [
+            "Attack: 9",
+            "Minumum stat: 6",
+            "Maximum stat: 18"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Rod"
+    },
+    {
+        "name": "Holy Rod",
+        "requirements": "70 Magic",
+        "stats": [
+            "Attack: 10",
+            "Minumum stat: 7",
+            "Maximum stat: 21"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Rod"
+    },
+    {
+        "name": "Shade",
+        "requirements": "80 Magic",
+        "stats": [
+            "Attack: 11",
+            "Minumum stat: 8",
+            "Maximum stat: 24"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Rod"
+    },
+    {
+        "name": "Daylight",
+        "requirements": "90 Magic",
+        "stats": [
+            "Attack: 12",
+            "Minumum stat: 9",
+            "Maximum stat: 27"
+        ],
+        "drops_from": [
+            "Unobtainable"
+        ],
+        "type": "Rod"
+    },
+    {
+        "name": "Spiked Club",
+        "requirements": "0 Melee",
+        "stats": [
+            "Attack: 3",
+            "Minumum stat: 0",
+            "Maximum stat: 0"
+        ],
+        "drops_from": [
+            "Unobtainable"
+        ],
+        "type": "Mace"
+    },
+    {
+        "name": "Training Club",
+        "requirements": "0 Melee",
+        "stats": [
+            "Attack: 1",
+            "Minumum stat: 0",
+            "Maximum stat: 0"
+        ],
+        "drops_from": [
+            "Unobtainable"
+        ],
+        "type": "Mace"
+    },
+    {
+        "name": "Duck Smasher",
+        "requirements": "0 Melee",
+        "stats": [
+            "Attack: 1",
+            "Minumum stat: 0",
+            "Maximum stat: 0"
+        ],
+        "drops_from": [
+            "Unobtainable"
+        ],
+        "type": "Mace"
+    },
+    {
+        "name": "Iron Sceptre",
+        "requirements": "15 Melee",
+        "stats": [
+            "Attack: 4",
+            "Minumum stat: 1",
+            "Maximum stat: 3"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Mace"
+    },
+    {
+        "name": "Morning Star",
+        "requirements": "20 Melee",
+        "stats": [
+            "Attack: 5",
+            "Minumum stat: 2",
+            "Maximum stat: 6"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Mace"
+    },
+    {
+        "name": "Heavy Mace",
+        "requirements": "30 Melee",
+        "stats": [
+            "Attack: 6",
+            "Minumum stat: 3",
+            "Maximum stat: 9"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Mace"
+    },
+    {
+        "name": "Giant Smasher",
+        "requirements": "40 Melee",
+        "stats": [
+            "Attack: 7",
+            "Minumum stat: 4",
+            "Maximum stat: 12"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Mace"
+    },
+    {
+        "name": "Paladin Hammer",
+        "requirements": "50 Melee",
+        "stats": [
+            "Attack: 8",
+            "Minumum stat: 5",
+            "Maximum stat: 15"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Mace"
+    },
+    {
+        "name": "Hell's Teeth",
+        "requirements": "60 Melee",
+        "stats": [
+            "Attack: 9",
+            "Minumum stat: 6",
+            "Maximum stat: 18"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Mace"
+    },
+    {
+        "name": "Chaos Mace",
+        "requirements": "70 Melee",
+        "stats": [
+            "Attack: 10",
+            "Minumum stat: 7",
+            "Maximum stat: 21"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Mace"
+    },
+    {
+        "name": "Punisher",
+        "requirements": "80 Melee",
+        "stats": [
+            "Attack: 11",
+            "Minumum stat: 8",
+            "Maximum stat: 24"
+        ],
+        "drops_from": [
+            "Unobtainable"
+        ],
+        "type": "Mace"
+    },
+    {
+        "name": "Ban Hammer",
+        "requirements": "666 Melee",
+        "stats": [
+            "Attack: 1000",
+            "Minumum stat: 0",
+            "Maximum stat: 0"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Mace"
+    },
+    {
+        "name": "Wooden Bow",
+        "requirements": "0 Distance",
+        "stats": [
+            "Attack: 3",
+            "Minumum stat: 0",
+            "Maximum stat: 0"
+        ],
+        "drops_from": [
+            "Unobtainable"
+        ],
+        "type": "Bow"
+    },
+    {
+        "name": "Training Bow",
+        "requirements": "0 Distance",
+        "stats": [
+            "Attack: 1",
+            "Minumum stat: 0",
+            "Maximum stat: 0"
+        ],
+        "drops_from": [
+            "Unobtainable"
+        ],
+        "type": "Bow"
+    },
+    {
+        "name": "Lupin's Bow",
+        "requirements": "0 Distance",
+        "stats": [
+            "Attack: 6",
+            "Minumum stat: 0",
+            "Maximum stat: 0"
+        ],
+        "drops_from": [
+            "Unobtainable"
+        ],
+        "type": "Bow"
+    },
+    {
+        "name": "Primitive Bow",
+        "requirements": "15 Distance",
+        "stats": [
+            "Attack: 4",
+            "Minumum stat: 1",
+            "Maximum stat: 3"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Bow"
+    },
+    {
+        "name": "Soldier Bow",
+        "requirements": "20 Distance",
+        "stats": [
+            "Attack: 5",
+            "Minumum stat: 2",
+            "Maximum stat: 6"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Bow"
+    },
+    {
+        "name": "Elven Bow",
+        "requirements": "30 Distance",
+        "stats": [
+            "Attack: 6",
+            "Minumum stat: 3",
+            "Maximum stat: 9"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Bow"
+    },
+    {
+        "name": "Skeletal Bow",
+        "requirements": "40 Distance",
+        "stats": [
+            "Attack: 7",
+            "Minumum stat: 4",
+            "Maximum stat: 12"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Bow"
+    },
+    {
+        "name": "Orcish Bow",
+        "requirements": "50 Distance",
+        "stats": [
+            "Attack: 8",
+            "Minumum stat: 5",
+            "Maximum stat: 15"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Bow"
+    },
+    {
+        "name": "Demon Bow",
+        "requirements": "60 Distance",
+        "stats": [
+            "Attack: 9",
+            "Minumum stat: 6",
+            "Maximum stat: 18"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Bow"
+    },
+    {
+        "name": "Pearl Bow",
+        "requirements": "70 Distance",
+        "stats": [
+            "Attack: 10",
+            "Minumum stat: 7",
+            "Maximum stat: 21"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Bow"
+    },
+    {
+        "name": "Tempest",
+        "requirements": "80 Distance",
+        "stats": [
+            "Attack: 11",
+            "Minumum stat: 8",
+            "Maximum stat: 24"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Bow"
+    },
+    {
+        "name": "Ironbark",
+        "requirements": "90 Distance",
+        "stats": [
+            "Attack: 12",
+            "Minumum stat: 9",
+            "Maximum stat: 27"
+        ],
+        "drops_from": [
+            "Unobtainable"
+        ],
+        "type": "Bow"
+    },
+    {
+        "name": "Zero's Reaver",
+        "requirements": "0 Melee",
+        "stats": [
+            "Attack: 7",
+            "Minumum stat: 0",
+            "Maximum stat: 0"
+        ],
+        "drops_from": [
+            "Unobtainable"
+        ],
+        "type": "Axe"
+    },
+    {
+        "name": "Steel Axe",
+        "requirements": "15 Melee",
+        "stats": [
+            "Attack: 5",
+            "Minumum stat: 2",
+            "Maximum stat: 6"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Axe"
+    },
+    {
+        "name": "Harvest Scythe",
+        "requirements": "20 Melee",
+        "stats": [
+            "Attack: 6",
+            "Minumum stat: 4",
+            "Maximum stat: 12"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Axe"
+    },
+    {
+        "name": "Executioner",
+        "requirements": "30 Melee",
+        "stats": [
+            "Attack: 7",
+            "Minumum stat: 6",
+            "Maximum stat: 18"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Axe"
+    },
+    {
+        "name": "Imperial Axe",
+        "requirements": "40 Melee",
+        "stats": [
+            "Attack: 8",
+            "Minumum stat: 8",
+            "Maximum stat: 24"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Axe"
+    },
+    {
+        "name": "Forest Axe",
+        "requirements": "50 Melee",
+        "stats": [
+            "Attack: 9",
+            "Minumum stat: 10",
+            "Maximum stat: 30"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Axe"
+    },
+    {
+        "name": "Warlord Axe",
+        "requirements": "60 Melee",
+        "stats": [
+            "Attack: 10",
+            "Minumum stat: 12",
+            "Maximum stat: 36"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Axe"
+    },
+    {
+        "name": "Ancient Axe",
+        "requirements": "70 Melee",
+        "stats": [
+            "Attack: 11",
+            "Minumum stat: 14",
+            "Maximum stat: 42"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Axe"
+    },
+    {
+        "name": "Retribution",
+        "requirements": "80 Melee",
+        "stats": [
+            "Attack: 12",
+            "Minumum stat: 16",
+            "Maximum stat: 48"
+        ],
+        "drops_from": [
+            "Unobtainable"
+        ],
+        "type": "Axe"
+    },
+    {
+        "name": "Training Arrows",
+        "requirements": "Level 0",
+        "stats": [
+            "Attack: 0",
+            "Minumum stat: 0",
+            "Maximum stat: 0"
+        ],
+        "drops_from": [
+            "Unobtainable"
+        ],
+        "type": "Ammunition"
+    },
+    {
+        "name": "Wooden Arrows",
+        "requirements": "Level 0",
+        "stats": [
+            "Attack: 0",
+            "Minumum stat: 0",
+            "Maximum stat: 0"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Ammunition"
+    },
+    {
+        "name": "Stone Arrows",
+        "requirements": "Level 20",
+        "stats": [
+            "Attack: 0",
+            "Minumum stat: 5",
+            "Maximum stat: 5"
+        ],
+        "drops_from": [
+            "Unobtainable"
+        ],
+        "type": "Ammunition"
+    },
+    {
+        "name": "Flint Arrows",
+        "requirements": "Level 30",
+        "stats": [
+            "Attack: 0",
+            "Minumum stat: 10",
+            "Maximum stat: 10"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Ammunition"
+    },
+    {
+        "name": "Tin Arrows",
+        "requirements": "Level 40",
+        "stats": [
+            "Attack: 0",
+            "Minumum stat: 15",
+            "Maximum stat: 15"
+        ],
+        "drops_from": [
+            "Unobtainable"
+        ],
+        "type": "Ammunition"
+    },
+    {
+        "name": "Iron Arrows",
+        "requirements": "Level 50",
+        "stats": [
+            "Attack: 0",
+            "Minumum stat: 20",
+            "Maximum stat: 20"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Ammunition"
+    },
+    {
+        "name": "Elven Arrows",
+        "requirements": "Level 60",
+        "stats": [
+            "Attack: 0",
+            "Minumum stat: 25",
+            "Maximum stat: 25"
+        ],
+        "drops_from": [
+            "Unobtainable"
+        ],
+        "type": "Ammunition"
+    },
+    {
+        "name": "Pearl Arrows",
+        "requirements": "Level 70",
+        "stats": [
+            "Attack: 0",
+            "Minumum stat: 30",
+            "Maximum stat: 30"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Ammunition"
+    },
+    {
+        "name": "Chaos Arrow",
+        "requirements": "Level 75",
+        "stats": [
+            "Attack: 0",
+            "Minumum stat: 200",
+            "Maximum stat: 200"
+        ],
+        "drops_from": [
+            "Unobtainable"
+        ],
+        "type": "Ammunition"
+    },
+    {
+        "name": "Spiked Arrows",
+        "requirements": "Level 80",
+        "stats": [
+            "Attack: 0",
+            "Minumum stat: 35",
+            "Maximum stat: 35"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Ammunition"
+    },
+    {
+        "name": "Mythril Arrows",
+        "requirements": "Level 90",
+        "stats": [
+            "Attack: 0",
+            "Minumum stat: 40",
+            "Maximum stat: 40"
+        ],
+        "drops_from": [
+            ""
+        ],
+        "type": "Ammunition"
+    }
+]

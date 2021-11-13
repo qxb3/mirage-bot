@@ -20,9 +20,8 @@ const getWeapons = (weaponJson, type) => {
 }
 
 module.exports = {
-    category: 'Wiki',
-    description: 'A wiki command that helps you with items stuff',
-    testOnly: true,
+    category: 'Items',
+    description: 'A weapons command to help you find and indentify weapons',
 
     callback: async ({ message, args, prefix }) => {
         const username = message.author.username

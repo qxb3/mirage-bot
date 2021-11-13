@@ -1,16 +1,15 @@
 {
   "wiki": {
     "commands": [
-      "wiki list - Lists all available information",
-      "wiki slang <slang> - Display the full information about the slang",
-      "wiki vocations <vocation> - Display the full information about the vocation",
-      "wiki enchantments <enchantment> - Display the full information about the enchantment where to get the materials needed for them"
+      "slang",
+      "vocations",
+      "enchantments"
     ]
   },
   "items": {
     "commands": [
-      "items list - Lists all item categories",
-      "items materials <material> - Display the full information about the material"
+      "weapons",
+      "materials"
     ]
   }
 }
