@@ -101,9 +101,9 @@ module.exports = {
                         stats += `• ${stat}\n`
                     })
 
-                    let dropsFrom = ''
-                    weapon.drops_from.forEach(mob => {
-                        dropsFrom += `• ${mob}\n`
+                    let monsters = ''
+                    weapon.drops_from.forEach(monster => {
+                        monsters += `• ${monster}\n`
                     })
 
                     const embed = new MessageEmbed()
@@ -112,7 +112,7 @@ module.exports = {
                             { name: '❯ Name', value: weapon.name },
                             { name: '❯ Requirements', value: weapon.requirements },
                             { name: '❯ Stats', value: stats },
-                            { name: '❯ Can be aquired from', value: dropsFrom }
+                            { name: '❯ Monsters', value: monsters }
                         ])
                         .setColor('BLUE')
 
