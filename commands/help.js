@@ -21,11 +21,17 @@ module.exports = {
             items += `• ${prefix + data}\n`
         })
 
+        let help = ''
+        help.help.commands.forEach(data => {
+            help += `• ${prefix + data}\n`
+        })
+
         const embed = new MessageEmbed()
             .setTitle('Help - Commands')
             .addFields([
                 { name: '❯ Wiki', value: wiki },
-                { name: '❯ Items', value: items }
+                { name: '❯ Items', value: items },
+                { name: '❯ Help', value: help }
             ])
             .setColor('BLUE')
 
