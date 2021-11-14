@@ -28,4 +28,8 @@ client.on('ready', () => {
     }).setDefaultPrefix('?')
 })
 
+client.on('messageCreate', (message) => {
+    console.log(message)
+})
+
 client.login(process.env.BOT_TOKEN)
