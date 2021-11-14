@@ -4,8 +4,6 @@ const { Client, Intents } = require('discord.js')
 const path = require('path')
 const WokCommands = require('wokcommands')
 
-const mongoose = require('mongoose')
-
 const client = new Client({
     intents: [
         Intents.FLAGS.GUILDS,
@@ -24,12 +22,6 @@ const setBotActivity = (client) => {
 client.on('ready', () => {
     setBotActivity(client)
  
-    mongoose.connect(process.env.MONGODB_URI, (err) => {
-        if (err) throw err
-
-        console.log('Connected to mongodb')
-    })
-
     new WokCommands(client, {
         commandDir: path.join(__dirname, './commands'), 
         testServers: [
