@@ -12,7 +12,7 @@ module.exports = {
             .addFields([
                 { name: '❯ Found a bug?', value: '• Contact me in discord: qxb3#4312' },
                 { name: '❯ Support me', value: '• Paypal: https://www.paypal.me/qxb3' },
-                { name: '❯ Special thanks', value: '• Anonym - I used his fanmade wiki for the items / mobs your seeing now on the bot\nHis wiki: http://mr.golitsyn.com/' }
+                { name: '❯ Special thanks', value: '• Anonym - I used his wiki for the items, weapons and other stuff!\nHis wiki: http://mr.golitsyn.com/' }
             ])
             .setColor('BLUE')
 
