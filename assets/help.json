@@ -16,6 +16,11 @@
       "scrolls"
     ]
   },
+  "mobs": {
+    "commands": [
+      "mobs"
+    ]
+  },
   "help": {
     "commands": [
       "help",

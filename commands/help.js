@@ -18,6 +18,11 @@ module.exports = {
             items += `• ${prefix + data}\n`
         })
 
+        let mobs = ''
+        help.mobs.commands.forEach(mob => {
+            mobs += `• ${prefix + mob}\n`
+        })
+
         let h = ''
         help.help.commands.forEach(data => {
             h += `• ${prefix + data}\n`
@@ -28,6 +33,7 @@ module.exports = {
             .addFields([
                 { name: '❯ Wiki', value: wiki },
                 { name: '❯ Items', value: items },
+                { name: '❯ Mobs', value: mobs },
                 { name: '❯ Help', value: h }
             ])
             .setColor('BLUE')
