@@ -1,0 +1,1554 @@
+[
+    {
+        "name": "Butterfly",
+        "stats": [
+            "Attack: Physical",
+            "Health: 5",
+            "Experience: 5",
+            "Skills: None",
+            "AOE: None"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: 0%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (1-1)"
+        ]
+    },
+    {
+        "name": "Rat",
+        "stats": [
+            "Attack: Physical",
+            "Health: 25",
+            "Experience: 10",
+            "Skills: None",
+            "AOE: None"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: 0%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (3-5)"
+        ]
+    },
+    {
+        "name": "Troll",
+        "stats": [
+            "Attack: Physical",
+            "Health: 65",
+            "Experience: 50",
+            "Skills: None",
+            "AOE: None"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: -5%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (6-12)",
+            "Bandana",
+            "Cloth Shirt",
+            "Old Gloves",
+            "Sandals",
+            "Troll Fur"
+        ]
+    },
+    {
+        "name": "Troll Mage",
+        "stats": [
+            "Attack: Mana",
+            "Health: 75",
+            "Experience: 70",
+            "Skills: None",
+            "AOE: None"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: -5%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 25%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (7-13)",
+            "Amber Staff",
+            "Novice's Notes",
+            "Nature Rod",
+            "Novice Cap",
+            "Bandana",
+            "Ragged Cloak",
+            "Ragged Gloves",
+            "Ragged Shoes",
+            "Broken Ring",
+            "Broken Staff",
+            "Troll Fur"
+        ]
+    },
+    {
+        "name": "Troll Ranger",
+        "stats": [
+            "Attack: Physical",
+            "Health: 85",
+            "Experience: 80",
+            "Skills: None",
+            "AOE: None"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: -5%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (8-15)",
+            "Primitive Bow",
+            "Ranger Cap",
+            "Leather Vest",
+            "Ranger Gloves",
+            "Steady Boots",
+            "Broken Ring",
+            "Wooden Arrows",
+            "Troll Fur"
+        ]
+    },
+    {
+        "name": "Troll Knight",
+        "stats": [
+            "Attack: Physical",
+            "Health: 95",
+            "Experience: 90",
+            "Skills: None",
+            "AOE: None"
+        ],
+        "resistance": [
+            "Physical: 10%",
+            "Fire: -5%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (9-17)",
+            "Primitive Sword",
+            "Reinforced Shield",
+            "Sturdy Helmet",
+            "Belted Armour",
+            "Sturdy Gloves",
+            "Sturdy Boots",
+            "Broken Ring",
+            "Troll Fur",
+            "Metal Plate"
+        ]
+    },
+    {
+        "name": "Troll Warlord",
+        "stats": [
+            "Attack: Physical",
+            "Health: 130",
+            "Experience: 200",
+            "Skills: None",
+            "AOE: Physical"
+        ],
+        "resistance": [
+            "Physical: 10%",
+            "Fire: -5%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (12-23)",
+            "Steel Axe",
+            "Iron Sceptre",
+            "Old Spellbook",
+            "Copper Shield",
+            "Novice Cap",
+            "Cloth Shirt",
+            "Tarnished Necklace",
+            "Metal Plate",
+            "Troll Fur"
+        ]
+    },
+    {
+        "name": "Cyclops",
+        "stats": [
+            "Attack: Physical",
+            "Health: 225",
+            "Experience: 320",
+            "Skills: None",
+            "AOE: None"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: 0%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (20-39)",
+            "Morning Star",
+            "Traveller's Hat",
+            "Iron Armour",
+            "Linothorax Gloves",
+            "Plain Ring",
+            "Giant Toe"
+        ]
+    },
+    {
+        "name": "Spider",
+        "stats": [
+            "Attack: Poison",
+            "Health: 240",
+            "Experience: 400",
+            "Skills: None",
+            "AOE: Poison"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: 0%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 100%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (21-41)",
+            "Spiked Sword",
+            "Harvest Scythe",
+            "Linothorax Helmet",
+            "Traveller's Gloves",
+            "Iron Gloves",
+            "Plain Ring",
+            "Spider Leg",
+            "Mandible"
+        ]
+    },
+    {
+        "name": "Crab",
+        "stats": [
+            "Attack: Physical",
+            "Health: 265",
+            "Experience: 540",
+            "Skills: None",
+            "AOE: None"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: 0%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (23-46)",
+            "Crab Claw"
+        ]
+    },
+    {
+        "name": "Deerstalker",
+        "stats": [
+            "Attack: Physical",
+            "Health: 290",
+            "Experience: 600",
+            "Skills: None",
+            "AOE: None"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: 0%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (25-50)",
+            "Soldier Bow",
+            "Traveller's Gown",
+            "Iron Boots",
+            "Linothorax Boots",
+            "Plain Ring",
+            "Flint Arrows",
+            "Giant Eye",
+            "Giant Toe"
+        ]
+    },
+    {
+        "name": "Widow",
+        "stats": [
+            "Attack: Poison",
+            "Health: 390",
+            "Experience: 800",
+            "Skills: None",
+            "AOE: Poison"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: 0%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 100%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (34-67)",
+            "Crystal Staff",
+            "Earth Rod",
+            "Iron Helmet",
+            "Linothorax Chest",
+            "Traveller's Boots",
+            "Widow Leg",
+            "Mandible"
+        ]
+    },
+    {
+        "name": "Firewyrm",
+        "stats": [
+            "Attack: Fire",
+            "Health: 480",
+            "Experience: 1000",
+            "Skills: None",
+            "AOE: Fire"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: 100%",
+            "Ice: -5%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (41-82)",
+            "Fire Tome",
+            "Plate Shield",
+            "Copper Helmet",
+            "Heroic Cloak",
+            "Flaming Boots",
+            "Ancient Necklace",
+            "Red Scales",
+            "Molten Core"
+        ]
+    },
+    {
+        "name": "Slime",
+        "stats": [
+            "Attack: Poison",
+            "Health: 605",
+            "Experience: 1269",
+            "Skills: None",
+            "AOE: Poison"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: -5%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 100%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (52-103)",
+            "Executioner",
+            "Copper Armour",
+            "Flaming Gloves",
+            "Heroic Boots",
+            "Dragon Ring",
+            "Dragon Necklace",
+            "Green Goo"
+        ]
+    },
+    {
+        "name": "Felwalker",
+        "stats": [
+            "Attack: Mana",
+            "Health: 905",
+            "Experience: 1909",
+            "Skills: None",
+            "AOE: None"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: 0%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 25%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (77-154)",
+            "Knight Sword",
+            "Spirit Staff",
+            "Jungle Rod",
+            "Flaming Cape",
+            "Heroic Gloves",
+            "Copper Boots",
+            "Ponytail",
+            "Giant Toe",
+            "Giant Eye"
+        ]
+    },
+    {
+        "name": "Defiler",
+        "stats": [
+            "Attack: Poison",
+            "Health: 1210",
+            "Experience: 2545",
+            "Skills: Heal",
+            "AOE: Poison"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: -5%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 100%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (103-206)",
+            "Heavy Mace",
+            "Elven Bow",
+            "Flaming Hood",
+            "Heroic Hat",
+            "Copper Gloves",
+            "Branch"
+        ]
+    },
+    {
+        "name": "Imp",
+        "stats": [
+            "Attack: Physical",
+            "Health: 1510",
+            "Experience: 3238",
+            "Skills: None",
+            "AOE: Physical"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: 0%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (129-257)",
+            "Sulphur Mask",
+            "Plate Gloves",
+            "Tin Boots",
+            "Gold Ring",
+            "Hoof",
+            "Blue Tail"
+        ]
+    },
+    {
+        "name": "Imp Ranger",
+        "stats": [
+            "Attack: Fire",
+            "Health: 1630",
+            "Experience: 3507",
+            "Skills: None",
+            "AOE: None"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: 0%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (139-278)",
+            "Skeletal Bow",
+            "Plate Helmet",
+            "Tin Armour",
+            "Sulphur Shoes",
+            "Iron Arrows",
+            "Hoof",
+            "Blue Ear",
+            "Blue Tail"
+        ]
+    },
+    {
+        "name": "Imp Knight",
+        "stats": [
+            "Attack: Fire",
+            "Health: 1750",
+            "Experience: 3796",
+            "Skills: Heal",
+            "AOE: Physical"
+        ],
+        "resistance": [
+            "Physical: 10%",
+            "Fire: 0%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (149-298)",
+            "Giant Smasher",
+            "Soldier Shield",
+            "Plate Armour",
+            "Sulphur Gloves",
+            "Tin Gloves",
+            "Metal Plate",
+            "Blue Ear",
+            "Blue TailHoof"
+        ]
+    },
+    {
+        "name": "Imp Mage",
+        "stats": [
+            "Attack: Mana",
+            "Health: 1815",
+            "Experience: 3954",
+            "Skills: None",
+            "AOE: Mana"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: 0%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 25%",
+            "Death: 10%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (155-309)",
+            "Fire Staff",
+            "Dead Rod",
+            "Tin Helmet",
+            "Sulphur Robe",
+            "Plate Boots",
+            "Jeweled Necklace",
+            "Broken Staff",
+            "Blue Ear",
+            "Blue Tail"
+        ]
+    },
+    {
+        "name": "Harbinger",
+        "stats": [
+            "Attack: Fire",
+            "Health: 3630",
+            "Experience: 8421",
+            "Skills: None",
+            "AOE: FireEnergy"
+        ],
+        "resistance": [
+            "Physical: 10%",
+            "Fire: 100%",
+            "Ice: -5%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 25%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (309-618)",
+            "Elven Sword",
+            "Imperial Axe",
+            "Molten Tome",
+            "Soldier Armour",
+            "Burning RingHoof",
+            "Molten Core",
+            "Red TailPie"
+        ]
+    },
+    {
+        "name": "Fire Slime",
+        "stats": [
+            "Attack: Fire",
+            "Health: 4235",
+            "Experience: 10250",
+            "Skills: None",
+            "AOE: Fire"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: 100%",
+            "Ice: -5%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (360-720)",
+            "Orcish Bow",
+            "Soldier Helmet",
+            "Nernai Hat",
+            "Chain Gloves",
+            "Molten Core",
+            "Red Goo"
+        ]
+    },
+    {
+        "name": "Giant Slug",
+        "stats": [
+            "Attack: Energy",
+            "Health: 4840",
+            "Experience: 11870",
+            "Skills: None",
+            "AOE: Energy"
+        ],
+        "resistance": [
+            "Physical: -5%",
+            "Fire: 0%",
+            "Ice: 0%",
+            "Energy: 100%",
+            "Poison: 10%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (412-823)",
+            "Soldier Shield",
+            "Nernai Hat",
+            "Chain Armour",
+            "Green Goo"
+        ]
+    },
+    {
+        "name": "Minotaur",
+        "stats": [
+            "Attack: Physical",
+            "Health: 4840",
+            "Experience: 11870",
+            "Skills: None",
+            "AOE: Physical"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: 0%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (412-823)",
+            "Paladin Hammer",
+            "Soldier Shield",
+            "Chain Armour",
+            "Nernai Boots",
+            "Minotaur Horn",
+            "HoofPie"
+        ]
+    },
+    {
+        "name": "Ghost",
+        "stats": [
+            "Attack: Energy",
+            "Health: 5140",
+            "Experience: 12750",
+            "Skills: None",
+            "AOE: None"
+        ],
+        "resistance": [
+            "Physical: 100%",
+            "Fire: 0%",
+            "Ice: 0%",
+            "Energy: 100%",
+            "Poison: 0%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (437-874)",
+            "Chain Helmet",
+            "Nernai Vest",
+            "Elven Ring",
+            "Ectoplasm"
+        ]
+    },
+    {
+        "name": "Ice Slime",
+        "stats": [
+            "Attack: Ice",
+            "Health: 6050",
+            "Experience: 15789",
+            "Skills: None",
+            "AOE: Ice"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: -5%",
+            "Ice: 100%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (515-1029)",
+            "Golden Staff",
+            "Forest Tome",
+            "Emerald Rod",
+            "Nernai Gloves",
+            "Chain Boots",
+            "Heroic Amulet",
+            "Blue Goo",
+            "Ice Shard"
+        ]
+    },
+    {
+        "name": "Behemoth",
+        "stats": [
+            "Attack: Physical",
+            "Health: 9075",
+            "Experience: 36477",
+            "Skills: Heal",
+            "AOE: Physical"
+        ],
+        "resistance": [
+            "Physical: 10%",
+            "Fire: 0%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (772-1543)",
+            "Paladin Sword",
+            "Forest Axe",
+            "Silver Shield",
+            "Elven Shirt",
+            "Caster Boots",
+            "Giant HornHoof"
+        ]
+    },
+    {
+        "name": "Revenant",
+        "stats": [
+            "Attack: Death",
+            "Health: 10285",
+            "Experience: 41698",
+            "Skills: None",
+            "AOE: DeathPoison"
+        ],
+        "resistance": [
+            "Physical: 10%",
+            "Fire: 0%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 100%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (875-1749)",
+            "Wizard Hood",
+            "Elven Hat",
+            "Silver Armour",
+            "SkullBone"
+        ]
+    },
+    {
+        "name": "Sorcerer",
+        "stats": [
+            "Attack: Energy",
+            "Health: 10285",
+            "Experience: 41943",
+            "Skills: Heal",
+            "AOE: FireIce"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: 5%",
+            "Ice: 5%",
+            "Energy: 5%",
+            "Poison: 0%",
+            "Mana: 25%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (875-1749)",
+            "Spirit Tome",
+            "Silver Helmet",
+            "Elven Gloves",
+            "Human Ear",
+            "Broken Staff"
+        ]
+    },
+    {
+        "name": "Orc",
+        "stats": [
+            "Attack: Physical",
+            "Health: 10890",
+            "Experience: 44666",
+            "Skills: Heal",
+            "AOE: None"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: -5%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (926-1852)",
+            "Warlord Axe",
+            "Caster Gloves",
+            "Silver Boots",
+            "Crystal Ring",
+            "Green Leather"
+        ]
+    },
+    {
+        "name": "Demon",
+        "stats": [
+            "Attack: Fire",
+            "Health: 11495",
+            "Experience: 47500",
+            "Skills: Heal",
+            "AOE: FireEnergy"
+        ],
+        "resistance": [
+            "Physical: 25%",
+            "Fire: 100%",
+            "Ice: -5%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 25%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (978-1955)",
+            "Hell's Teeth",
+            "Nightmare Staff",
+            "Demon Bow",
+            "Life Rod",
+            "Molten Core",
+            "Demon Bone"
+        ]
+    },
+    {
+        "name": "Hellhound",
+        "stats": [
+            "Attack: Fire",
+            "Health: 11495",
+            "Experience: 47711",
+            "Skills: None",
+            "AOE: Physical"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: 25%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (978-1955)",
+            "Talon",
+            "Caster Robe",
+            "Silver Gloves",
+            "Elven Boots",
+            "Power Amulet",
+            "Razor Claws"
+        ]
+    },
+    {
+        "name": "Orc Worker",
+        "stats": [
+            "Attack: Physical",
+            "Health: 12100",
+            "Experience: 50714",
+            "Skills: None",
+            "AOE: None"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: -5%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (1029-2057)",
+            "Pearl Helmet",
+            "Platinum Gloves",
+            "Green Leather"
+        ]
+    },
+    {
+        "name": "Thief",
+        "stats": [
+            "Attack: Physical",
+            "Health: 12100",
+            "Experience: 50857",
+            "Skills: None",
+            "AOE: None"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: 0%",
+            "Ice: 0%",
+            "Energy: -5%",
+            "Poison: 0%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (1029-2057)",
+            "Pearl Gloves",
+            "Human Ear"
+        ]
+    },
+    {
+        "name": "Bandit",
+        "stats": [
+            "Attack: Physical",
+            "Health: 12705",
+            "Experience: 53549",
+            "Skills: None",
+            "AOE: Physical"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: 0%",
+            "Ice: 0%",
+            "Energy: -5%",
+            "Poison: 0%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (1080-2160)",
+            "Chaos Mace",
+            "Indigo Hat",
+            "Demon Tooth",
+            "Human Ear"
+        ]
+    },
+    {
+        "name": "Giant Wasp",
+        "stats": [
+            "Attack: Poison",
+            "Health: 13310",
+            "Experience: 57200",
+            "Skills: None",
+            "AOE: Poison"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: 0%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 100%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (1132-2263)",
+            "Indigo Sandals",
+            "Platinum Boots",
+            "Green Goo",
+            "Wasp Stinger",
+            "Wasp Wing"
+        ]
+    },
+    {
+        "name": "Orc Mage",
+        "stats": [
+            "Attack: ManaDeath",
+            "Health: 13310",
+            "Experience: 56466",
+            "Skills: None",
+            "AOE: Mana"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: -5%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 25%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (1132-2263)",
+            "Mana Staff",
+            "Holy Rod",
+            "Pearl Boots",
+            "Broken Staff"
+        ]
+    },
+    {
+        "name": "Hunter",
+        "stats": [
+            "Attack: Physical",
+            "Health: 13310",
+            "Experience: 56466",
+            "Skills: None",
+            "AOE: None"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: 0%",
+            "Ice: 0%",
+            "Energy: -5%",
+            "Poison: 0%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (1132-2263)",
+            "Pearl Bow",
+            "Indigo Cape",
+            "Pearl Arrows",
+            "Human Ear"
+        ]
+    },
+    {
+        "name": "Shadow",
+        "stats": [
+            "Attack: Death",
+            "Health: 13915",
+            "Experience: 60761",
+            "Skills: Heal",
+            "AOE: ManaDeath"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: 0%",
+            "Ice: 0%",
+            "Energy: -5%",
+            "Poison: 0%",
+            "Mana: 75%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (1183-2366)",
+            "Platinum Shield",
+            "Platinum Armour",
+            "Pearl Armour",
+            "Indigo Sandals",
+            "Cursed Eye"
+        ]
+    },
+    {
+        "name": "Orc Warrior",
+        "stats": [
+            "Attack: Physical",
+            "Health: 13915",
+            "Experience: 61093",
+            "Skills: Heal",
+            "AOE: Physical"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: -5%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (1183-2366)",
+            "Vindicator",
+            "Mana Tome",
+            "Mana Stone",
+            "Metal Plate",
+            "Green Leather"
+        ]
+    },
+    {
+        "name": "Orc Berzerk",
+        "stats": [
+            "Attack: Physical",
+            "Health: 13915",
+            "Experience: 63250",
+            "Skills: None",
+            "AOE: Physical"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: -5%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (1183-2366)",
+            "Ancient Axe",
+            "Spiked Armour",
+            "Arnisium Boots",
+            "Green Leather"
+        ]
+    },
+    {
+        "name": "Wild Soldier",
+        "stats": [
+            "Attack: Physical",
+            "Health: 13915",
+            "Experience: 61093",
+            "Skills: Heal",
+            "AOE: Physical"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: 0%",
+            "Ice: 0%",
+            "Energy: -5%",
+            "Poison: 0%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (1183-2366)",
+            "Emerald Shield",
+            "Platinum Helmet",
+            "Human Ear"
+        ]
+    },
+    {
+        "name": "Shambler",
+        "stats": [
+            "Attack: Physical",
+            "Health: 18150",
+            "Experience: 83999",
+            "Skills: Heal",
+            "AOE: Physical"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: 0%",
+            "Ice: -5%",
+            "Energy: 0%",
+            "Poison: 100%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (1543-3086)",
+            "Emerald Armour",
+            "Arnisium Gloves",
+            "Cursed Teeth"
+        ]
+    },
+    {
+        "name": "Bloodseeker",
+        "stats": [
+            "Attack: Physical",
+            "Health: 18150",
+            "Experience: 83999",
+            "Skills: Heal",
+            "AOE: None"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: 0%",
+            "Ice: -5%",
+            "Energy: 0%",
+            "Poison: 100%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (1543-3086)",
+            "Spiked Helmet",
+            "Emerald Gloves",
+            "Spiked Arrows",
+            "Cursed Teeth"
+        ]
+    },
+    {
+        "name": "Slimespitter",
+        "stats": [
+            "Attack: Poison",
+            "Health: 18150",
+            "Experience: 83999",
+            "Skills: Heal",
+            "AOE: Poison"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: 0%",
+            "Ice: -5%",
+            "Energy: 0%",
+            "Poison: 100%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (1543-3086)",
+            "Arnisium Hat",
+            "Spiked Gloves",
+            "Cursed Teeth"
+        ]
+    },
+    {
+        "name": "Priestess",
+        "stats": [
+            "Attack: Ice",
+            "Health: 21175",
+            "Experience: 101111",
+            "Skills: None",
+            "AOE: None"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: 0%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: -5%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (1800-3600)",
+            "Tempest",
+            "Emerald Helmet",
+            "Mythril Arrows",
+            "Human EarPie"
+        ]
+    },
+    {
+        "name": "Hero",
+        "stats": [
+            "Attack: Energy",
+            "Health: 21175",
+            "Experience: 101111",
+            "Skills: Heal",
+            "AOE: Physical"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: 0%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: -5%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (1800-3600)",
+            "Banisher",
+            "Poison Tome",
+            "Amber Ring",
+            "Metal Plate",
+            "Human EarPie"
+        ]
+    },
+    {
+        "name": "Necromancer",
+        "stats": [
+            "Attack: Death",
+            "Health: 21175",
+            "Experience: 101111",
+            "Skills: None",
+            "AOE: Death"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: 0%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (1800-3600)",
+            "TruthShade",
+            "Spiked Boots",
+            "Broken Staff",
+            "Human EarPie"
+        ]
+    },
+    {
+        "name": "Flame Fury",
+        "stats": [
+            "Attack: Fire",
+            "Health: 24200",
+            "Experience: 120000",
+            "Skills: None",
+            "AOE: None"
+        ],
+        "resistance": [
+            "Physical: 50%",
+            "Fire: 100%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 100%",
+            "Mana: 50%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (2057-4114)"
+        ]
+    },
+    {
+        "name": "Mana Fury",
+        "stats": [
+            "Attack: Mana",
+            "Health: 24200",
+            "Experience: 120000",
+            "Skills: None",
+            "AOE: None"
+        ],
+        "resistance": [
+            "Physical: 50%",
+            "Fire: 0%",
+            "Ice: 100%",
+            "Energy: 0%",
+            "Poison: 100%",
+            "Mana: 100%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (2057-4114)"
+        ]
+    },
+    {
+        "name": "Frost Fury",
+        "stats": [
+            "Attack: Ice",
+            "Health: 24200",
+            "Experience: 120000",
+            "Skills: None",
+            "AOE: None"
+        ],
+        "resistance": [
+            "Physical: 50%",
+            "Fire: 0%",
+            "Ice: 100%",
+            "Energy: 0%",
+            "Poison: 100%",
+            "Mana: 50%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (2057-4114)"
+        ]
+    },
+    {
+        "name": "Void Goliath",
+        "stats": [
+            "Attack: Death",
+            "Health: 27225",
+            "Experience: 139500",
+            "Skills: None",
+            "AOE: None"
+        ],
+        "resistance": [
+            "Physical: 50%",
+            "Fire: 0%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 50%",
+            "Death: 100%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (2315-4629)"
+        ]
+    },
+    {
+        "name": "Astral Trueshot",
+        "stats": [
+            "Attack: Energy",
+            "Health: 27225",
+            "Experience: 139500",
+            "Skills: None",
+            "AOE: None"
+        ],
+        "resistance": [
+            "Physical: 50%",
+            "Fire: 0%",
+            "Ice: 0%",
+            "Energy: 100%",
+            "Poison: 0%",
+            "Mana: 50%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (2315-4629)"
+        ]
+    },
+    {
+        "name": "Nether Slime",
+        "stats": [
+            "Attack: Physical",
+            "Health: 27225",
+            "Experience: 139500",
+            "Skills: None",
+            "AOE: None"
+        ],
+        "resistance": [
+            "Physical: 100%",
+            "Fire: 0%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 50%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (2315-4629)"
+        ]
+    },
+    {
+        "name": "Angry Biscottsman",
+        "stats": [
+            "Attack: PhysicalDeath",
+            "Health: 5000000",
+            "Experience: 1000000",
+            "Skills: Heal",
+            "AOE: ManaEnergyPoison"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: 0%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Copper (425000-850000)",
+            "Biscot"
+        ]
+    },
+    {
+        "name": "Das Bug",
+        "stats": [
+            "Attack: Fire",
+            "Health: 1337",
+            "Experience: 0",
+            "Skills: Ban Hugs, Exevo Gran, Mas Vis",
+            "AOE: Fire"
+        ],
+        "resistance": [
+            "Physical: 0%",
+            "Fire: 0%",
+            "Ice: 0%",
+            "Energy: 0%",
+            "Poison: 0%",
+            "Mana: 0%",
+            "Death: 0%",
+            "Holy: 0%"
+        ],
+        "loots": [
+            "Ban Hammer",
+            "Liam's Blessing"
+        ]
+    }
+]
