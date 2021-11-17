@@ -5,27 +5,35 @@ module.exports = {
     category: 'Help',
     description: 'Help command for the bot',
 
-    callback: async ({ prefix }) => {
-
+    callback: ({ prefix }) => {
         const help = JSON.parse(Buffer.from(fs.readFileSync(process.env.PWD + '/assets/help.json').toString()))
+        
         let wiki = ''
-        help.wiki.commands.forEach(data => {
-            wiki += `• ${prefix + data}\n`
+        help.wiki.commands.forEach((data, i) => {
+            wiki += data
+            if (i != help.wiki.commands.length-1)
+                wiki += ', '
         })
 
         let items = ''
-        help.items.commands.forEach(data => {
-            items += `• ${prefix + data}\n`
+        help.items.commands.forEach((data, i) => {
+            items += data
+            if (i != help.items.commands.length-1)
+                items += ', '
         })
 
         let mobs = ''
-        help.mobs.commands.forEach(mob => {
-            mobs += `• ${prefix + mob}\n`
+        help.mobs.commands.forEach((data, i) => {
+            mobs += data
+            if (i != help.mobs.commands.length-1)
+                mobs += ', '
         })
 
         let h = ''
-        help.help.commands.forEach(data => {
-            h += `• ${prefix + data}\n`
+        help.help.commands.forEach((data, i) => {
+            h += data
+            if (i != help.help.commands.length-1)
+                h += ', '
         })
 
         const embed = new MessageEmbed()
@@ -34,7 +42,8 @@ module.exports = {
                 { name: '❯ Wiki', value: wiki },
                 { name: '❯ Items', value: items },
                 { name: '❯ Mobs', value: mobs },
-                { name: '❯ Help', value: h }
+                { name: '❯ Help', value: h },
+                { name: '❯ Usage', value: `${prefix}<command>` }
             ])
             .setColor('BLUE')
 
