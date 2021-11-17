@@ -22,13 +22,6 @@ module.exports = {
                 items += ', '
         })
 
-        let mobs = ''
-        help.mobs.commands.forEach((data, i) => {
-            mobs += data
-            if (i != help.mobs.commands.length-1)
-                mobs += ', '
-        })
-
         let h = ''
         help.help.commands.forEach((data, i) => {
             h += data
@@ -41,7 +34,6 @@ module.exports = {
             .addFields([
                 { name: '❯ Wiki', value: wiki },
                 { name: '❯ Items', value: items },
-                { name: '❯ Mobs', value: mobs },
                 { name: '❯ Help', value: h },
                 { name: '❯ Usage', value: `${prefix}<command>` }
             ])
