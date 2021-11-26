@@ -24,7 +24,7 @@ module.exports = {
     options: [
         {
             name: 'slang',
-            description: 'The slang name you want to check.',
+            description: 'The name of the slang you want to check.',
             required: false,
             type: 3
         }

@@ -24,7 +24,7 @@ module.exports = {
     options: [
         {
             name: 'mob',
-            description: 'The mob name you want to check.',
+            description: 'The name of the mob you want to check.',
             required: false,
             type: 3
         }

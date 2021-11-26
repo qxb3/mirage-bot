@@ -24,7 +24,7 @@ module.exports = {
     options: [
         {
             name: 'enchantment',
-            description: 'The enchantment name you want to check',
+            description: 'The name of the enchantment you want to check',
             required: false,
             type: 3
         }

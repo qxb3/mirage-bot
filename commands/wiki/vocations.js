@@ -24,7 +24,7 @@ module.exports = {
     options: [
         {
             name: 'vocation',
-            description: 'The vocation name you want to check.',
+            description: 'The name of the vocation you want to check.',
             required: false,
             type: 3
         }
