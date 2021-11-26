@@ -1,6 +1,6 @@
 [
     {
-        "enchantment": "Poison",
+        "name": "Poison",
         "enchanter": "Parker",
         "location": "Spider cave",
         "materials_required": [
@@ -12,7 +12,7 @@
         ]
     },
     {
-        "enchantment": "Ice",
+        "name": "Ice",
         "enchanter": "Hog",
         "location": "Cyclops",
         "materials_required": [
@@ -24,7 +24,7 @@
         ]
     },
     {
-        "enchantment": "Fire",
+        "name": "Fire",
         "enchanter": "Marshlands",
         "location": "Slime",
         "materials_required": [
@@ -36,7 +36,7 @@
         ]
     },
     {
-        "enchantment": "Energy",
+        "name": "Energy",
         "enchanter": "Shell",
         "location": "Fortress",
         "materials_required": [
@@ -48,7 +48,7 @@
         ]
     },
     {
-        "enchantment": "Mana",
+        "name": "Mana",
         "enchanter": "Squidge",
         "location": "Inferno (H2)",
         "materials_required": [
@@ -59,7 +59,7 @@
         ]
     },
     {
-        "enchantment": "Physical",
+        "name": "Physical",
         "enchanter": "Harvey",
         "location": "Inferno (H2)",
         "materials_required": [

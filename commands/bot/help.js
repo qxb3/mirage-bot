@@ -5,6 +5,8 @@ module.exports = {
     category: 'Help',
     description: 'Help command for the bot',
 
+    slash: 'both',
+
     callback: ({ prefix }) => {
         const help = JSON.parse(Buffer.from(fs.readFileSync(process.env.PWD + '/assets/help.json').toString()))
         

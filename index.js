@@ -25,9 +25,11 @@ client.on('ready', () => {
     new WokCommands(client, {
         commandDir: path.join(__dirname, './commands'), 
         testServers: [
-            '811195710065082378', //Tools server
+            '811195710065082378'
         ]
-    }).setDefaultPrefix('?')
+    })
+    .setDefaultPrefix('?')
+    .setBotOwner('591150858830479381')
 })
 
 client.login(process.env.BOT_TOKEN)

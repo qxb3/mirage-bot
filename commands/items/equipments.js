@@ -19,24 +19,46 @@ const getEquipments = (weaponJson, type) => {
     return equipments
 }
 
+const sendMessage = (message, interaction, content) => {
+    if (message) {
+        message.channel.send(content)
+    }
+
+   if (interaction) {
+        interaction.reply(content)
+    }
+}
+
 module.exports = {
     category: 'Items',
     description: 'A equipments command to help you find and indentify equipments on the game',
 
-    callback: async ({ message, args, prefix }) => {
-        const username = message.author.username
-        const tag = `#${message.author.discriminator}`
-        const avatar = `https://cdn.discordapp.com/avatars/${message.author.id}/${message.author.avatar}.png`
+    callback: async ({ message, interaction, args, prefix }) => {
+        let author = ''
+        let avatar = ''
+
+        if (message) {
+            author = message.author.username + '#' + message.author.discriminator
+            avatar = `https://cdn.discordapp.com/avatars/${message.author.id}/${message.author.avatar}.png`
+        }
+
+        if (interaction) {
+            author = interaction.user.username + '#' + interaction.user.discriminator
+            avatar = `https://cdn.discordapp.com/avatars/${interaction.user.id}/${interaction.user.avatar}.png`
+            prefix = '/'
+        }
 
         const equipmentJson = JSON.parse(Buffer.from(fs.readFileSync(process.env.PWD + '/assets/items/equipments.json').toString()))
         const categories = ['Helmet', 'Chest', 'Gloves', 'Boots', 'Ring', 'Necklace']
 
         //If there is no argument defined
         if (args[0] == undefined) {
-            return new MessageEmbed() 
-                .setAuthor(username + tag, avatar)
+            const embed = new MessageEmbed() 
+                .setAuthor(author, avatar)
                 .addField('❯ Usage', `${prefix}equipments <equipment>\n${prefix}equpiments list - To lists all equpiments category`)
                 .setColor('RED')
+
+            return sendMessage(message, interaction, { embeds: [ embed ] })
         }
 
         if (ignoreCase.equals(args[0], 'list')) {
@@ -49,15 +71,15 @@ module.exports = {
 
                         const equipments = getEquipments(equipmentJson, args[1])
                         const embed = new MessageEmbed()
-                            .setAuthor(username + tag, avatar)
+                            .setAuthor(author, avatar)
                             .addFields([
                                 { name: `❯ ${category} - List`, value: equipments },
                                 { name: '❯ Usage', value: `${prefix}equipments <equipment>` }
                             ])
                             .setColor('BLUE')
 
-                        message.reply({
-                            embeds: [embed]
+                        return sendMessage(message, interaction, {
+                            embeds: [ embed ]
                         })
                     }
                 })
@@ -66,14 +88,14 @@ module.exports = {
                 if (code == 1) {
                     const list = getCategories(categories)
                     const embed = new MessageEmbed() 
-                        .setAuthor(username + tag, avatar)
+                        .setAuthor(author, avatar)
                         .setDescription('You forgot the categories? Jesus christ, here you go!')
                         .addField('❯ Categories', list)
                         .addField('❯ Usage', `${prefix}equipments list <category>`)
                         .setColor('RED')
 
-                    return message.reply({
-                        embeds: [embed]
+                    return sendMessage(message, interaction, {
+                        embeds: [ embed ]
                     })
                 }
             } 
@@ -81,11 +103,15 @@ module.exports = {
             //List of categories
             else {
                 const list = getCategories(categories)
-                return new MessageEmbed() 
-                    .setAuthor(username + tag, avatar)
+                const embed = new MessageEmbed() 
+                    .setAuthor(author, avatar)
                     .addField('❯ Categories', list)
                     .addField('❯ Usage', `${prefix}equipments <equipment>`)
                     .setColor('BLUE')
+
+                return sendMessage(message, interaction, {
+                    embeds: [ embed ]
+                })
             }
         }
 
@@ -107,7 +133,7 @@ module.exports = {
                     })
 
                     const embed = new MessageEmbed()
-                        .setAuthor(username + tag, avatar)
+                        .setAuthor(author, avatar)
                         .addFields([
                             { name: '❯ Name', value: equipment.name },
                             { name: '❯ Requirements', value: equipment.requirements },
@@ -116,8 +142,8 @@ module.exports = {
                         ])
                         .setColor('BLUE')
 
-                    message.reply({
-                        embeds: [embed]
+                    return sendMessage(message, interaction, {
+                        embeds: [ embed ]
                     })
                 }
             })
@@ -125,7 +151,7 @@ module.exports = {
             //If the equipment user input didn't exist
             if (code == 1) {
                 const embed = new MessageEmbed()
-                    .setAuthor(username + tag, avatar)
+                    .setAuthor(author, avatar)
                     .setDescription('Make sure the equipment you type is valid')
                     .addField('❯ Usage', `${prefix}equipments list <category>`)
                     .setColor('RED')
