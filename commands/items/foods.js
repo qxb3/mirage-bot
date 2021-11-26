@@ -1,5 +1,8 @@
 const { MessageEmbed } = require('discord.js')
+const Utils = require('../../utils/utils')
+
 const ignoreCase = require('ignore-case')
+const utils = new Utils()
 const fs = require('fs')
 
 const getCategories = (categories) => {
@@ -12,74 +15,87 @@ const getCategories = (categories) => {
 
 module.exports = {
     category: 'Items',
-    description: 'A command that helps you find and indentify foods in the game',
+    description: 'A command that will help you for the foods in the game.',
 
-    callback: async ({ message, args, prefix }) => {
-        const username = message.author.username
-        const tag = `#${message.author.discriminator}`
-        const avatar = `https://cdn.discordapp.com/avatars/${message.author.id}/${message.author.avatar}.png`
+    slash: 'both',
+
+    maxArgs: 1,
+    expectedArgs: '<food>',
+    options: [
+        {
+            name: 'food',
+            description: 'The name of the food that you want to check.',
+            required: false,
+            type: 3
+        }
+    ],
+
+    callback: async ({ message, interaction, args, prefix }) => {
+        const messageDetails = utils.getMessageDetails(message, interaction, prefix)
 
         const foodJson = JSON.parse(Buffer.from(fs.readFileSync(process.env.PWD + '/assets/items/foods.json').toString()))
         const categories = []
         foodJson.forEach(material => {
             categories.push(material.name)
-        })
-
-        //If there is no argument defined
-        if (args[0] == undefined) {
-            return new MessageEmbed() 
-                .setAuthor(username + tag, avatar)
-                .addField('❯ Usage', `${prefix}foods <food>\n${prefix}foods list - To lists all foods in the game`)
-                .setColor('RED')
-        }
+        }) 
 
         //List the foods
-        if (ignoreCase.equals(args[0], 'list')) {
+        if (!args[0]) {
             const list = getCategories(categories)
-            return new MessageEmbed() 
-                .setAuthor(username + tag, avatar)
+            const embed = new MessageEmbed() 
+                .setAuthor(messageDetails.author, messageDetails.avatar)
                 .addField('❯ Foods', list)
-                .addField('❯ Usage', `${prefix}foods <food>`)
+                .addField('❯ Usage', `${messageDetails.prefix}foods <food>`)
                 .setColor('BLUE')
+
+            return utils.sendMessage(message, interaction, {
+                embeds: [
+                    embed
+                ]
+            })
         }
 
         //Show full details of a food
-        if (!ignoreCase.equals(args[0], 'list')) {
-            let code = 1
-            foodJson.forEach(food => {
-                if (ignoreCase.equals(args.join(' '), food.name)) {
-                    code = 0
+        let code = 1
+        foodJson.forEach(food => {
+            if (ignoreCase.equals(args.join(' '), food.name)) {
+                code = 0
 
-                    let monsters = ''
-                    food.monsters.forEach(monster => {
-                        monsters += `• ${monster}\n`
-                    })
+                let monsters = ''
+                food.monsters.forEach(monster => {
+                    monsters += `• ${monster}\n`
+                })
 
-                    const embed = new MessageEmbed()
-                        .setAuthor(username + tag, avatar)
-                        .addFields([
-                            { name: '❯ Name', value: food.name },
-                            { name: '❯ Time', value: food.time },
-                            { name: '❯ Monsters', value: monsters },
-                        ])
-                        .setColor('BLUE')
-
-                    message.reply({
-                        embeds: [embed]
-                    })
-                }
-            })
-
-            //If the food user typed didn't exist
-            if (code == 1) {
                 const embed = new MessageEmbed()
-                    .setAuthor(username + tag, avatar)
-                    .setDescription('Make sure the food you type is valid')
-                    .addField('❯ Usage', `${prefix}foods list - To list all food in the game` )
-                    .setColor('RED')
+                    .setAuthor(messageDetails.author, messageDetails.avatar)
+                    .addFields([
+                        { name: '❯ Name', value: food.name },
+                        { name: '❯ Time', value: food.time },
+                        { name: '❯ Monsters', value: monsters },
+                    ])
+                    .setColor('BLUE')
 
-                return embed
+                utils.sendMessage(message, interaction, {
+                    embeds: [
+                        embed
+                    ]
+                })
             }
+        })
+
+        //If the food user typed didn't exist
+        if (code == 1) {
+            const embed = new MessageEmbed()
+                .setAuthor(messageDetails.author, messageDetails.avatar)
+                .setDescription('Make sure the food you type is valid')
+                .addField('❯ Usage', `${messageDetails.prefix}foods - To list all food in the game` )
+                .setColor('RED')
+
+            utils.sendMessage(message, interaction, {
+                embeds: [
+                    embed
+                ]
+            })
         }
     }
 }
