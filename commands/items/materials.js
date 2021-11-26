@@ -1,5 +1,8 @@
 const { MessageEmbed } = require('discord.js')
+const Utils = require('../../utils/utils')
+
 const ignoreCase = require('ignore-case')
+const utils = new Utils()
 const fs = require('fs')
 
 const getCategories = (categories) => {
@@ -12,12 +15,24 @@ const getCategories = (categories) => {
 
 module.exports = {
     category: 'Items',
-    description: 'A command that helps you find and indentify materials in the game',
+    description: 'A command that will help you with materials in the game.',
 
-    callback: async ({ message, args, prefix }) => {
-        const username = message.author.username
-        const tag = `#${message.author.discriminator}`
-        const avatar = `https://cdn.discordapp.com/avatars/${message.author.id}/${message.author.avatar}.png`
+    slash: 'both',
+    testOnly: true,
+
+    maxArgs: 1,
+    expectedArgs: '<material>',
+    options: [
+        {
+            name: 'material',
+            description: 'The name of the material you want to check.',
+            required: 'false',
+            type: 3
+        }
+    ],
+
+    callback: async ({ message, interaction, args, prefix }) => {
+        const messageDetails = utils.getMessageDetails(message, interaction, prefix)
 
         const materialJson = JSON.parse(Buffer.from(fs.readFileSync(process.env.PWD + '/assets/items/materials.json').toString()))
         const categories = []
@@ -25,61 +40,61 @@ module.exports = {
             categories.push(material.name)
         })
 
-        //If there is no argument defined
-        if (args[0] == undefined) {
-            return new MessageEmbed() 
-                .setAuthor(username + tag, avatar)
-                .addField('❯ Usage', `${prefix}materials <material>\n${prefix}materials list - To lists all materials in the game`)
-                .setColor('RED')
-        }
-
         //List the materials
-        if (ignoreCase.equals(args[0], 'list')) {
+        if (!args[0]) {
             const list = getCategories(categories)
-            return new MessageEmbed() 
-                .setAuthor(username + tag, avatar)
+            const embed = new MessageEmbed() 
+                .setAuthor(messageDetails.author, messageDetails.avatar)
                 .addField('❯ Materials', list)
-                .addField('❯ Usage', `${prefix}materials <material>`)
+                .addField('❯ Usage', `${messageDetails.prefix}materials <material>`)
                 .setColor('BLUE')
+
+            return utils.sendMessage(message, interaction, {
+                embeds: [
+                    embed
+                ]
+            })
         }
 
         //Show full details of a material
-        if (!ignoreCase.equals(args[0], 'list')) {
-            let code = 1
-            materialJson.forEach(material => {
-                if (ignoreCase.equals(args.join(' '), material.name)) {
-                    code = 0
+        let code = 1
+        materialJson.forEach(material => {
+            if (ignoreCase.equals(args.join(' '), material.name)) {
+                code = 0
 
-                    let monsters = ''
-                    material.monsters.forEach(monster => {
-                        monsters += `• ${monster}\n`
-                    })
+                let monsters = ''
+                material.monsters.forEach(monster => {
+                    monsters += `• ${monster}\n`
+                })
 
-                    const embed = new MessageEmbed()
-                        .setAuthor(username + tag, avatar)
-                        .addFields([
-                            { name: '❯ Name', value: material.name },
-                            { name: '❯ Price', value: material.price },
-                            { name: '❯ Drops from', value: monsters },
-                        ])
-                        .setColor('BLUE')
-
-                    message.reply({
-                        embeds: [embed]
-                    })
-                }
-            })
-
-            //If the material user typed didn't exist
-            if (code == 1) {
                 const embed = new MessageEmbed()
-                    .setAuthor(username + tag, avatar)
-                    .setDescription('Make sure the material you type is valid')
-                    .addField('❯ Usage', `${prefix}materials list - To list all materials in the game` )
-                    .setColor('RED')
+                    .setAuthor(messageDetails.author, messageDetails.avatar)
+                    .addFields([
+                        { name: '❯ Name', value: material.name },
+                        { name: '❯ Price', value: material.price },
+                        { name: '❯ Drops from', value: monsters },
+                    ])
+                    .setColor('BLUE')
 
-                return embed
+                utils.sendMessage(message, interaction, {
+                    embeds: [embed]
+                })
             }
+        })
+
+        //If the material user typed didn't exist
+        if (code == 1) {
+            const embed = new MessageEmbed()
+                .setAuthor(messageDetails.author, messageDetails.avatar)
+                .setDescription('Make sure the material you type is valid')
+                .addField('❯ Usage', `${messageDetails.prefix}materials - To list all materials in the game` )
+                .setColor('RED')
+
+            utils.sendMessage(message, interaction, {
+                embeds: [
+                    embed
+                ]
+            })
         }
     }
 }
