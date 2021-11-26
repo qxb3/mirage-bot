@@ -18,7 +18,6 @@ module.exports = {
     description: 'A command that will help you with slangs in the game.',
 
     slash: 'both',
-    testOnly: true,
 
     maxArgs: 1,
     expectedArgs: '<slang>',

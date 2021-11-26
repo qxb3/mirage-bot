@@ -18,7 +18,6 @@ module.exports = {
     description: 'A command will help you with mobs in the game.',
 
     slash: 'both',
-    testOnly: true,
 
     maxArgs: 1,
     expectedArgs: '<mob>',

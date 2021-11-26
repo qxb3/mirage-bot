@@ -18,7 +18,6 @@ module.exports = {
     description: 'A command that will help you with enchantments in the game.',
 
     slash: 'both',
-    testOnly: true,
 
     maxArgs: 1,
     expectedArgs: '<enchanment>',
