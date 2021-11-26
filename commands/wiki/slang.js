@@ -1,5 +1,8 @@
 const { MessageEmbed } = require('discord.js')
+const Utils = require('../../utils/utils')
+
 const ignoreCase = require('ignore-case')
+const utils = new Utils()
 const fs = require('fs')
 
 const getCategories = (categories) => {
@@ -12,68 +15,82 @@ const getCategories = (categories) => {
 
 module.exports = {
     category: 'Wiki',
-    description: 'You might came across some players saying weird things from the game like kos, pz, pk, etc.. this command helps you for that!',
+    description: 'A command that will help you with slangs in the game.',
 
-    callback: async ({ message, args, prefix }) => {
-        const username = message.author.username
-        const tag = `#${message.author.discriminator}`
-        const avatar = `https://cdn.discordapp.com/avatars/${message.author.id}/${message.author.avatar}.png`
+    slash: 'both',
+    testOnly: true,
+
+    maxArgs: 1,
+    expectedArgs: '<slang>',
+    options: [
+        {
+            name: 'slang',
+            description: 'The slang name you want to check.',
+            required: false,
+            type: 3
+        }
+    ],
+
+    callback: async ({ message, interaction, args, prefix }) => {
+        const messageDetails = utils.getMessageDetails(message, interaction, prefix)
 
         const slangJson = JSON.parse(Buffer.from(fs.readFileSync(process.env.PWD + '/assets/wiki/slangs.json').toString()))
         const categories = []
         slangJson.forEach(slang => {
             categories.push(slang.slang)
-        })
-
-        //If there is no argument defined
-        if (args[0] == undefined) {
-            return new MessageEmbed() 
-                .setAuthor(username + tag, avatar)
-                .addField('❯ Usage', `${prefix}slang <slang>\n${prefix}slang list - To lists all slangs commonly used in the game`)
-                .setColor('RED')
-        }
+        }) 
 
         //List the slang
-        if (ignoreCase.equals(args[0], 'list')) {
+        if (!args[0]) {
             const list = getCategories(categories)
-            return new MessageEmbed() 
-                .setAuthor(username + tag, avatar)
+            const embed = new MessageEmbed() 
+                .setAuthor(messageDetails.author, messageDetails.avatar)
                 .addField('❯ Slangs', list)
-                .addField('❯ Usage', `${prefix}slang <slang>`)
+                .addField('❯ Usage', `${messageDetails.prefix}slang <slang>`)
                 .setColor('BLUE')
+
+            return utils.sendMessage(message, interaction, {
+                embeds: [
+                    embed
+                ]
+            })
         }
 
         //Show full details of a slang
-        if (!ignoreCase.equals(args[0], 'list')) {
-            let code = 1
-            slangJson.forEach(slang => {
-                if (ignoreCase.equals(args.join(' '), slang.slang)) {
-                    code = 0
+        let code = 1
+        slangJson.forEach(slang => {
+            if (ignoreCase.equals(args.join(' '), slang.slang)) {
+                code = 0
 
-                    const embed = new MessageEmbed()
-                        .setAuthor(username + tag, avatar)
-                        .addFields([
-                            { name: '❯ Name', value: slang.name },
-                            { name: '❯ Description', value: slang.description }
-                        ])
-                        .setColor('BLUE')
-
-                    message.reply({
-                        embeds: [embed]
-                    })
-                }
-            })
-
-            //If the slang user typed didn't exist
-            if (code == 1) {
                 const embed = new MessageEmbed()
-                    .setAuthor(username + tag, avatar)
-                    .setDescription('Make sure the slang you type is valid')
-                    .addField('❯ Usage', `${prefix}slang list - To list all slangs commonly used in the game>`)
-                    .setColor('RED')
+                    .setAuthor(messageDetails.author, messageDetails.avatar)
+                    .addFields([
+                        { name: '❯ Name', value: slang.name },
+                        { name: '❯ Description', value: slang.description }
+                    ])
+                    .setColor('BLUE')
 
-                return embed
+                utils.sendMessage(message, interaction, {
+                    embeds: [
+                        embed
+                    ]
+                })
             }
+        })
+
+        //If the slang user typed didn't exist
+        if (code == 1) {
+            const embed = new MessageEmbed()
+                .setAuthor(messageDetails.author, messageDetails.avatar)
+                .setDescription('Make sure the slang you type is valid')
+                .addField('❯ Usage', `${messageDetails.prefix}slang - To list all slangs commonly used in the game`)
+                .setColor('RED')
+
+            utils.sendMessage(message, interaction, {
+                embeds: [
+                    embed
+                ]
+            })
         }
     }
 }
