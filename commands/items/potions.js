@@ -1,5 +1,8 @@
 const { MessageEmbed } = require('discord.js')
+const Utils = require('../../utils/utils')
+
 const ignoreCase = require('ignore-case')
+const utils = new Utils()
 const fs = require('fs')
 
 const getCategories = (categories) => {
@@ -12,12 +15,23 @@ const getCategories = (categories) => {
 
 module.exports = {
     category: 'Items',
-    description: 'A command that helps you find and indentify potions in the game',
+    description: 'A command that will help you for potions in the game.',
 
-    callback: async ({ message, args, prefix }) => {
-        const username = message.author.username
-        const tag = `#${message.author.discriminator}`
-        const avatar = `https://cdn.discordapp.com/avatars/${message.author.id}/${message.author.avatar}.png`
+    slash: 'both',
+
+    maxArgs: 1,
+    expectedArgs: '<potion>',
+    options: [
+        {
+            name: 'potion',
+            description: 'The name of the potion that you wanted to check.',
+            required: false,
+            type: 3
+        }
+    ],
+
+    callback: async ({ message, interaction, args, prefix }) => {
+        const messageDetails = utils.getMessageDetails(message, interaction, prefix)
 
         const potionJson = JSON.parse(Buffer.from(fs.readFileSync(process.env.PWD + '/assets/items/potions.json').toString()))
         const categories = []
@@ -25,66 +39,68 @@ module.exports = {
             categories.push(potion.name)
         })
 
-        //If there is no argument defined
-        if (args[0] == undefined) {
-            return new MessageEmbed() 
-                .setAuthor(username + tag, avatar)
-                .addField('❯ Usage', `${prefix}potions <potion>\n${prefix}potions list - To lists all potions in the game`)
-                .setColor('RED')
-        }
-
         //List the potions
-        if (ignoreCase.equals(args[0], 'list')) {
+        if (!args[0]) {
             const list = getCategories(categories)
-            return new MessageEmbed() 
-                .setAuthor(username + tag, avatar)
+            const embed = new MessageEmbed() 
+                .setAuthor(messageDetails.author, messageDetails.avatar)
                 .addField('❯ Potions', list)
-                .addField('❯ Usage', `${prefix}potions <potion>`)
+                .addField('❯ Usage', `${messageDetails.prefix}potions <potion>`)
                 .setColor('BLUE')
+
+            return utils.sendMessage(message, interaction, {
+                embeds: [
+                    embed
+                ]
+            })
         }
 
         //Show full details of a potion
-        if (!ignoreCase.equals(args[0], 'list')) {
-            let code = 1
-            potionJson.forEach(potion => {
-                if (ignoreCase.equals(args.join(' '), potion.name)) {
-                    code = 0
+        let code = 1
+        potionJson.forEach(potion => {
+            if (ignoreCase.equals(args.join(' '), potion.name)) {
+                code = 0
 
-                    let effects = ''
-                    potion.effects.forEach(effect => {
-                        effects += `• ${effect}\n`
-                    })
+                let effects = ''
+                potion.effects.forEach(effect => {
+                    effects += `• ${effect}\n`
+                })
 
-                    let monsters = ''
-                    potion.monsters.forEach(monster => {
-                        monsters += `• ${monster}\n`
-                    })
+                let monsters = ''
+                potion.monsters.forEach(monster => {
+                    monsters += `• ${monster}\n`
+                })
 
-                    const embed = new MessageEmbed()
-                        .setAuthor(username + tag, avatar)
-                        .addFields([
-                            { name: '❯ Name', value: potion.name },
-                            { name: '❯ Effects', value: effects },
-                            { name: '❯ Monsters', value: monsters },
-                        ])
-                        .setColor('BLUE')
-
-                    message.reply({
-                        embeds: [embed]
-                    })
-                }
-            })
-
-            //If the potion user typed didn't exist
-            if (code == 1) {
                 const embed = new MessageEmbed()
-                    .setAuthor(username + tag, avatar)
-                    .setDescription('Make sure the potion you type is valid')
-                    .addField('❯ Usage', `${prefix}potion list - To list all food in the game` )
-                    .setColor('RED')
+                    .setAuthor(messageDetails.author, messageDetails.avatar)
+                    .addFields([
+                        { name: '❯ Name', value: potion.name },
+                        { name: '❯ Effects', value: effects },
+                        { name: '❯ Monsters', value: monsters },
+                    ])
+                    .setColor('BLUE')
 
-                return embed
+                utils.sendMessage(message, interaction, {
+                    embeds: [
+                        embed
+                    ]
+                })
             }
+        })
+
+        //If the potion user typed didn't exist
+        if (code == 1) {
+            const embed = new MessageEmbed()
+                .setAuthor(messageDetails.author, messageDetails.avatar)
+                .setDescription('Make sure the potion you type is valid')
+                .addField('❯ Usage', `${messageDetails.prefix}potion - To list all food in the game` )
+                .setColor('RED')
+
+            utils.sendMessage(message, interaction, {
+                embeds: [
+                    embed
+                ]
+            })
         }
     }
 }
