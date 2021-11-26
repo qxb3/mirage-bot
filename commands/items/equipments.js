@@ -27,7 +27,6 @@ module.exports = {
     description: 'A command that will help you for equipments in the game',
 
     slash: 'both',
-    testOnly: true,
 
     maxArgs: 1,
     expectedArgs: '<equipment>',
