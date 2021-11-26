@@ -1,5 +1,8 @@
 const { MessageEmbed } = require('discord.js')
+const Utils = require('../../utils/utils')
+
 const ignoreCase = require('ignore-case')
+const utils = new Utils()
 const fs = require('fs')
 
 const getCategories = (categories) => {
@@ -10,114 +13,79 @@ const getCategories = (categories) => {
     return list
 }
 
-const getEquipments = (weaponJson, type) => {
-    let equipments = ''
-    weaponJson.filter(equipment => ignoreCase.equals(type, equipment.type))
-        .forEach(equipment => {
-            equipments += `• ${equipment.name}\n`
+const getWeapons = (equipmentJson, type) => {
+    let weapons = ''
+    equipmentJson.filter(weapon => ignoreCase.equals(type, weapon.type))
+        .forEach(weapon => {
+            weapons += `• ${weapon.name}\n`
     })
-    return equipments
-}
-
-const sendMessage = (message, interaction, content) => {
-    if (message) {
-        message.channel.send(content)
-    }
-
-   if (interaction) {
-        interaction.reply(content)
-    }
+    return weapons
 }
 
 module.exports = {
     category: 'Items',
-    description: 'A equipments command to help you find and indentify equipments on the game',
+    description: 'A command that will help you for equipments in the game',
+
+    slash: 'both',
+    testOnly: true,
+
+    maxArgs: 1,
+    expectedArgs: '<equipment>',
+    options: [
+        {
+            name: 'equipment',
+            description: 'It can be the name of the equipment or a category.',
+            required: false,
+            type: 3
+        }
+    ],
 
     callback: async ({ message, interaction, args, prefix }) => {
-        let author = ''
-        let avatar = ''
-
-        if (message) {
-            author = message.author.username + '#' + message.author.discriminator
-            avatar = `https://cdn.discordapp.com/avatars/${message.author.id}/${message.author.avatar}.png`
-        }
-
-        if (interaction) {
-            author = interaction.user.username + '#' + interaction.user.discriminator
-            avatar = `https://cdn.discordapp.com/avatars/${interaction.user.id}/${interaction.user.avatar}.png`
-            prefix = '/'
-        }
+        const messageDetails = utils.getMessageDetails(message, interaction, prefix)
 
         const equipmentJson = JSON.parse(Buffer.from(fs.readFileSync(process.env.PWD + '/assets/items/equipments.json').toString()))
         const categories = ['Helmet', 'Chest', 'Gloves', 'Boots', 'Ring', 'Necklace']
 
-        //If there is no argument defined
-        if (args[0] == undefined) {
-            const embed = new MessageEmbed() 
-                .setAuthor(author, avatar)
-                .addField('❯ Usage', `${prefix}equipments <equipment>\n${prefix}equpiments list - To lists all equpiments category`)
-                .setColor('RED')
+        if (!args[0]) {
+            const list = getCategories(categories)
+            const embed = new MessageEmbed()
+                .setAuthor(messageDetails.author, messageDetails.avatar)
+                .addField('❯ Categories', list)
+                .addField('❯ Usage', `${messageDetails.prefix}equipments - To list all equipment categories in the game\n${messageDetails.prefix}equipments <category> - To list all the equipments in that category`)
+                .setColor('BLUE')
 
-            return sendMessage(message, interaction, { embeds: [ embed ] })
+            return utils.sendMessage(message, interaction, {
+                embeds: [
+                    embed
+                ]
+            })
         }
 
-        if (ignoreCase.equals(args[0], 'list')) {
-            //List the equipmemts
-            if (args[1] != undefined) {
-                let code = 1
-                categories.forEach(category => {
-                    if (ignoreCase.equals(args[1], category)) {
-                        code = 0
+        //List the equipments in that category
+        let code = 1
+        categories.forEach(category => {
+            if (ignoreCase.equals(args.join(' '), category)) {
+                code = 0
 
-                        const equipments = getEquipments(equipmentJson, args[1])
-                        const embed = new MessageEmbed()
-                            .setAuthor(author, avatar)
-                            .addFields([
-                                { name: `❯ ${category} - List`, value: equipments },
-                                { name: '❯ Usage', value: `${prefix}equipments <equipment>` }
-                            ])
-                            .setColor('BLUE')
-
-                        return sendMessage(message, interaction, {
-                            embeds: [ embed ]
-                        })
-                    }
-                })
-
-                //If the category entered by user is not valid
-                if (code == 1) {
-                    const list = getCategories(categories)
-                    const embed = new MessageEmbed() 
-                        .setAuthor(author, avatar)
-                        .setDescription('You forgot the categories? Jesus christ, here you go!')
-                        .addField('❯ Categories', list)
-                        .addField('❯ Usage', `${prefix}equipments list <category>`)
-                        .setColor('RED')
-
-                    return sendMessage(message, interaction, {
-                        embeds: [ embed ]
-                    })
-                }
-            } 
-
-            //List of categories
-            else {
-                const list = getCategories(categories)
-                const embed = new MessageEmbed() 
-                    .setAuthor(author, avatar)
-                    .addField('❯ Categories', list)
-                    .addField('❯ Usage', `${prefix}equipments <equipment>`)
+                const weapons = getWeapons(equipmentJson, args.join(' '))
+                const embed = new MessageEmbed()
+                    .setAuthor(messageDetails.author, messageDetails.avatar)
+                    .addFields([
+                        { name: `❯ ${category} - List`, value: weapons },
+                        { name: '❯ Usage', value: `${messageDetails.prefix}equipments <equipment>` }
+                    ])
                     .setColor('BLUE')
 
-                return sendMessage(message, interaction, {
-                    embeds: [ embed ]
+                utils.sendMessage(message, interaction, {
+                    embeds: [
+                        embed
+                    ]
                 })
             }
-        }
+        })
 
-        //Show full details of a equipment
-        if (!ignoreCase.equals(args[0], 'list')) {
-            let code = 1
+        //Show full details of the equipment
+        if (code == 1) {
             equipmentJson.forEach(equipment => {
                 if (ignoreCase.equals(args.join(' '), equipment.name)) {
                     code = 0
@@ -133,7 +101,7 @@ module.exports = {
                     })
 
                     const embed = new MessageEmbed()
-                        .setAuthor(author, avatar)
+                        .setAuthor(messageDetails.author, messageDetails.avatar)
                         .addFields([
                             { name: '❯ Name', value: equipment.name },
                             { name: '❯ Requirements', value: equipment.requirements },
@@ -142,22 +110,28 @@ module.exports = {
                         ])
                         .setColor('BLUE')
 
-                    return sendMessage(message, interaction, {
-                        embeds: [ embed ]
+                    utils.sendMessage(message, interaction, {
+                        embeds: [
+                            embed
+                        ]
                     })
                 }
             })
+        }
 
-            //If the equipment user input didn't exist
-            if (code == 1) {
-                const embed = new MessageEmbed()
-                    .setAuthor(author, avatar)
-                    .setDescription('Make sure the equipment you type is valid')
-                    .addField('❯ Usage', `${prefix}equipments list <category>`)
-                    .setColor('RED')
+        //If the user typed didnt exist
+        if (code == 1) {
+            const embed = new MessageEmbed()
+                .setAuthor(messageDetails.author, messageDetails.avatar)
+                .setDescription('Make sure the equipment or the category you typed is valid')
+                .addField('❯ Usage', `${messageDetails.prefix}equipments - To list all weapon categories in the game\n${messageDetails.prefix}equipments <category> - To list all the equipments in that category`)
+                .setColor('RED')
 
-                return embed
-            }
+            utils.sendMessage(message, interaction, {
+                embeds: [
+                    embed
+                ]
+            })
         }
     }
 }
