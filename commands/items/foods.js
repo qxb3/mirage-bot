@@ -65,7 +65,7 @@ module.exports = {
             if (ignoreCase.equals(args.join(' '), food.name)) {
                 code = 0
 
-                const name = food.name.replace(' ', '-').toLowerCase()
+                const name = food.name.replaceAll(' ', '-').toLowerCase()
                 const sprite = process.env.PWD + '/assets/items/sprites' + food.sprite
 
                 let monsters = ''
