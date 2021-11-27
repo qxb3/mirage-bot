@@ -1,4 +1,7 @@
 const { MessageEmbed } = require('discord.js')
+const Utils = require('../../utils/utils')
+
+const utils = new Utils()
 const fs = require('fs')
 
 module.exports = {
@@ -7,7 +10,8 @@ module.exports = {
 
     slash: 'both',
 
-    callback: ({ prefix }) => {
+    callback: ({ message, interaction, prefix }) => {
+        const messageDetails = utils.getMessageDetails(message, interaction, prefix)
         const help = JSON.parse(Buffer.from(fs.readFileSync(process.env.PWD + '/assets/help.json').toString()))
         
         let wiki = ''
@@ -37,10 +41,14 @@ module.exports = {
                 { name: '❯ Wiki', value: wiki },
                 { name: '❯ Items', value: items },
                 { name: '❯ Help', value: h },
-                { name: '❯ Usage', value: `${prefix}<command>` }
+                { name: '❯ Usage', value: `${messageDetails.prefix}<command>` }
             ])
             .setColor('BLUE')
 
-        return embed
+        utils.sendMessage(message, interaction, {
+            embeds: [
+                embed
+            ]
+        })
     }
 }
