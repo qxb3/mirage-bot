@@ -44,6 +44,7 @@ module.exports = {
             const list = getCategories(categories)
             const embed = new MessageEmbed() 
                 .setAuthor(messageDetails.author, messageDetails.avatar)
+                .setThumbnail('attachment://experience-scroll.png')
                 .addField('❯ Materials', list)
                 .addField('❯ Usage', `${messageDetails.prefix}scrolls <scrolls>`)
                 .setColor('BLUE')
@@ -51,6 +52,9 @@ module.exports = {
             return utils.sendMessage(message, interaction, {
                 embeds: [
                     embed
+                ],
+                files: [
+                    process.env.PWD + '/assets/items/sprites/scrolls/experience-scroll.png'
                 ]
             })
         }
@@ -61,6 +65,9 @@ module.exports = {
             if (ignoreCase.equals(args.join(' '), scroll.name)) {
                 code = 0
 
+                const name = scroll.name.replaceAll(' ', '-').toLowerCase()
+                const sprite = process.env.PWD + '/assets/items/sprites/' + scroll.sprite
+
                 let effects = ''
                 scroll.effects.forEach(effect => {
                     effects += `• ${effect}\n`
@@ -68,6 +75,7 @@ module.exports = {
 
                 const embed = new MessageEmbed()
                     .setAuthor(messageDetails.author, messageDetails.avatar)
+                    .setThumbnail(`attachment://${name}.png`)
                     .addFields([
                         { name: '❯ Name', value: scroll.name },
                         { name: '❯ Effects', value: effects }
@@ -77,6 +85,9 @@ module.exports = {
                 utils.sendMessage(message, interaction, {
                     embeds: [
                         embed
+                    ],
+                    files: [
+                        sprite
                     ]
                 })
             }
@@ -86,6 +97,7 @@ module.exports = {
         if (code == 1) {
             const embed = new MessageEmbed()
                 .setAuthor(messageDetails.author, messageDetails.avatar)
+                .setThumbnail('attachment://experience-scroll.png')
                 .setDescription('Make sure the scroll you type is valid')
                 .addField('❯ Usage', `${messageDetails.prefix}scrolls - To list all scrolls in the game` )
                 .setColor('RED')
@@ -93,6 +105,9 @@ module.exports = {
             utils.sendMessage(message, interaction, {
                 embeds: [
                     embed
+                ],
+                files: [
+                    process.env.PWD + '/assets/items/sprites/scrolls/experience-scroll.png'
                 ]
             })
         }
