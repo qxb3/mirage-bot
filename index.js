@@ -24,7 +24,7 @@ client.on('ready', () => {
 
     new WokCommands(client, {
         commandDir: path.join(__dirname, './commands'), 
-        featuresDir: path.join(__dirname, './features'),
+        //featuresDir: path.join(__dirname, './features'),
         testServers: ['811195710065082378']
     })
     .setDefaultPrefix('?')
