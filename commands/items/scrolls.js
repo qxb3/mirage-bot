@@ -16,6 +16,7 @@ const getCategories = (categories) => {
 module.exports = {
     category: 'Items',
     description: 'A command that will help you for scrolls in the game.',
+    aliases: ['scroll'],
 
     slash: 'both',
 

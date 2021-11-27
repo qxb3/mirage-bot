@@ -16,6 +16,7 @@ const getCategories = (categories) => {
 module.exports = {
     category: 'Mobs',
     description: 'A command will help you with mobs in the game.',
+    aliases: ['mob'],
 
     slash: 'both',
 

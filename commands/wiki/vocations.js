@@ -16,6 +16,7 @@ const getCategories = (categories) => {
 module.exports = {
     category: 'Wiki',
     description: 'A command that will helps you identify vocations in the game.',
+    aliases: ['vocation', 'vocs', 'voc'],
 
     slash: 'both',
 
