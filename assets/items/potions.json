@@ -1,6 +1,7 @@
 [
     {
         "name": "Weak Potion",
+        "sprite": "/potions/weak-potion.png",
         "effects": [
             "Health: +50",
             "Mana: +25"
@@ -11,6 +12,7 @@
     },
     {
         "name": "Health Vial",
+        "sprite": "/potions/health-vial.png",
         "effects": [
             "Health: +200",
             "Mana: +0"
@@ -36,6 +38,7 @@
     },
     {
         "name": "Health Flask",
+        "sprite": "/potions/health-flask.png",
         "effects": [
             "Health: +350",
             "Mana: +0"
@@ -53,6 +56,7 @@
     },
     {
         "name": "Health Bottle",
+        "sprite": "/potions/health-bottle.png",
         "effects": [
             "Health: +500",
             "Mana: +0"
@@ -63,6 +67,7 @@
     },
     {
         "name": "Health Flagon",
+        "sprite": "/potions/health-flagon.png",
         "effects": [
             "Health: +750",
             "Mana: +0"
@@ -73,6 +78,7 @@
     },
     {
         "name": "Mana Vial",
+        "sprite": "/potions/mana-vial.png",
         "effects": [
             "Health: +0",
             "Mana: +100"
@@ -85,6 +91,7 @@
     },
     {
         "name": "Mana Flask",
+        "sprite": "/potions/mana-flask.png",
         "effects": [
             "Health: +0",
             "Mana: +200"
@@ -95,6 +102,7 @@
     },
     {
         "name": "Mana Bottle",
+        "sprite": "/potions/mana-bottle.png",
         "effects": [
             "Health: +0",
             "Mana: +300"
@@ -105,6 +113,7 @@
     },
     {
         "name": "Mana Flagon",
+        "sprite": "/potions/mana-flagon.png",
         "effects": [
             "Health: +0",
             "Mana: +400"
@@ -115,6 +124,7 @@
     },
     {
         "name": "Mana Ewer",
+        "sprite": "/potions/mana-ewer.png",
         "effects": [
             "Health: +0",
             "Mana: +500"
@@ -125,6 +135,7 @@
     },
     {
         "name": "Mead",
+        "sprite": "/potions/mead.png",
         "effects": [
             "Health: +0",
             "Mana: +0"
@@ -135,6 +146,7 @@
     },
     {
         "name": "Wine",
+        "sprite": "/potions/wine.png",
         "effects": [
             "Health: +0",
             "Mana: +0"
@@ -145,6 +157,7 @@
     },
     {
         "name": "Water",
+        "sprite": "/potions/water.png",
         "effects": [
             "Health: +0",
             "Mana: +0"
@@ -155,6 +168,7 @@
     },
     {
         "name": "Ale",
+        "sprite": "/potions/ale.png",
         "effects": [
             "Health: +0",
             "Mana: +0"

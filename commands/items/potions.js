@@ -44,6 +44,7 @@ module.exports = {
             const list = getCategories(categories)
             const embed = new MessageEmbed() 
                 .setAuthor(messageDetails.author, messageDetails.avatar)
+                .setThumbnail('attachment://health-vial.png')
                 .addField('❯ Potions', list)
                 .addField('❯ Usage', `${messageDetails.prefix}potions <potion>`)
                 .setColor('BLUE')
@@ -51,6 +52,9 @@ module.exports = {
             return utils.sendMessage(message, interaction, {
                 embeds: [
                     embed
+                ],
+                files: [
+                    process.env.PWD + '/assets/items/sprites/potions/health-vial.png'
                 ]
             })
         }
@@ -60,6 +64,9 @@ module.exports = {
         potionJson.forEach(potion => {
             if (ignoreCase.equals(args.join(' '), potion.name)) {
                 code = 0
+
+                const name = potion.name.replaceAll(' ', '-').toLowerCase()
+                const sprite =  process.env.PWD + '/assets/items/sprites' + potion.sprite
 
                 let effects = ''
                 potion.effects.forEach(effect => {
@@ -73,6 +80,7 @@ module.exports = {
 
                 const embed = new MessageEmbed()
                     .setAuthor(messageDetails.author, messageDetails.avatar)
+                    .setThumbnail(`attachment://${name}.png`)
                     .addFields([
                         { name: '❯ Name', value: potion.name },
                         { name: '❯ Effects', value: effects },
@@ -83,6 +91,9 @@ module.exports = {
                 utils.sendMessage(message, interaction, {
                     embeds: [
                         embed
+                    ],
+                    files: [
+                        sprite
                     ]
                 })
             }
@@ -92,6 +103,7 @@ module.exports = {
         if (code == 1) {
             const embed = new MessageEmbed()
                 .setAuthor(messageDetails.author, messageDetails.avatar)
+                .setThumbnail('attachment://health-vial.png')
                 .setDescription('Make sure the potion you type is valid')
                 .addField('❯ Usage', `${messageDetails.prefix}potion - To list all food in the game` )
                 .setColor('RED')
@@ -99,6 +111,9 @@ module.exports = {
             utils.sendMessage(message, interaction, {
                 embeds: [
                     embed
+                ],
+                files: [
+                    process.env.PWD + '/assets/items/sprites/potions/health-vial.png'
                 ]
             })
         }
