@@ -44,6 +44,7 @@ module.exports = {
             const list = getCategories(categories)
             const embed = new MessageEmbed() 
                 .setAuthor(messageDetails.author, messageDetails.avatar)
+                .setThumbnail('attachment://meat.png')
                 .addField('❯ Foods', list)
                 .addField('❯ Usage', `${messageDetails.prefix}foods <food>`)
                 .setColor('BLUE')
@@ -51,6 +52,9 @@ module.exports = {
             return utils.sendMessage(message, interaction, {
                 embeds: [
                     embed
+                ],
+                files: [
+                    process.env.PWD + '/assets/items/sprites/foods/meat.png'
                 ]
             })
         }
@@ -61,6 +65,9 @@ module.exports = {
             if (ignoreCase.equals(args.join(' '), food.name)) {
                 code = 0
 
+                const name = food.name.replace(' ', '-').toLowerCase()
+                const sprite = process.env.PWD + '/assets/items/sprites' + food.sprite
+
                 let monsters = ''
                 food.monsters.forEach(monster => {
                     monsters += `• ${monster}\n`
@@ -68,6 +75,7 @@ module.exports = {
 
                 const embed = new MessageEmbed()
                     .setAuthor(messageDetails.author, messageDetails.avatar)
+                    .setThumbnail(`attachment://${name}.png`)
                     .addFields([
                         { name: '❯ Name', value: food.name },
                         { name: '❯ Time', value: food.time },
@@ -78,6 +86,9 @@ module.exports = {
                 utils.sendMessage(message, interaction, {
                     embeds: [
                         embed
+                    ],
+                    files: [
+                        sprite
                     ]
                 })
             }
@@ -87,6 +98,7 @@ module.exports = {
         if (code == 1) {
             const embed = new MessageEmbed()
                 .setAuthor(messageDetails.author, messageDetails.avatar)
+                .setThumbnail('attachment://meat.png')
                 .setDescription('Make sure the food you type is valid')
                 .addField('❯ Usage', `${messageDetails.prefix}foods - To list all food in the game` )
                 .setColor('RED')
@@ -94,6 +106,9 @@ module.exports = {
             utils.sendMessage(message, interaction, {
                 embeds: [
                     embed
+                ],
+                files: [
+                    process.env.PWD + '/assets/items/sprites/foods/meat.png'
                 ]
             })
         }

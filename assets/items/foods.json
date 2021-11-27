@@ -1,6 +1,7 @@
 [
     {
         "name": "Cheese",
+        "sprite": "/foods/cheese.png",
         "time": "2",
         "monsters": [
             "Rat"
@@ -8,6 +9,7 @@
     },
     {
         "name": "Apple",
+        "sprite": "/foods/apple.png",
         "time": "2",
         "monsters": [
             "Thief",
@@ -17,6 +19,7 @@
     },
     {
         "name": "Carrot",
+        "sprite": "/foods/carrot.png",
         "time": "2",
         "monsters": [
             "Giant Slug",
@@ -26,6 +29,7 @@
     },
     {
         "name": "Banana",
+        "sprite": "/foods/banana.png",
         "time": "2",
         "monsters": [
             "Orc Worker"
@@ -33,6 +37,7 @@
     },
     {
         "name": "Cherries",
+        "sprite": "/foods/cherries.png",
         "time": "2",
         "monsters": [
             "Defiler",
@@ -41,6 +46,7 @@
     },
     {
         "name": "Egg",
+        "sprite": "/foods/egg.png",
         "time": "2",
         "monsters": [
             "Sorcerer"
@@ -48,6 +54,7 @@
     },
     {
         "name": "Grapes",
+        "sprite": "/foods/grapes.png",
         "time": "2",
         "monsters": [
             "Orc",
@@ -56,6 +63,7 @@
     },
     {
         "name": "Tomato",
+        "sprite": "/foods/tomato.png",
         "time": "2",
         "monsters": [
             "Giant Slug",
@@ -64,6 +72,7 @@
     },
     {
         "name": "Mushroom",
+        "sprite": "/foods/mushroom.png",
         "time": "2",
         "monsters": [
             "Imp",
@@ -78,6 +87,7 @@
     },
     {
         "name": "Candy Cane",
+        "sprite": "/foods/candy-cane.png",
         "time": "3",
         "monsters": [
             "Unobtainable - Only two of them on the game (Lakipaska and Freedomplz) liam sell it to them for 1g"
@@ -85,6 +95,7 @@
     },
     {
         "name": "Meat",
+        "sprite": "/foods/meat.png",
         "time": "5",
         "monsters": [
             "Troll",
@@ -95,6 +106,7 @@
     },
     {
         "name": "Turnip",
+        "sprite": "/foods/turnip.png",
         "time": "7",
         "monsters": [
             "Imp",
@@ -103,6 +115,7 @@
     },
     {
         "name": "Biscot",
+        "sprite": "/foods/biscot.png",
         "time": "7",
         "monsters": [
             "Angry Biscottsman"
@@ -110,6 +123,7 @@
     },
     {
         "name": "Tough Meat",
+        "sprite": "/foods/tough-meat.png",
         "time": "8",
         "monsters": [
             "Cyclops",
@@ -121,6 +135,7 @@
     },
     {
         "name": "Pie",
+        "sprite": "/foods/pie.png",
         "time": "30",
         "monsters": [
             "Harbinger",
@@ -132,6 +147,7 @@
     },
     {
         "name": "Magic Candy",
+        "sprite": "/foods/magic-candy.png",
         "time": "100",
         "monsters": [
             "?"

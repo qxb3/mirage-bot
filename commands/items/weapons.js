@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js')
+const { MessageEmbed, MessageAttachment } = require('discord.js')
 const Utils = require('../../utils/utils')
 
 const ignoreCase = require('ignore-case')
@@ -27,6 +27,7 @@ module.exports = {
     description: 'A command that will help you for weapons in the game',
 
     slash: 'both',
+    testOnly: true,
 
     maxArgs: 1,
     expectedArgs: '<weapon>',
@@ -89,6 +90,8 @@ module.exports = {
                 if (ignoreCase.equals(args.join(' '), weapon.name)) {
                     code = 0
 
+                    const sprite = process.env.PWD + '/assets/items/sprites/weapons/' + weapon.sprite
+                    
                     let stats = ''
                     weapon.stats.forEach(stat => {
                         stats += `• ${stat}\n`
@@ -101,6 +104,7 @@ module.exports = {
 
                     const embed = new MessageEmbed()
                         .setAuthor(messageDetails.author, messageDetails.avatar)
+                        .setThumbnail('attachment://skeletal-bow.png')
                         .addFields([
                             { name: '❯ Name', value: weapon.name },
                             { name: '❯ Requirements', value: weapon.requirements },
@@ -112,6 +116,9 @@ module.exports = {
                     utils.sendMessage(message, interaction, {
                         embeds: [
                             embed
+                        ],
+                        files: [
+                            sprite
                         ]
                     })
                 }
