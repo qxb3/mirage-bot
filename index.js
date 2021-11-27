@@ -12,7 +12,16 @@ const client = new Client({
     ]
 })
 
+const setBotActivity = (client) => {
+    client.user.setActivity({
+        type: 'WATCHING',
+        name: `On ${client.guilds.cache.size} Servers!!`
+    })
+}
+
 client.on('ready', () => {
+    setBotActivity(client)
+
     new WokCommands(client, {
         commandDir: path.join(__dirname, './commands'), 
         featuresDir: path.join(__dirname, './features'),
@@ -20,6 +29,18 @@ client.on('ready', () => {
     })
     .setDefaultPrefix('?')
     .setBotOwner('591150858830479381')
+})
+
+client.on('guildCreate', (guild) => {
+    setBotActivity(client)
+
+    console.log('Added: ' + guild.name)
+})
+
+client.on('guildDelete', (guild) => {
+    setBotActivity(client)
+
+    console.log('Removed: ' + guild.name)
 })
 
 client.login(process.env.BOT_TOKEN)
