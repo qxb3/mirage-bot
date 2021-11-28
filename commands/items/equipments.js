@@ -29,7 +29,6 @@ module.exports = {
 
     slash: 'both',
 
-    maxArgs: 1,
     expectedArgs: '<equipment>',
     options: [
         {

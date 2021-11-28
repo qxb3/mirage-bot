@@ -20,7 +20,6 @@ module.exports = {
 
     slash: 'both',
 
-    maxArgs: 1,
     expectedArg: '<scroll>',
     options: [
         {

@@ -20,7 +20,6 @@ module.exports = {
 
     slash: 'both',
 
-    maxArgs: 1,
     expectedArgs: '<food>',
     options: [
         {
