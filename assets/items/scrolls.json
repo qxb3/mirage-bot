@@ -1,63 +1,54 @@
 [
     {
         "name": "Experience Scroll",
-        "sprite": "/scrolls/experience-scroll.png",
         "effects": [
             "125% Experience"
         ]
     },
     {
         "name": "Currency Scroll",
-        "sprite": "/scrolls/currency-scroll.png",
         "effects": [
             "125% Drops"
         ]
     },
     {
         "name": "Skill Scroll",
-        "sprite": "/scrolls/skill-scroll.png",
         "effects": [
             "125% Training"
         ]
     },
     {
         "name": "Drop Rate Scroll",
-        "sprite": "/scrolls/drop-rate-scroll.png",
         "effects": [
             "125% Drop Rate"
         ]
     },
     {
         "name": "Potion Scroll",
-        "sprite": "/scrolls/potion-scroll.png",
         "effects": [
             "150% Potions"
         ]
     },
     {
         "name": "Rename Scroll",
-        "sprite": "/scrolls/rename-scroll.png",
         "effects": [
             "Name Change"
         ]
     },
     {
         "name": "Gender Scroll",
-        "sprite": "/scrolls/gender-scroll.png",
         "effects": [
             "Gender Change"
         ]
     },
     {
         "name": "Hero Slot Scroll",
-        "sprite": "/scrolls/hero-slot-scroll.png",
         "effects": [
             "Add additional hero slot"
         ]
     },
     {
         "name": "Supporter Scroll",
-        "sprite": "/scrolls/supporter-scroll.png",
         "effects": [
             "+100 Extra bank slots",
             "+50 More friend slots",

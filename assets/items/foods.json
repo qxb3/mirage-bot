@@ -1,16 +1,14 @@
 [
     {
         "name": "Cheese",
-        "sprite": "/foods/cheese.png",
-        "time": "2",
+        "time": "2 Minutes",
         "monsters": [
             "Rat"
         ]
     },
     {
         "name": "Apple",
-        "sprite": "/foods/apple.png",
-        "time": "2",
+        "time": "2 Minutes",
         "monsters": [
             "Thief",
             "Hunter",
@@ -19,8 +17,7 @@
     },
     {
         "name": "Carrot",
-        "sprite": "/foods/carrot.png",
-        "time": "2",
+        "time": "2 Minutes",
         "monsters": [
             "Giant Slug",
             "Bandit",
@@ -29,16 +26,14 @@
     },
     {
         "name": "Banana",
-        "sprite": "/foods/banana.png",
-        "time": "2",
+        "time": "2 Minutes",
         "monsters": [
             "Orc Worker"
         ]
     },
     {
         "name": "Cherries",
-        "sprite": "/foods/cherries.png",
-        "time": "2",
+        "time": "2 Minutes",
         "monsters": [
             "Defiler",
             "Minotaur"
@@ -46,16 +41,14 @@
     },
     {
         "name": "Egg",
-        "sprite": "/foods/egg.png",
-        "time": "2",
+        "time": "2 Minutes",
         "monsters": [
             "Sorcerer"
         ]
     },
     {
         "name": "Grapes",
-        "sprite": "/foods/grapes.png",
-        "time": "2",
+        "time": "2 Minutes",
         "monsters": [
             "Orc",
             "Orc Warrior"
@@ -63,8 +56,7 @@
     },
     {
         "name": "Tomato",
-        "sprite": "/foods/tomato.png",
-        "time": "2",
+        "time": "2 Minutes",
         "monsters": [
             "Giant Slug",
             "Orc Mage"
@@ -72,8 +64,7 @@
     },
     {
         "name": "Mushroom",
-        "sprite": "/foods/mushroom.png",
-        "time": "2",
+        "time": "2 Minutes",
         "monsters": [
             "Imp",
             "Imp Ranger",
@@ -87,16 +78,14 @@
     },
     {
         "name": "Candy Cane",
-        "sprite": "/foods/candy-cane.png",
-        "time": "3",
+        "time": "3 Minutes",
         "monsters": [
             "Unobtainable - Only two of them on the game (Lakipaska and Freedomplz) liam sell it to them for 1g"
         ]
     },
     {
         "name": "Meat",
-        "sprite": "/foods/meat.png",
-        "time": "5",
+        "time": "5 Minutes",
         "monsters": [
             "Troll",
             "Troll Mage",
@@ -106,8 +95,7 @@
     },
     {
         "name": "Turnip",
-        "sprite": "/foods/turnip.png",
-        "time": "7",
+        "time": "7 Minutes",
         "monsters": [
             "Imp",
             "Fire Slime"
@@ -115,16 +103,14 @@
     },
     {
         "name": "Biscot",
-        "sprite": "/foods/biscot.png",
-        "time": "7",
+        "time": "7 Minutes",
         "monsters": [
             "Angry Biscottsman"
         ]
     },
     {
         "name": "Tough Meat",
-        "sprite": "/foods/tough-meat.png",
-        "time": "8",
+        "time": "8 Minutes",
         "monsters": [
             "Cyclops",
             "Deerstalker",
@@ -135,8 +121,7 @@
     },
     {
         "name": "Pie",
-        "sprite": "/foods/pie.png",
-        "time": "30",
+        "time": "30 Minutes",
         "monsters": [
             "Harbinger",
             "Minotaur",
@@ -147,8 +132,7 @@
     },
     {
         "name": "Magic Candy",
-        "sprite": "/foods/magic-candy.png",
-        "time": "100",
+        "time": "100 Minutes",
         "monsters": [
             "?"
         ]

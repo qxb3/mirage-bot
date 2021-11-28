@@ -66,7 +66,7 @@ module.exports = {
                 code = 0
 
                 const name = scroll.name.replaceAll(' ', '-').toLowerCase()
-                const sprite = process.env.PWD + '/assets/items/sprites/' + scroll.sprite
+                const sprite = process.env.PWD + '/assets/items/sprites/scrolls/' + name + '.png'
 
                 let effects = ''
                 scroll.effects.forEach(effect => {

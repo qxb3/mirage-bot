@@ -66,7 +66,7 @@ module.exports = {
                 code = 0
 
                 const name = potion.name.replaceAll(' ', '-').toLowerCase()
-                const sprite =  process.env.PWD + '/assets/items/sprites' + potion.sprite
+                const sprite =  process.env.PWD + '/assets/items/sprites/potions/' + name + '.png'
 
                 let effects = ''
                 potion.effects.forEach(effect => {

@@ -33,17 +33,18 @@ module.exports = {
     callback: async ({ message, interaction, args, prefix }) => {
         const messageDetails = utils.getMessageDetails(message, interaction, prefix)
 
-        const vocationJson = JSON.parse(Buffer.from(fs.readFileSync(process.env.PWD + '/assets/wiki/vocations_info.json').toString()))
+        const vocationJson = JSON.parse(Buffer.from(fs.readFileSync(process.env.PWD + '/assets/wiki/vocations.json').toString()))
         const categories = []
         vocationJson.forEach(vocation => {
             categories.push(vocation.name)
         })
 
-        //List the enchantments
+        //List the vocations
         if (!args[0]) {
             const list = getCategories(categories)
             const embed = new MessageEmbed() 
                 .setAuthor(messageDetails.author, messageDetails.avatar)
+                .setThumbnail('attachment://knight.png')
                 .addField('❯ Vocations', list)
                 .addField('❯ Usage', `${messageDetails.prefix}vocations <vocation>`)
                 .setColor('BLUE')
@@ -51,6 +52,9 @@ module.exports = {
             return utils.sendMessage(message, interaction, {
                 embeds: [
                     embed
+                ],
+                files: [
+                    process.env.PWD + '/assets/wiki/sprites/vocations/knight.png'
                 ]
             })
         }
@@ -60,6 +64,9 @@ module.exports = {
         vocationJson.forEach(vocation => {
             if (ignoreCase.equals(args.join(' '), vocation.name)) {
                 code = 0
+
+                const name = vocation.name.replaceAll(' ', '-').toLowerCase()
+                const sprite = process.env.PWD + '/assets/wiki/sprites/vocations/' + name + '.png'
 
                 let weapons = ''
                 vocation.weapons.forEach(weapon => {
@@ -73,6 +80,7 @@ module.exports = {
 
                 const embed = new MessageEmbed()
                     .setAuthor(messageDetails.author, messageDetails.avatar)
+                    .setThumbnail(`attachment://${name}.png`)
                     .addFields([
                         { name: '❯ Name', value: vocation.name },
                         { name: '❯ Weapons', value: weapons },
@@ -84,6 +92,9 @@ module.exports = {
                 utils.sendMessage(message, interaction, {
                     embeds: [
                         embed
+                    ],
+                    files: [
+                        sprite
                     ]
                 })
             }
@@ -100,7 +111,11 @@ module.exports = {
             utils.sendMessage(message, interaction, {
                 embeds: [
                     embed
+                ],
+                files: [
+                    process.env.PWD + '/assets/wiki/sprites/vocations/knight.png'
                 ]
+
             })
         }
     }

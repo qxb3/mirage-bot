@@ -66,8 +66,8 @@ module.exports = {
                 code = 0
 
                 const name = food.name.replaceAll(' ', '-').toLowerCase()
-                const sprite = process.env.PWD + '/assets/items/sprites' + food.sprite
-
+                const sprite = process.env.PWD + '/assets/items/sprites/foods/' + name + '.png'
+                
                 let monsters = ''
                 food.monsters.forEach(monster => {
                     monsters += `• ${monster}\n`
