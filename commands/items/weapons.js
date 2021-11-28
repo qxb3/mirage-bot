@@ -30,7 +30,6 @@ module.exports = {
     slash: 'both',
     testOnly: true,
 
-    maxArgs: 1,
     expectedArgs: '<weapon>',
     options: [
         {
@@ -51,6 +50,7 @@ module.exports = {
             const list = getCategories(categories)
             const embed = new MessageEmbed()
                 .setAuthor(messageDetails.author, messageDetails.avatar)
+                .setThumbnail('attachment://sword.png')
                 .addField('❯ Categories', list)
                 .addField('❯ Usage', `${messageDetails.prefix}weapons - To list all weapon categories in the game\n${messageDetails.prefix}weapons <category> - To list all the weapons in that category`)
                 .setColor('BLUE')
@@ -58,6 +58,9 @@ module.exports = {
             return utils.sendMessage(message, interaction, {
                 embeds: [
                     embed
+                ],
+                files: [
+                    process.env.PWD + '/assets/items/sprites/weapons/category-thumbnails/sword.png'
                 ]
             })
         }
@@ -71,8 +74,9 @@ module.exports = {
                 const weapons = getWeapons(weaponJson, args.join(' '))
                 const embed = new MessageEmbed()
                     .setAuthor(messageDetails.author, messageDetails.avatar)
+                    .setThumbnail(`attachment://${category.toLowerCase()}.png`)
                     .addFields([
-                        { name: `❯ ${category} - List`, value: weapons },
+                        { name: `❯ ${category}s`, value: weapons },
                         { name: '❯ Usage', value: `${messageDetails.prefix}weapons <weapon>` }
                     ])
                     .setColor('BLUE')
@@ -80,6 +84,9 @@ module.exports = {
                 utils.sendMessage(message, interaction, {
                     embeds: [
                         embed
+                    ],
+                    files: [
+                        process.env.PWD + `/assets/items/sprites/weapons/category-thumbnails/${category.toLowerCase()}.png`
                     ]
                 })
             }
@@ -91,7 +98,8 @@ module.exports = {
                 if (ignoreCase.equals(args.join(' '), weapon.name)) {
                     code = 0
 
-                    const sprite = process.env.PWD + '/assets/items/sprites/weapons/' + weapon.sprite
+                    const name = weapon.name.replace("'", '').replaceAll(' ', '-').toLowerCase()
+                    const sprite = process.env.PWD + '/assets/items/sprites/weapons/' + weapon.type.toLowerCase() + '/' + weapon.name.replace("'", '').replaceAll(' ', '-').toLowerCase() + '.png'
                     
                     let stats = ''
                     weapon.stats.forEach(stat => {
@@ -105,7 +113,7 @@ module.exports = {
 
                     const embed = new MessageEmbed()
                         .setAuthor(messageDetails.author, messageDetails.avatar)
-                        .setThumbnail('attachment://skeletal-bow.png')
+                        .setThumbnail(`attachment://${name}.png`)
                         .addFields([
                             { name: '❯ Name', value: weapon.name },
                             { name: '❯ Requirements', value: weapon.requirements },
@@ -130,6 +138,7 @@ module.exports = {
         if (code == 1) {
             const embed = new MessageEmbed()
                 .setAuthor(messageDetails.author, messageDetails.avatar)
+                .setThumbnail('attachment://sword.png')
                 .setDescription('Make sure the weapon or the category you typed is valid')
                 .addField('❯ Usage', `${messageDetails.prefix}weapons - To list all weapon categories in the game\n${messageDetails.prefix}weapons <category> - To list all the weapons in that category`)
                 .setColor('RED')
@@ -137,6 +146,9 @@ module.exports = {
             utils.sendMessage(message, interaction, {
                 embeds: [
                     embed
+                ],
+                files: [
+                    process.env.PWD + '/assets/items/sprites/weapons/category-thumbnails/sword.png'
                 ]
             })
         }

@@ -875,7 +875,6 @@
     },
     {
         "name": "Skeletal Bow",
-        "sprite": "skeletal-bow.png",
         "requirements": "40 Distance",
         "stats": [
             "Attack: 7",
