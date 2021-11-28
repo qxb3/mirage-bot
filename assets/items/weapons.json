@@ -1160,7 +1160,7 @@
         "type": "Ammunition"
     },
     {
-        "name": "Chaos Arrow",
+        "name": "Chaos Arrows",
         "requirements": "Level 75",
         "stats": [
             "Attack: 0",
