@@ -28,7 +28,6 @@ module.exports = {
     aliases: ['weapon', 'weaps', 'weap'],
 
     slash: 'both',
-    testOnly: true,
 
     expectedArgs: '<weapon>',
     options: [
