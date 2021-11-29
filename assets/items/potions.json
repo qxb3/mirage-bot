@@ -75,7 +75,7 @@
         "name": "Mana Vial",
         "effects": [
             "Health: +0",
-            "Mana: +100"
+            "Mana: +125"
         ],
         "monsters": [
             "Widow",
@@ -87,7 +87,7 @@
         "name": "Mana Flask",
         "effects": [
             "Health: +0",
-            "Mana: +200"
+            "Mana: +250"
         ],
         "monsters": [
             "Potions store"
@@ -97,7 +97,7 @@
         "name": "Mana Bottle",
         "effects": [
             "Health: +0",
-            "Mana: +300"
+            "Mana: +375"
         ],
         "monsters": [
             "Potions store"
@@ -107,7 +107,7 @@
         "name": "Mana Flagon",
         "effects": [
             "Health: +0",
-            "Mana: +400"
+            "Mana: +500"
         ],
         "monsters": [
             "Potions store"
@@ -117,7 +117,7 @@
         "name": "Mana Ewer",
         "effects": [
             "Health: +0",
-            "Mana: +500"
+            "Mana: +625"
         ],
         "monsters": [
             "Potions store"
