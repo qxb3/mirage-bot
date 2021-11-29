@@ -10,7 +10,6 @@ module.exports = {
     description: 'A help command that will help you get started with the bot.',
 
     slash: 'both',
-    testOnly: true,
 
     expectedArgs: '<command>',
     options: [
