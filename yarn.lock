@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@babel/runtime@^7.10.2":
+  version "7.16.3"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.16.3.tgz#b86f0db02a04187a3c17caa77de69840165d42d5"
+  integrity sha512-WBwekcqacdY2e9AF/Q7WLFUWmdJGJTkbjqTjoMDgXkVZ3ZRUvOPsLb5KdwISoQVsbP+DQzVZW4Zhci0DvpbNTQ==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@discordjs/builders@^0.8.1":
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/@discordjs/builders/-/builders-0.8.2.tgz#c3ef99caa9ebe70a4196b987011d90136c71054a"
@@ -323,6 +330,15 @@ denque@^2.0.1:
   resolved "https://registry.yarnpkg.com/denque/-/denque-2.0.1.tgz#bcef4c1b80dc32efe97515744f21a4229ab8934a"
   integrity sha512-tfiWc6BQLXNLpNiR5iGd0Ocu3P3VpxfzFiqubLgMfhfOw9WyvgJBd46CClNn9k3qfbjvT//0cf7AlYRX/OslMQ==
 
+didyoumean2@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/didyoumean2/-/didyoumean2-5.0.0.tgz#84cc03b42f1b04beff13f3f69edca2a0daf3e998"
+  integrity sha512-Plha9WCF08aSGB39IsOhlk0AHecwcXtq/gMbHgylRNEv7JV3lnlt7akfdax7mnUHndEuuh57CmBaKSSXns7+YA==
+  dependencies:
+    "@babel/runtime" "^7.10.2"
+    fastest-levenshtein "^1.0.12"
+    lodash.deburr "^4.1.0"
+
 discord-api-types@^0.24.0:
   version "0.24.0"
   resolved "https://registry.yarnpkg.com/discord-api-types/-/discord-api-types-0.24.0.tgz#9e429b8a1ddb4147134dfb3109093422de7ec549"
@@ -388,6 +404,11 @@ escape-goat@^2.0.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/escape-goat/-/escape-goat-2.1.1.tgz#1b2dc77003676c457ec760b2dc68edb648188675"
   integrity sha512-8/uIhbG12Csjy2JEW7D9pHbreaVaS/OpN3ycnyvElTdwM5n6GY6W6e2IPemfvGZeUMqZ9A/3GqIZMgKnBhAw/Q==
+
+fastest-levenshtein@^1.0.12:
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/fastest-levenshtein/-/fastest-levenshtein-1.0.12.tgz#9990f7d3a88cc5a9ffd1f1745745251700d497e2"
+  integrity sha512-On2N+BpYJ15xIC974QNVuYGMOlEVt4s0EOI3wwMqOmK1fdDY+FN/zltPV8vosq4ad4c/gJ1KHScUn/6AWIgiow==
 
 fill-range@^7.0.1:
   version "7.0.1"
@@ -607,6 +628,11 @@ latest-version@^5.1.0:
   integrity sha512-weT+r0kTkRQdCdYCNtkMwWXQTMEswKrFBkm4ckQOMVhhqhIMI1UT2hMj+1iigIhgSZm5gTmrRXBNoGUgaTY1xA==
   dependencies:
     package-json "^6.3.0"
+
+lodash.deburr@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/lodash.deburr/-/lodash.deburr-4.1.0.tgz#ddb1bbb3ef07458c0177ba07de14422cb033ff9b"
+  integrity sha1-3bG7s+8HRYwBd7oH3hRCLLAz/5s=
 
 lodash.isequal@^4.5.0:
   version "4.5.0"
@@ -854,6 +880,11 @@ readdirp@~3.6.0:
   integrity sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==
   dependencies:
     picomatch "^2.2.1"
+
+regenerator-runtime@^0.13.4:
+  version "0.13.9"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz#8925742a98ffd90814988d7566ad30ca3b263b52"
+  integrity sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==
 
 regexp-clone@1.0.0, regexp-clone@^1.0.0:
   version "1.0.0"
