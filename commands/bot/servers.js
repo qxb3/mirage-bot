@@ -5,7 +5,7 @@ const utils = new Utils()
 module.exports = {
     category: 'Utils',
     description: 'Get servers bot joined to.',
-    Permissions: ['ADMINISTRATOR', 'MODERATOR'],
+    ownerOnly: true,
 
     slash: 'both',
     testOnly: true,
