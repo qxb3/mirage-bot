@@ -5,7 +5,7 @@ const utils = new Utils()
 const fs = require('fs')
 
 module.exports = {
-    category: 'Help',
+    category: 'Bot',
     description: 'About command for information about the bot',
 
     slash: 'both',

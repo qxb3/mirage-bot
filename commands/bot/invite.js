@@ -2,7 +2,7 @@ const Utils = require('../../utils/utils')
 const utils = new Utils()
 
 module.exports = {
-    category: 'Utils',
+    category: 'Bot',
     description: 'Get the bot invite link.',
 
     slash: 'both',

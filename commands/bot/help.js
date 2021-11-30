@@ -23,40 +23,29 @@ module.exports = {
 
     callback: ({ message, interaction, instance, args, prefix }) => {
         const messageDetails = utils.getMessageDetails(message, interaction, prefix)
-        const help = JSON.parse(Buffer.from(fs.readFileSync(process.env.PWD + '/assets/help.json').toString()))
 
         //List the commands
         if (!args[0]) {
-            let wiki = ''
-            help.wiki.commands.forEach((data, i) => {
-                wiki += data
-                if (i != help.wiki.commands.length-1)
-                    wiki += ', '
-            })
-
-            let items = ''
-            help.items.commands.forEach((data, i) => {
-                items += data
-                if (i != help.items.commands.length-1)
-                    items += ', '
-            })
-
-            let h = ''
-            help.help.commands.forEach((data, i) => {
-                h += data
-                if (i != help.help.commands.length-1)
-                    h += ', '
-            })
+            const commands = []
+            const categories = fs.readdirSync('./commands')
+            for (let i = categories.length - 1; i >= 0; i--) {
+                if (categories[i] != 'bot-owner') {
+                    const categoryCommands = fs.readdirSync(`./commands/${categories[i]}`)
+                    
+                    const name = categories[i].charAt(0).toUpperCase() + categories[i].slice(1)
+                    const command = categoryCommands.join(', ').replaceAll('.js', '')
+                    commands.push({
+                        name: `❯ ${name}`,
+                        value: command
+                    })
+                }
+            }
 
             const embed = new MessageEmbed()
-                .setTitle('Help - Commands')
+                .setTitle('Help Commands')
                 .setThumbnail('attachment://help.png')
-                .addFields([
-                    { name: '❯ Wiki', value: wiki },
-                    { name: '❯ Items', value: items },
-                    { name: '❯ Help', value: h },
-                    { name: '❯ Usage', value: `${messageDetails.prefix}<command>` }
-                ])
+                .addFields(commands)
+                .addField('❯ Usage', `${messageDetails.prefix}help <command>`)
                 .setColor('BLUE')
 
             return utils.sendMessage(message, interaction, {
@@ -76,13 +65,15 @@ module.exports = {
                     code = 0
 
                     const aliases = command.names.join(', ')
+                    const syntax = command.syntax ? command.syntax : ''
                     const embed = new MessageEmbed()
                         .setThumbnail('attachment://info_blue.png')
                         .addFields(
-                            { name: '❯ Name', value: name },
+                            { name: '❯ Command Name', value: name.charAt(0).toUpperCase() + name.slice(1) },
+                            { name: '❯ Category', value: command.category },
                             { name: '❯ Description', value: command.description },
                             { name: '❯ Aliases', value: aliases },
-                            { name: '❯ Usage', value: `${messageDetails.prefix + name} ${command.syntax}` }
+                            { name: '❯ Usage', value: `${messageDetails.prefix + name} ${syntax}` }
                         )
                         .setColor('BLUE')
 

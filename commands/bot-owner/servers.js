@@ -3,7 +3,7 @@ const Utils = require('../../utils/utils')
 const utils = new Utils()
 
 module.exports = {
-    category: 'Utils',
+    category: 'BotOwner',
     description: 'Get servers bot joined to.',
     ownerOnly: true,
 
