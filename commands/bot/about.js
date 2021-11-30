@@ -19,7 +19,7 @@ module.exports = {
                 { name: '❯ Support me', value: '• Paypal: https://www.paypal.me/qxb3' },
                 { name: '❯ Special thanks', value: '• Anonym - I used his wiki for the items, weapons and other stuff!\nHis wiki: http://mr.golitsyn.com/' }
             ])
-            .setColor('BLUE')
+            .setColor('YELLOW')
 
         utils.sendMessage(message, interaction, {
             embeds: [
