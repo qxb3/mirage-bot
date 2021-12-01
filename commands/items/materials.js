@@ -44,6 +44,7 @@ module.exports = {
             const list = getCategories(categories)
             const embed = new MessageEmbed() 
                 .setAuthor(messageDetails.author, messageDetails.avatar)
+                .setThumbnail('attachment://troll-fur.png')
                 .addField('❯ Materials', list)
                 .addField('❯ Usage', `${messageDetails.prefix}materials <material>`)
                 .setColor('BLUE')
@@ -51,6 +52,9 @@ module.exports = {
             return utils.sendMessage(message, interaction, {
                 embeds: [
                     embed
+                ],
+                files: [
+                    process.env.PWD + '/assets/items/sprites/materials/troll-fur.png'
                 ]
             })
         }
@@ -61,6 +65,9 @@ module.exports = {
             if (ignoreCase.equals(args.join(' '), material.name)) {
                 code = 0
 
+                const name = material.name.replaceAll(' ', '-').toLowerCase()
+                const sprite = process.env.PWD + '/assets/items/sprites/materials/' + name + '.png'
+
                 let monsters = ''
                 material.monsters.forEach(monster => {
                     monsters += `• ${monster}\n`
@@ -68,6 +75,7 @@ module.exports = {
 
                 const embed = new MessageEmbed()
                     .setAuthor(messageDetails.author, messageDetails.avatar)
+                    .setThumbnail(`attachment://${name}.png`)
                     .addFields([
                         { name: '❯ Name', value: material.name },
                         { name: '❯ Price', value: material.price },
@@ -76,7 +84,12 @@ module.exports = {
                     .setColor('BLUE')
 
                 utils.sendMessage(message, interaction, {
-                    embeds: [embed]
+                    embeds: [
+                        embed
+                    ],
+                    files: [
+                        sprite
+                    ]
                 })
             }
         })
@@ -85,6 +98,7 @@ module.exports = {
         if (code == 1) {
             const embed = new MessageEmbed()
                 .setAuthor(messageDetails.author, messageDetails.avatar)
+                .setThumbnail('attachment://troll-fur.png')
                 .setDescription('Make sure the material you type is valid')
                 .addField('❯ Usage', `${messageDetails.prefix}materials - To list all materials in the game` )
                 .setColor('RED')
@@ -92,6 +106,9 @@ module.exports = {
             utils.sendMessage(message, interaction, {
                 embeds: [
                     embed
+                ],
+                files: [
+                    process.env.PWD + '/assets/items/sprites/materials/troll-fur.png'
                 ]
             })
         }
