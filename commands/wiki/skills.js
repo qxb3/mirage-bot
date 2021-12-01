@@ -104,10 +104,10 @@ module.exports = {
                         .setAuthor(messageDetails.author, messageDetails.avatar)
                         .setThumbnail(`attachment://${name}.png`)
                         .addFields([
-                            { name: '❯ Name', value: `• ${skill.name}` },
-                            { name: '❯ Description', value: `• ${skill.description}` },
-                            { name: '❯ Level requirement', value: `• ${skill.requirement}` },
-                            { name: '❯ Cooldown', value: `• ${skill.cooldown}` },
+                            { name: '❯ Name', value: `${skill.name}` },
+                            { name: '❯ Description', value: `${skill.description}` },
+                            { name: '❯ Level requirement', value: `${skill.requirement}` },
+                            { name: '❯ Cooldown', value: `${skill.cooldown}` },
                             { name: '❯ Effects', value: effects }
                         ])
                         .setColor('BLUE')
