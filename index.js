@@ -25,7 +25,7 @@ client.on('ready', () => {
     new WokCommands(client, {
         commandDir: path.join(__dirname, './commands'), 
         featuresDir: path.join(__dirname, './features'),
-        testServers: ['811195710065082378']
+        testServers: ['811195710065082378'],
     })
     .setDefaultPrefix('?')
     .setBotOwner('591150858830479381')

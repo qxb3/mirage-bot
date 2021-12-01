@@ -33,7 +33,7 @@ module.exports = {
     callback: async ({ message, interaction, args, prefix }) => {
         const messageDetails = utils.getMessageDetails(message, interaction, prefix)
 
-        const mobsJson = JSON.parse(Buffer.from(fs.readFileSync(process.env.PWD + '/assets/mobs/mobs.json').toString()))
+        const mobsJson = JSON.parse(Buffer.from(fs.readFileSync(process.env.PWD + '/assets/wiki/mobs.json').toString()))
         const categories = []
         mobsJson.forEach(mob => {
             categories.push(mob.name)

@@ -1,0 +1,231 @@
+[
+    {
+        "name": "Conjure Wooden Arrows",
+        "description": "Conjure 35 wooden arrows.",
+        "requirement": "Level 5",
+        "cooldown": "60.0 Seconds",
+        "effects": [
+            "-15 Mana"
+        ],
+        "vocation": "Ranger"
+    },
+    {
+        "name": "Volley",
+        "description":  "Fire 3 arrows in rapid succession, each arrow deals 206 attack power and can crit.",
+        "requirement": "Level 10",
+        "cooldown": "6.0 Seconds",
+        "effects": [
+            "-20 Mana",
+            "+1 Distance exp"
+        ],
+        "vocation": "Ranger"
+    },
+    {
+        "name": "Conjure Stone Arrows",
+        "description": "Conjure 35 stone arrows.",
+        "requirement": "Level 10",
+        "cooldown": "60.0 Seconds",
+        "effects": [
+            "-20 Mana",
+            "+1 Magic exp"
+        ],
+        "vocation": "Ranger"
+    },
+    {
+        "name": "Conjure Flint Arrows",
+        "description": "Conjure 35 flint arrows.",
+        "requirement": "Level 15",
+        "cooldown": "60.0 Seconds",
+        "effects": [
+            "-25 Mana",
+            "+1 Magic exp"
+        ],
+        "vocation": "Ranger"
+    },
+    {
+        "name": "Concussive Shot",
+        "description": "Concuss the target, disengaging and causing them to strike out wildly at another attacker or retreat. Only works on targets attacking you or a party member. Does not affect players.",
+        "requirement": "Level 15",
+        "cooldown": "15.0 Seconds",
+        "effects": [
+            "-50 Mana"
+        ],
+        "vocation": "Ranger"
+    },
+    {
+        "name": "Conjure Tin Arrows",
+        "description": "Conjure 35 tin arrows.",
+        "requirement": "Level 20",
+        "cooldown": "60.0 Seconds",
+        "effects": [
+            "-30 Mana",
+            "+1 Magic exp"
+        ],
+        "vocation": "Ranger"
+    },
+    {
+        "name": "Headshot",
+        "description": "Headshot the target with an arrow for 300% damage. Only usable on targets with less than 15% health.",
+        "requirement": "Level 20",
+        "cooldown": "15.0 Seconds",
+        "effects": [
+            "-50 Mana",
+            "+1 Distance exp"
+        ],
+        "vocation": "Ranger"
+    },
+    {
+        "name": "Volley Rank1",
+        "description": "Fire 3 arroWs in rapid succession, each arrow deals 40% attack power and can crit.",
+        "requirement": "Level 25",
+        "cooldown": "6.0 Seconds",
+        "effects": [
+            "-30 Mana",
+            "+1 Distance exp"
+        ],
+        "vocation": "Ranger"
+    },
+    {
+        "name": "Conjure Iron Arrows",
+        "description": "Conjure 35 iron arrows.",
+        "requirement": "Level 30",
+        "cooldown": "60.0 Seconds",
+        "effects": [
+            "-35 Mana",
+            "+1 Magic exp"
+        ],
+        "vocation": "Ranger"
+    },
+    {
+        "name": "Scatter Shot",
+        "description": "Fire an arrow at all enemies clase to your target, each arrow deals 100% weapon damage.",
+        "requirement": "Level 30",
+        "cooldown": "30.0 Seconds",
+        "effects": [
+            "-75 Mana",
+            "+1 Distance exp"
+        ],
+        "vocation": "Ranger"
+    },
+    {
+        "name": "Headshot Rank1",
+        "description": "Headshot the target with an arrow for 400% damage. Only usable on targets with less than 15% health.",
+        "requirement": "Level 35",
+        "cooldown": "15.0 Seconds",
+        "effects": [
+            "-75 Mana",
+            "+1 Distance exp"
+        ],
+        "vocation": "Ranger"
+    },
+    {
+        "name": "Conjure Elven Arrows",
+        "description": "Conjure 35 elven arrows.",
+        "requirement": "Level 40",
+        "cooldown": "60.0 Seconds",
+        "effects": [
+            "-40 Mana",
+            "+2 Magic exp"
+        ],
+        "vocation": "Ranger"
+    },
+    {
+        "name": "Scatter Shot Rank1",
+        "description": "Fire an arrow at all enemies close to your target, each arrow deals 175% weapon damage.",
+        "requirement": "Level 40",
+        "cooldown": "30.0 Seconds",
+        "effects": [
+            "-90 Mana",
+            "+1 Distance exp"
+        ],
+        "vocation": "Ranger"
+    },
+    {
+        "name": "Volley Rank2",
+        "description": "Fire 3 arrows in rapid succession, each arrow deals 60% attack power and can crit.",
+        "requirement": "Level 45",
+        "cooldown": "6.0 Seconds",
+        "effects": [
+            "-40 Mana",
+            "+1 Distance exp"
+        ],
+        "vocation": "Ranger"
+    },
+    {
+        "name": "Conjure Pearl Arrows",
+        "description": "Conjure 35 pearl arrows.",
+        "requirement": "Level 50",
+        "cooldown": "60.0 Seconds",
+        "effects": [
+            "-45 Mana",
+            "+2 Magic exp"
+        ],
+        "vocation": "Ranger"
+    },
+    {
+        "name": "Scatter Shot Rank2",
+        "description": "Fire an arrow at all enemies clase to your target, each arrow deals 250% weapon damage.",
+        "requirement": "Level 50",
+        "cooldown": "30.0 Seconds",
+        "effects": [
+            "-100 Mana",
+            "+1 Distance exp"
+        ],
+        "vocation": "Ranger"
+    },
+    {
+        "name": "Conjure Spiked Arrows",
+        "description": "Conjure 35 spiked arrows.",
+        "requirement": "Level 60",
+        "cooldown": "60.0 Seconds",
+        "effects": [
+            "-50 Mana",
+            "+2 Magic exp"
+        ],
+        "vocation": "Ranger"
+    },
+    {
+        "name": "Conjure Mythril Arrows",
+        "description": "Conjure 35 mythril arrows.",
+        "requirement": "Level 70",
+        "cooldown": "60.0 Seconds",
+        "effects": [
+            "-55 Mana",
+            "+2 Magic exp"
+        ],
+        "vocation": "Ranger"
+    },
+    {
+        "name": "Conjure Diamond Arrows",
+        "description": "Conjure 35 diamond arrows.",
+        "requirement": "Level 80",
+        "cooldown": "60.0 Seconds",
+        "effects": [
+            "-60 Mana",
+            "+3 Magic exp"
+        ],
+        "vocation": "Ranger"
+    },
+    {
+        "name": "Conjure Royal Arrows",
+        "description": "Conjure 35 royal arrows.",
+        "requirement": "Level 90",
+        "cooldown": "60.0 Seconds",
+        "effects": [
+            "-65 Mana",
+            "+3 Magic exp"
+        ],
+        "vocation": "Ranger"
+    },
+    {
+        "name": "Conjure Chaos Arrows",
+        "description": "Conjure 1 chaos arrow.",
+        "requirement": "Level 100",
+        "cooldown": "600.0 Seconds",
+        "effects": [
+            "-1000 Mana",
+            "+50 Magic exp"
+        ],
+        "vocation": "Ranger"
+    }
+]
