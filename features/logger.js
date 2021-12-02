@@ -50,7 +50,7 @@ module.exports = async (client, instance) => {
         const guildId = interaction.guild.id
         const guildName = interaction.guild.name
         const user = interaction.user.username + '#' + interaction.user.discriminator
-        const commandUsed = interaction.commandName
+        const commandUsed = '/' + interaction.commandName
         const on = date.format(new Date(), 'MMM/DD/YYYY • h:mm A')
 
         sendToDatabase(guildId, guildName, user, commandUsed, on)
