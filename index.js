@@ -26,6 +26,7 @@ client.on('ready', async () => {
         commandDir: path.join(__dirname, './commands'), 
         featuresDir: path.join(__dirname, './features'),
         testServers: ['811195710065082378'],
+        botOwners: ['591150858830479381'],
         mongoUri: process.env.MONGO_URI,
         disabledDefaultCommands: [
             'channelonly', 'command', 'language',
@@ -33,7 +34,6 @@ client.on('ready', async () => {
         ]
     })
     .setDefaultPrefix('?')
-    .setBotOwner('591150858830479381')
 })
 
 client.login(process.env.BOT_TOKEN)
