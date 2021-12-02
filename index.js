@@ -1,5 +1,5 @@
 require('dotenv').config()
-const { Client, Intents, WebhookClient, MessageEmbed } = require('discord.js')
+const { Client, Intents } = require('discord.js')
 
 const path = require('path')
 const WokCommands = require('wokcommands')
@@ -19,13 +19,18 @@ const setBotActivity = (client) => {
     })
 }
 
-client.on('ready', () => {
-    setBotActivity(client)
+client.on('ready', async () => {
+    setBotActivity(client) 
 
     new WokCommands(client, {
         commandDir: path.join(__dirname, './commands'), 
         featuresDir: path.join(__dirname, './features'),
         testServers: ['811195710065082378'],
+        mongoUri: process.env.MONGO_URI,
+        disabledDefaultCommands: [
+            'channelonly', 'command', 'language',
+            'prefix', 'requiredrole', 'slash'
+        ]
     })
     .setDefaultPrefix('?')
     .setBotOwner('591150858830479381')
