@@ -289,6 +289,11 @@ crypto-random-string@^2.0.0:
   resolved "https://registry.yarnpkg.com/crypto-random-string/-/crypto-random-string-2.0.0.tgz#ef2a7a966ec11083388369baa02ebead229b30d5"
   integrity sha512-v1plID3y9r/lPhviJ1wrXpLeyUIGAZ2SHNYTEapm7/8A9nLPoyvVp3RK/EPFqn5kEznyWgYZNsRtYYIWbuG8KA==
 
+date-and-time@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/date-and-time/-/date-and-time-2.0.1.tgz#bc8b72704980e8a0979bb186118d30d02059ef04"
+  integrity sha512-O7Xe5dLaqvY/aF/MFWArsAM1J4j7w1CSZlPCX9uHgmb+6SbkPd8Q4YOvfvH/cZGvFlJFfHOZKxQtmMUOoZhc/w==
+
 debug@4.x:
   version "4.3.3"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.3.tgz#04266e0b70a98d4462e6e288e38259213332b664"
@@ -716,7 +721,7 @@ mongodb@4.1.4:
   optionalDependencies:
     saslprep "^1.0.3"
 
-mongoose@^6.0.10:
+mongoose@^6.0.10, mongoose@^6.0.14:
   version "6.0.14"
   resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-6.0.14.tgz#8f4d45318bb5de08814a8a9b040dd53521246608"
   integrity sha512-SZ0kBlHrz/G70yWdVXLfM/gH4NsY85+as4MZRdtWxBTDEcmoE3rCFAz1/Ho2ycg5mJAeOBwdGZw4a5sn/WrwUA==

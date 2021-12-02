@@ -5,12 +5,17 @@ const requiredString = {
     required: true
 }
 
-const LogSchema = new mongoose.Schema({
+const logSchema = new mongoose.Schema({
     _id: requiredString,
-    logs: {
-        type: Array,
-        required: true
-    }
+    guildId: requiredString,
+    guildName: requiredString,
+    logs: [
+        { 
+            user: requiredString,
+            command: requiredString,
+            date: requiredString
+        }
+    ]
 })
 
-module.exports = mongoose.model('log-schema', LogSchema)
+module.exports = mongoose.models['logs'] || mongoose.model('logs', logSchema)
