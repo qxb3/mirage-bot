@@ -30,7 +30,7 @@ client.on('ready', async () => {
         mongoUri: process.env.MONGO_URI,
         disabledDefaultCommands: [
             'channelonly', 'command', 'language',
-            'prefix', 'requiredrole', 'slash'
+            'prefix', 'requiredrole'
         ]
     })
     .setDefaultPrefix('?')
