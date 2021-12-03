@@ -1,14 +1,14 @@
 [
     {
         "name": "Cheese",
-        "effect": "++2 Nourishments",
+        "effect": "+2 Nourishments",
         "monsters": [
             "Rat"
         ]
     },
     {
         "name": "Apple",
-        "effect": "++2 Nourishments",
+        "effect": "+2 Nourishments",
         "monsters": [
             "Thief",
             "Hunter",
@@ -17,7 +17,7 @@
     },
     {
         "name": "Carrot",
-        "effect": "++2 Nourishments",
+        "effect": "+2 Nourishments",
         "monsters": [
             "Giant Slug",
             "Bandit",
