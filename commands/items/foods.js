@@ -77,7 +77,7 @@ module.exports = {
                     .setThumbnail(`attachment://${name}.png`)
                     .addFields([
                         { name: '❯ Name', value: food.name },
-                        { name: '❯ Time', value: food.time },
+                        { name: '❯ Effect', value: food.effect },
                         { name: '❯ Monsters', value: monsters },
                     ])
                     .setColor('BLUE')

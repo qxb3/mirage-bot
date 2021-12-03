@@ -1,14 +1,14 @@
 [
     {
         "name": "Cheese",
-        "time": "2 Minutes",
+        "effect": "++2 Nourishments",
         "monsters": [
             "Rat"
         ]
     },
     {
         "name": "Apple",
-        "time": "2 Minutes",
+        "effect": "++2 Nourishments",
         "monsters": [
             "Thief",
             "Hunter",
@@ -17,7 +17,7 @@
     },
     {
         "name": "Carrot",
-        "time": "2 Minutes",
+        "effect": "++2 Nourishments",
         "monsters": [
             "Giant Slug",
             "Bandit",
@@ -26,14 +26,14 @@
     },
     {
         "name": "Banana",
-        "time": "2 Minutes",
+        "effect": "+2 Nourishments",
         "monsters": [
             "Orc Worker"
         ]
     },
     {
         "name": "Cherries",
-        "time": "2 Minutes",
+        "effect": "+2 Nourishments",
         "monsters": [
             "Defiler",
             "Minotaur"
@@ -41,14 +41,14 @@
     },
     {
         "name": "Egg",
-        "time": "2 Minutes",
+        "effect": "+2 Nourishments",
         "monsters": [
             "Sorcerer"
         ]
     },
     {
         "name": "Grapes",
-        "time": "2 Minutes",
+        "effect": "+2 Nourishments",
         "monsters": [
             "Orc",
             "Orc Warrior"
@@ -56,7 +56,7 @@
     },
     {
         "name": "Tomato",
-        "time": "2 Minutes",
+        "effect": "+2 Nourishments",
         "monsters": [
             "Giant Slug",
             "Orc Mage"
@@ -64,7 +64,7 @@
     },
     {
         "name": "Mushroom",
-        "time": "2 Minutes",
+        "effect": "+2 Nourishments",
         "monsters": [
             "Imp",
             "Imp Ranger",
@@ -78,14 +78,14 @@
     },
     {
         "name": "Candy Cane",
-        "time": "3 Minutes",
+        "effect": "+3 Nourishments",
         "monsters": [
             "Unobtainable - Only two of them on the game (Lakipaska and Freedomplz) liam sell it to them for 1g"
         ]
     },
     {
         "name": "Meat",
-        "time": "5 Minutes",
+        "effect": "+5 Nourishments",
         "monsters": [
             "Troll",
             "Troll Mage",
@@ -95,7 +95,7 @@
     },
     {
         "name": "Turnip",
-        "time": "7 Minutes",
+        "effect": "+7 Nourishments",
         "monsters": [
             "Imp",
             "Fire Slime"
@@ -103,14 +103,14 @@
     },
     {
         "name": "Biscot",
-        "time": "7 Minutes",
+        "effect": "+7 Nourishments",
         "monsters": [
             "Angry Biscottsman"
         ]
     },
     {
         "name": "Tough Meat",
-        "time": "8 Minutes",
+        "effect": "+8 Nourishments",
         "monsters": [
             "Cyclops",
             "Deerstalker",
@@ -121,7 +121,7 @@
     },
     {
         "name": "Pie",
-        "time": "30 Minutes",
+        "effect": "+30 Nourishments",
         "monsters": [
             "Harbinger",
             "Minotaur",
@@ -132,7 +132,7 @@
     },
     {
         "name": "Magic Candy",
-        "time": "100 Minutes",
+        "effect": "+100 Nourishments",
         "monsters": [
             "?"
         ]
