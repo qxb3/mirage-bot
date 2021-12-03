@@ -11,7 +11,7 @@ module.exports = {
         const embed = new MessageEmbed()
             .setTitle('About')
             .setThumbnail('attachment://mirage.png')
-            .setDescription('Hello, im qxb3 (IM NO OB / Zeven / Unknown / Mastermind from the game) I made this bot to help newbies get started to the game and i find it really annoying to forget items especially the materials needed for the enchantments, Anyway i hope this bot can hopefully help you to your mirage realms journey!')
+            .setDescription('Hello, im qxb3 (ZeVen from the game) I made this bot to help newbies get started to the game and i find it really annoying to forget items especially the materials needed for the enchantments, Anyway i hope this bot can hopefully help you to your mirage realms journey!')
             .addFields([
                 { name: '❯ Found a bug? Contact me in', value: '• Discord: qxb3#4312' },
                 { name: '❯ Official Discord Server', value: '• https://discord.gg/7PKhEk4NAe' },
