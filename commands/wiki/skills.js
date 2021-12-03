@@ -50,7 +50,7 @@ module.exports = {
             const list = getCategories(categories)
             const embed = new MessageEmbed() 
                 .setAuthor(messageDetails.author, messageDetails.avatar)
-                //.setThumbnail('attachment://knight.png')
+                .setThumbnail('attachment://volley.png')
                 .addField('❯ Vocations', list)
                 .addField('❯ Usage', `${messageDetails.prefix}skills <skill>`)
                 .setColor('BLUE')
@@ -59,9 +59,9 @@ module.exports = {
                 embeds: [
                     embed
                 ],
-                /*files: [
-                    process.env.PWD + '/assets/wiki/sprites/vocations/knight.png'
-                ]*/
+                files: [
+                    process.env.PWD + '/assets/wiki/sprites/skills/ranger/volley.png'
+                ]
             })
         }
 
@@ -74,12 +74,16 @@ module.exports = {
                 const skills = getSkills(skillJson, category)
                 const embed = new MessageEmbed()
                     .setAuthor(messageDetails.author, messageDetails.avatar)
+                    .setThumbnail(`attachment://${category.toLowerCase()}.png`)
                     .addField('❯ Skills', skills)
                     .setColor('BLUE')
 
                 sendMessage(message, interaction, {
                     embeds: [
                         embed
+                    ],
+                    files: [
+                        process.env.PWD + `/assets/wiki/sprites/skills/category-thumbnails/${category.toLowerCase()}.png`
                     ]
                 })
             }
