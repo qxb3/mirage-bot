@@ -1,5 +1,113 @@
 [
     {
+        "name": "Throwing Axe",
+        "description": "Throw an axe at the target dealing 25% damage.",
+        "requirement": "Level 5",
+        "cooldown": "6.0 Seconds",
+        "effects": [
+            "-20 Mana"
+        ],
+        "vocation": "Knight"
+    },
+    {
+        "name": "Devastate",
+        "description": "Hit your target with your equipped weapon for 30% damage.",
+        "requirement": "Level 10",
+        "cooldown": "4.0 Seconds",
+        "effects": [
+            "-10 Mana",
+            "+1 Melee exp"
+        ],
+        "vocation": "Knight"
+    },
+    {
+        "name": "Execute",
+        "description": "Execute the target with your equipped weapon for 300% damage. Only usable on targets with less than 15% health.",
+        "requirement": "Level 15",
+        "cooldown": "15.0 Seconds",
+        "effects": [
+            "-50 Mana",
+            "+1 Melee exp"
+        ],
+        "vocation": "Knight"
+    },
+    {
+        "name": "Devastate Rank 1",
+        "description": "Hit your target with your equipped weapon for 50% damage.",
+        "requirement": "Level 20",
+        "cooldown": "4.0 Seconds",
+        "effects": [
+            "-15 Mana",
+            "+1 Melee exp"
+        ],
+        "vocation": "Knight"
+    },
+    {
+        "name": "Whirlwind",
+        "description": "Swing your equipped weapon 360 degrees dealing 100% damage to all enemies directiy araund you.",
+        "requirement": "Level 25",
+        "cooldown": "30.0 Seconds",
+        "effects": [
+            "-50 Mana",
+            "+1 Melee exp"
+        ],
+        "vocation": "Knight"
+    },
+    {
+        "name": "Devastate Rank 2",
+        "description": "Hit your target with your equipped weapon for 75% damage.",
+        "requirement": "Level 30",
+        "cooldown": "4.0 Seconds",
+        "effects": [
+            "-20 Mana",
+            "+1 Melee exp"
+        ],
+        "vocation": "Knight"
+    },
+    {
+        "name": "Challenging Throw",
+        "description": "Throw an axe at the target dealing 25% damage and forcing it to focus on you. Does not taunt players.",
+        "requirement": "Level 35",
+        "cooldown": "6.0 Seconds",
+        "effects": [
+            "-30 Mana"
+        ],
+        "vocation": "Knight"
+    },
+    {
+        "name": "Whirlwind Rank 1",
+        "description": "Swing your equipped weapon 360 degrees dealing 200% damage to all enemies directly around you.",
+        "requirement": "Level 40",
+        "cooldown": "30.0 Seconds",
+        "effects": [
+            "-75 Mana",
+            "+1 Melee exp"
+        ],
+        "vocation": "Knight"
+    },
+    {
+        "name": "Execute Rank 1",
+        "description": "Execute the target with your equipped weapon for 400% damage. Only usable on targets with less than 15% health.",
+        "requirement": "Level 45",
+        "cooldown": "15.0 Seconds",
+        "effects": [
+            "-75 Mana",
+            "+1 Melee exp"
+        ],
+        "vocation": "Knight"
+    },
+    {
+        "name": "Whirlwind Rank 2",
+        "description": "Swing your equipped weapon 360 degrees dealing 300% damage to all enemies directy around you.",
+        "requirement": "Level 50",
+        "cooldown": "30.0 Seconds",
+        "effects": [
+            "-100 Mana",
+            "+1 Melee exp"
+        ],
+        "vocation": "Knight"
+    },
+    {
         "name": "Conjure Wooden Arrows",
         "description": "Conjure 35 wooden arrows.",
         "requirement": "Level 5",
@@ -75,7 +183,7 @@
         "vocation": "Ranger"
     },
     {
-        "name": "Volley Rank1",
+        "name": "Volley Rank 1",
         "description": "Fire 3 arroWs in rapid succession, each arrow deals 40% attack power and can crit.",
         "requirement": "Level 25",
         "cooldown": "6.0 Seconds",
@@ -108,7 +216,7 @@
         "vocation": "Ranger"
     },
     {
-        "name": "Headshot Rank1",
+        "name": "Headshot Rank 1",
         "description": "Headshot the target with an arrow for 400% damage. Only usable on targets with less than 15% health.",
         "requirement": "Level 35",
         "cooldown": "15.0 Seconds",
@@ -130,7 +238,7 @@
         "vocation": "Ranger"
     },
     {
-        "name": "Scatter Shot Rank1",
+        "name": "Scatter Shot Rank 1",
         "description": "Fire an arrow at all enemies close to your target, each arrow deals 175% weapon damage.",
         "requirement": "Level 40",
         "cooldown": "30.0 Seconds",
@@ -141,7 +249,7 @@
         "vocation": "Ranger"
     },
     {
-        "name": "Volley Rank2",
+        "name": "Volley Rank 2",
         "description": "Fire 3 arrows in rapid succession, each arrow deals 60% attack power and can crit.",
         "requirement": "Level 45",
         "cooldown": "6.0 Seconds",
@@ -163,7 +271,7 @@
         "vocation": "Ranger"
     },
     {
-        "name": "Scatter Shot Rank2",
+        "name": "Scatter Shot Rank 2",
         "description": "Fire an arrow at all enemies clase to your target, each arrow deals 250% weapon damage.",
         "requirement": "Level 50",
         "cooldown": "30.0 Seconds",
