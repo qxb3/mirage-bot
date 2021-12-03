@@ -6,7 +6,7 @@ module.exports = {
     description: 'Get servers bot joined to.',
     aliases: ['server'],
 
-    slash: 'both',
+    slash: true,
     testOnly: true,
     ownerOnly: true,
 
