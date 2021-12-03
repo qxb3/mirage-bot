@@ -1,14 +1,14 @@
 const { MessageEmbed } = require('discord.js')
-const Utils = require('../../utils/utils')
-const utils = new Utils()
+const sendMessage = require('../../utils/send-message')
 
 module.exports = {
     category: 'BotOwner',
     description: 'Get servers bot joined to.',
-    ownerOnly: true,
+    aliases: ['server'],
 
     slash: 'both',
     testOnly: true,
+    ownerOnly: true,
 
     callback: async ({ message, interaction, client }) => {
         const servers = []
@@ -24,7 +24,7 @@ module.exports = {
             .addFields(servers)
             .setColor('GREEN')
 
-        utils.sendMessage(message, interaction, {
+        sendMessage(message, interaction, {
             embeds: [
                 embed
             ],
