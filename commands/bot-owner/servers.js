@@ -15,7 +15,8 @@ module.exports = {
         client.guilds.cache.forEach(guild => {
             servers.push({
                 name: `❯ ${guild.name}`,
-                value: `Member count: ${guild.memberCount}`
+                value: `Guild ID: ${guild.id}\n` +
+                       `Member count: ${guild.memberCount}`
             })
         })
 
