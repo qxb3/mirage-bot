@@ -1,9 +1,8 @@
 const { MessageEmbed } = require('discord.js')
-const Utils = require('../../utils/utils')
-
 const ignoreCase = require('ignore-case')
-const utils = new Utils()
 const fs = require('fs')
+const getMessageDetails = require('../../utils/get-message-details')
+const sendMessage = require('../../utils/send-message')
 
 const getCategories = (categories) => {
     let list = ''
@@ -31,7 +30,7 @@ module.exports = {
     ],
 
     callback: async ({ message, interaction, args, prefix }) => {
-        const messageDetails = utils.getMessageDetails(message, interaction, prefix)
+        const messageDetails = getMessageDetails(message, interaction, prefix)
 
         const enchantmentJson = JSON.parse(Buffer.from(fs.readFileSync(process.env.PWD + '/assets/wiki/enchantments.json').toString()))
         const categories = []
@@ -48,7 +47,7 @@ module.exports = {
                 .addField('❯ Usage', `${messageDetails.prefix}enchantments <enchantment>`)
                 .setColor('BLUE')
 
-            return utils.sendMessage(message, interaction, {
+            return sendMessage(message, interaction, {
                 embeds: [
                     embed
                 ]
@@ -76,7 +75,7 @@ module.exports = {
                     ])
                     .setColor('BLUE')
 
-                utils.sendMessage(message, interaction, {
+                sendMessage(message, interaction, {
                     embeds: [
                         embed
                     ]
@@ -92,7 +91,7 @@ module.exports = {
                 .addField('❯ Usage', `${messageDetails.prefix}enchantments - To list all enchantments in the game` )
                 .setColor('RED')
 
-            utils.sendMessage(message, interaction, {
+            sendMessage(message, interaction, {
                 embeds: [
                     embed
                 ]

@@ -1,5 +1,4 @@
-const Utils = require('../../utils/utils')
-const utils = new Utils()
+const sendMessage = require('../../utils/send-message')
 
 module.exports = {
     category: 'Bot',
@@ -8,7 +7,7 @@ module.exports = {
     slash: 'both',
 
     callback: async ({ message, interaction }) => {
-        utils.sendMessage(message, interaction, {
+        sendMessage(message, interaction, {
             content: 'https://discordbotlist.com/bots/miragebot'
         })
     }

@@ -1,9 +1,8 @@
 const { MessageEmbed } = require('discord.js')
-const Utils = require('../../utils/utils')
-
 const ignoreCase = require('ignore-case')
-const utils = new Utils()
 const fs = require('fs')
+const getMessageDetails = require('../../utils/get-message-details')
+const sendMessage = require('../../utils/send-message')
 
 module.exports = {
     category: 'Help',
@@ -22,7 +21,7 @@ module.exports = {
     ],
 
     callback: ({ message, interaction, instance, args, prefix }) => {
-        const messageDetails = utils.getMessageDetails(message, interaction, prefix)
+        const messageDetails = getMessageDetails(message, interaction, prefix)
 
         //List the commands
         if (!args[0]) {
@@ -48,7 +47,7 @@ module.exports = {
                 .addField('❯ Usage', `${messageDetails.prefix}help <command>`)
                 .setColor('BLUE')
 
-            return utils.sendMessage(message, interaction, {
+            return sendMessage(message, interaction, {
                 embeds: [
                     embed
                 ],
@@ -77,7 +76,7 @@ module.exports = {
                         )
                         .setColor('BLUE')
 
-                    utils.sendMessage(message, interaction, {
+                    sendMessage(message, interaction, {
                         embeds: [
                             embed
                         ],
@@ -97,7 +96,7 @@ module.exports = {
                 .addField('❯ Usage', `${messageDetails.prefix}help <command>`)
                 .setColor('RED')
 
-            utils.sendMessage(message, interaction, {
+            sendMessage(message, interaction, {
                 embeds: [
                     embed
                 ],

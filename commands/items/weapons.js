@@ -1,9 +1,8 @@
 const { MessageEmbed, MessageAttachment } = require('discord.js')
-const Utils = require('../../utils/utils')
-
 const ignoreCase = require('ignore-case')
-const utils = new Utils()
 const fs = require('fs')
+const getMessageDetails = require('../../utils/get-message-details')
+const sendMessage = require('../../utils/send-message')
 
 const getCategories = (categories) => {
     let list = ''
@@ -40,7 +39,7 @@ module.exports = {
     ],
 
     callback: async ({ message, interaction, args, prefix }) => {
-        const messageDetails = utils.getMessageDetails(message, interaction, prefix)
+        const messageDetails = getMessageDetails(message, interaction, prefix)
 
         const weaponJson = JSON.parse(Buffer.from(fs.readFileSync(process.env.PWD + '/assets/items/weapons.json').toString()))
         const categories = ['Sword', 'Axe', 'Mace', 'Shield', 'Bow', 'Ammunition', 'Staff', 'Rod', 'Spellbook']
@@ -54,7 +53,7 @@ module.exports = {
                 .addField('❯ Usage', `${messageDetails.prefix}weapons - To list all weapon categories in the game\n${messageDetails.prefix}weapons <category> - To list all the weapons in that category`)
                 .setColor('BLUE')
 
-            return utils.sendMessage(message, interaction, {
+            return sendMessage(message, interaction, {
                 embeds: [
                     embed
                 ],
@@ -80,7 +79,7 @@ module.exports = {
                     ])
                     .setColor('BLUE')
 
-                utils.sendMessage(message, interaction, {
+                sendMessage(message, interaction, {
                     embeds: [
                         embed
                     ],
@@ -121,7 +120,7 @@ module.exports = {
                         ])
                         .setColor('BLUE')
 
-                    utils.sendMessage(message, interaction, {
+                    sendMessage(message, interaction, {
                         embeds: [
                             embed
                         ],
@@ -142,7 +141,7 @@ module.exports = {
                 .addField('❯ Usage', `${messageDetails.prefix}weapons - To list all weapon categories in the game\n${messageDetails.prefix}weapons <category> - To list all the weapons in that category`)
                 .setColor('RED')
 
-            utils.sendMessage(message, interaction, {
+            sendMessage(message, interaction, {
                 embeds: [
                     embed
                 ],

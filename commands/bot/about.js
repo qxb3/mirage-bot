@@ -1,8 +1,5 @@
 const { MessageEmbed } = require('discord.js')
-const Utils = require('../../utils/utils')
-
-const utils = new Utils()
-const fs = require('fs')
+const sendMessage = require('../../utils/send-message')
 
 module.exports = {
     category: 'Bot',
@@ -23,7 +20,7 @@ module.exports = {
             ])
             .setColor('YELLOW')
 
-        utils.sendMessage(message, interaction, {
+        sendMessage(message, interaction, {
             embeds: [
                 embed
             ],

@@ -3,7 +3,6 @@ module.exports = {
     description: 'Get the bot latency',
 
     slash: 'both',
-    testOnly: true,
 
     callback: async ({ message, interaction }) => {
         if (message) {
