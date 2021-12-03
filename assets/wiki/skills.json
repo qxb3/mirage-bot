@@ -335,5 +335,268 @@
             "+50 Magic exp"
         ],
         "vocation": "Ranger"
+    },
+    {
+        "name": "Healing Hands",
+        "description": "Heal yourself or an ally for 100% magic power.",
+        "requirement": "Level 5",
+        "cooldown": "7.0 Seconds",
+        "effects": [
+            "-30 Mana",
+            "+1 Magic exp"
+        ],
+        "vocation": "Shaman"
+    },
+    {
+        "name": "Conjure Light Mana Missile",
+        "description": "Conjure a light mana missile rune with 3 charges. Consumes 1 blank rune.",
+        "requirement": "Level 10",
+        "cooldown": "60.0 Seconds",
+        "effects": [
+            "-100 Mana",
+            "+50 Magic exp"
+        ],
+        "vocation": "Shaman"
+    },
+    {
+        "name": "Mind Games",
+        "description": "Confuse the target, disengaging and causing them to strike out wildly at another attacker or retreat. Only works on targets attacking you or party member. Does not affect players.",
+        "requirement": "Level 10",
+        "cooldown": "15.0 Seconds",
+        "effects": [
+            "-50 Mana"
+        ],
+        "vocation": "Shaman"
+    },
+    {
+        "name": "Conjure Light Physical Missile",
+        "description": "Conjure a light physical missile rune with 3 charges. Consumes 1 blank rune.",
+        "requirement": "Level 15",
+        "cooldown": "60.0 Seconds",
+        "effects": [
+            "-100 Mana",
+            "+50 Magic exp"
+        ],
+        "vocation": "Shaman"
+    },
+    {
+        "name": "Conjure Light Nature Missile",
+        "description": "Conjure a light nature missile rune with 3 charges. Consumes 1 blank rune.",
+        "requirement": "Level 20",
+        "cooldown": "60.0 Seconds",
+        "effects": [
+            "-100 Mana",
+            "+50 Magic exp"
+        ],
+        "vocation": "Shaman"
+    },
+    {
+        "name": "Healing Hands Rank 1",
+        "description": "Heal yourself or an ally for 200% magic pawer.",
+        "requirement": "Level 20",
+        "cooldown": "7.0 Seconds",
+        "effects": [
+            "-60 Mana",
+            "+1 Magic exp"
+        ],
+        "vocation": "Shaman"
+    },
+    {
+        "name": "Conjure Light Haly Missile",
+        "description": "Conjure a light haly missile rune with 3 charges. Consumes 1 blank rune.",
+        "requirement": "Level 25",
+        "cooldown": "60.0 Seconds",
+        "effects": [
+            "-100 Mana",
+            "+50 Magic exp"
+        ],
+        "vocation": "Shaman"
+    },
+    {
+        "name": "Divine Intervention",
+        "description": "Heal yourself and all allies in range for 200%",
+        "requirement": "Level 25",
+        "cooldown": "15.0 Seconds",
+        "effects": [
+            "-120 Mana",
+            "+1 Magic exp"
+        ],
+        "vocation": "Shaman"
+    },
+    {
+        "name": "Conjure Light Heal",
+        "description": "Conjure a light healing rune with 3 charges. Consumes 1 blankrune.",
+        "requirement": "Level 30",
+        "cooldown": "3000.0 Seconds",
+        "effects": [
+            "-400 Mana",
+            "+20 Magic exp"
+        ],
+        "vocation": "Shaman"
+    },
+    {
+        "name": "Healing Hands Rank 2",
+        "description": "Heal yourself or an ally for 300% magic power.",
+        "requirement": "Level 30",
+        "cooldown": "7.0 Seconds",
+        "effects": [
+            "-90 Mana",
+            "+1 Magic exp"
+        ],
+        "vocation": "Shaman"
+    },
+    {
+        "name": "Conjure Physical Missile",
+        "description": "Conjure a physical missile rune with 2 charges. Consumes 1 blank rune.",
+        "requirement": "Level 35",
+        "cooldown": "60.0 Seconds",
+        "effects": [
+            "-200 Mana",
+            "+10 Magic exp"
+        ],
+        "vocation": "Shaman"
+    },
+    {
+        "name": "Conjure Nature Missile",
+        "description": "Conjure a nature missile rune with 2 charges. Consumes 1 blank rune.",
+        "requirement": "Level 40",
+        "cooldown": "600.0 Seconds",
+        "effects": [
+            "-200 Mana",
+            "+10 Magic exp"
+        ],
+        "vocation": "Shaman"
+    },
+    {
+        "name": "Divine Intervention Rank 1",
+        "description": "Heal yourself and all allies in range for 300%.",
+        "requirement": "Level 40",
+        "cooldown": "15.0 Seconds",
+        "effects": [
+            "-180 Mana",
+            "+1 Magic exp"
+        ],
+        "vocation": "Shaman"
+    },
+    {
+        "name": "Conjure Holy Missile",
+        "description": "Conjure a holy missile rune with 2 charges. Consumes 1 blank rune.",
+        "requirement": "Level 45",
+        "cooldown": "60.0 Seconds",
+        "effects": [
+            "-200 Mana",
+            "+10 Magic exp"
+        ],
+        "vocation": "Shaman"
+    },
+    {
+        "name": "Healing Hands Rank 3",
+        "description": "Heal yourself or an ally for 400% magic power.",
+        "requirement": "Level 45",
+        "cooldown": "7.0 Seconds",
+        "effects": [
+            "-120 Mana",
+            "+1 Magic exp"
+        ],
+        "vocation": "Shaman"
+    },
+    {
+        "name": "Conjure Mana Missile",
+        "description": "Conjure a mana missile rune with 2 charges. Consumes 1 blank rune.",
+        "requirement": "Level 50",
+        "cooldown": "60.0 Seconds",
+        "effects": [
+            "-200 Mana",
+            "+10 Magic exp"
+        ],
+        "vocation": "Shaman"
+    },
+    {
+        "name": "Divine Intervention Rank 2",
+        "description": "Heal yourself and all allies in range for 400% magic power.",
+        "requirement": "Level 50",
+        "cooldown": "15.0 Seconds",
+        "effects": [
+            "-240 Mana",
+            "+10 Magic exp"
+        ],
+        "vocation": "Shaman"
+    },
+    {
+        "name": "Conjure Heal",
+        "description": "Conjure a healing rune with 2 charges. Consumes 1 blank rune.",
+        "requirement": "Level 55",
+        "cooldown": "300.0 Seconds",
+        "effects": [
+            "-800 Mana",
+            "+40 Magic exp"
+        ],
+        "vocation": "Shaman"
+    },
+    {
+        "name": "Conjure Heavy Physical Missile",
+        "description": "Conjure a heavy physical missile rune with 1 charge. Consumes 1 blank rune.",
+        "requirement": "Level 60",
+        "cooldown": "60.0 Seconds",
+        "effects": [
+            "-400 Mana",
+            "+20 Magic exp"
+        ],
+        "vocation": "Shaman"
+    },
+    {
+        "name": "Conjure Heavy Nature Missile",
+        "description": "Conjure a heavy nature missile rune with 1 charge. Consumes 1 blank rune.",
+        "requirement": "Level 65",
+        "cooldown": "60.0 Seconds",
+        "effects": [
+            "-400 Mana",
+            "+20 Magic exp"
+        ],
+        "vocation": "Shaman"
+    },
+    {
+        "name": "Conjure Heavy Holy Missile",
+        "description": "Conjure a heavy holy missile rune with 1 charge. Consumes 1 blank rune.",
+        "requirement": "Level 70",
+        "cooldown": "60.0 Seconds",
+        "effects": [
+            "-400 Mana",
+            "+20 Magic exp"
+        ],
+        "vocation": "Shaman"
+    },
+    {
+        "name": "Divine Intervention Rank 3",
+        "description": "Heal yourself and all allies in range for 500%.",
+        "requirement": "Level 70",
+        "cooldown": "15.0 Seconds",
+        "effects": [
+            "-300 Mana",
+            "+1 Magic exp"
+        ],
+        "vocation": "Shaman"
+    },
+    {
+        "name": "Conjure Heavy Mana Missile",
+        "description": "Conjure a heavy mana missile rune with 1 charge. Consumes 1 blank rune.",
+        "requirement": "Level 75",
+        "cooldown": "60.0 Seconds",
+        "effects": [
+            "-400 Mana",
+            "+20 Magic exp"
+        ],
+        "vocation": "Shaman"
+    },
+    {
+        "name": "Conjure Heavy Heal",
+        "description": "Conjure a heavy healing rune with 1 charge. Consumes 1 blank rune.",
+        "requirement": "Level 100",
+        "cooldown": "3000.0 Seconds",
+        "effects": [
+            "-1500 Mana",
+            "+75 Magic exp"
+        ],
+        "vocation": "Shaman"
     }
 ]
