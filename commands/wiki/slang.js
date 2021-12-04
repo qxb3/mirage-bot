@@ -41,8 +41,9 @@ module.exports = {
         //List the slang
         if (!args[0]) {
             const list = getCategories(categories)
-            const embed = new MessageEmbed() 
+            const embed = new MessageEmbed()
                 .setAuthor(messageDetails.author, messageDetails.avatar)
+                .setThumbnail('attachment://rules.png')
                 .addField('❯ Slangs', list)
                 .addField('❯ Usage', `${messageDetails.prefix}slang <slang>`)
                 .setColor('BLUE')
@@ -50,6 +51,9 @@ module.exports = {
             return sendMessage(message, interaction, {
                 embeds: [
                     embed
+                ],
+                files: [
+                    process.env.PWD + '/assets/icons/rules.png'
                 ]
             })
         }
@@ -62,6 +66,7 @@ module.exports = {
 
                 const embed = new MessageEmbed()
                     .setAuthor(messageDetails.author, messageDetails.avatar)
+                    .setThumbnail('attachment://rules.png')
                     .addFields([
                         { name: '❯ Name', value: slang.name },
                         { name: '❯ Description', value: slang.description }
@@ -71,6 +76,9 @@ module.exports = {
                 sendMessage(message, interaction, {
                     embeds: [
                         embed
+                    ],
+                    files: [
+                        process.env.PWD + '/assets/icons/rules.png'
                     ]
                 })
             }
@@ -80,6 +88,7 @@ module.exports = {
         if (code == 1) {
             const embed = new MessageEmbed()
                 .setAuthor(messageDetails.author, messageDetails.avatar)
+                .setThumbnail('attachment://rules.png')
                 .setDescription('Make sure the slang you type is valid')
                 .addField('❯ Usage', `${messageDetails.prefix}slang - To list all slangs commonly used in the game`)
                 .setColor('RED')
@@ -87,6 +96,9 @@ module.exports = {
             sendMessage(message, interaction, {
                 embeds: [
                     embed
+                ],
+                files: [
+                    process.env.PWD + '/assets/icons/rules.png'
                 ]
             })
         }
