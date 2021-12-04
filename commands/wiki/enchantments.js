@@ -41,8 +41,9 @@ module.exports = {
         //List the enchantments
         if (!args[0]) {
             const list = getCategories(categories)
-            const embed = new MessageEmbed() 
+            const embed = new MessageEmbed()
                 .setAuthor(messageDetails.author, messageDetails.avatar)
+                .setThumbnail('attachment://physical.png')
                 .addField('❯ Enchantments', list)
                 .addField('❯ Usage', `${messageDetails.prefix}enchantments <enchantment>`)
                 .setColor('BLUE')
@@ -50,6 +51,9 @@ module.exports = {
             return sendMessage(message, interaction, {
                 embeds: [
                     embed
+                ],
+                files: [
+                    process.env.PWD + '/assets/wiki/sprites/enchantments/physical.png'
                 ]
             })
         }
@@ -60,6 +64,9 @@ module.exports = {
             if (ignoreCase.equals(args.join(' '), enchantment.name)) {
                 code = 0
 
+                const name = enchantment.name.replaceAll(' ', '-').toLowerCase()
+                const sprite = process.env.PWD + '/assets/wiki/sprites/enchantments/' + name + '.png'
+
                 let materialsRequired = ''
                 enchantment.materials_required.forEach(material => {
                     materialsRequired += `• ${material}\n`
@@ -67,6 +74,7 @@ module.exports = {
 
                 const embed = new MessageEmbed()
                     .setAuthor(messageDetails.author, messageDetails.avatar)
+                    .setThumbnail(`attachment://${name}.png`)
                     .addFields([
                         { name: '❯ Enchantment', value: enchantment.name },
                         { name: '❯ Enchanter', value: enchantment.enchanter },
@@ -78,6 +86,9 @@ module.exports = {
                 sendMessage(message, interaction, {
                     embeds: [
                         embed
+                    ],
+                    files: [
+                        sprite
                     ]
                 })
             }
@@ -87,6 +98,7 @@ module.exports = {
         if (code == 1) {
             const embed = new MessageEmbed()
                 .setAuthor(messageDetails.author, messageDetails.avatar)
+                .setThumbnail('attachment://physical.png')
                 .setDescription('Make sure the enchantment you type is valid')
                 .addField('❯ Usage', `${messageDetails.prefix}enchantments - To list all enchantments in the game` )
                 .setColor('RED')
@@ -94,6 +106,9 @@ module.exports = {
             sendMessage(message, interaction, {
                 embeds: [
                     embed
+                ],
+                files: [
+                    process.env.PWD + '/assets/wiki/sprites/enchantments/physical.png'
                 ]
             })
         }
