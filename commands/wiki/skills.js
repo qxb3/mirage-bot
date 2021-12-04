@@ -27,7 +27,6 @@ module.exports = {
     aliases: ['skill'],
 
     slash: 'both',
-    testOnly: true,
 
     expectedArgs: '<skill>',
     options: [
@@ -50,7 +49,7 @@ module.exports = {
             const list = getCategories(categories)
             const embed = new MessageEmbed() 
                 .setAuthor(messageDetails.author, messageDetails.avatar)
-                .setThumbnail('attachment://volley.png')
+                .setThumbnail('attachment://explosion.png')
                 .addField('❯ Vocations', list)
                 .addField('❯ Usage', `${messageDetails.prefix}skills <skill>`)
                 .setColor('BLUE')
@@ -60,7 +59,7 @@ module.exports = {
                     embed
                 ],
                 files: [
-                    process.env.PWD + '/assets/wiki/sprites/skills/ranger/volley.png'
+                    process.env.PWD + '/assets/wiki/sprites/skills/mage/explosion.png'
                 ]
             })
         }
@@ -100,7 +99,7 @@ module.exports = {
 
                     let effects = ''
                     skill.effects.forEach(effect => {
-                        effects += `• ${effect}\n`
+                        effects += `${effect}\n`
                     })
 
                     const embed = new MessageEmbed()

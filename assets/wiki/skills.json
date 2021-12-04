@@ -21,34 +21,12 @@
         "vocation": "Knight"
     },
     {
-        "name": "Execute",
-        "description": "Execute the target with your equipped weapon for 300% damage. Only usable on targets with less than 15% health.",
-        "requirement": "Level 15",
-        "cooldown": "15.0 Seconds",
-        "effects": [
-            "-50 Mana",
-            "+1 Melee exp"
-        ],
-        "vocation": "Knight"
-    },
-    {
         "name": "Devastate Rank 1",
         "description": "Hit your target with your equipped weapon for 50% damage.",
         "requirement": "Level 20",
         "cooldown": "4.0 Seconds",
         "effects": [
             "-15 Mana",
-            "+1 Melee exp"
-        ],
-        "vocation": "Knight"
-    },
-    {
-        "name": "Whirlwind",
-        "description": "Swing your equipped weapon 360 degrees dealing 100% damage to all enemies directiy araund you.",
-        "requirement": "Level 25",
-        "cooldown": "30.0 Seconds",
-        "effects": [
-            "-50 Mana",
             "+1 Melee exp"
         ],
         "vocation": "Knight"
@@ -65,22 +43,12 @@
         "vocation": "Knight"
     },
     {
-        "name": "Challenging Throw",
-        "description": "Throw an axe at the target dealing 25% damage and forcing it to focus on you. Does not taunt players.",
-        "requirement": "Level 35",
-        "cooldown": "6.0 Seconds",
+        "name": "Execute",
+        "description": "Execute the target with your equipped weapon for 300% damage. Only usable on targets with less than 15% health.",
+        "requirement": "Level 15",
+        "cooldown": "15.0 Seconds",
         "effects": [
-            "-30 Mana"
-        ],
-        "vocation": "Knight"
-    },
-    {
-        "name": "Whirlwind Rank 1",
-        "description": "Swing your equipped weapon 360 degrees dealing 200% damage to all enemies directly around you.",
-        "requirement": "Level 40",
-        "cooldown": "30.0 Seconds",
-        "effects": [
-            "-75 Mana",
+            "-50 Mana",
             "+1 Melee exp"
         ],
         "vocation": "Knight"
@@ -90,6 +58,28 @@
         "description": "Execute the target with your equipped weapon for 400% damage. Only usable on targets with less than 15% health.",
         "requirement": "Level 45",
         "cooldown": "15.0 Seconds",
+        "effects": [
+            "-75 Mana",
+            "+1 Melee exp"
+        ],
+        "vocation": "Knight"
+    },
+    {
+        "name": "Whirlwind",
+        "description": "Swing your equipped weapon 360 degrees dealing 100% damage to all enemies directiy araund you.",
+        "requirement": "Level 25",
+        "cooldown": "30.0 Seconds",
+        "effects": [
+            "-50 Mana",
+            "+1 Melee exp"
+        ],
+        "vocation": "Knight"
+    },
+    {
+        "name": "Whirlwind Rank 1",
+        "description": "Swing your equipped weapon 360 degrees dealing 200% damage to all enemies directly around you.",
+        "requirement": "Level 40",
+        "cooldown": "30.0 Seconds",
         "effects": [
             "-75 Mana",
             "+1 Melee exp"
@@ -108,15 +98,15 @@
         "vocation": "Knight"
     },
     {
-        "name": "Conjure Wooden Arrows",
-        "description": "Conjure 35 wooden arrows.",
-        "requirement": "Level 5",
-        "cooldown": "60.0 Seconds",
+        "name": "Challenging Throw",
+        "description": "Throw an axe at the target dealing 25% damage and forcing it to focus on you. Does not taunt players.",
+        "requirement": "Level 35",
+        "cooldown": "6.0 Seconds",
         "effects": [
-            "-15 Mana"
+            "-30 Mana"
         ],
-        "vocation": "Ranger"
-    },
+        "vocation": "Knight"
+    }, 
     {
         "name": "Volley",
         "description":  "Fire 3 arrows in rapid succession, each arrow deals 206 attack power and can crit.",
@@ -125,6 +115,103 @@
         "effects": [
             "-20 Mana",
             "+1 Distance exp"
+        ],
+        "vocation": "Ranger"
+    },
+    {
+        "name": "Volley Rank 1",
+        "description": "Fire 3 arroWs in rapid succession, each arrow deals 40% attack power and can crit.",
+        "requirement": "Level 25",
+        "cooldown": "6.0 Seconds",
+        "effects": [
+            "-30 Mana",
+            "+1 Distance exp"
+        ],
+        "vocation": "Ranger"
+    },
+    {
+        "name": "Volley Rank 2",
+        "description": "Fire 3 arrows in rapid succession, each arrow deals 60% attack power and can crit.",
+        "requirement": "Level 45",
+        "cooldown": "6.0 Seconds",
+        "effects": [
+            "-40 Mana",
+            "+1 Distance exp"
+        ],
+        "vocation": "Ranger"
+    },
+    {
+        "name": "Concussive Shot",
+        "description": "Concuss the target, disengaging and causing them to strike out wildly at another attacker or retreat. Only works on targets attacking you or a party member. Does not affect players.",
+        "requirement": "Level 15",
+        "cooldown": "15.0 Seconds",
+        "effects": [
+            "-50 Mana"
+        ],
+        "vocation": "Ranger"
+    },
+    {
+        "name": "Headshot",
+        "description": "Headshot the target with an arrow for 300% damage. Only usable on targets with less than 15% health.",
+        "requirement": "Level 20",
+        "cooldown": "15.0 Seconds",
+        "effects": [
+            "-50 Mana",
+            "+1 Distance exp"
+        ],
+        "vocation": "Ranger"
+    },
+    {
+        "name": "Headshot Rank 1",
+        "description": "Headshot the target with an arrow for 400% damage. Only usable on targets with less than 15% health.",
+        "requirement": "Level 35",
+        "cooldown": "15.0 Seconds",
+        "effects": [
+            "-75 Mana",
+            "+1 Distance exp"
+        ],
+        "vocation": "Ranger"
+    },
+    {
+        "name": "Scatter Shot",
+        "description": "Fire an arrow at all enemies clase to your target, each arrow deals 100% weapon damage.",
+        "requirement": "Level 30",
+        "cooldown": "30.0 Seconds",
+        "effects": [
+            "-75 Mana",
+            "+1 Distance exp"
+        ],
+        "vocation": "Ranger"
+    },
+    {
+        "name": "Scatter Shot Rank 1",
+        "description": "Fire an arrow at all enemies close to your target, each arrow deals 175% weapon damage.",
+        "requirement": "Level 40",
+        "cooldown": "30.0 Seconds",
+        "effects": [
+            "-90 Mana",
+            "+1 Distance exp"
+        ],
+        "vocation": "Ranger"
+    },
+    {
+        "name": "Scatter Shot Rank 2",
+        "description": "Fire an arrow at all enemies clase to your target, each arrow deals 250% weapon damage.",
+        "requirement": "Level 50",
+        "cooldown": "30.0 Seconds",
+        "effects": [
+            "-100 Mana",
+            "+1 Distance exp"
+        ],
+        "vocation": "Ranger"
+    },
+    {
+        "name": "Conjure Wooden Arrows",
+        "description": "Conjure 35 wooden arrows.",
+        "requirement": "Level 5",
+        "cooldown": "60.0 Seconds",
+        "effects": [
+            "-15 Mana"
         ],
         "vocation": "Ranger"
     },
@@ -151,16 +238,6 @@
         "vocation": "Ranger"
     },
     {
-        "name": "Concussive Shot",
-        "description": "Concuss the target, disengaging and causing them to strike out wildly at another attacker or retreat. Only works on targets attacking you or a party member. Does not affect players.",
-        "requirement": "Level 15",
-        "cooldown": "15.0 Seconds",
-        "effects": [
-            "-50 Mana"
-        ],
-        "vocation": "Ranger"
-    },
-    {
         "name": "Conjure Tin Arrows",
         "description": "Conjure 35 tin arrows.",
         "requirement": "Level 20",
@@ -170,29 +247,7 @@
             "+1 Magic exp"
         ],
         "vocation": "Ranger"
-    },
-    {
-        "name": "Headshot",
-        "description": "Headshot the target with an arrow for 300% damage. Only usable on targets with less than 15% health.",
-        "requirement": "Level 20",
-        "cooldown": "15.0 Seconds",
-        "effects": [
-            "-50 Mana",
-            "+1 Distance exp"
-        ],
-        "vocation": "Ranger"
-    },
-    {
-        "name": "Volley Rank 1",
-        "description": "Fire 3 arroWs in rapid succession, each arrow deals 40% attack power and can crit.",
-        "requirement": "Level 25",
-        "cooldown": "6.0 Seconds",
-        "effects": [
-            "-30 Mana",
-            "+1 Distance exp"
-        ],
-        "vocation": "Ranger"
-    },
+    }, 
     {
         "name": "Conjure Iron Arrows",
         "description": "Conjure 35 iron arrows.",
@@ -203,29 +258,7 @@
             "+1 Magic exp"
         ],
         "vocation": "Ranger"
-    },
-    {
-        "name": "Scatter Shot",
-        "description": "Fire an arrow at all enemies clase to your target, each arrow deals 100% weapon damage.",
-        "requirement": "Level 30",
-        "cooldown": "30.0 Seconds",
-        "effects": [
-            "-75 Mana",
-            "+1 Distance exp"
-        ],
-        "vocation": "Ranger"
-    },
-    {
-        "name": "Headshot Rank 1",
-        "description": "Headshot the target with an arrow for 400% damage. Only usable on targets with less than 15% health.",
-        "requirement": "Level 35",
-        "cooldown": "15.0 Seconds",
-        "effects": [
-            "-75 Mana",
-            "+1 Distance exp"
-        ],
-        "vocation": "Ranger"
-    },
+    }, 
     {
         "name": "Conjure Elven Arrows",
         "description": "Conjure 35 elven arrows.",
@@ -236,29 +269,7 @@
             "+2 Magic exp"
         ],
         "vocation": "Ranger"
-    },
-    {
-        "name": "Scatter Shot Rank 1",
-        "description": "Fire an arrow at all enemies close to your target, each arrow deals 175% weapon damage.",
-        "requirement": "Level 40",
-        "cooldown": "30.0 Seconds",
-        "effects": [
-            "-90 Mana",
-            "+1 Distance exp"
-        ],
-        "vocation": "Ranger"
-    },
-    {
-        "name": "Volley Rank 2",
-        "description": "Fire 3 arrows in rapid succession, each arrow deals 60% attack power and can crit.",
-        "requirement": "Level 45",
-        "cooldown": "6.0 Seconds",
-        "effects": [
-            "-40 Mana",
-            "+1 Distance exp"
-        ],
-        "vocation": "Ranger"
-    },
+    }, 
     {
         "name": "Conjure Pearl Arrows",
         "description": "Conjure 35 pearl arrows.",
@@ -269,18 +280,7 @@
             "+2 Magic exp"
         ],
         "vocation": "Ranger"
-    },
-    {
-        "name": "Scatter Shot Rank 2",
-        "description": "Fire an arrow at all enemies clase to your target, each arrow deals 250% weapon damage.",
-        "requirement": "Level 50",
-        "cooldown": "30.0 Seconds",
-        "effects": [
-            "-100 Mana",
-            "+1 Distance exp"
-        ],
-        "vocation": "Ranger"
-    },
+    }, 
     {
         "name": "Conjure Spiked Arrows",
         "description": "Conjure 35 spiked arrows.",
@@ -337,6 +337,258 @@
         "vocation": "Ranger"
     },
     {
+		"name": "Elemental Strike",
+		"description": "Unleash your equipped weapon's energy in a targeted strike dealing 25% weapon damage.",
+		"requirement": "Level 5",
+		"cooldown": "4.0 Seconds",
+		"effects": [
+			"-10 Mana",
+			"+1 Magic exp"
+		],
+		"vocation": "Mage"
+	},
+	{
+		"name": "Elemental Strike Rank 1",
+		"description": "Unleash your equipped weapan's energy in a targeted strike dealing 50% weapon damage.",
+		"requirement": "Level 20",
+		"cooldown": "4.0 Seconds",
+		"effects": [
+			"-15 Mana",
+			"+1 Magic exp"
+		],
+		"vocation": "Mage"
+	},
+	{
+		"name": "Elemental Strike Rank 2",
+		"description": "Unleash your equipped weapan's energy in a targeted strike dealing 75% weapon damage.",
+		"requirement": "Level 30",
+		"cooldown": "4.0 Seconds",
+		"effects": [
+			"-20 Mana",
+			"+1 Magic exp"
+		],
+		"vocation": "Mage"
+	},
+	{
+		"name": "Elemental Strike Rank 3",
+		"description": "Unleash your equipped weapon's energy in a targeted strike dealing 100% weapon damage.",
+		"requirement": "Level 45",
+		"cooldown": "4.0 Seconds",
+		"effects": [
+			"-25 Mana",
+			"+1 Magic exp"
+		],
+		"vocation": "Mage"
+	},
+	{
+		"name": "Explosion",
+		"description": "Unleash your equipped weapon's energy in a targeted explosion dealing 100% weapon damage.",
+		"requirement": "Level 25",
+		"cooldown": "30.0 Seconds",
+		"effects": [
+			"-75 Mana",
+			"+1 Magic exp"
+		],
+		"vocation": "Mage"
+	},
+	{
+		"name": "Explosion Rank 1",
+		"description": "Unleash your equipped weapon's energy in a targeted explosian dealing 200% weapon damage.",
+		"requirement": "Level 40",
+		"cooldown": "30.0 Seconds",
+		"effects": [
+			"-100 Mana",
+			"+1 Magic exp"
+		],
+		"vocation": "Mage"
+	},
+	{
+		"name": "Explosion Rank 2",
+		"description": "Unleash your equipped weapon's energy in a targeted explosion dealing 300% weapon damage.",
+		"requirement": "Level 50",
+		"cooldown": "30.0 Seconds",
+		"effects": [
+			"-200 Mana",
+			"+10 Magic exp"
+		],
+		"vocation": "Mage"
+	},
+	{
+		"name": "Mind Games",
+		"description": "Confuse the target, disengaging and causing them to strike out wildly at another attacker or retreat. Only works on targets attacking you or a party member. Does not affect players.",
+		"requirement": "Level 10",
+		"cooldown": "15.0 Seconds",
+		"effects": [
+			"-50 Mana"
+		],
+		"vocation": "Mage"
+	},
+	{
+		"name": "Conjure Light Mana Missile",
+		"description": "Conjure a light mana missile rune with 3 charges. Consumes 1 blank rune.",
+		"requirement": "Level 10",
+		"cooldown": "60.0 Seconds",
+		"effects": [
+			"-100 Mana",
+			"+5 Magic exp"
+		],
+		"vocation": "Mage"
+	},
+	{
+		"name": "Conjure Mana Missile",
+		"description": "Conjure a mana missile rune with 2 charges. Consumes 1 blankrune.",
+		"requirement": "Level 50",
+		"cooldown": "60.0 Seconds",
+		"effects": [
+			"-200 Mana",
+			"+10 Magic exp"
+		],
+		"vocation": "Mage"
+	},
+	{
+		"name": "Conjure Heavy Mana Missile",
+		"description": "Conjure a heavy mana missile rune with 1 charge. Consumes 1 blank rune.",
+		"requirement": "Level 75",
+		"cooldown": "60.0 Seconds",
+		"effects": [
+			"-400 Mana",
+			"+20 Magic exp"
+		],
+		"vocation": "Mage"
+	},
+	{
+		"name": "Conjure Light Ice Missile",
+		"description": "Conjure a light ice missile rune with 3 charges. Consumes 1 blank rune.",
+		"requirement": "Level 15",
+		"cooldown": "60.0 Seconds",
+		"effects": [
+			"-100 Mana",
+			"+5 Magic exp"
+		],
+		"vocation": "Mage"
+	},
+	{
+		"name": "Conjure Ice Missile",
+		"description": "Conjure an ice missile rune with 2 charges. Consumes 1 blank rune.",
+		"requirement": "Level 35",
+		"cooldown": "60.0 Seconds",
+		"effects": [
+			"-200 Mana",
+			"+10 Magic exp"
+		],
+		"vocation": "Mage"
+	},
+	{
+		"name": "Conjure Heavy Ice Missile",
+		"description": "Conjure a heavy ice missile rune with 1 charge. Consumes 1 blank rune.",
+		"requirement": "Level 60",
+		"cooldown": "60.0 Seconds",
+		"effects": [
+			"-400 Mana",
+			"+20 Magic exp"
+		],
+		"vocation": "Mage"
+	},
+	{
+		"name": "Conjure Light Fire Missile",
+		"description": "Conjure alight fire missile rune with 3 charges. Consumes 1 blank rune.",
+		"requirement": "Level 20",
+		"cooldown": "60.0 Seconds",
+		"effects": [
+			"-100 Mana",
+			"+5 Magic exp"
+		],
+		"vocation": "Mage"
+	},
+	{
+		"name": "Conjure Fire Missile",
+		"description": "Conjure a fire missilerune with 2 charges. Consumes 1 blank rune.",
+		"requirement": "Level 40",
+		"cooldown": "60.0 Seconds",
+		"effects": [
+			"-200 Mana",
+			"+10 Magic exp"
+		],
+		"vocation": "Mage"
+	},
+	{
+		"name": "Conjure Heavy Fire Missile",
+		"description": "Conjure a heavy fire missile rune with 1 charge. Consumes 1 blank rune.",
+		"requirement": "Level 65",
+		"cooldown": "60.0 Seconds",
+		"effects": [
+			"-400 Mana",
+			"+20 Magic exp"
+		],
+		"vocation": "Mage"
+	},
+	{
+		"name": "Conjure Light Energy Missile",
+		"description": "Conjure a light energy missile rune with 3 charges. Consumes 1 blank rune.",
+		"requirement": "Level 25",
+		"cooldown": "60.0 Seconds",
+		"effects": [
+			"-100 Mana",
+			"+5 Magic exp"
+		],
+		"vocation": "Mage"
+	},
+	{
+		"name": "Conjure Energy Missile",
+		"description": "Conjure an energy missile rune with 2 charges. Consumes 1 blank rune.",
+		"requirement": "Level 45",
+		"cooldown": "60.0 Seconds",
+		"effects": [
+			"-200 Mana",
+			"+10 Magic exp"
+		],
+		"vocation": "Mage"
+	},
+	{
+		"name": "Conjure Heavy Energy Missile",
+		"description": "Conjure a heavy energy missile rune with 1 charge. Consumes 1 blank rune.",
+		"requirement": "Level 70",
+		"cooldown": "60.0 Seconds",
+		"effects": [
+			"-400 Mana",
+			"+20 Magic exp"
+		],
+		"vocation": "Mage"
+	},
+	{
+		"name": "Conjure Light Death Missile",
+		"description": "Conjure a light death missile rune with 3 charges. Consumes 1 blank rune.",
+		"requirement": "Level 30",
+		"cooldown": "600.0 Seconds",
+		"effects": [
+			"-400 Mana",
+			"+20 Magic exp"
+		],
+		"vocation": "Mage"
+	},
+	{
+		"name": "Conjure Death Missile",
+		"description": "Conjure a death missile rune with 2 charges. Consumes 1 blank rune.",
+		"requirement": "Level 55",
+		"cooldown": "600.0 Seconds",
+		"effects": [
+			"-800 Mana",
+			"+40 Magic exp"
+		],
+		"vocation": "Mage"
+	},
+	{
+		"name": "Conjure Heavy Death Missile",
+		"description": "Conjure a heavy death missile rune with 1 charge. Consumes 1 blank rune.",
+		"requirement": "Level 100",
+		"cooldown": "600.0 Seconds",
+		"effects": [
+			"-1500 Mana",
+			"+75 Magic exp"
+		],
+		"vocation": "Mage"
+	},
+    {
         "name": "Healing Hands",
         "description": "Heal yourself or an ally for 100% magic power.",
         "requirement": "Level 5",
@@ -344,49 +596,6 @@
         "effects": [
             "-30 Mana",
             "+1 Magic exp"
-        ],
-        "vocation": "Shaman"
-    },
-    {
-        "name": "Conjure Light Mana Missile",
-        "description": "Conjure a light mana missile rune with 3 charges. Consumes 1 blank rune.",
-        "requirement": "Level 10",
-        "cooldown": "60.0 Seconds",
-        "effects": [
-            "-100 Mana",
-            "+50 Magic exp"
-        ],
-        "vocation": "Shaman"
-    },
-    {
-        "name": "Mind Games",
-        "description": "Confuse the target, disengaging and causing them to strike out wildly at another attacker or retreat. Only works on targets attacking you or party member. Does not affect players.",
-        "requirement": "Level 10",
-        "cooldown": "15.0 Seconds",
-        "effects": [
-            "-50 Mana"
-        ],
-        "vocation": "Shaman"
-    },
-    {
-        "name": "Conjure Light Physical Missile",
-        "description": "Conjure a light physical missile rune with 3 charges. Consumes 1 blank rune.",
-        "requirement": "Level 15",
-        "cooldown": "60.0 Seconds",
-        "effects": [
-            "-100 Mana",
-            "+50 Magic exp"
-        ],
-        "vocation": "Shaman"
-    },
-    {
-        "name": "Conjure Light Nature Missile",
-        "description": "Conjure a light nature missile rune with 3 charges. Consumes 1 blank rune.",
-        "requirement": "Level 20",
-        "cooldown": "60.0 Seconds",
-        "effects": [
-            "-100 Mana",
-            "+50 Magic exp"
         ],
         "vocation": "Shaman"
     },
@@ -402,39 +611,6 @@
         "vocation": "Shaman"
     },
     {
-        "name": "Conjure Light Haly Missile",
-        "description": "Conjure a light haly missile rune with 3 charges. Consumes 1 blank rune.",
-        "requirement": "Level 25",
-        "cooldown": "60.0 Seconds",
-        "effects": [
-            "-100 Mana",
-            "+50 Magic exp"
-        ],
-        "vocation": "Shaman"
-    },
-    {
-        "name": "Divine Intervention",
-        "description": "Heal yourself and all allies in range for 200%",
-        "requirement": "Level 25",
-        "cooldown": "15.0 Seconds",
-        "effects": [
-            "-120 Mana",
-            "+1 Magic exp"
-        ],
-        "vocation": "Shaman"
-    },
-    {
-        "name": "Conjure Light Heal",
-        "description": "Conjure a light healing rune with 3 charges. Consumes 1 blankrune.",
-        "requirement": "Level 30",
-        "cooldown": "3000.0 Seconds",
-        "effects": [
-            "-400 Mana",
-            "+20 Magic exp"
-        ],
-        "vocation": "Shaman"
-    },
-    {
         "name": "Healing Hands Rank 2",
         "description": "Heal yourself or an ally for 300% magic power.",
         "requirement": "Level 30",
@@ -442,50 +618,6 @@
         "effects": [
             "-90 Mana",
             "+1 Magic exp"
-        ],
-        "vocation": "Shaman"
-    },
-    {
-        "name": "Conjure Physical Missile",
-        "description": "Conjure a physical missile rune with 2 charges. Consumes 1 blank rune.",
-        "requirement": "Level 35",
-        "cooldown": "60.0 Seconds",
-        "effects": [
-            "-200 Mana",
-            "+10 Magic exp"
-        ],
-        "vocation": "Shaman"
-    },
-    {
-        "name": "Conjure Nature Missile",
-        "description": "Conjure a nature missile rune with 2 charges. Consumes 1 blank rune.",
-        "requirement": "Level 40",
-        "cooldown": "600.0 Seconds",
-        "effects": [
-            "-200 Mana",
-            "+10 Magic exp"
-        ],
-        "vocation": "Shaman"
-    },
-    {
-        "name": "Divine Intervention Rank 1",
-        "description": "Heal yourself and all allies in range for 300%.",
-        "requirement": "Level 40",
-        "cooldown": "15.0 Seconds",
-        "effects": [
-            "-180 Mana",
-            "+1 Magic exp"
-        ],
-        "vocation": "Shaman"
-    },
-    {
-        "name": "Conjure Holy Missile",
-        "description": "Conjure a holy missile rune with 2 charges. Consumes 1 blank rune.",
-        "requirement": "Level 45",
-        "cooldown": "60.0 Seconds",
-        "effects": [
-            "-200 Mana",
-            "+10 Magic exp"
         ],
         "vocation": "Shaman"
     },
@@ -501,13 +633,24 @@
         "vocation": "Shaman"
     },
     {
-        "name": "Conjure Mana Missile",
-        "description": "Conjure a mana missile rune with 2 charges. Consumes 1 blank rune.",
-        "requirement": "Level 50",
-        "cooldown": "60.0 Seconds",
+        "name": "Divine Intervention",
+        "description": "Heal yourself and all allies in range for 200%",
+        "requirement": "Level 25",
+        "cooldown": "15.0 Seconds",
         "effects": [
-            "-200 Mana",
-            "+10 Magic exp"
+            "-120 Mana",
+            "+1 Magic exp"
+        ],
+        "vocation": "Shaman"
+    },
+    {
+        "name": "Divine Intervention Rank 1",
+        "description": "Heal yourself and all allies in range for 300%.",
+        "requirement": "Level 40",
+        "cooldown": "15.0 Seconds",
+        "effects": [
+            "-180 Mana",
+            "+1 Magic exp"
         ],
         "vocation": "Shaman"
     },
@@ -523,13 +666,78 @@
         "vocation": "Shaman"
     },
     {
-        "name": "Conjure Heal",
-        "description": "Conjure a healing rune with 2 charges. Consumes 1 blank rune.",
-        "requirement": "Level 55",
-        "cooldown": "300.0 Seconds",
+        "name": "Divine Intervention Rank 3",
+        "description": "Heal yourself and all allies in range for 500%.",
+        "requirement": "Level 70",
+        "cooldown": "15.0 Seconds",
         "effects": [
-            "-800 Mana",
-            "+40 Magic exp"
+            "-300 Mana",
+            "+1 Magic exp"
+        ],
+        "vocation": "Shaman"
+    },
+    {
+        "name": "Mind Games",
+        "description": "Confuse the target, disengaging and causing them to strike out wildly at another attacker or retreat. Only works on targets attacking you or party member. Does not affect players.",
+        "requirement": "Level 10",
+        "cooldown": "15.0 Seconds",
+        "effects": [
+            "-50 Mana"
+        ],
+        "vocation": "Shaman"
+    },
+    {
+        "name": "Conjure Light Mana Missile",
+        "description": "Conjure a light mana missile rune with 3 charges. Consumes 1 blank rune.",
+        "requirement": "Level 10",
+        "cooldown": "60.0 Seconds",
+        "effects": [
+            "-100 Mana",
+            "+50 Magic exp"
+        ],
+        "vocation": "Shaman"
+    },
+    {
+		"name": "Conjure Mana Missile",
+		"description": "Conjure a mana missile rune with 2 charges. Consumes 1 blankrune.",
+		"requirement": "Level 50",
+		"cooldown": "60.0 Seconds",
+		"effects": [
+			"-200 Mana",
+			"+10 Magic exp"
+		],
+		"vocation": "Shaman"
+	},
+	{
+		"name": "Conjure Heavy Mana Missile",
+		"description": "Conjure a heavy mana missile rune with 1 charge. Consumes 1 blank rune.",
+		"requirement": "Level 75",
+		"cooldown": "60.0 Seconds",
+		"effects": [
+			"-400 Mana",
+			"+20 Magic exp"
+		],
+		"vocation": "Shaman"
+	},
+    {
+        "name": "Conjure Light Physical Missile",
+        "description": "Conjure a light physical missile rune with 3 charges. Consumes 1 blank rune.",
+        "requirement": "Level 15",
+        "cooldown": "60.0 Seconds",
+        "effects": [
+            "-100 Mana",
+            "+50 Magic exp"
+        ],
+        "vocation": "Shaman"
+    },
+    {
+        "name": "Conjure Physical Missile",
+        "description": "Conjure a physical missile rune with 2 charges. Consumes 1 blank rune.",
+        "requirement": "Level 35",
+        "cooldown": "60.0 Seconds",
+        "effects": [
+            "-200 Mana",
+            "+10 Magic exp"
         ],
         "vocation": "Shaman"
     },
@@ -545,6 +753,28 @@
         "vocation": "Shaman"
     },
     {
+        "name": "Conjure Light Nature Missile",
+        "description": "Conjure a light nature missile rune with 3 charges. Consumes 1 blank rune.",
+        "requirement": "Level 20",
+        "cooldown": "60.0 Seconds",
+        "effects": [
+            "-100 Mana",
+            "+50 Magic exp"
+        ],
+        "vocation": "Shaman"
+    },
+    {
+        "name": "Conjure Nature Missile",
+        "description": "Conjure a nature missile rune with 2 charges. Consumes 1 blank rune.",
+        "requirement": "Level 40",
+        "cooldown": "600.0 Seconds",
+        "effects": [
+            "-200 Mana",
+            "+10 Magic exp"
+        ],
+        "vocation": "Shaman"
+    },
+    {
         "name": "Conjure Heavy Nature Missile",
         "description": "Conjure a heavy nature missile rune with 1 charge. Consumes 1 blank rune.",
         "requirement": "Level 65",
@@ -552,6 +782,28 @@
         "effects": [
             "-400 Mana",
             "+20 Magic exp"
+        ],
+        "vocation": "Shaman"
+    },
+    {
+        "name": "Conjure Light Holy Missile",
+        "description": "Conjure a light haly missile rune with 3 charges. Consumes 1 blank rune.",
+        "requirement": "Level 25",
+        "cooldown": "60.0 Seconds",
+        "effects": [
+            "-100 Mana",
+            "+50 Magic exp"
+        ],
+        "vocation": "Shaman"
+    },
+    {
+        "name": "Conjure Holy Missile",
+        "description": "Conjure a holy missile rune with 2 charges. Consumes 1 blank rune.",
+        "requirement": "Level 45",
+        "cooldown": "60.0 Seconds",
+        "effects": [
+            "-200 Mana",
+            "+10 Magic exp"
         ],
         "vocation": "Shaman"
     },
@@ -567,27 +819,27 @@
         "vocation": "Shaman"
     },
     {
-        "name": "Divine Intervention Rank 3",
-        "description": "Heal yourself and all allies in range for 500%.",
-        "requirement": "Level 70",
-        "cooldown": "15.0 Seconds",
-        "effects": [
-            "-300 Mana",
-            "+1 Magic exp"
-        ],
-        "vocation": "Shaman"
-    },
-    {
-        "name": "Conjure Heavy Mana Missile",
-        "description": "Conjure a heavy mana missile rune with 1 charge. Consumes 1 blank rune.",
-        "requirement": "Level 75",
-        "cooldown": "60.0 Seconds",
+        "name": "Conjure Light Heal",
+        "description": "Conjure a light healing rune with 3 charges. Consumes 1 blankrune.",
+        "requirement": "Level 30",
+        "cooldown": "3000.0 Seconds",
         "effects": [
             "-400 Mana",
             "+20 Magic exp"
         ],
         "vocation": "Shaman"
-    },
+    }, 
+    {
+        "name": "Conjure Heal",
+        "description": "Conjure a healing rune with 2 charges. Consumes 1 blank rune.",
+        "requirement": "Level 55",
+        "cooldown": "300.0 Seconds",
+        "effects": [
+            "-800 Mana",
+            "+40 Magic exp"
+        ],
+        "vocation": "Shaman"
+    },  
     {
         "name": "Conjure Heavy Heal",
         "description": "Conjure a heavy healing rune with 1 charge. Consumes 1 blank rune.",
