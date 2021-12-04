@@ -75,6 +75,7 @@ module.exports = {
                     .setAuthor(messageDetails.author, messageDetails.avatar)
                     .setThumbnail(`attachment://${category.toLowerCase()}.png`)
                     .addField('❯ Skills', skills)
+                    .addField('❯ Usage', `${messageDetails.prefix}skills <skill>`)
                     .setColor('BLUE')
 
                 sendMessage(message, interaction, {
