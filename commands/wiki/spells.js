@@ -12,9 +12,9 @@ const getCategories = (categories) => {
     return list
 }
 
-const getSkills = (skillJson, type) => {
+const getSpells = (spellJson, type) => {
     let skills = ''
-    skillJson.filter(skill => ignoreCase.equals(type, skill.vocation))
+    spellJson.filter(skill => ignoreCase.equals(type, skill.vocation))
         .forEach(skill => {
             skills += `• ${skill.name}\n`
     })
@@ -23,16 +23,16 @@ const getSkills = (skillJson, type) => {
 
 module.exports = {
     category: 'Wiki',
-    description: 'A command that will help you for skills in the game.',
-    aliases: ['skill'],
+    description: 'A command that will help you for spells in the game.',
+    aliases: ['spell'],
 
     slash: 'both',
 
-    expectedArgs: '<skill>',
+    expectedArgs: '<spell>',
     options: [
         {
-            name: 'skill',
-            description: 'The name of the skill you want to check.',
+            name: 'spell',
+            description: 'The name of the spell you want to check.',
             required: false,
             type: 3
         }
@@ -41,7 +41,7 @@ module.exports = {
     callback: async ({ message, interaction, args, prefix }) => {
         const messageDetails = getMessageDetails(message, interaction, prefix)
 
-        const skillJson = JSON.parse(Buffer.from(fs.readFileSync(process.env.PWD + '/assets/wiki/skills.json').toString()))
+        const spellJson = JSON.parse(Buffer.from(fs.readFileSync(process.env.PWD + '/assets/wiki/spells.json').toString()))
         const categories = ['Knight', 'Ranger', 'Mage', 'Shaman']
 
         //List the categories
@@ -51,7 +51,7 @@ module.exports = {
                 .setAuthor(messageDetails.author, messageDetails.avatar)
                 .setThumbnail('attachment://explosion.png')
                 .addField('❯ Vocations', list)
-                .addField('❯ Usage', `${messageDetails.prefix}skills <skill>`)
+                .addField('❯ Usage', `${messageDetails.prefix}spells <spell>`)
                 .setColor('BLUE')
 
             return sendMessage(message, interaction, {
@@ -59,23 +59,23 @@ module.exports = {
                     embed
                 ],
                 files: [
-                    process.env.PWD + '/assets/wiki/sprites/skills/mage/explosion.png'
+                    process.env.PWD + '/assets/wiki/sprites/spells/mage/explosion.png'
                 ]
             })
         }
 
-        //List the skills in that category
+        //List the spells in that category
         let code = 1
         categories.forEach(category => {
             if (ignoreCase.equals(args.join(' '), category)) {
                 code = 0
 
-                const skills = getSkills(skillJson, category)
+                const skills = getSpells(spellJson, category)
                 const embed = new MessageEmbed()
                     .setAuthor(messageDetails.author, messageDetails.avatar)
                     .setThumbnail(`attachment://${category.toLowerCase()}.png`)
-                    .addField('❯ Skills', skills)
-                    .addField('❯ Usage', `${messageDetails.prefix}skills <skill>`)
+                    .addField(`❯ ${category} Spells`, skills)
+                    .addField('❯ Usage', `${messageDetails.prefix}spells <spell>`)
                     .setColor('BLUE')
 
                 sendMessage(message, interaction, {
@@ -83,20 +83,20 @@ module.exports = {
                         embed
                     ],
                     files: [
-                        process.env.PWD + `/assets/wiki/sprites/skills/category-thumbnails/${category.toLowerCase()}.png`
+                        process.env.PWD + `/assets/wiki/sprites/spells/category-thumbnails/${category.toLowerCase()}.png`
                     ]
                 })
             }
         })
 
-        //Show full details of a skill
+        //Show full details of a spell
         if (code == 1) {
-            skillJson.forEach(skill => {
+            spellJson.forEach(skill => {
                 if (ignoreCase.equals(args.join(' '), skill.name)) {
                     code = 0
 
                     const name = skill.name.replaceAll(' ', '-').toLowerCase()
-                    const sprite = process.env.PWD + '/assets/wiki/sprites/skills/' + skill.vocation.toLowerCase() + '/' + name + '.png'
+                    const sprite = process.env.PWD + '/assets/wiki/sprites/spells/' + skill.vocation.toLowerCase() + '/' + name + '.png'
 
                     let effects = ''
                     skill.effects.forEach(effect => {
@@ -127,21 +127,22 @@ module.exports = {
             })
         }
 
-        //If the vocation user typed didn't exist
+        //If the spell user typed didn't exist
         if (code == 1) {
             const embed = new MessageEmbed()
                 .setAuthor(messageDetails.author, messageDetails.avatar)
-                .setDescription('Make sure the skill you type is valid')
-                .addField('❯ Usage', `${messageDetails.prefix}skills - To list all skill categories available in the game` )
+                .setThumbnail('attachment://explosion.png')
+                .setDescription('Make sure the spell you type is valid')
+                .addField('❯ Usage', `${messageDetails.prefix}spells - To list all spell categories available in the game` )
                 .setColor('RED')
 
             sendMessage(message, interaction, {
                 embeds: [
                     embed
                 ],
-                /*files: [
-                    process.env.PWD + '/assets/wiki/sprites/vocations/knight.png'
-                ]*/
+                files: [
+                    process.env.PWD + '/assets/wiki/sprites/spells/mage/explosion.png'
+                ]
             })
         }
     }
