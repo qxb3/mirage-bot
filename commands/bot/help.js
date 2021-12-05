@@ -5,7 +5,7 @@ const getMessageDetails = require('../../utils/get-message-details')
 const sendMessage = require('../../utils/send-message')
 
 module.exports = {
-    category: 'Help',
+    category: 'Bot',
     description: 'A help command that will help you get started with the bot.',
 
     slash: 'both',
