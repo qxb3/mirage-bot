@@ -48,6 +48,7 @@ module.exports = {
             const list = getCategories(categories)
             const embed = new MessageEmbed()
                 .setAuthor(messageDetails.author, messageDetails.avatar)
+                .setThumbnail('attachment://cloth-shirt.png')
                 .addField('❯ Categories', list)
                 .addField('❯ Usage', `${messageDetails.prefix}equipments - To list all equipment categories in the game\n${messageDetails.prefix}equipments <category> - To list all the equipments in that category`)
                 .setColor('BLUE')
@@ -55,6 +56,9 @@ module.exports = {
             return sendMessage(message, interaction, {
                 embeds: [
                     embed
+                ],
+                files: [
+                    process.env.PWD + '/assets/items/sprites/equipments/chest/cloth-shirt.png'
                 ]
             })
         }
@@ -65,9 +69,13 @@ module.exports = {
             if (ignoreCase.equals(args.join(' '), category)) {
                 code = 0
 
+                const name = category.toLowerCase()
+                const sprite = process.env.PWD + '/assets/items/sprites/equipments/category-thumbnails/' + name + '.png'
+
                 const weapons = getWeapons(equipmentJson, args.join(' '))
                 const embed = new MessageEmbed()
                     .setAuthor(messageDetails.author, messageDetails.avatar)
+                    .setThumbnail(`attachment://${name}.png`)
                     .addFields([
                         { name: `❯ ${category} - List`, value: weapons },
                         { name: '❯ Usage', value: `${messageDetails.prefix}equipments <equipment>` }
@@ -77,6 +85,9 @@ module.exports = {
                 sendMessage(message, interaction, {
                     embeds: [
                         embed
+                    ],
+                    files: [
+                        sprite
                     ]
                 })
             }
@@ -87,6 +98,9 @@ module.exports = {
             equipmentJson.forEach(equipment => {
                 if (ignoreCase.equals(args.join(' '), equipment.name)) {
                     code = 0
+
+                    const name = equipment.name.replace("'", '').replaceAll(' ', '-').toLowerCase()
+                    const sprite = process.env.PWD + '/assets/items/sprites/equipments/' + equipment.type.toLowerCase() + '/' + name + '.png'
 
                     let stats = ''
                     equipment.stats.forEach(stat => {
@@ -100,6 +114,7 @@ module.exports = {
 
                     const embed = new MessageEmbed()
                         .setAuthor(messageDetails.author, messageDetails.avatar)
+                        .setThumbnail(`attachment://${name}.png`)
                         .addFields([
                             { name: '❯ Name', value: equipment.name },
                             { name: '❯ Requirements', value: equipment.requirements },
@@ -111,6 +126,9 @@ module.exports = {
                     sendMessage(message, interaction, {
                         embeds: [
                             embed
+                        ],
+                        files: [
+                            sprite
                         ]
                     })
                 }
@@ -121,6 +139,7 @@ module.exports = {
         if (code == 1) {
             const embed = new MessageEmbed()
                 .setAuthor(messageDetails.author, messageDetails.avatar)
+                .setThumbnail('attachment://cloth-shirt.png')
                 .setDescription('Make sure the equipment or the category you typed is valid')
                 .addField('❯ Usage', `${messageDetails.prefix}equipments - To list all weapon categories in the game\n${messageDetails.prefix}equipments <category> - To list all the equipments in that category`)
                 .setColor('RED')
@@ -128,6 +147,9 @@ module.exports = {
             sendMessage(message, interaction, {
                 embeds: [
                     embed
+                ],
+                files: [
+                    process.env.PWD + '/assets/items/sprites/equipments/chest/cloth-shirt.png'
                 ]
             })
         }
