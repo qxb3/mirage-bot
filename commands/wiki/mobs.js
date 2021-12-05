@@ -41,8 +41,9 @@ module.exports = {
         //List the mobs
         if (!args[0]) {
             const list = getCategories(categories)
-            const embed = new MessageEmbed() 
+            const embed = new MessageEmbed()
                 .setAuthor(messageDetails.author, messageDetails.avatar)
+                .setThumbnail('attachment://troll.png')
                 .addField('❯ Mobs', list)
                 .addField('❯ Usage', `${messageDetails.prefix}mobs <mob>`)
                 .setColor('BLUE')
@@ -50,6 +51,9 @@ module.exports = {
             return sendMessage(message, interaction, {
                 embeds: [
                     embed
+                ],
+                files: [
+                    process.env.PWD + '/assets/wiki/sprites/mobs/troll.png'
                 ]
             })
         }
@@ -59,6 +63,9 @@ module.exports = {
         mobsJson.forEach(mob => {
             if (ignoreCase.equals(args.join(' '), mob.name)) {
                 code = 0
+
+                const name = mob.name.replace("'", '').replaceAll(' ', '-').toLowerCase()
+                const sprite = process.env.PWD + '/assets/wiki/sprites/mobs/' + name + '.png'
 
                 let stats = ''
                 mob.stats.forEach(stat => {
@@ -77,6 +84,7 @@ module.exports = {
 
                 const embed = new MessageEmbed()
                     .setAuthor(messageDetails.author, messageDetails.avatar)
+                    .setThumbnail(`attachment://${name}.png`)
                     .addFields([
                         { name: '❯ Name', value: mob.name },
                         { name: '❯ Stats', value: stats },
@@ -88,6 +96,9 @@ module.exports = {
                 sendMessage(message, interaction, {
                     embeds: [
                         embed
+                    ],
+                    files: [
+                        sprite
                     ]
                 })
             }
@@ -97,6 +108,7 @@ module.exports = {
         if (code == 1) {
             const embed = new MessageEmbed()
                 .setAuthor(messageDetails.author, messageDetails.avatar)
+                .setThumbnail('attachment://troll.png')
                 .setDescription('Make sure the mob you type is valid')
                 .addField('❯ Usage', `${messageDetails.prefix}mobs - To list all mobs in the game` )
                 .setColor('RED')
@@ -104,6 +116,9 @@ module.exports = {
             sendMessage(message, interaction, {
                 embeds: [
                     embed
+                ],
+                files: [
+                    process.env.PWD + '/assets/wiki/sprites/mobs/troll.png'
                 ]
             })
         }
