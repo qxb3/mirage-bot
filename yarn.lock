@@ -1140,10 +1140,9 @@ widest-line@^3.1.0:
   dependencies:
     string-width "^4.0.0"
 
-wokcommands@^1.5.3:
+wokcommands@qxb3/wokcommands:
   version "1.5.3"
-  resolved "https://registry.yarnpkg.com/wokcommands/-/wokcommands-1.5.3.tgz#422718970acf2b012b8bb0050af45badffbc7ec2"
-  integrity sha512-oBb7ujov8zJ1DYSLz3G7OW9DJK+0l35t/ds5j/2nJ+4DwfzLU7w4i2yXGZOidSHkkygSegiNuaWKfZTP2okJOw==
+  resolved "https://codeload.github.com/qxb3/wokcommands/tar.gz/2dfe0c4baa05c54b1e6eb3ddc706a822baae7c8b"
   dependencies:
     discord.js "^13.1.0"
     dotenv "^8.2.0"
