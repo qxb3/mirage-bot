@@ -25,15 +25,16 @@ client.on('ready', async () => {
     new WokCommands(client, {
         commandDir: path.join(__dirname, './commands'), 
         featuresDir: path.join(__dirname, './features'),
-        testServers: ['811195710065082378'],
-        botOwners: ['591150858830479381'],
         mongoUri: process.env.MONGO_URI,
+        testServers: ['811195710065082378'],
+        botOwners: ['591150858830479381'], 
         disabledDefaultCommands: [
-            'channelonly', 'command', 'language',
-            /*'prefix', */'requiredrole'
+            'channelonly', 'command', 'commands',
+            'language', /*'prefix', */'requiredrole',
         ]
     })
     .setDefaultPrefix('?')
+    .setCategorySettings([])
 })
 
 client.login(process.env.BOT_TOKEN)
