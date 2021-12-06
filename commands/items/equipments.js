@@ -24,7 +24,7 @@ const getWeapons = (equipmentJson, type) => {
 module.exports = {
     category: 'Items',
     description: 'A command that will help you for equipments in the game',
-    aliases: ['equipment', 'equips', 'equip'],
+    aliases: ['equipment', 'equips', 'equip', 'eqs', 'eq'],
 
     slash: 'both',
 
