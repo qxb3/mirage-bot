@@ -45,7 +45,7 @@ module.exports = {
                 .setTitle('Commands')
                 .setThumbnail('attachment://help.png')
                 .addFields(commands)
-                .addField('❯ Usage', `${messageDetails.prefix}command <command>`)
+                .addField('❯ Usage', `${messageDetails.prefix}commands <command>`)
                 .setColor('BLUE')
 
             return sendMessage(message, interaction, {
@@ -94,7 +94,7 @@ module.exports = {
             const embed = new MessageEmbed()
                 .setThumbnail('attachment://error.png')
                 .setDescription('Make sure the command name you typed exist')
-                .addField('❯ Usage', `${messageDetails.prefix}help <command>`)
+                .addField('❯ Usage', `${messageDetails.prefix}commands <command>`)
                 .setColor('RED')
 
             sendMessage(message, interaction, {
