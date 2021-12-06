@@ -14,3 +14,8 @@ module.exports = (client) => {
         setBotActivity(client)
     })
 }
+
+module.exports.config = {
+    displayName: 'Set Bot Activity',
+    dbName: 'BOT_ACTIVITY'
+}

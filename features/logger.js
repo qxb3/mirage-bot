@@ -56,3 +56,8 @@ module.exports = async (client, instance) => {
         sendToDatabase(guildId, guildName, user, commandUsed, on)
     })
 }
+
+module.exports.config = {
+    displayName: 'Command Logger',
+    dbName: 'COMMAND_LOGGER'
+}

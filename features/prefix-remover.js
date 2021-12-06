@@ -7,3 +7,8 @@ module.exports = (client) => {
         }).clone().catch(err => console.log(err))
     })
 }
+
+module.exports.config = {
+    displayName: 'Prefix Remover',
+    dbName: 'PREFIX_REMOVER'
+}
