@@ -29,8 +29,8 @@ client.on('ready', async () => {
         testServers: ['811195710065082378'],
         botOwners: ['591150858830479381'], 
         disabledDefaultCommands: [
-            'channelonly', 'command', 'commands',
-            'language', /*'prefix', */'requiredrole',
+            'channelonly', 'command', 'language',
+            'prefix', 'requiredrole',
         ]
     })
     .setDefaultPrefix('?')
