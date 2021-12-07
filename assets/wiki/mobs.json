@@ -1385,7 +1385,8 @@
             "Holy: 0%"
         ],
         "loots": [
-            "Copper (2057-4114)"
+            "Copper (2057-4114)",
+            "Hellborn Amulet"
         ]
     },
     {
@@ -1479,7 +1480,8 @@
             "Holy: 0%"
         ],
         "loots": [
-            "Copper (2315-4629)"
+            "Copper (2315-4629)",
+            "Granite Boots"
         ]
     },
     {
@@ -1502,7 +1504,11 @@
             "Holy: 0%"
         ],
         "loots": [
-            "Copper (2315-4629)"
+            "Copper (2315-4629)",
+            "Midnight Sword",
+            "Daylight Rod",
+            "Purity Staff",
+            "Ironbark"
         ]
     },
     {
