@@ -10,7 +10,7 @@ module.exports = {
     category: 'Utilities',
     description: 'Sell items using beautiful embeds.',
 
-    slash: 'both',
+    slash: true,
 
     minArgs: 3,
     expectedArgs: '<name> <stats> <price>',
@@ -36,9 +36,10 @@ module.exports = {
     ],
 
     callback: async ({ message, interaction, user, args }) => {
-        const price = args.pop()
+        const [name, stats, price] = args
+        /*const price = args.pop()
         const stats = args.pop()
-        const name = args.join(' ')
+        const name = args.join(' ')*/
 
         const weaponsJson = getJsonFile('assets/items/weapons.json')
         const equipmentsJson = getJsonFile('assets/items/equipments.json')
