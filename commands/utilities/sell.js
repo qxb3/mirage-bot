@@ -11,7 +11,6 @@ module.exports = {
     description: 'Sell items using beautiful embeds.',
 
     slash: 'both',
-    testOnly: true,
 
     minArgs: 3,
     expectedArgs: '<name> <stats> <price>',
