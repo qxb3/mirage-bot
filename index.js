@@ -4,6 +4,8 @@ const { Client, Intents } = require('discord.js')
 const path = require('path')
 const WokCommands = require('wokcommands')
 
+const setBotActivity = require('./utils/set-bot-activity')
+
 const client = new Client({
     intents: [
         Intents.FLAGS.GUILDS,
@@ -11,13 +13,6 @@ const client = new Client({
         Intents.FLAGS.GUILD_MESSAGE_REACTIONS
     ]
 })
-
-const setBotActivity = (client) => {
-    client.user.setActivity({
-        type: 'WATCHING',
-        name: `On ${client.guilds.cache.size} Servers!!`
-    })
-}
 
 client.on('ready', async () => {
     setBotActivity(client) 

@@ -1,11 +1,6 @@
-module.exports = (client) => {
-    const setBotActivity = (client) => {
-        client.user.setActivity({
-            type: 'WATCHING',
-            name: `On ${client.guilds.cache.size} Servers!!`
-        })
-    }
+const setBotActivity = require('../utils/set-bot-activity')
 
+module.exports = (client) => {
     client.on('guildCreate', () => {
         setBotActivity(client)
     })
