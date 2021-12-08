@@ -65,7 +65,7 @@ module.exports = {
 
             embed.setThumbnail(`attachment://${sprite}`)
             embed.addFields([
-                { name: `❯ ${isCategory}s`, value: equipments },
+                { name: `❯ ${isCategory}`, value: equipments },
                 usage
             ])
 
