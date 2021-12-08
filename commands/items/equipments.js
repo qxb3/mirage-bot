@@ -1,5 +1,3 @@
-const { MessageEmbed } = require('discord.js')
-
 const equipmentsJson = require('@assets/items/equipments.json')
 const sendMessage = require('@utils/send-message')
 const formatter = require('@utils/formatter')
