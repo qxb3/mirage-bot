@@ -28,6 +28,11 @@ module.exports = {
         const embed = new MessageEmbed()
             .setAuthor(user.tag, user.displayAvatarURL())
             .setColor('GREEN')
+
+        if (interaction) {
+            prefix = '/'
+        }
+
         const usage = {
             name: '❯ Usage',
             value: `${prefix}equipments <equipment> - To see the full details of an item.\n` +
@@ -95,6 +100,7 @@ module.exports = {
         embed.setThumbnail('attachment://error.png')
         embed.setDescription('The equipment you typed did not match to any equipments.')
         embed.addFields([ usage ])
+        embed.setColor('RED')
 
         sendMessage(message, interaction, {
             embeds: [ embed ],
