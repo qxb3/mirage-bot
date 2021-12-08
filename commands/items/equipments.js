@@ -33,8 +33,8 @@ module.exports = {
         const usage = {
             name: '❯ Usage',
             value: `${prefix}equipments <equipment> - To see the full details of the equipment.\n` +
-                   `${prefix}equipments <category> - To see all the equipments in that categories.\n` +
-                   `${prefix}equipments - To sell all the categories.`
+                   `${prefix}equipments <category> - To list all the equipments in that categories.\n` +
+                   `${prefix}equipments - To list all the categories.`
         }
 
         //If user didn't give arguments

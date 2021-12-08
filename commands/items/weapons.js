@@ -33,8 +33,8 @@ module.exports = {
         const usage = {
             name: '❯ Usage',
             value: `${prefix}weapons <weapon> - To see the full details of the weapon.\n` +
-                   `${prefix}weapons <category> - To see all the weapons in that categories.\n` +
-                   `${prefix}weapons - To sell all the categories.`
+                   `${prefix}weapons <category> - To list all the weapons in that categories.\n` +
+                   `${prefix}weapons - To list all the categories.`
         }
 
         //If user didn't give arguments
