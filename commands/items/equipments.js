@@ -32,8 +32,8 @@ module.exports = {
 
         const usage = {
             name: '❯ Usage',
-            value: `${prefix}equipments <equipment> - To see the full details of an item.\n` +
-                   `${prefix}equipments <category> - To see all the items in that categories.\n` +
+            value: `${prefix}equipments <equipment> - To see the full details of the equipment.\n` +
+                   `${prefix}equipments <category> - To see all the equipments in that categories.\n` +
                    `${prefix}equipments - To sell all the categories.`
         }
 
