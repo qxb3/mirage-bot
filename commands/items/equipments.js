@@ -1,25 +1,10 @@
 const { MessageEmbed } = require('discord.js')
-const ignoreCase = require('ignore-case')
-const fs = require('fs')
-const getMessageDetails = require('../../utils/get-message-details')
+
+const equipmentJson = require('../../assets/items/equipments.json')
 const sendMessage = require('../../utils/send-message')
+const formatter = require('../../utils/formatter')
 
-const getCategories = (categories) => {
-    let list = ''
-    categories.forEach(category => {
-        list += `• ${category}\n`
-    })
-    return list
-}
-
-const getWeapons = (equipmentJson, type) => {
-    let weapons = ''
-    equipmentJson.filter(weapon => ignoreCase.equals(type, weapon.type))
-        .forEach(weapon => {
-            weapons += `• ${weapon.name}\n`
-    })
-    return weapons
-}
+const didyoumean = require('didyoumean2').default
 
 module.exports = {
     category: 'Items',
@@ -38,120 +23,82 @@ module.exports = {
         }
     ],
 
-    callback: async ({ message, interaction, args, prefix }) => {
-        const messageDetails = getMessageDetails(message, interaction, prefix)
-
-        const equipmentJson = JSON.parse(Buffer.from(fs.readFileSync(process.env.PWD + '/assets/items/equipments.json').toString()))
+    callback: async ({ message, interaction, args, prefix, user }) => {
         const categories = ['Helmet', 'Chest', 'Gloves', 'Boots', 'Ring', 'Necklace']
-
-        if (!args[0]) {
-            const list = getCategories(categories)
-            const embed = new MessageEmbed()
-                .setAuthor(messageDetails.author, messageDetails.avatar)
-                .setThumbnail('attachment://cloth-shirt.png')
-                .addField('❯ Categories', list)
-                .addField('❯ Usage', `${messageDetails.prefix}equipments - To list all equipment categories in the game\n${messageDetails.prefix}equipments <category> - To list all the equipments in that category`)
-                .setColor('BLUE')
-
-            return sendMessage(message, interaction, {
-                embeds: [
-                    embed
-                ],
-                files: [
-                    process.env.PWD + '/assets/items/sprites/equipments/chest/cloth-shirt.png'
-                ]
-            })
+        const embed = new MessageEmbed()
+            .setAuthor(user.tag, user.displayAvatarURL())
+            .setColor('GREEN')
+        const usage = {
+            name: '❯ Usage',
+            value: `${prefix}equipments <equipment> - To see the full details of an item.\n` +
+                   `${prefix}equipments <category> - To see all the items in that categories.\n` +
+                   `${prefix}equipments - To sell all the categories.`
         }
 
-        //List the equipments in that category
-        let code = 1
-        categories.forEach(category => {
-            if (ignoreCase.equals(args.join(' '), category)) {
-                code = 0
-
-                const name = category.toLowerCase()
-                const sprite = process.env.PWD + '/assets/items/sprites/equipments/category-thumbnails/' + name + '.png'
-
-                const weapons = getWeapons(equipmentJson, args.join(' '))
-                const embed = new MessageEmbed()
-                    .setAuthor(messageDetails.author, messageDetails.avatar)
-                    .setThumbnail(`attachment://${name}.png`)
-                    .addFields([
-                        { name: `❯ ${category} - List`, value: weapons },
-                        { name: '❯ Usage', value: `${messageDetails.prefix}equipments <equipment>` }
-                    ])
-                    .setColor('BLUE')
-
-                sendMessage(message, interaction, {
-                    embeds: [
-                        embed
-                    ],
-                    files: [
-                        sprite
-                    ]
-                })
-            }
-        })
-
-        //Show full details of the equipment
-        if (code == 1) {
-            equipmentJson.forEach(equipment => {
-                if (ignoreCase.equals(args.join(' '), equipment.name)) {
-                    code = 0
-
-                    const name = equipment.name.replace("'", '').replaceAll(' ', '-').toLowerCase()
-                    const sprite = process.env.PWD + '/assets/items/sprites/equipments/' + equipment.type.toLowerCase() + '/' + name + '.png'
-
-                    let stats = ''
-                    equipment.stats.forEach(stat => {
-                        stats += `• ${stat}\n`
-                    })
-
-                    let monsters = ''
-                    equipment.monsters.forEach(monster => {
-                        monsters += `• ${monster}\n`
-                    })
-
-                    const embed = new MessageEmbed()
-                        .setAuthor(messageDetails.author, messageDetails.avatar)
-                        .setThumbnail(`attachment://${name}.png`)
-                        .addFields([
-                            { name: '❯ Name', value: equipment.name },
-                            { name: '❯ Requirements', value: equipment.requirements },
-                            { name: '❯ Stats', value: stats },
-                            { name: '❯ Monsters', value: monsters }
-                        ])
-                        .setColor('BLUE')
-
-                    sendMessage(message, interaction, {
-                        embeds: [
-                            embed
-                        ],
-                        files: [
-                            sprite
-                        ]
-                    })
-                }
-            })
-        }
-
-        //If the user typed didnt exist
-        if (code == 1) {
-            const embed = new MessageEmbed()
-                .setAuthor(messageDetails.author, messageDetails.avatar)
-                .setThumbnail('attachment://cloth-shirt.png')
-                .setDescription('Make sure the equipment or the category you typed is valid')
-                .addField('❯ Usage', `${messageDetails.prefix}equipments - To list all weapon categories in the game\n${messageDetails.prefix}equipments <category> - To list all the equipments in that category`)
-                .setColor('RED')
+        //If user didn't give arguments
+        if (args.length === 0) {
+            embed.setThumbnail('attachment://cloth-shirt.png')
+            embed.addFields([
+                { name: '❯ Categories', value: formatter(categories) },
+                usage
+            ])
 
             sendMessage(message, interaction, {
-                embeds: [
-                    embed
-                ],
-                files: [
-                    process.env.PWD + '/assets/items/sprites/equipments/chest/cloth-shirt.png'
-                ]
+                embeds: [ embed ],
+                files: [  process.env.PWD + '/assets/items/sprites/equipments/chest/cloth-shirt.png' ]
             })
+            return
         }
+
+        const isCategory = didyoumean(args.join(' '), categories)
+        const isEquipment = didyoumean(args.join(' '), equipmentJson.map(data => data.name))
+
+        //If the user input is category
+        if (isCategory) {
+            const equipments = formatter(equipmentJson.filter(data => data.type === isCategory).map(data => data.name))
+            const sprite = `${isCategory.toLowerCase()}.png`
+
+            embed.setThumbnail(`attachment://${sprite}`)
+            embed.addFields([
+                { name: `❯ ${isCategory}s`, value: equipments },
+                usage
+            ])
+
+            sendMessage(message, interaction, {
+                embeds: [ embed ],
+                files: [ `${process.env.PWD}/assets/items/sprites/equipments/category-thumbnails/${sprite}` ]
+            })
+            return
+        }
+
+        //If the user input is equipment
+        if (isEquipment) {
+            const equipment = equipmentJson.find(data => data.name === isEquipment)
+            const sprite = equipment.name.replace(/'/, '').replaceAll(' ', '-').toLowerCase() + '.png'
+            const type = equipment.type.toLowerCase()
+
+            embed.setThumbnail(`attachment://${sprite}`)
+            embed.addFields(
+                { name: '❯ Name', value: equipment.name },
+                { name: '❯ Requirement', value: equipment.requirements },
+                { name: '❯ Stats', value: formatter(equipment.stats) },
+                { name: '❯ Monsters', value: formatter(equipment.monsters) }
+            )
+            sendMessage(message, interaction, {
+                embeds: [ embed ],
+                files: [ `${process.env.PWD}/assets/items/sprites/equipments/${type}/${sprite}` ]
+            })
+            return
+        }
+
+        //If didn't match anything
+        embed.setThumbnail('attachment://error.png')
+        embed.setDescription('The equipment you typed did not match to any equipments.')
+        embed.addFields([ usage ])
+
+        sendMessage(message, interaction, {
+            embeds: [ embed ],
+            files: [ `${process.env.PWD}/assets/icons/error.png` ]
+        })
     }
 }
