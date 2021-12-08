@@ -16,8 +16,15 @@
     "discord.js": "^13.3.1",
     "dotenv": "^10.0.0",
     "ignore-case": "^0.1.0",
+    "module-alias": "^2.2.2",
     "mongoose": "^6.0.14",
     "wokcommands": "qxb3/wokcommands"
+  },
+  "_moduleAliases": {
+    "@root": ".",
+    "@assets": "./assets",
+    "@utils": "./utils",
+    "@models": "./models"
   },
   "devDependencies": {
     "nodemon": "^2.0.14"

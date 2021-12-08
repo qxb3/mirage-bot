@@ -1,8 +1,8 @@
 const { MessageEmbed } = require('discord.js')
 
-const equipmentJson = require('../../assets/items/equipments.json')
-const sendMessage = require('../../utils/send-message')
-const formatter = require('../../utils/formatter')
+const equipmentJson = require('@assets/items/equipments.json')
+const sendMessage = require('@utils/send-message')
+const formatter = require('@utils/formatter')
 
 const didyoumean = require('didyoumean2').default
 
@@ -105,7 +105,8 @@ module.exports = {
 
         sendMessage(message, interaction, {
             embeds: [ embed ],
-            files: [ `${process.env.PWD}/assets/icons/error.png` ]
+            files: [ 'assets/icons/error.png' ]
+            //files: [ `${process.env.PWD}/assets/icons/error.png` ]
         })
     }
 }

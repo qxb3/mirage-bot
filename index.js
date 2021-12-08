@@ -1,3 +1,4 @@
+require('module-alias/register')
 require('dotenv').config()
 const { Client, Intents } = require('discord.js')
 

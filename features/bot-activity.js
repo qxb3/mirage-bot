@@ -1,4 +1,4 @@
-const setBotActivity = require('../utils/set-bot-activity')
+const setBotActivity = require('@utils/set-bot-activity')
 
 module.exports = (client) => {
     client.on('guildCreate', () => {

@@ -1,5 +1,5 @@
 const { MessageAttachment } = require('discord.js')
-const logSchema = require('../../schemas/log-schema')
+const logSchema = require('@models/log-schema')
 const ignoreCase = require('ignore-case')
 
 module.exports = {

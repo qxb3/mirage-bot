@@ -1,7 +1,7 @@
 const ignoreCase = require('ignore-case')
 const date = require('date-and-time')
 
-const logSchema = require('../schemas/log-schema')
+const logSchema = require('@models/log-schema')
 
 module.exports = async (client, instance) => {
     const sendToDatabase = async (guildId, guildName, user, commandUsed, date) => {
