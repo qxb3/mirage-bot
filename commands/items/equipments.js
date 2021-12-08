@@ -55,8 +55,9 @@ module.exports = {
             return
         }
 
-        const isCategory = didyoumean(args.join(' '), categories)
-        const isEquipment = didyoumean(args.join(' '), equipmentJson.map(data => data.name))
+        const input = args.join(' ')
+        const isCategory = didyoumean(input, categories, { threshold: 0.6 })
+        const isEquipment = didyoumean(input, equipmentJson.map(data => data.name), { threshold: 0.6 })
 
         //If the user input is category
         if (isCategory) {
