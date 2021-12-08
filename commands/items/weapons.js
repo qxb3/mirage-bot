@@ -1,30 +1,16 @@
-const { MessageEmbed, MessageAttachment } = require('discord.js')
-const ignoreCase = require('ignore-case')
-const fs = require('fs')
-const getMessageDetails = require('../../utils/get-message-details')
-const sendMessage = require('../../utils/send-message')
+const { MessageEmbed } = require('discord.js')
 
-const getCategories = (categories) => {
-    let list = ''
-    categories.forEach(category => {
-        list += `• ${category}\n`
-    })
-    return list
-}
+const weaponsJson = require('@assets/items/weapons.json')
+const sendMessage = require('@utils/send-message')
+const formatter = require('@utils/formatter')
+const getEmbed = require('@utils/get-embed')
 
-const getWeapons = (weaponJson, type) => {
-    let weapons = ''
-    weaponJson.filter(weapon => ignoreCase.equals(type, weapon.type))
-        .forEach(weapon => {
-            weapons += `• ${weapon.name}\n`
-    })
-    return weapons
-}
+const didyoumean = require('didyoumean2').default
 
 module.exports = {
     category: 'Items',
     description: 'A command that will help you for weapons in the game',
-    aliases: ['weapon', 'weaps', 'weap'],
+    aliases: ['weapon', 'weaps', 'weap', 'wp'],
 
     slash: 'both',
 
@@ -38,117 +24,87 @@ module.exports = {
         }
     ],
 
-    callback: async ({ message, interaction, args, prefix }) => {
-        const messageDetails = getMessageDetails(message, interaction, prefix)
-
-        const weaponJson = JSON.parse(Buffer.from(fs.readFileSync(process.env.PWD + '/assets/items/weapons.json').toString()))
+    callback: async ({ message, interaction, args, prefix, user }) => { 
         const categories = ['Sword', 'Axe', 'Mace', 'Shield', 'Bow', 'Ammunition', 'Staff', 'Rod', 'Spellbook']
+        const embed = getEmbed(user)
 
-        if (!args[0]) {
-            const list = getCategories(categories)
-            const embed = new MessageEmbed()
-                .setAuthor(messageDetails.author, messageDetails.avatar)
-                .setThumbnail('attachment://sword.png')
-                .addField('❯ Categories', list)
-                .addField('❯ Usage', `${messageDetails.prefix}weapons - To list all weapon categories in the game\n${messageDetails.prefix}weapons <category> - To list all the weapons in that category`)
-                .setColor('BLUE')
-
-            return sendMessage(message, interaction, {
-                embeds: [
-                    embed
-                ],
-                files: [
-                    process.env.PWD + '/assets/items/sprites/weapons/category-thumbnails/sword.png'
-                ]
-            })
+        if (interaction) {
+            prefix = '/'
         }
 
-        //List the weapons in that category
-        let code = 1
-        categories.forEach(category => {
-            if (ignoreCase.equals(args.join(' '), category)) {
-                code = 0
-
-                const weapons = getWeapons(weaponJson, args.join(' '))
-                const embed = new MessageEmbed()
-                    .setAuthor(messageDetails.author, messageDetails.avatar)
-                    .setThumbnail(`attachment://${category.toLowerCase()}.png`)
-                    .addFields([
-                        { name: `❯ ${category}s`, value: weapons },
-                        { name: '❯ Usage', value: `${messageDetails.prefix}weapons <weapon>` }
-                    ])
-                    .setColor('BLUE')
-
-                sendMessage(message, interaction, {
-                    embeds: [
-                        embed
-                    ],
-                    files: [
-                        process.env.PWD + `/assets/items/sprites/weapons/category-thumbnails/${category.toLowerCase()}.png`
-                    ]
-                })
-            }
-        })
-
-        //Show full details of the weapon
-        if (code == 1) {
-            weaponJson.forEach(weapon => {
-                if (ignoreCase.equals(args.join(' '), weapon.name)) {
-                    code = 0
-
-                    const name = weapon.name.replace("'", '').replaceAll(' ', '-').toLowerCase()
-                    const sprite = process.env.PWD + '/assets/items/sprites/weapons/' + weapon.type.toLowerCase() + '/' + weapon.name.replace("'", '').replaceAll(' ', '-').toLowerCase() + '.png'
-                    
-                    let stats = ''
-                    weapon.stats.forEach(stat => {
-                        stats += `• ${stat}\n`
-                    })
-
-                    let monsters = ''
-                    weapon.monsters.forEach(monster => {
-                        monsters += `• ${monster}\n`
-                    })
-
-                    const embed = new MessageEmbed()
-                        .setAuthor(messageDetails.author, messageDetails.avatar)
-                        .setThumbnail(`attachment://${name}.png`)
-                        .addFields([
-                            { name: '❯ Name', value: weapon.name },
-                            { name: '❯ Requirements', value: weapon.requirements },
-                            { name: '❯ Stats', value: stats },
-                            { name: '❯ Monsters', value: monsters }
-                        ])
-                        .setColor('BLUE')
-
-                    sendMessage(message, interaction, {
-                        embeds: [
-                            embed
-                        ],
-                        files: [
-                            sprite
-                        ]
-                    })
-                }
-            })
+        const usage = {
+            name: '❯ Usage',
+            value: `${prefix}weapons <weapon> - To see the full details of the weapon.\n` +
+                   `${prefix}weapons <category> - To see all the weapons in that categories.\n` +
+                   `${prefix}weapons - To sell all the categories.`
         }
 
-        //If the user typed didnt exist
-        if (code == 1) {
-            const embed = new MessageEmbed()
-                .setAuthor(messageDetails.author, messageDetails.avatar)
-                .setThumbnail('attachment://sword.png')
-                .setDescription('Make sure the weapon or the category you typed is valid')
-                .addField('❯ Usage', `${messageDetails.prefix}weapons - To list all weapon categories in the game\n${messageDetails.prefix}weapons <category> - To list all the weapons in that category`)
-                .setColor('RED')
+        //If user didn't give arguments
+        if (args.length === 0) {
+            embed.setThumbnail('attachment://sword.png')
+            embed.addFields([
+                { name: '❯ Categories', value: formatter(categories) },
+                usage
+            ])
 
             sendMessage(message, interaction, {
-                embeds: [
-                    embed
-                ],
-                files: [
-                    process.env.PWD + '/assets/items/sprites/weapons/category-thumbnails/sword.png'
-                ]
+                embeds: [ embed ],
+                files: [ 'assets/items/sprites/weapons/thumbnails/sword.png' ]
             })
+            return
         }
+
+        const input = args.join(' ')
+        const isCategory = didyoumean(input, categories, { threshold: 0.6 })
+        const isWeapon = didyoumean(input, weaponsJson.map(data => data.name), { threshold: 0.6 })
+
+        //If the user input is category
+        if (isCategory) {
+            const weapons = formatter(weaponsJson.filter(data => data.type === isCategory).map(data => data.name))
+            const sprite = `${isCategory.toLowerCase()}.png`
+
+            embed.setThumbnail(`attachment://${sprite}`)
+            embed.addFields([
+                { name: `❯ ${isCategory}`, value: weapons },
+                usage
+            ])
+
+            sendMessage(message, interaction, {
+                embeds: [ embed ],
+                files: [ `assets/items/sprites/weapons/thumbnails/${sprite}` ]
+            })
+            return
+        }
+
+        //If the user input is weapon
+        if (isWeapon) {
+            const weapon = weaponsJson.find(data => data.name === isWeapon)
+            const sprite = weapon.name.replace(/'/, '').replaceAll(' ', '-').toLowerCase() + '.png'
+            const type = weapon.type.toLowerCase()
+
+            embed.setThumbnail(`attachment://${sprite}`)
+            embed.addFields(
+                { name: '❯ Name', value: weapon.name },
+                { name: '❯ Requirement', value: weapon.requirements },
+                { name: '❯ Stats', value: formatter(weapon.stats) },
+                { name: '❯ Monsters', value: formatter(weapon.monsters) }
+            )
+            sendMessage(message, interaction, {
+                embeds: [ embed ],
+                files: [ `assets/items/sprites/weapons/${type + '/' + sprite}` ]
+            })
+            return
+        }
+
+        //If didn't match anything
+        embed.setThumbnail('attachment://sword.png')
+        embed.setDescription('The weapon you typed did not match to any weapons.')
+        embed.addFields([ usage ])
+        embed.setColor('RED')
+
+        sendMessage(message, interaction, {
+            embeds: [ embed ],
+            files: [ `assets/items/sprites/weapons/thumbnails/sword.png` ]
+        }) 
     }
 }
