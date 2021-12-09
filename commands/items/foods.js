@@ -1,21 +1,15 @@
-const { MessageEmbed } = require('discord.js')
-const ignoreCase = require('ignore-case')
-const fs = require('fs')
-const getMessageDetails = require('../../utils/get-message-details')
-const sendMessage = require('../../utils/send-message')
+const foodsJson = require('@assets/items/foods.json')
 
-const getCategories = (categories) => {
-    let list = ''
-    categories.forEach(category => {
-        list += `• ${category}\n`
-    })
-    return list
-}
+const sendMessage = require('@utils/send-message')
+const formatter = require('@utils/formatter')
+const getEmbed = require('@utils/get-embed')
+
+const didyoumean = require('didyoumean2').default
 
 module.exports = {
     category: 'Items',
     description: 'A command that will help you for the foods in the game.',
-    aliases: ['food'],
+    aliases: ['food', 'fd'],
 
     slash: 'both',
 
@@ -29,87 +23,67 @@ module.exports = {
         }
     ],
 
-    callback: async ({ message, interaction, args, prefix }) => {
-        const messageDetails = getMessageDetails(message, interaction, prefix)
+    callback: async ({ message, interaction, args, prefix, user }) => {
+        const embed = getEmbed(user)
 
-        const foodJson = JSON.parse(Buffer.from(fs.readFileSync(process.env.PWD + '/assets/items/foods.json').toString()))
-        const categories = []
-        foodJson.forEach(material => {
-            categories.push(material.name)
-        }) 
-
-        //List the foods
-        if (!args[0]) {
-            const list = getCategories(categories)
-            const embed = new MessageEmbed() 
-                .setAuthor(messageDetails.author, messageDetails.avatar)
-                .setThumbnail('attachment://meat.png')
-                .addField('❯ Foods', list)
-                .addField('❯ Usage', `${messageDetails.prefix}foods <food>`)
-                .setColor('BLUE')
-
-            return sendMessage(message, interaction, {
-                embeds: [
-                    embed
-                ],
-                files: [
-                    process.env.PWD + '/assets/items/sprites/foods/meat.png'
-                ]
-            })
+        if (interaction) {
+            prefix = '/'
         }
 
-        //Show full details of a food
-        let code = 1
-        foodJson.forEach(food => {
-            if (ignoreCase.equals(args.join(' '), food.name)) {
-                code = 0
+        const usage = {
+            name: '❯ Usage',
+            value: `${prefix}foods <food> - To see the full details of the food.\n` +
+                   `${prefix}foods - To list all the foods.`
+        }
 
-                const name = food.name.replaceAll(' ', '-').toLowerCase()
-                const sprite = process.env.PWD + '/assets/items/sprites/foods/' + name + '.png'
-                
-                let monsters = ''
-                food.monsters.forEach(monster => {
-                    monsters += `• ${monster}\n`
-                })
+        //If user didn't give arguments
+        if (args.length === 0) {
+            const foods = formatter(foodsJson.map(data => data.name))
 
-                const embed = new MessageEmbed()
-                    .setAuthor(messageDetails.author, messageDetails.avatar)
-                    .setThumbnail(`attachment://${name}.png`)
-                    .addFields([
-                        { name: '❯ Name', value: food.name },
-                        { name: '❯ Effect', value: food.effect },
-                        { name: '❯ Monsters', value: monsters },
-                    ])
-                    .setColor('BLUE')
-
-                sendMessage(message, interaction, {
-                    embeds: [
-                        embed
-                    ],
-                    files: [
-                        sprite
-                    ]
-                })
-            }
-        })
-
-        //If the food user typed didn't exist
-        if (code == 1) {
-            const embed = new MessageEmbed()
-                .setAuthor(messageDetails.author, messageDetails.avatar)
-                .setThumbnail('attachment://meat.png')
-                .setDescription('Make sure the food you type is valid')
-                .addField('❯ Usage', `${messageDetails.prefix}foods - To list all food in the game` )
-                .setColor('RED')
+            embed.setThumbnail('attachment://meat.png')
+            embed.addFields([
+                { name: '❯ Materials', value: foods },
+                usage
+            ])
 
             sendMessage(message, interaction, {
-                embeds: [
-                    embed
-                ],
-                files: [
-                    process.env.PWD + '/assets/items/sprites/foods/meat.png'
-                ]
+                embeds: [ embed ],
+                files: [ 'assets/items/sprites/foods/meat.png' ]
             })
+            return
         }
+
+        const input = args.join(' ')
+        const isFood = didyoumean(input, foodsJson.map(data => data.name), { threshold: 0.6 })
+
+        //If the user input is food
+        if (isFood) {
+            const food = foodsJson.find(data => data.name === isFood)
+            const sprite = food.name.replace(/'/, '').replaceAll(' ', '-').toLowerCase() + '.png'
+
+            embed.setThumbnail(`attachment://${sprite}`)
+            embed.addFields([
+                { name: '❯ Name', value: food.name },
+                { name: '❯ Effect', value: food.effect },
+                { name: '❯ Monsters', value: formatter(food.monsters) },
+            ])
+
+            sendMessage(message, interaction, {
+                embeds: [ embed ],
+                files: [ `assets/items/sprites/foods/${sprite}` ]
+            })
+            return
+        }
+
+        //If didn't match anything
+        embed.setThumbnail('attachment://meat.png')
+        embed.setDescription('The food you typed did not match to any foods.')
+        embed.addFields([ usage ])
+        embed.setColor('RED')
+
+        sendMessage(message, interaction, {
+            embeds: [ embed ],
+            files: [ 'assets/items/sprites/foods/meat.png' ]
+        })
     }
 }
