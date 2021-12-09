@@ -9,7 +9,7 @@ const didyoumean = require('didyoumean2').default
 module.exports = {
     category: 'Items',
     description: 'A command that will help you for scrolls in the game.',
-    aliases: ['scroll'],
+    aliases: ['scroll', 'sc'],
 
     slash: 'both',
 
