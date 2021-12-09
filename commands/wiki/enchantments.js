@@ -9,7 +9,7 @@ const didyoumean = require('didyoumean2').default
 module.exports = {
     category: 'Wiki',
     description: 'A command that will help you with enchantments in the game.',
-    aliases: ['enchantment', 'enchants', 'enchant'],
+    aliases: ['enchantment', 'enchants', 'enchant', 'ec'],
 
     slash: 'both',
 
