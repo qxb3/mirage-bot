@@ -1,16 +1,10 @@
-const { MessageEmbed } = require('discord.js')
-const ignoreCase = require('ignore-case')
-const fs = require('fs')
-const getMessageDetails = require('../../utils/get-message-details')
-const sendMessage = require('../../utils/send-message')
+const scrollsJson = require('@assets/items/scrolls.json')
 
-const getCategories = (categories) => {
-    let list = ''
-    categories.forEach(category => {
-        list += `• ${category}\n`
-    })
-    return list
-}
+const sendMessage = require('@utils/send-message')
+const formatter = require('@utils/formatter')
+const getEmbed = require('@utils/get-embed')
+
+const didyoumean = require('didyoumean2').default
 
 module.exports = {
     category: 'Items',
@@ -29,86 +23,66 @@ module.exports = {
         }
     ],
 
-    callback: async ({ message, interaction, args, prefix }) => {
-        const messageDetails = getMessageDetails(message, interaction, prefix)
+    callback: async ({ message, interaction, args, prefix, user }) => {
+        const embed = getEmbed(user)
 
-        const scrollJson = JSON.parse(Buffer.from(fs.readFileSync(process.env.PWD + '/assets/items/scrolls.json').toString()))
-        const categories = []
-        scrollJson.forEach(scroll => {
-            categories.push(scroll.name)
-        })
-
-        //List the scrolls
-        if (!args[0]) {
-            const list = getCategories(categories)
-            const embed = new MessageEmbed() 
-                .setAuthor(messageDetails.author, messageDetails.avatar)
-                .setThumbnail('attachment://experience-scroll.png')
-                .addField('❯ Materials', list)
-                .addField('❯ Usage', `${messageDetails.prefix}scrolls <scrolls>`)
-                .setColor('BLUE')
-
-            return sendMessage(message, interaction, {
-                embeds: [
-                    embed
-                ],
-                files: [
-                    process.env.PWD + '/assets/items/sprites/scrolls/experience-scroll.png'
-                ]
-            })
+        if (interaction) {
+            prefix = '/'
         }
 
-        //Show full details of a scroll
-        let code = 1
-        scrollJson.forEach(scroll => {
-            if (ignoreCase.equals(args.join(' '), scroll.name)) {
-                code = 0
+        const usage = {
+            name: '❯ Usage',
+            value: `${prefix}scrolls <scroll> - To see the full details of the scroll.\n` +
+                   `${prefix}scrolls - To list all the scrolls.`
+        }
 
-                const name = scroll.name.replaceAll(' ', '-').toLowerCase()
-                const sprite = process.env.PWD + '/assets/items/sprites/scrolls/' + name + '.png'
+        //If user didn't give arguments
+        if (args.length === 0) {
+            const scrolls = formatter(scrollsJson.map(data => data.name))
 
-                let effects = ''
-                scroll.effects.forEach(effect => {
-                    effects += `• ${effect}\n`
-                })
-
-                const embed = new MessageEmbed()
-                    .setAuthor(messageDetails.author, messageDetails.avatar)
-                    .setThumbnail(`attachment://${name}.png`)
-                    .addFields([
-                        { name: '❯ Name', value: scroll.name },
-                        { name: '❯ Effects', value: effects }
-                    ])
-                    .setColor('BLUE')
-
-                sendMessage(message, interaction, {
-                    embeds: [
-                        embed
-                    ],
-                    files: [
-                        sprite
-                    ]
-                })
-            }
-        })
-
-        //If the scroll user typed didn't exist
-        if (code == 1) {
-            const embed = new MessageEmbed()
-                .setAuthor(messageDetails.author, messageDetails.avatar)
-                .setThumbnail('attachment://experience-scroll.png')
-                .setDescription('Make sure the scroll you type is valid')
-                .addField('❯ Usage', `${messageDetails.prefix}scrolls - To list all scrolls in the game` )
-                .setColor('RED')
+            embed.setThumbnail('attachment://experience-scroll.png')
+            embed.addFields([
+                { name: '❯ Scrolls', value: scrolls },
+                usage
+            ])
 
             sendMessage(message, interaction, {
-                embeds: [
-                    embed
-                ],
-                files: [
-                    process.env.PWD + '/assets/items/sprites/scrolls/experience-scroll.png'
-                ]
+                embeds: [ embed ],
+                files: [ 'assets/items/sprites/scrolls/experience-scroll.png' ]
             })
+            return
         }
+
+        const input = args.join(' ')
+        const isScroll = didyoumean(input, scrollsJson.map(data => data.name), { threshold: 0.6 })
+
+        //If the user input is scroll
+        if (isScroll) {
+            const scroll = scrollsJson.find(data => data.name === isScroll)
+            const sprite = scroll.name.replace(/'/, '').replaceAll(' ', '-').toLowerCase() + '.png'
+
+            embed.setThumbnail(`attachment://${sprite}`)
+            embed.addFields([
+                { name: '❯ Name', value: scroll.name },
+                { name: '❯ Effects', value: formatter(scroll.effects) },
+            ])
+
+            sendMessage(message, interaction, {
+                embeds: [ embed ],
+                files: [ `assets/items/sprites/scrolls/${sprite}` ]
+            })
+            return
+        }
+
+        //If didn't match anything
+        embed.setThumbnail('attachment://experience-scroll.png')
+        embed.setDescription('The scroll you typed did not match to any scrolls.')
+        embed.addFields([ usage ])
+        embed.setColor('RED')
+
+        sendMessage(message, interaction, {
+            embeds: [ embed ],
+            files: [ 'assets/items/sprites/scrolls/experience-scroll.png' ]
+        })
     }
 }
