@@ -1,16 +1,10 @@
-const { MessageEmbed } = require('discord.js')
-const ignoreCase = require('ignore-case')
-const fs = require('fs')
-const getMessageDetails = require('../../utils/get-message-details')
-const sendMessage = require('../../utils/send-message')
+const vocationsJson = require('@assets/wiki/vocations.json')
 
-const getCategories = (categories) => {
-    let list = ''
-    categories.forEach(category => {
-        list += `• ${category}\n`
-    })
-    return list
-}
+const sendMessage = require('@utils/send-message')
+const formatter = require('@utils/formatter')
+const getEmbed = require('@utils/get-embed')
+
+const didyoumean = require('didyoumean2').default
 
 module.exports = {
     category: 'Wiki',
@@ -29,93 +23,68 @@ module.exports = {
         }
     ],
 
-    callback: async ({ message, interaction, args, prefix }) => {
-        const messageDetails = getMessageDetails(message, interaction, prefix)
+    callback: async ({ message, interaction, args, prefix, user }) => {
+        const embed = getEmbed(user)
 
-        const vocationJson = JSON.parse(Buffer.from(fs.readFileSync(process.env.PWD + '/assets/wiki/vocations.json').toString()))
-        const categories = []
-        vocationJson.forEach(vocation => {
-            categories.push(vocation.name)
-        })
-
-        //List the vocations
-        if (!args[0]) {
-            const list = getCategories(categories)
-            const embed = new MessageEmbed() 
-                .setAuthor(messageDetails.author, messageDetails.avatar)
-                .setThumbnail('attachment://knight.png')
-                .addField('❯ Vocations', list)
-                .addField('❯ Usage', `${messageDetails.prefix}vocations <vocation>`)
-                .setColor('BLUE')
-
-            return sendMessage(message, interaction, {
-                embeds: [
-                    embed
-                ],
-                files: [
-                    process.env.PWD + '/assets/wiki/sprites/vocations/knight.png'
-                ]
-            })
+        if (interaction) {
+            prefix = '/'
         }
 
-        //Show full details of a vocation
-        let code = 1
-        vocationJson.forEach(vocation => {
-            if (ignoreCase.equals(args.join(' '), vocation.name)) {
-                code = 0
+        const usage = {
+            name: '❯ Usage',
+            value: `${prefix}vocations <vocation> - To see the full details of the food.\n` +
+                   `${prefix}vocations - To list all the vocations.`
+        }
 
-                const name = vocation.name.replaceAll(' ', '-').toLowerCase()
-                const sprite = process.env.PWD + '/assets/wiki/sprites/vocations/' + name + '.png'
+        //If user didn't give arguments
+        if (args.length === 0) {
+            const vocations = formatter(vocationsJson.map(data => data.name))
 
-                let weapons = ''
-                vocation.weapons.forEach(weapon => {
-                    weapons += `• ${weapon}\n`
-                })
-
-                let initialResistance = ''
-                vocation.initial_resistance.forEach(resistance => {
-                    initialResistance += `• ${resistance}\n`
-                })
-
-                const embed = new MessageEmbed()
-                    .setAuthor(messageDetails.author, messageDetails.avatar)
-                    .setThumbnail(`attachment://${name}.png`)
-                    .addFields([
-                        { name: '❯ Name', value: vocation.name },
-                        { name: '❯ Weapons', value: weapons },
-                        { name: '❯ Description', value: vocation.description },
-                        { name: '❯ Initial Resistance', value: initialResistance }
-                    ])
-                    .setColor('BLUE')
-
-                sendMessage(message, interaction, {
-                    embeds: [
-                        embed
-                    ],
-                    files: [
-                        sprite
-                    ]
-                })
-            }
-        })
-
-        //If the vocation user typed didn't exist
-        if (code == 1) {
-            const embed = new MessageEmbed()
-                .setAuthor(messageDetails.author, messageDetails.avatar)
-                .setDescription('Make sure the vocation you type is valid')
-                .addField('❯ Usage', `${messageDetails.prefix}vocations - To list all vocations available in the game` )
-                .setColor('RED')
+            embed.setThumbnail('attachment://knight.png')
+            embed.addFields([
+                { name: '❯ Vocations', value: vocations },
+                usage
+            ])
 
             sendMessage(message, interaction, {
-                embeds: [
-                    embed
-                ],
-                files: [
-                    process.env.PWD + '/assets/wiki/sprites/vocations/knight.png'
-                ]
-
+                embeds: [ embed ],
+                files: [ 'assets/wiki/sprites/vocations/knight.png' ]
             })
+            return
         }
+
+        const input = args.join(' ')
+        const isVocation = didyoumean(input, vocationsJson.map(data => data.name), { threshold: 0.6 })
+
+        //If the user input is vocation
+        if (isVocation) {
+            const vocation = vocationsJson.find(data => data.name === isVocation)
+            const sprite = vocation.name.replace(/'/, '').replaceAll(' ', '-').toLowerCase() + '.png'
+
+            embed.setThumbnail(`attachment://${sprite}`)
+            embed.addFields([
+                { name: '❯ Name', value: vocation.name },
+                { name: '❯ Description', value: vocation.description },
+                { name: '❯ Weapons', value: formatter(vocation.weapons) },
+                { name: '❯ Initial resistance', value: formatter(vocation.initial_resistance) }
+            ])
+
+            sendMessage(message, interaction, {
+                embeds: [ embed ],
+                files: [ `assets/wiki/sprites/vocations/${sprite}` ]
+            })
+            return
+        }
+
+        //If didn't match anything
+        embed.setThumbnail('attachment://knight.png')
+        embed.setDescription('The vocation you typed did not match to any vocations.')
+        embed.addFields([ usage ])
+        embed.setColor('RED')
+
+        sendMessage(message, interaction, {
+            embeds: [ embed ],
+            files: [ 'assets/wiki/sprites/vocations/knight.png' ]
+        })
     }
 }
