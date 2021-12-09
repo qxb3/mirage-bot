@@ -1,21 +1,15 @@
-const { MessageEmbed } = require('discord.js')
-const ignoreCase = require('ignore-case')
-const fs = require('fs')
-const getMessageDetails = require('../../utils/get-message-details')
-const sendMessage = require('../../utils/send-message')
+const potionsJson = require('@assets/items/potions.json')
 
-const getCategories = (categories) => {
-    let list = ''
-    categories.forEach(category => {
-        list += `• ${category}\n`
-    })
-    return list
-}
+const sendMessage = require('@utils/send-message')
+const formatter = require('@utils/formatter')
+const getEmbed = require('@utils/get-embed')
+
+const didyoumean = require('didyoumean2').default
 
 module.exports = {
     category: 'Items',
     description: 'A command that will help you for potions in the game.',
-    aliases: ['potion', 'pots'],
+    aliases: ['potion', 'pots', 'pt'],
 
     slash: 'both',
 
@@ -29,92 +23,67 @@ module.exports = {
         }
     ],
 
-    callback: async ({ message, interaction, args, prefix }) => {
-        const messageDetails = getMessageDetails(message, interaction, prefix)
+    callback: async ({ message, interaction, args, prefix, user }) => {
+        const embed = getEmbed(user)
 
-        const potionJson = JSON.parse(Buffer.from(fs.readFileSync(process.env.PWD + '/assets/items/potions.json').toString()))
-        const categories = []
-        potionJson.forEach(potion => {
-            categories.push(potion.name)
-        })
-
-        //List the potions
-        if (!args[0]) {
-            const list = getCategories(categories)
-            const embed = new MessageEmbed() 
-                .setAuthor(messageDetails.author, messageDetails.avatar)
-                .setThumbnail('attachment://health-vial.png')
-                .addField('❯ Potions', list)
-                .addField('❯ Usage', `${messageDetails.prefix}potions <potion>`)
-                .setColor('BLUE')
-
-            return sendMessage(message, interaction, {
-                embeds: [
-                    embed
-                ],
-                files: [
-                    process.env.PWD + '/assets/items/sprites/potions/health-vial.png'
-                ]
-            })
+        if (interaction) {
+            prefix = '/'
         }
 
-        //Show full details of a potion
-        let code = 1
-        potionJson.forEach(potion => {
-            if (ignoreCase.equals(args.join(' '), potion.name)) {
-                code = 0
+        const usage = {
+            name: '❯ Usage',
+            value: `${prefix}potions <potion> - To see the full details of the potion.\n` +
+                   `${prefix}potions - To list all the potions.`
+        }
 
-                const name = potion.name.replaceAll(' ', '-').toLowerCase()
-                const sprite =  process.env.PWD + '/assets/items/sprites/potions/' + name + '.png'
+        //If user didn't give arguments
+        if (args.length === 0) {
+            const potions = formatter(potionsJson.map(data => data.name))
 
-                let effects = ''
-                potion.effects.forEach(effect => {
-                    effects += `• ${effect}\n`
-                })
-
-                let monsters = ''
-                potion.monsters.forEach(monster => {
-                    monsters += `• ${monster}\n`
-                })
-
-                const embed = new MessageEmbed()
-                    .setAuthor(messageDetails.author, messageDetails.avatar)
-                    .setThumbnail(`attachment://${name}.png`)
-                    .addFields([
-                        { name: '❯ Name', value: potion.name },
-                        { name: '❯ Effects', value: effects },
-                        { name: '❯ Monsters', value: monsters },
-                    ])
-                    .setColor('BLUE')
-
-                sendMessage(message, interaction, {
-                    embeds: [
-                        embed
-                    ],
-                    files: [
-                        sprite
-                    ]
-                })
-            }
-        })
-
-        //If the potion user typed didn't exist
-        if (code == 1) {
-            const embed = new MessageEmbed()
-                .setAuthor(messageDetails.author, messageDetails.avatar)
-                .setThumbnail('attachment://health-vial.png')
-                .setDescription('Make sure the potion you type is valid')
-                .addField('❯ Usage', `${messageDetails.prefix}potion - To list all food in the game` )
-                .setColor('RED')
+            embed.setThumbnail('attachment://health-vial.png')
+            embed.addFields([
+                { name: '❯ Potions', value: potions },
+                usage
+            ])
 
             sendMessage(message, interaction, {
-                embeds: [
-                    embed
-                ],
-                files: [
-                    process.env.PWD + '/assets/items/sprites/potions/health-vial.png'
-                ]
+                embeds: [ embed ],
+                files: [ 'assets/items/sprites/potions/health-vial.png' ]
             })
+            return
         }
+
+        const input = args.join(' ')
+        const isPotion = didyoumean(input, potionsJson.map(data => data.name), { threshold: 0.6 })
+
+        //If the user input is potion
+        if (isPotion) {
+            const potion = potionsJson.find(data => data.name === isPotion)
+            const sprite = potion.name.replace(/'/, '').replaceAll(' ', '-').toLowerCase() + '.png'
+
+            embed.setThumbnail(`attachment://${sprite}`)
+            embed.addFields([
+                { name: '❯ Name', value: potion.name },
+                { name: '❯ Effects', value: formatter(potion.effects) },
+                { name: '❯ Monsters', value: formatter(potion.monsters) },
+            ])
+
+            sendMessage(message, interaction, {
+                embeds: [ embed ],
+                files: [ `assets/items/sprites/potions/${sprite}` ]
+            })
+            return
+        }
+
+        //If didn't match anything
+        embed.setThumbnail('attachment://health-vial.png')
+        embed.setDescription('The potion you typed did not match to any potions.')
+        embed.addFields([ usage ])
+        embed.setColor('RED')
+
+        sendMessage(message, interaction, {
+            embeds: [ embed ],
+            files: [ 'assets/items/sprites/potions/health-vial.png' ]
+        })
     }
 }
