@@ -1,16 +1,10 @@
-const { MessageEmbed } = require('discord.js')
-const ignoreCase = require('ignore-case')
-const fs = require('fs')
-const getMessageDetails = require('../../utils/get-message-details')
-const sendMessage = require('../../utils/send-message')
+const enchantmentsJson = require('@assets/wiki/enchantments.json')
 
-const getCategories = (categories) => {
-    let list = ''
-    categories.forEach(category => {
-        list += `• ${category}\n`
-    })
-    return list
-}
+const sendMessage = require('@utils/send-message')
+const formatter = require('@utils/formatter')
+const getEmbed = require('@utils/get-embed')
+
+const didyoumean = require('didyoumean2').default
 
 module.exports = {
     category: 'Wiki',
@@ -29,88 +23,68 @@ module.exports = {
         }
     ],
 
-    callback: async ({ message, interaction, args, prefix }) => {
-        const messageDetails = getMessageDetails(message, interaction, prefix)
+    callback: async ({ message, interaction, args, prefix, user }) => {
+        const embed = getEmbed(user)
 
-        const enchantmentJson = JSON.parse(Buffer.from(fs.readFileSync(process.env.PWD + '/assets/wiki/enchantments.json').toString()))
-        const categories = []
-        enchantmentJson.forEach(enchantment => {
-            categories.push(enchantment.name)
-        })
-        
-        //List the enchantments
-        if (!args[0]) {
-            const list = getCategories(categories)
-            const embed = new MessageEmbed()
-                .setAuthor(messageDetails.author, messageDetails.avatar)
-                .setThumbnail('attachment://physical.png')
-                .addField('❯ Enchantments', list)
-                .addField('❯ Usage', `${messageDetails.prefix}enchantments <enchantment>`)
-                .setColor('BLUE')
-
-            return sendMessage(message, interaction, {
-                embeds: [
-                    embed
-                ],
-                files: [
-                    process.env.PWD + '/assets/wiki/sprites/enchantments/physical.png'
-                ]
-            })
+        if (interaction) {
+            prefix = '/'
         }
 
-        //Show full details of a enchantment
-        let code = 1
-        enchantmentJson.forEach(enchantment => {
-            if (ignoreCase.equals(args.join(' '), enchantment.name)) {
-                code = 0
+        const usage = {
+            name: '❯ Usage',
+            value: `${prefix}enchantments <enchantment> - To see the full details of the enchantment.\n` +
+                   `${prefix}enchantments - To list all the enchantments.`
+        }
 
-                const name = enchantment.name.replaceAll(' ', '-').toLowerCase()
-                const sprite = process.env.PWD + '/assets/wiki/sprites/enchantments/' + name + '.png'
+        //If user didn't give arguments
+        if (args.length === 0) {
+            const enchantments = formatter(enchantmentsJson.map(data => data.name))
 
-                let materialsRequired = ''
-                enchantment.materials_required.forEach(material => {
-                    materialsRequired += `• ${material}\n`
-                })
-
-                const embed = new MessageEmbed()
-                    .setAuthor(messageDetails.author, messageDetails.avatar)
-                    .setThumbnail(`attachment://${name}.png`)
-                    .addFields([
-                        { name: '❯ Enchantment', value: enchantment.name },
-                        { name: '❯ Enchanter', value: enchantment.enchanter },
-                        { name: '❯ Location', value: enchantment.location },
-                        { name: '❯ Materials Required', value: materialsRequired }
-                    ])
-                    .setColor('BLUE')
-
-                sendMessage(message, interaction, {
-                    embeds: [
-                        embed
-                    ],
-                    files: [
-                        sprite
-                    ]
-                })
-            }
-        })
-
-        //If the enchantment user typed didn't exist
-        if (code == 1) {
-            const embed = new MessageEmbed()
-                .setAuthor(messageDetails.author, messageDetails.avatar)
-                .setThumbnail('attachment://physical.png')
-                .setDescription('Make sure the enchantment you type is valid')
-                .addField('❯ Usage', `${messageDetails.prefix}enchantments - To list all enchantments in the game` )
-                .setColor('RED')
+            embed.setThumbnail('attachment://physical.png')
+            embed.addFields([
+                { name: '❯ Enchantments', value: enchantments },
+                usage
+            ])
 
             sendMessage(message, interaction, {
-                embeds: [
-                    embed
-                ],
-                files: [
-                    process.env.PWD + '/assets/wiki/sprites/enchantments/physical.png'
-                ]
+                embeds: [ embed ],
+                files: [ 'assets/wiki/sprites/enchantments/physical.png' ]
             })
+            return
         }
+
+        const input = args.join(' ')
+        const isFood = didyoumean(input, enchantmentsJson.map(data => data.name), { threshold: 0.6 })
+
+        //If the user input is enchantment
+        if (isFood) {
+            const enchantment = enchantmentsJson.find(data => data.name === isFood)
+            const sprite = enchantment.name.replace(/'/, '').replaceAll(' ', '-').toLowerCase() + '.png'
+
+            embed.setThumbnail(`attachment://${sprite}`)
+            embed.addFields([
+                { name: '❯ Name', value: enchantment.name },
+                { name: '❯ Enchanter', value: enchantment.enchanter },
+                { name: '❯ Location', value: enchantment.location },
+                { name: '❯ Materials required', value: formatter(enchantment.materials_required) }
+            ])
+
+            sendMessage(message, interaction, {
+                embeds: [ embed ],
+                files: [ `assets/wiki/sprites/enchantments/${sprite}` ]
+            })
+            return
+        }
+
+        //If didn't match anything
+        embed.setThumbnail('attachment://physical.png')
+        embed.setDescription('The enchantment you typed did not match to any enchantments.')
+        embed.addFields([ usage ])
+        embed.setColor('RED')
+
+        sendMessage(message, interaction, {
+            embeds: [ embed ],
+            files: [ 'assets/wiki/sprites/enchantments/physical.png' ]
+        }) 
     }
 }
