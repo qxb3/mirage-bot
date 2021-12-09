@@ -1,7 +1,7 @@
 [
     {
         "name": "Broken Ring",
-        "requirements": "Level 0",
+        "level_requirement": "0",
         "stats": [
             "Armour: 0",
             "Minumum stat: 1",
@@ -16,7 +16,7 @@
     },
     {
         "name": "Liam's Blessing",
-        "requirements": "Level 0",
+        "level_requirement": "0",
         "stats": [
             "Armour: 0",
             "Minumum stat: 0",
@@ -29,7 +29,7 @@
     },
     {
         "name": "Plain Ring",
-        "requirements": "Level 5",
+        "level_requirement": "5",
         "stats": [
             "Armour: 0",
             "Minumum stat: 2",
@@ -44,7 +44,7 @@
     },
     {
         "name": "Dragon Ring",
-        "requirements": "Level 10",
+        "level_requirement": "10",
         "stats": [
             "Armour: 0",
             "Minumum stat: 3",
@@ -57,7 +57,7 @@
     },
     {
         "name": "Gold Ring",
-        "requirements": "Level 20",
+        "level_requirement": "20",
         "stats": [
             "Armour: 0",
             "Minumum stat: 4",
@@ -70,7 +70,7 @@
     },
     {
         "name": "Burning Ring",
-        "requirements": "Level 30",
+        "level_requirement": "30",
         "stats": [
             "Armour: 0",
             "Minumum stat: 5",
@@ -83,7 +83,7 @@
     },
     {
         "name": "Elven Ring",
-        "requirements": "Level 40",
+        "level_requirement": "40",
         "stats": [
             "Armour: 0",
             "Minumum stat: 6",
@@ -96,7 +96,7 @@
     },
     {
         "name": "Crystal Ring",
-        "requirements": "Level 50",
+        "level_requirement": "50",
         "stats": [
             "Armour: 0",
             "Minumum stat: 7",
@@ -109,7 +109,7 @@
     },
     {
         "name": "Mana Stone",
-        "requirements": "Level 60",
+        "level_requirement": "60",
         "stats": [
             "Armour: 0",
             "Minumum stat: 8",
@@ -122,7 +122,7 @@
     },
     {
         "name": "Amber Ring",
-        "requirements": "Level 70",
+        "level_requirement": "70",
         "stats": [
             "Armour: 0",
             "Minumum stat: 9",
@@ -135,7 +135,7 @@
     },
     {
         "name": "Tarnished Necklace",
-        "requirements": "Level 5",
+        "level_requirement": "5",
         "stats": [
             "Armour: 0",
             "Minumum stat: 1",
@@ -148,7 +148,7 @@
     },
     {
         "name": "Ancient Necklace",
-        "requirements": "Level 10",
+        "level_requirement": "10",
         "stats": [
             "Armour: 0",
             "Minumum stat: 2",
@@ -161,7 +161,7 @@
     },
     {
         "name": "Dragon Necklace",
-        "requirements": "Level 20",
+        "level_requirement": "20",
         "stats": [
             "Armour: 0",
             "Minumum stat: 3",
@@ -174,7 +174,7 @@
     },
     {
         "name": "Jeweled Necklace",
-        "requirements": "Level 30",
+        "level_requirement": "30",
         "stats": [
             "Armour: 0",
             "Minumum stat: 4",
@@ -187,7 +187,7 @@
     },
     {
         "name": "Heroic Amulet",
-        "requirements": "Level 40",
+        "level_requirement": "40",
         "stats": [
             "Armour: 0",
             "Minumum stat: 5",
@@ -200,7 +200,7 @@
     },
     {
         "name": "Power Amulet",
-        "requirements": "Level 50",
+        "level_requirement": "50",
         "stats": [
             "Armour: 0",
             "Minumum stat: 6",
@@ -213,7 +213,7 @@
     },
     {
         "name": "Demon Tooth",
-        "requirements": "Level 60",
+        "level_requirement": "60",
         "stats": [
             "Armour: 0",
             "Minumum stat: 7",
@@ -226,7 +226,7 @@
     },
     {
         "name": "Hellborn Amulet",
-        "requirements": "Level 70",
+        "level_requirement": "70",
         "stats": [
             "Armour: 0",
             "Minumum stat: 8",
@@ -239,7 +239,7 @@
     },
     {
         "name": "Bandana",
-        "requirements": "Level 0",
+        "level_requirement": "0",
         "stats": [
             "Armour: 1",
             "Minumum stat: 0",
@@ -253,7 +253,7 @@
     },
     {
         "name": "Sturdy Helmet",
-        "requirements": "Level 5",
+        "level_requirement": "5",
         "stats": [
             "Armour: 1",
             "Minumum stat: 1",
@@ -266,7 +266,7 @@
     },
     {
         "name": "Ranger Cap",
-        "requirements": "Level 5",
+        "level_requirement": "5",
         "stats": [
             "Armour: 1",
             "Minumum stat: 1",
@@ -279,7 +279,7 @@
     },
     {
         "name": "Novice Cap",
-        "requirements": "Level 5",
+        "level_requirement": "5",
         "stats": [
             "Armour: 1",
             "Minumum stat: 1",
@@ -293,7 +293,7 @@
     },
     {
         "name": "Iron Helmet",
-        "requirements": "Level 10",
+        "level_requirement": "10",
         "stats": [
             "Armour: 1",
             "Minumum stat: 2",
@@ -306,7 +306,7 @@
     },
     {
         "name": "Linothorax Helmet",
-        "requirements": "Level 10",
+        "level_requirement": "10",
         "stats": [
             "Armour: 1",
             "Minumum stat: 2",
@@ -319,7 +319,7 @@
     },
     {
         "name": "Traveller's Hat",
-        "requirements": "Level 10",
+        "level_requirement": "10",
         "stats": [
             "Armour: 1",
             "Minumum stat: 2",
@@ -332,7 +332,7 @@
     },
     {
         "name": "Copper Helmet",
-        "requirements": "Level 20",
+        "level_requirement": "20",
         "stats": [
             "Armour: 2",
             "Minumum stat: 3",
@@ -345,7 +345,7 @@
     },
     {
         "name": "Flaming Hood",
-        "requirements": "Level 20",
+        "level_requirement": "20",
         "stats": [
             "Armour: 1",
             "Minumum stat: 3",
@@ -358,7 +358,7 @@
     },
     {
         "name": "Heroic Hat",
-        "requirements": "Level 20",
+        "level_requirement": "20",
         "stats": [
             "Armour: 2",
             "Minumum stat: 3",
@@ -371,7 +371,7 @@
     },
     {
         "name": "Plate Helmet",
-        "requirements": "Level 30",
+        "level_requirement": "30",
         "stats": [
             "Armour: 3",
             "Minumum stat: 4",
@@ -384,7 +384,7 @@
     },
     {
         "name": "Sulphur Mask",
-        "requirements": "Level 30",
+        "level_requirement": "30",
         "stats": [
             "Armour: 2",
             "Minumum stat: 4",
@@ -397,7 +397,7 @@
     },
     {
         "name": "Tin Helmet",
-        "requirements": "Level 30",
+        "level_requirement": "30",
         "stats": [
             "Armour: 2",
             "Minumum stat: 4",
@@ -410,7 +410,7 @@
     },
     {
         "name": "Chain Helmet",
-        "requirements": "Level 40",
+        "level_requirement": "40",
         "stats": [
             "Armour: 4",
             "Minumum stat: 5",
@@ -423,7 +423,7 @@
     },
     {
         "name": "Nernai Hat",
-        "requirements": "Level 40",
+        "level_requirement": "40",
         "stats": [
             "Armour: 2",
             "Minumum stat: 5",
@@ -437,7 +437,7 @@
     },
     {
         "name": "Soldier Helmet",
-        "requirements": "Level 40",
+        "level_requirement": "40",
         "stats": [
             "Armour: 3",
             "Minumum stat: 5",
@@ -450,7 +450,7 @@
     },
     {
         "name": "Silver Helmet",
-        "requirements": "Level 50",
+        "level_requirement": "50",
         "stats": [
             "Armour: 5",
             "Minumum stat: 6",
@@ -463,7 +463,7 @@
     },
     {
         "name": "Wizard Hood",
-        "requirements": "Level 50",
+        "level_requirement": "50",
         "stats": [
             "Armour: 2",
             "Minumum stat: 6",
@@ -476,7 +476,7 @@
     },
     {
         "name": "Elven Hat",
-        "requirements": "Level 50",
+        "level_requirement": "50",
         "stats": [
             "Armour: 3",
             "Minumum stat: 6",
@@ -489,7 +489,7 @@
     },
     {
         "name": "Platinum Helmet",
-        "requirements": "Level 60",
+        "level_requirement": "60",
         "stats": [
             "Armour: 6",
             "Minumum stat: 7",
@@ -502,7 +502,7 @@
     },
     {
         "name": "Indigo Hat",
-        "requirements": "Level 60",
+        "level_requirement": "60",
         "stats": [
             "Armour: 3",
             "Minumum stat: 7",
@@ -515,7 +515,7 @@
     },
     {
         "name": "Pearl Helmet",
-        "requirements": "Level 60",
+        "level_requirement": "60",
         "stats": [
             "Armour: 4",
             "Minumum stat: 7",
@@ -528,7 +528,7 @@
     },
     {
         "name": "Emerald Helmet",
-        "requirements": "Level 70",
+        "level_requirement": "70",
         "stats": [
             "Armour: 7",
             "Minumum stat: 8",
@@ -541,7 +541,7 @@
     },
     {
         "name": "Arnisium Hat",
-        "requirements": "Level 70",
+        "level_requirement": "70",
         "stats": [
             "Armour: 3",
             "Minumum stat: 8",
@@ -554,7 +554,7 @@
     },
     {
         "name": "Spiked Helmet",
-        "requirements": "Level 70",
+        "level_requirement": "70",
         "stats": [
             "Armour: 4",
             "Minumum stat: 8",
@@ -567,7 +567,7 @@
     },
     {
         "name": "Granite Helmet",
-        "requirements": "Level 80",
+        "level_requirement": "80",
         "stats": [
             "Armour: 8",
             "Minumum stat: 9",
@@ -580,7 +580,7 @@
     },
     {
         "name": "Crystal Mask",
-        "requirements": "Level 80",
+        "level_requirement": "80",
         "stats": [
             "Armour: 3",
             "Minumum stat: 9",
@@ -593,7 +593,7 @@
     },
     {
         "name": "Sentinel Helmet",
-        "requirements": "Level 80",
+        "level_requirement": "80",
         "stats": [
             "Armour: 5",
             "Minumum stat: 9",
@@ -606,7 +606,7 @@
     },
     {
         "name": "Old Gloves",
-        "requirements": "Level 0",
+        "level_requirement": "0",
         "stats": [
             "Armour: 1",
             "Minumum stat: 0",
@@ -619,7 +619,7 @@
     },
     {
         "name": "Ragged Gloves",
-        "requirements": "Level 5",
+        "level_requirement": "5",
         "stats": [
             "Armour: 1",
             "Minumum stat: 1",
@@ -632,7 +632,7 @@
     },
     {
         "name": "Sturdy Gloves",
-        "requirements": "Level 5",
+        "level_requirement": "5",
         "stats": [
             "Armour: 1",
             "Minumum stat: 1",
@@ -645,7 +645,7 @@
     },
     {
         "name": "Ranger Gloves",
-        "requirements": "Level 5",
+        "level_requirement": "5",
         "stats": [
             "Armour: 1",
             "Minumum stat: 1",
@@ -658,7 +658,7 @@
     },
     {
         "name": "Traveller's Gloves",
-        "requirements": "Level 10",
+        "level_requirement": "10",
         "stats": [
             "Armour: 1",
             "Minumum stat: 2",
@@ -671,7 +671,7 @@
     },
     {
         "name": "Linothorax Gloves",
-        "requirements": "Level 10",
+        "level_requirement": "10",
         "stats": [
             "Armour: 1",
             "Minumum stat: 2",
@@ -684,7 +684,7 @@
     },
     {
         "name": "Iron Gloves",
-        "requirements": "Level 10",
+        "level_requirement": "10",
         "stats": [
             "Armour: 1",
             "Minumum stat: 2",
@@ -697,7 +697,7 @@
     },
     {
         "name": "Copper Gloves",
-        "requirements": "Level 20",
+        "level_requirement": "20",
         "stats": [
             "Armour: 2",
             "Minumum stat: 3",
@@ -710,7 +710,7 @@
     },
     {
         "name": "Flaming Gloves",
-        "requirements": "Level 20",
+        "level_requirement": "20",
         "stats": [
             "Armour: 1",
             "Minumum stat: 3",
@@ -723,7 +723,7 @@
     },
     {
         "name": "Heroic Gloves",
-        "requirements": "Level 20",
+        "level_requirement": "20",
         "stats": [
             "Armour: 2",
             "Minumum stat: 3",
@@ -736,7 +736,7 @@
     },
     {
         "name": "Plate Gloves",
-        "requirements": "Level 30",
+        "level_requirement": "30",
         "stats": [
             "Armour: 3",
             "Minumum stat: 4",
@@ -749,7 +749,7 @@
     },
     {
         "name": "Sulphur Gloves",
-        "requirements": "Level 30",
+        "level_requirement": "30",
         "stats": [
             "Armour: 2",
             "Minumum stat: 4",
@@ -762,7 +762,7 @@
     },
     {
         "name": "Tin Gloves",
-        "requirements": "Level 30",
+        "level_requirement": "30",
         "stats": [
             "Armour: 2",
             "Minumum stat: 4",
@@ -775,7 +775,7 @@
     },
     {
         "name": "Chain Gloves",
-        "requirements": "Level 40",
+        "level_requirement": "40",
         "stats": [
             "Armour: 4",
             "Minumum stat: 5",
@@ -788,7 +788,7 @@
     },
     {
         "name": "Nernai Gloves",
-        "requirements": "Level 40",
+        "level_requirement": "40",
         "stats": [
             "Armour: 2",
             "Minumum stat: 5",
@@ -801,7 +801,7 @@
     },
     {
         "name": "Silver Gloves",
-        "requirements": "Level 50",
+        "level_requirement": "50",
         "stats": [
             "Armour: 5",
             "Minumum stat: 6",
@@ -814,7 +814,7 @@
     },
     {
         "name": "Caster Gloves",
-        "requirements": "Level 50",
+        "level_requirement": "50",
         "stats": [
             "Armour: 2",
             "Minumum stat: 6",
@@ -827,7 +827,7 @@
     },
     {
         "name": "Elven Gloves",
-        "requirements": "Level 50",
+        "level_requirement": "50",
         "stats": [
             "Armour: 3",
             "Minumum stat: 6",
@@ -840,7 +840,7 @@
     },
     {
         "name": "Platinum Gloves",
-        "requirements": "Level 60",
+        "level_requirement": "60",
         "stats": [
             "Armour: 6",
             "Minumum stat: 7",
@@ -853,7 +853,7 @@
     },
     {
         "name": "Indigo Gloves",
-        "requirements": "Level 60",
+        "level_requirement": "60",
         "stats": [
             "Armour: 3",
             "Minumum stat: 7",
@@ -866,7 +866,7 @@
     },
     {
         "name": "Pearl Gloves",
-        "requirements": "Level 60",
+        "level_requirement": "60",
         "stats": [
             "Armour: 4",
             "Minumum stat: 7",
@@ -879,7 +879,7 @@
     },
     {
         "name": "Emerald Gloves",
-        "requirements": "Level 70",
+        "level_requirement": "70",
         "stats": [
             "Armour: 7",
             "Minumum stat: 8",
@@ -892,7 +892,7 @@
     },
     {
         "name": "Arnisium Gloves",
-        "requirements": "Level 70",
+        "level_requirement": "70",
         "stats": [
             "Armour: 3",
             "Minumum stat: 8",
@@ -905,7 +905,7 @@
     },
     {
         "name": "Spiked Gloves",
-        "requirements": "Level 70",
+        "level_requirement": "70",
         "stats": [
             "Armour: 4",
             "Minumum stat: 8",
@@ -918,7 +918,7 @@
     },
     {
         "name": "Granite Gloves",
-        "requirements": "Level 80",
+        "level_requirement": "80",
         "stats": [
             "Armour: 8",
             "Minumum stat: 9",
@@ -931,7 +931,7 @@
     },
     {
         "name": "Crystal Gloves",
-        "requirements": "Level 80",
+        "level_requirement": "80",
         "stats": [
             "Armour: 3",
             "Minumum stat: 9",
@@ -944,7 +944,7 @@
     },
     {
         "name": "Sentinel Gloves",
-        "requirements": "Level 80",
+        "level_requirement": "80",
         "stats": [
             "Armour: 5",
             "Minumum stat: 9",
@@ -957,7 +957,7 @@
     },
     {
         "name": "Cloth Shirt",
-        "requirements": "Level 0",
+        "level_requirement": "0",
         "stats": [
             "Armour: 1",
             "Minumum stat: 0",
@@ -970,7 +970,7 @@
     },
     {
         "name": "Ragged Cloak",
-        "requirements": "Level 5",
+        "level_requirement": "5",
         "stats": [
             "Armour: 1",
             "Minumum stat: 1",
@@ -983,7 +983,7 @@
     },
     {
         "name": "Leather Vest",
-        "requirements": "Level 5",
+        "level_requirement": "5",
         "stats": [
             "Armour: 1",
             "Minumum stat: 1",
@@ -996,7 +996,7 @@
     },
     {
         "name": "Belted Armour",
-        "requirements": "Level 5",
+        "level_requirement": "5",
         "stats": [
             "Armour: 1",
             "Minumum stat: 1",
@@ -1009,7 +1009,7 @@
     },
     {
         "name": "Traveller's Gown",
-        "requirements": "Level 10",
+        "level_requirement": "10",
         "stats": [
             "Armour: 1",
             "Minumum stat: 2",
@@ -1022,7 +1022,7 @@
     },
     {
         "name": "Linothorax Chest",
-        "requirements": "Level 10",
+        "level_requirement": "10",
         "stats": [
             "Armour: 1",
             "Minumum stat: 2",
@@ -1035,7 +1035,7 @@
     },
     {
         "name": "Iron Armour",
-        "requirements": "Level 10",
+        "level_requirement": "10",
         "stats": [
             "Armour: 2",
             "Minumum stat: 2",
@@ -1048,7 +1048,7 @@
     },
     {
         "name": "Copper Armour",
-        "requirements": "Level 20",
+        "level_requirement": "20",
         "stats": [
             "Armour: 2",
             "Minumum stat: 3",
@@ -1061,7 +1061,7 @@
     },
     {
         "name": "Heroic Cloak",
-        "requirements": "Level 20",
+        "level_requirement": "20",
         "stats": [
             "Armour: 2",
             "Minumum stat: 3",
@@ -1074,7 +1074,7 @@
     },
     {
         "name": "Flaming Cape",
-        "requirements": "Level 20",
+        "level_requirement": "20",
         "stats": [
             "Armour: 1",
             "Minumum stat: 3",
@@ -1087,7 +1087,7 @@
     },
     {
         "name": "Plate Armour",
-        "requirements": "Level 30",
+        "level_requirement": "30",
         "stats": [
             "Armour: 3",
             "Minumum stat: 4",
@@ -1100,7 +1100,7 @@
     },
     {
         "name": "Sulphur Robe",
-        "requirements": "Level 30",
+        "level_requirement": "30",
         "stats": [
             "Armour: 2",
             "Minumum stat: 4",
@@ -1113,7 +1113,7 @@
     },
     {
         "name": "Tin Armour",
-        "requirements": "Level 30",
+        "level_requirement": "30",
         "stats": [
             "Armour: 2",
             "Minumum stat: 4",
@@ -1126,7 +1126,7 @@
     },
     {
         "name": "Chain Armour",
-        "requirements": "Level 40",
+        "level_requirement": "40",
         "stats": [
             "Armour: 4",
             "Minumum stat: 5",
@@ -1139,7 +1139,7 @@
     },
     {
         "name": "Nernai Vest",
-        "requirements": "Level 40",
+        "level_requirement": "40",
         "stats": [
             "Armour: 2",
             "Minumum stat: 5",
@@ -1152,7 +1152,7 @@
     },
     {
         "name": "Soldier Armour",
-        "requirements": "Level 40",
+        "level_requirement": "40",
         "stats": [
             "Armour: 3",
             "Minumum stat: 5",
@@ -1165,7 +1165,7 @@
     },
     {
         "name": "Silver Armour",
-        "requirements": "Level 50",
+        "level_requirement": "50",
         "stats": [
             "Armour: 5",
             "Minumum stat: 6",
@@ -1178,7 +1178,7 @@
     },
     {
         "name": "Caster Robe",
-        "requirements": "Level 50",
+        "level_requirement": "50",
         "stats": [
             "Armour: 2",
             "Minumum stat: 6",
@@ -1191,7 +1191,7 @@
     },
     {
         "name": "Elven Shirt",
-        "requirements": "Level 50",
+        "level_requirement": "50",
         "stats": [
             "Armour: 3",
             "Minumum stat: 6",
@@ -1204,7 +1204,7 @@
     },
     {
         "name": "Platinum Armour",
-        "requirements": "Level 60",
+        "level_requirement": "60",
         "stats": [
             "Armour: 6",
             "Minumum stat: 7",
@@ -1217,7 +1217,7 @@
     },
     {
         "name": "Indigo Cape",
-        "requirements": "Level 60",
+        "level_requirement": "60",
         "stats": [
             "Armour: 3",
             "Minumum stat: 7",
@@ -1230,7 +1230,7 @@
     },
     {
         "name": "Pearl Armour",
-        "requirements": "Level 60",
+        "level_requirement": "60",
         "stats": [
             "Armour: 4",
             "Minumum stat: 7",
@@ -1243,7 +1243,7 @@
     },
     {
         "name": "Emerald Armour",
-        "requirements": "Level 70",
+        "level_requirement": "70",
         "stats": [
             "Armour: 7",
             "Minumum stat: 8",
@@ -1256,7 +1256,7 @@
     },
     {
         "name": "Arnisium Vest",
-        "requirements": "Level 70",
+        "level_requirement": "70",
         "stats": [
             "Armour: 3",
             "Minumum stat: 8",
@@ -1269,7 +1269,7 @@
     },
     {
         "name": "Spiked Armour",
-        "requirements": "Level 70",
+        "level_requirement": "70",
         "stats": [
             "Armour: 4",
             "Minumum stat: 8",
@@ -1282,7 +1282,7 @@
     },
     {
         "name": "Granite Armour",
-        "requirements": "Level 80",
+        "level_requirement": "80",
         "stats": [
             "Armour: 8",
             "Minumum stat: 9",
@@ -1295,7 +1295,7 @@
     },
     {
         "name": "Crystal Cape",
-        "requirements": "Level 80",
+        "level_requirement": "80",
         "stats": [
             "Armour: 3",
             "Minumum stat: 9",
@@ -1308,7 +1308,7 @@
     },
     {
         "name": "Sentinel Armour",
-        "requirements": "Level 80",
+        "level_requirement": "80",
         "stats": [
             "Armour: 5",
             "Minumum stat: 9",
@@ -1321,7 +1321,7 @@
     },
     {
         "name": "Sandals",
-        "requirements": "Level 0",
+        "level_requirement": "0",
         "stats": [
             "Armour: 1",
             "Minumum stat: 0",
@@ -1334,7 +1334,7 @@
     },
     {
         "name": "Sturdy Boots",
-        "requirements": "Level 5",
+        "level_requirement": "5",
         "stats": [
             "Armour: 1",
             "Minumum stat: 1",
@@ -1347,7 +1347,7 @@
     },
     {
         "name": "Steady Boots",
-        "requirements": "Level 5",
+        "level_requirement": "5",
         "stats": [
             "Armour: 1",
             "Minumum stat: 1",
@@ -1360,7 +1360,7 @@
     },
     {
         "name": "Ragged Shoes",
-        "requirements": "Level 5",
+        "level_requirement": "5",
         "stats": [
             "Armour: 1",
             "Minumum stat: 1",
@@ -1373,7 +1373,7 @@
     },
     {
         "name": "Linothorax Boots",
-        "requirements": "Level 10",
+        "level_requirement": "10",
         "stats": [
             "Armour: 1",
             "Minumum stat: 2",
@@ -1386,7 +1386,7 @@
     },
     {
         "name": "Traveller's Boots",
-        "requirements": "Level 10",
+        "level_requirement": "10",
         "stats": [
             "Armour: 1",
             "Minumum stat: 2",
@@ -1399,7 +1399,7 @@
     },
     {
         "name": "Iron Boots",
-        "requirements": "Level 10",
+        "level_requirement": "10",
         "stats": [
             "Armour: 1",
             "Minumum stat: 2",
@@ -1412,7 +1412,7 @@
     },
     {
         "name": "Heroic Boots",
-        "requirements": "Level 20",
+        "level_requirement": "20",
         "stats": [
             "Armour: 2",
             "Minumum stat: 3",
@@ -1425,7 +1425,7 @@
     },
     {
         "name": "Copper Boots",
-        "requirements": "Level 20",
+        "level_requirement": "20",
         "stats": [
             "Armour: 2",
             "Minumum stat: 3",
@@ -1438,7 +1438,7 @@
     },
     {
         "name": "Flaming Boots",
-        "requirements": "Level 20",
+        "level_requirement": "20",
         "stats": [
             "Armour: 1",
             "Minumum stat: 3",
@@ -1451,7 +1451,7 @@
     },
     {
         "name": "Plate Boots",
-        "requirements": "Level 30",
+        "level_requirement": "30",
         "stats": [
             "Armour: 3",
             "Minumum stat: 4",
@@ -1464,7 +1464,7 @@
     },
     {
         "name": "Sulphur Shoes",
-        "requirements": "Level 30",
+        "level_requirement": "30",
         "stats": [
             "Armour: 2",
             "Minumum stat: 4",
@@ -1477,7 +1477,7 @@
     },
     {
         "name": "Tin Boots",
-        "requirements": "Level 30",
+        "level_requirement": "30",
         "stats": [
             "Armour: 2",
             "Minumum stat: 4",
@@ -1490,7 +1490,7 @@
     },
     {
         "name": "Chain Boots",
-        "requirements": "Level 40",
+        "level_requirement": "40",
         "stats": [
             "Armour: 4",
             "Minumum stat: 5",
@@ -1503,7 +1503,7 @@
     },
     {
         "name": "Nernai Boots",
-        "requirements": "Level 40",
+        "level_requirement": "40",
         "stats": [
             "Armour: 2",
             "Minumum stat: 5",
@@ -1516,7 +1516,7 @@
     },
     {
         "name": "Silver Boots",
-        "requirements": "Level 50",
+        "level_requirement": "50",
         "stats": [
             "Armour: 5",
             "Minumum stat: 6",
@@ -1529,7 +1529,7 @@
     },
     {
         "name": "Caster Boots",
-        "requirements": "Level 50",
+        "level_requirement": "50",
         "stats": [
             "Armour: 2",
             "Minumum stat: 6",
@@ -1542,7 +1542,7 @@
     },
     {
         "name": "Elven Boots",
-        "requirements": "Level 50",
+        "level_requirement": "50",
         "stats": [
             "Armour: 3",
             "Minumum stat: 6",
@@ -1555,7 +1555,7 @@
     },
     {
         "name": "Platinum Boots",
-        "requirements": "Level 60",
+        "level_requirement": "60",
         "stats": [
             "Armour: 6",
             "Minumum stat: 7",
@@ -1568,7 +1568,7 @@
     },
     {
         "name": "Indigo Sandals",
-        "requirements": "Level 60",
+        "level_requirement": "60",
         "stats": [
             "Armour: 3",
             "Minumum stat: 7",
@@ -1582,7 +1582,7 @@
     },
     {
         "name": "Pearl Boots",
-        "requirements": "Level 60",
+        "level_requirement": "60",
         "stats": [
             "Armour: 4",
             "Minumum stat: 7",
@@ -1595,7 +1595,7 @@
     },
     {
         "name": "Emerald Boots",
-        "requirements": "Level 70",
+        "level_requirement": "70",
         "stats": [
             "Armour: 7",
             "Minumum stat: 8",
@@ -1608,7 +1608,7 @@
     },
     {
         "name": "Arnisium Boots",
-        "requirements": "Level 70",
+        "level_requirement": "70",
         "stats": [
             "Armour: 3",
             "Minumum stat: 8",
@@ -1621,7 +1621,7 @@
     },
     {
         "name": "Spiked Boots",
-        "requirements": "Level 70",
+        "level_requirement": "70",
         "stats": [
             "Armour: 4",
             "Minumum stat: 8",
@@ -1634,7 +1634,7 @@
     },
     {
         "name": "Granite Boots",
-        "requirements": "Level 80",
+        "level_requirement": "80",
         "stats": [
             "Armour: 8",
             "Minumum stat: 9",
@@ -1647,7 +1647,7 @@
     },
     {
         "name": "Crystal Boots",
-        "requirements": "Level 80",
+        "level_requirement": "80",
         "stats": [
             "Armour: 3",
             "Minumum stat: 9",
@@ -1660,7 +1660,7 @@
     },
     {
         "name": "Sentinel Boots",
-        "requirements": "Level 80",
+        "level_requirement": "80",
         "stats": [
             "Armour: 5",
             "Minumum stat: 9",

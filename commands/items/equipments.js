@@ -19,7 +19,7 @@ module.exports = {
             description: 'It can be the name of the equipment or a category.',
             required: false,
             type: 3
-        }
+        },
     ],
 
     callback: async ({ message, interaction, args, prefix, user }) => {
@@ -72,7 +72,7 @@ module.exports = {
                 files: [ `assets/items/sprites/equipments/thumbnails/${sprite}` ]
             })
             return
-        }
+        } 
 
         //If the user input is equipment
         if (isEquipment) {
@@ -83,7 +83,7 @@ module.exports = {
             embed.setThumbnail(`attachment://${sprite}`)
             embed.addFields(
                 { name: '❯ Name', value: equipment.name },
-                { name: '❯ Requirement', value: equipment.requirements },
+                { name: '❯ Level requirement', value: `Level ${equipment.level_requirement}` },
                 { name: '❯ Stats', value: formatter(equipment.stats) },
                 { name: '❯ Monsters', value: formatter(equipment.monsters) }
             )
