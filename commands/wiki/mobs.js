@@ -1,21 +1,15 @@
-const { MessageEmbed } = require('discord.js')
-const ignoreCase = require('ignore-case')
-const fs = require('fs')
-const getMessageDetails = require('../../utils/get-message-details')
-const sendMessage = require('../../utils/send-message')
+const mobsJson = require('@assets/wiki/mobs.json')
 
-const getCategories = (categories) => {
-    let list = ''
-    categories.forEach(category => {
-        list += `• ${category}\n`
-    })
-    return list
-}
+const sendMessage = require('@utils/send-message')
+const formatter = require('@utils/formatter')
+const getEmbed = require('@utils/get-embed')
+
+const didyoumean = require('didyoumean2').default
 
 module.exports = {
     category: 'Mobs',
     description: 'A command will help you with mobs in the game.',
-    aliases: ['mob'],
+    aliases: ['mob', 'mb'],
 
     slash: 'both',
 
@@ -29,98 +23,68 @@ module.exports = {
         }
     ],
 
-    callback: async ({ message, interaction, args, prefix }) => {
-        const messageDetails = getMessageDetails(message, interaction, prefix)
+    callback: async ({ message, interaction, args, prefix, user }) => {
+        const embed = getEmbed(user)
 
-        const mobsJson = JSON.parse(Buffer.from(fs.readFileSync(process.env.PWD + '/assets/wiki/mobs.json').toString()))
-        const categories = []
-        mobsJson.forEach(mob => {
-            categories.push(mob.name)
-        }) 
-
-        //List the mobs
-        if (!args[0]) {
-            const list = getCategories(categories)
-            const embed = new MessageEmbed()
-                .setAuthor(messageDetails.author, messageDetails.avatar)
-                .setThumbnail('attachment://troll.png')
-                .addField('❯ Mobs', list)
-                .addField('❯ Usage', `${messageDetails.prefix}mobs <mob>`)
-                .setColor('BLUE')
-
-            return sendMessage(message, interaction, {
-                embeds: [
-                    embed
-                ],
-                files: [
-                    process.env.PWD + '/assets/wiki/sprites/mobs/troll.png'
-                ]
-            })
+        if (interaction) {
+            prefix = '/'
         }
 
-        //Show full details of a mob
-        let code = 1
-        mobsJson.forEach(mob => {
-            if (ignoreCase.equals(args.join(' '), mob.name)) {
-                code = 0
+        const usage = {
+            name: '❯ Usage',
+            value: `${prefix}mobs <mob> - To see the full details of the mob.\n` +
+                   `${prefix}mobs - To list all the mobs.`
+        }
 
-                const name = mob.name.replace("'", '').replaceAll(' ', '-').toLowerCase()
-                const sprite = process.env.PWD + '/assets/wiki/sprites/mobs/' + name + '.png'
+        //If user didn't give arguments
+        if (args.length === 0) {
+            const mobs = formatter(mobsJson.map(data => data.name))
 
-                let stats = ''
-                mob.stats.forEach(stat => {
-                    stats += `• ${stat}\n`
-                })
-
-                let resistance = ''
-                mob.resistance.forEach(res => {
-                    resistance += `• ${res}\n`
-                })
-
-                let loots = ''
-                mob.loots.forEach(loot => {
-                    loots += `• ${loot}\n`
-                })
-
-                const embed = new MessageEmbed()
-                    .setAuthor(messageDetails.author, messageDetails.avatar)
-                    .setThumbnail(`attachment://${name}.png`)
-                    .addFields([
-                        { name: '❯ Name', value: mob.name },
-                        { name: '❯ Stats', value: stats },
-                        { name: '❯ Resistance', value: resistance },
-                        { name: `❯ Loots`, value: loots }
-                    ])
-                    .setColor('BLUE')
-
-                sendMessage(message, interaction, {
-                    embeds: [
-                        embed
-                    ],
-                    files: [
-                        sprite
-                    ]
-                })
-            }
-        })
-
-        //If the mob user typed didn't exist
-        if (code == 1) {
-            const embed = new MessageEmbed()
-                .setAuthor(messageDetails.author, messageDetails.avatar)
-                .setThumbnail('attachment://troll.png')
-                .setDescription('Make sure the mob you type is valid')
-                .addField('❯ Usage', `${messageDetails.prefix}mobs - To list all mobs in the game` )
-                .setColor('RED')
+            embed.setThumbnail('attachment://troll.png')
+            embed.addFields([
+                { name: '❯ Mobs', value: mobs },
+                usage
+            ])
 
             sendMessage(message, interaction, {
-                embeds: [
-                    embed
-                ],
-                files: [
-                    process.env.PWD + '/assets/wiki/sprites/mobs/troll.png'
-                ]
+                embeds: [ embed ],
+                files: [ 'assets/wiki/sprites/mobs/troll.png' ]
             })
+            return
         }
+
+        const input = args.join(' ')
+        const isMob = didyoumean(input, mobsJson.map(data => data.name), { threshold: 0.6 })
+
+        //If the user input is mob
+        if (isMob) {
+            const mob = mobsJson.find(data => data.name === isMob)
+            const sprite = mob.name.replace(/'/, '').replaceAll(' ', '-').toLowerCase() + '.png'
+
+            embed.setThumbnail(`attachment://${sprite}`)
+            embed.addFields([
+                { name: '❯ Name', value: mob.name },
+                { name: '❯ Stats', value: formatter(mob.stats) },
+                { name: '❯ Resistance', value: formatter(mob.resistance) },
+                { name: '❯ Loots', value: formatter(mob.loots) }
+            ])
+
+            sendMessage(message, interaction, {
+                embeds: [ embed ],
+                files: [ `assets/wiki/sprites/mobs/${sprite}` ]
+            })
+            return
+        }
+
+        //If didn't match anything
+        embed.setThumbnail('attachment://troll.png')
+        embed.setDescription('The mob you typed did not match to any mobs.')
+        embed.addFields([ usage ])
+        embed.setColor('RED')
+
+        sendMessage(message, interaction, {
+            embeds: [ embed ],
+            files: [ 'assets/wiki/sprites/mobs/troll.png' ]
+        })
     }
 }
