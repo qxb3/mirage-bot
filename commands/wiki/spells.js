@@ -1,25 +1,10 @@
-const { MessageEmbed } = require('discord.js')
-const ignoreCase = require('ignore-case')
-const fs = require('fs')
-const getMessageDetails = require('../../utils/get-message-details')
-const sendMessage = require('../../utils/send-message')
+const spellsJson = require('@assets/wiki/spells.json')
 
-const getCategories = (categories) => {
-    let list = ''
-    categories.forEach(category => {
-        list += `• ${category}\n`
-    })
-    return list
-}
+const sendMessage = require('@utils/send-message')
+const formatter = require('@utils/formatter')
+const getEmbed = require('@utils/get-embed')
 
-const getSpells = (spellJson, type) => {
-    let skills = ''
-    spellJson.filter(skill => ignoreCase.equals(type, skill.vocation))
-        .forEach(skill => {
-            skills += `• ${skill.name}\n`
-    })
-    return skills
-}
+const didyoumean = require('didyoumean2').default
 
 module.exports = {
     category: 'Wiki',
@@ -38,112 +23,89 @@ module.exports = {
         }
     ],
 
-    callback: async ({ message, interaction, args, prefix }) => {
-        const messageDetails = getMessageDetails(message, interaction, prefix)
-
-        const spellJson = JSON.parse(Buffer.from(fs.readFileSync(process.env.PWD + '/assets/wiki/spells.json').toString()))
+    callback: async ({ message, interaction, args, prefix, user }) => {
         const categories = ['Knight', 'Ranger', 'Mage', 'Shaman']
+        const embed = getEmbed(user)
 
-        //List the categories
-        if (!args[0]) {
-            const list = getCategories(categories)
-            const embed = new MessageEmbed() 
-                .setAuthor(messageDetails.author, messageDetails.avatar)
-                .setThumbnail('attachment://explosion.png')
-                .addField('❯ Vocations', list)
-                .addField('❯ Usage', `${messageDetails.prefix}spells <spell>`)
-                .setColor('BLUE')
-
-            return sendMessage(message, interaction, {
-                embeds: [
-                    embed
-                ],
-                files: [
-                    process.env.PWD + '/assets/wiki/sprites/spells/mage/explosion.png'
-                ]
-            })
+        if (interaction) {
+            prefix = '/'
         }
 
-        //List the spells in that category
-        let code = 1
-        categories.forEach(category => {
-            if (ignoreCase.equals(args.join(' '), category)) {
-                code = 0
-
-                const skills = getSpells(spellJson, category)
-                const embed = new MessageEmbed()
-                    .setAuthor(messageDetails.author, messageDetails.avatar)
-                    .setThumbnail(`attachment://${category.toLowerCase()}.png`)
-                    .addField(`❯ ${category} Spells`, skills)
-                    .addField('❯ Usage', `${messageDetails.prefix}spells <spell>`)
-                    .setColor('BLUE')
-
-                sendMessage(message, interaction, {
-                    embeds: [
-                        embed
-                    ],
-                    files: [
-                        process.env.PWD + `/assets/wiki/sprites/spells/category-thumbnails/${category.toLowerCase()}.png`
-                    ]
-                })
-            }
-        })
-
-        //Show full details of a spell
-        if (code == 1) {
-            spellJson.forEach(skill => {
-                if (ignoreCase.equals(args.join(' '), skill.name)) {
-                    code = 0
-
-                    const name = skill.name.replaceAll(' ', '-').toLowerCase()
-                    const sprite = process.env.PWD + '/assets/wiki/sprites/spells/' + skill.vocation.toLowerCase() + '/' + name + '.png'
-
-                    let effects = ''
-                    skill.effects.forEach(effect => {
-                        effects += `${effect}\n`
-                    })
-
-                    const embed = new MessageEmbed()
-                        .setAuthor(messageDetails.author, messageDetails.avatar)
-                        .setThumbnail(`attachment://${name}.png`)
-                        .addFields([
-                            { name: '❯ Name', value: `${skill.name}` },
-                            { name: '❯ Description', value: `${skill.description}` },
-                            { name: '❯ Level requirement', value: `${skill.requirement}` },
-                            { name: '❯ Cooldown', value: `${skill.cooldown}` },
-                            { name: '❯ Effects', value: effects }
-                        ])
-                        .setColor('BLUE')
-
-                    sendMessage(message, interaction, {
-                        embeds: [
-                            embed
-                        ],
-                        files: [
-                            sprite
-                        ]
-                    })
-                }
-            })
+        const usage = {
+            name: '❯ Usage',
+            value: `${prefix}spells <spell> - To see the full details of the spell.\n` +
+                   `${prefix}spells <category> - To list all the spells in that categories.\n` +
+                   `${prefix}spells - To list all the categories.`
         }
 
-        //If the spell user typed didn't exist
-        if (code == 1) {
-            const embed = new MessageEmbed()
-                .setAuthor(messageDetails.author, messageDetails.avatar)
-                .setThumbnail('attachment://explosion.png')
-                .setDescription('Make sure the spell you type is valid')
-                .addField('❯ Usage', `${messageDetails.prefix}spells - To list all spell categories available in the game` )
-                .setColor('RED')
+        //If user didn't give arguments
+        if (args.length === 0) {
+            embed.setThumbnail('attachment://mage.png')
+            embed.addFields([
+                { name: '❯ Categories', value: formatter(categories) },
+                usage
+            ])
 
             sendMessage(message, interaction, {
-                embeds: [
-                    embed
-                ],
-                files: [
-                    process.env.PWD + '/assets/wiki/sprites/spells/mage/explosion.png'
-                ]
+                embeds: [ embed ],
+                files: [ 'assets/wiki/sprites/spells/thumbnails/mage.png' ]
             })
+            return
         }
+
+        const input = args.join(' ')
+        const isCategory = didyoumean(input, categories, { threshold: 0.6 })
+        const isSpell = didyoumean(input, spellsJson.map(data => data.name), { threshold: 0.6 })
+
+        //If the user input is category
+        if (isCategory) {
+            const spells = formatter(spellsJson.filter(data => data.vocation === isCategory).map(data => data.name))
+            const sprite = `${isCategory.toLowerCase()}.png`
+
+            embed.setThumbnail(`attachment://${sprite}`)
+            embed.addFields([
+                { name: `❯ ${isCategory}`, value: spells },
+                usage
+            ])
+
+            sendMessage(message, interaction, {
+                embeds: [ embed ],
+                files: [ `assets/wiki/sprites/spells/thumbnails/${sprite}` ]
+            })
+            return
+        }
+
+        //If the user input is spell
+        if (isSpell) {
+            const spell = spellsJson.find(data => data.name === isSpell)
+            const sprite = spell.name.replace(/'/, '').replaceAll(' ', '-').toLowerCase() + '.png'
+            const type = spell.vocation.toLowerCase()
+            const effects = spell.effects.join('\n')
+
+            embed.setThumbnail(`attachment://${sprite}`)
+            embed.addFields(
+                { name: '❯ Name', value: spell.name },
+                { name: '❯ Description', value: spell.description },
+                { name: '❯ Requirement', value: spell.requirement },
+                { name: '❯ Cooldown', value: spell.cooldown },
+                { name: '❯ Effects', value: effects }
+            )
+            sendMessage(message, interaction, {
+                embeds: [ embed ],
+                files: [ `assets/wiki/sprites/spells/${type + '/' + sprite}` ]
+            })
+            return
+        }
+
+        //If didn't match anything
+        embed.setThumbnail('attachment://mage.png')
+        embed.setDescription('The spell you typed did not match to any spells.')
+        embed.addFields([ usage ])
+        embed.setColor('RED')
+
+        sendMessage(message, interaction, {
+            embeds: [ embed ],
+            files: [ `assets/wiki/sprites/spells/thumbnails/mage.png` ]
+        })
     }
 }
