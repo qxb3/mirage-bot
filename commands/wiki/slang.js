@@ -1,21 +1,15 @@
-const { MessageEmbed } = require('discord.js')
-const ignoreCase = require('ignore-case')
-const fs = require('fs')
-const getMessageDetails = require('../../utils/get-message-details')
-const sendMessage = require('../../utils/send-message')
+const slangsJson = require('@assets/wiki/slangs.json')
 
-const getCategories = (categories) => {
-    let list = ''
-    categories.forEach(category => {
-        list += `• ${category}\n`
-    })
-    return list
-}
+const sendMessage = require('@utils/send-message')
+const formatter = require('@utils/formatter')
+const getEmbed = require('@utils/get-embed')
+
+const didyoumean = require('didyoumean2').default
 
 module.exports = {
     category: 'Wiki',
     description: 'A command that will help you with slangs in the game.',
-    aliases: ['slangs'],
+    aliases: ['slangs', 'sl'],
 
     slash: 'both',
 
@@ -29,78 +23,65 @@ module.exports = {
         }
     ],
 
-    callback: async ({ message, interaction, args, prefix }) => {
-        const messageDetails = getMessageDetails(message, interaction, prefix)
+    callback: async ({ message, interaction, args, prefix, user }) => {
+         const embed = getEmbed(user)
 
-        const slangJson = JSON.parse(Buffer.from(fs.readFileSync(process.env.PWD + '/assets/wiki/slangs.json').toString()))
-        const categories = []
-        slangJson.forEach(slang => {
-            categories.push(slang.slang)
-        }) 
-
-        //List the slang
-        if (!args[0]) {
-            const list = getCategories(categories)
-            const embed = new MessageEmbed()
-                .setAuthor(messageDetails.author, messageDetails.avatar)
-                .setThumbnail('attachment://rules.png')
-                .addField('❯ Slangs', list)
-                .addField('❯ Usage', `${messageDetails.prefix}slang <slang>`)
-                .setColor('BLUE')
-
-            return sendMessage(message, interaction, {
-                embeds: [
-                    embed
-                ],
-                files: [
-                    process.env.PWD + '/assets/icons/rules.png'
-                ]
-            })
+        if (interaction) {
+            prefix = '/'
         }
 
-        //Show full details of a slang
-        let code = 1
-        slangJson.forEach(slang => {
-            if (ignoreCase.equals(args.join(' '), slang.slang)) {
-                code = 0
+        const usage = {
+            name: '❯ Usage',
+            value: `${prefix}slang <slang> - To see the full details of the slang.\n` +
+                   `${prefix}slang - To list all the slangs.`
+        }
 
-                const embed = new MessageEmbed()
-                    .setAuthor(messageDetails.author, messageDetails.avatar)
-                    .setThumbnail('attachment://rules.png')
-                    .addFields([
-                        { name: '❯ Name', value: slang.name },
-                        { name: '❯ Description', value: slang.description }
-                    ])
-                    .setColor('BLUE')
+        //If user didn't give arguments
+        if (args.length === 0) {
+            const slangs = formatter(slangsJson.map(data => data.slang))
 
-                sendMessage(message, interaction, {
-                    embeds: [
-                        embed
-                    ],
-                    files: [
-                        process.env.PWD + '/assets/icons/rules.png'
-                    ]
-                })
-            }
-        })
-
-        //If the slang user typed didn't exist
-        if (code == 1) {
-            const embed = new MessageEmbed()
-                .setAuthor(messageDetails.author, messageDetails.avatar)
-                .setThumbnail('attachment://rules.png')
-                .setDescription('Make sure the slang you type is valid')
-                .addField('❯ Usage', `${messageDetails.prefix}slang - To list all slangs commonly used in the game`)
-                .setColor('RED')
+            embed.setThumbnail('attachment://rules.png')
+            embed.addFields([
+                { name: '❯ Slangs', value: slangs },
+                usage
+            ])
 
             sendMessage(message, interaction, {
-                embeds: [
-                    embed
-                ],
-                files: [
-                    process.env.PWD + '/assets/icons/rules.png'
-                ]
+                embeds: [ embed ],
+                files: [ 'assets/icons/rules.png' ]
             })
+            return
         }
+
+        const input = args.join(' ')
+        const isSlang = didyoumean(input, slangsJson.map(data => data.slang), { threshold: 0.6 })
+
+        //If the user input is slang
+        if (isSlang) {
+            const slang = slangsJson.find(data => data.slang === isSlang)
+
+            embed.setThumbnail(`attachment://rules.png`)
+            embed.addFields([
+                { name: '❯ Name', value: slang.name },
+                { name: '❯ Description', value: slang.description }
+            ])
+
+            sendMessage(message, interaction, {
+                embeds: [ embed ],
+                files: [ `assets/icons/rules.png` ]
+            })
+            return
+        }
+
+        //If didn't match anything
+        embed.setThumbnail('attachment://rules.png')
+        embed.setDescription('The slang you typed did not match to any slangs.')
+        embed.addFields([ usage ])
+        embed.setColor('RED')
+
+        sendMessage(message, interaction, {
+            embeds: [ embed ],
+            files: [ 'assets/icons/rules.png' ]
+        })
     }
 }
