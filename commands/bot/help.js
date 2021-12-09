@@ -1,8 +1,8 @@
 const { MessageEmbed } = require('discord.js')
+
 const ignoreCase = require('ignore-case')
 const fs = require('fs')
-const getMessageDetails = require('../../utils/get-message-details')
-const sendMessage = require('../../utils/send-message')
+const sendMessage = require('@utils/send-message')
 
 module.exports = {
     category: 'Bot',
@@ -21,40 +21,36 @@ module.exports = {
     ],
 
     callback: ({ message, interaction, instance, args, prefix }) => {
-        const messageDetails = getMessageDetails(message, interaction, prefix)
+        if (interaction) {
+            prefix = '/'
+        }
 
         //List the commands
-        if (!args[0]) {
-            const commands = []
+        if (args.length === 0) {
+            const embed = new MessageEmbed()
+                .setTitle('Commands')
+                .setThumbnail('attachment://help.png')
+                .setColor('GREEN')
+
             const categories = fs.readdirSync('./commands')
-            for (let i = categories.length - 1; i >= 0; i--) {
+            for (let i = categories.length - 1; i >= 0; i--)  {
                 if (categories[i] != 'bot-owner') {
                     const categoryCommands = fs.readdirSync(`./commands/${categories[i]}`)
-                    
+
                     const name = categories[i].charAt(0).toUpperCase() + categories[i].slice(1)
                     const command = categoryCommands.join(', ').replaceAll('.js', '')
-                    commands.push({
-                        name: `❯ ${name}`,
-                        value: command
-                    })
+                    embed.addField(`❯ ${name}`, command)
                 }
             }
 
-            const embed = new MessageEmbed()
-                .setTitle('Help Commands')
-                .setThumbnail('attachment://help.png')
-                .addFields(commands)
-                .addField('❯ Usage', `${messageDetails.prefix}help <command>`)
-                .setColor('BLUE')
+            embed.addField('❯ Usage', `${prefix}help <command>`)
 
-            return sendMessage(message, interaction, {
-                embeds: [
-                    embed
+            sendMessage(message, interaction, {
+                embeds: [ embed
                 ],
-                files: [
-                    process.env.PWD + '/assets/icons/help.png'
-                ]
+                files: [ 'assets/icons/help.png' ]
             })
+            return
         }
 
         let code = 1
@@ -72,17 +68,13 @@ module.exports = {
                             { name: '❯ Category', value: command.category },
                             { name: '❯ Description', value: command.description },
                             { name: '❯ Aliases', value: aliases },
-                            { name: '❯ Usage', value: `${messageDetails.prefix + name} ${syntax}` }
+                            { name: '❯ Usage', value: `${prefix + name} ${syntax}` }
                         )
-                        .setColor('BLUE')
+                        .setColor('GREEN')
 
                     sendMessage(message, interaction, {
-                        embeds: [
-                            embed
-                        ],
-                        files: [
-                            process.env.PWD + '/assets/icons/info_blue.png'
-                        ]
+                        embeds: [ embed ],
+                        files: [ 'assets/icons/info_blue.png' ]
                     })
                 }
             })
@@ -92,17 +84,13 @@ module.exports = {
         if (code == 1) { 
             const embed = new MessageEmbed()
                 .setThumbnail('attachment://error.png')
-                .setDescription('Make sure the command name you typed exist')
-                .addField('❯ Usage', `${messageDetails.prefix}help <command>`)
+                .setDescription('Make sure the command name you typed is correct.')
+                .addField('❯ Usage', `${prefix}help <command>`)
                 .setColor('RED')
 
             sendMessage(message, interaction, {
-                embeds: [
-                    embed
-                ],
-                files: [
-                    process.env.PWD + '/assets/icons/error.png'
-                ]
+                embeds: [ embed ],
+                files: [ 'assets/icons/error.png' ]
             })
         }
     }
