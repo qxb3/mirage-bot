@@ -83,7 +83,7 @@ module.exports = {
             embed.setThumbnail(`attachment://${sprite}`)
             embed.addFields(
                 { name: '❯ Name', value: weapon.name },
-                { name: '❯ Requirement', value: weapon.requirements },
+                { name: '❯ Level requirement', value: weapon.level_requirement },
                 { name: '❯ Stats', value: formatter(weapon.stats) },
                 { name: '❯ Monsters', value: formatter(weapon.monsters) }
             )
