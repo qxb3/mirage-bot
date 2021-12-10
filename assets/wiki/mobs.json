@@ -9,14 +9,7 @@
             "AOE: None"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: 0%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 0%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "None" 
         ],
         "loots": [
             "Copper (1-1)"
@@ -32,14 +25,7 @@
             "AOE: None"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: 0%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 0%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "None" 
         ],
         "loots": [
             "Copper (3-5)"
@@ -55,14 +41,7 @@
             "AOE: None"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: -5%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 0%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Fire: -5%"
         ],
         "loots": [
             "Copper (6-12)",
@@ -83,14 +62,8 @@
             "AOE: None"
         ],
         "resistance": [
-            "Physical: 0%",
             "Fire: -5%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 0%",
-            "Mana: 25%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Mana: 25%"
         ],
         "loots": [
             "Copper (7-13)",
@@ -117,14 +90,7 @@
             "AOE: None"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: -5%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 0%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Fire: -5%"
         ],
         "loots": [
             "Copper (8-15)",
@@ -148,14 +114,7 @@
             "AOE: None"
         ],
         "resistance": [
-            "Physical: 10%",
-            "Fire: -5%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 0%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Fire: -5%"
         ],
         "loots": [
             "Copper (9-17)",
@@ -181,13 +140,7 @@
         ],
         "resistance": [
             "Physical: 10%",
-            "Fire: -5%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 0%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Fire: -5%"
         ],
         "loots": [
             "Copper (12-23)",
@@ -212,14 +165,7 @@
             "AOE: None"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: 0%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 0%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "None" 
         ],
         "loots": [
             "Copper (20-39)",
@@ -241,14 +187,7 @@
             "AOE: Poison"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: 0%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 100%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Poison: 100%"
         ],
         "loots": [
             "Copper (21-41)",
@@ -272,14 +211,7 @@
             "AOE: None"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: 0%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 0%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "None" 
         ],
         "loots": [
             "Copper (23-46)",
@@ -296,14 +228,7 @@
             "AOE: None"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: 0%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 0%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "None" 
         ],
         "loots": [
             "Copper (25-50)",
@@ -327,14 +252,7 @@
             "AOE: Poison"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: 0%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 100%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Poison: 100%"
         ],
         "loots": [
             "Copper (34-67)",
@@ -357,14 +275,8 @@
             "AOE: Fire"
         ],
         "resistance": [
-            "Physical: 0%",
             "Fire: 100%",
-            "Ice: -5%",
-            "Energy: 0%",
-            "Poison: 0%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Ice: -5%"
         ],
         "loots": [
             "Copper (41-82)",
@@ -388,14 +300,8 @@
             "AOE: Poison"
         ],
         "resistance": [
-            "Physical: 0%",
             "Fire: -5%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 100%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Poison: 100%"
         ],
         "loots": [
             "Copper (52-103)",
@@ -418,14 +324,7 @@
             "AOE: None"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: 0%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 0%",
-            "Mana: 25%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Mana: 25%"
         ],
         "loots": [
             "Copper (77-154)",
@@ -450,14 +349,8 @@
             "AOE: Poison"
         ],
         "resistance": [
-            "Physical: 0%",
             "Fire: -5%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 100%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Poison: 100%"
         ],
         "loots": [
             "Copper (103-206)",
@@ -479,14 +372,7 @@
             "AOE: Physical"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: 0%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 0%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "None" 
         ],
         "loots": [
             "Copper (129-257)",
@@ -508,14 +394,7 @@
             "AOE: None"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: 0%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 0%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "None" 
         ],
         "loots": [
             "Copper (139-278)",
@@ -539,14 +418,7 @@
             "AOE: Physical"
         ],
         "resistance": [
-            "Physical: 10%",
-            "Fire: 0%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 0%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Physical: 10%"
         ],
         "loots": [
             "Copper (149-298)",
@@ -570,14 +442,8 @@
             "AOE: Mana"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: 0%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 0%",
             "Mana: 25%",
-            "Death: 10%",
-            "Holy: 0%"
+            "Death: 10%"
         ],
         "loots": [
             "Copper (155-309)",
@@ -599,17 +465,13 @@
             "Health: 3630",
             "Experience: 8421",
             "Skills: None",
-            "AOE: FireEnergy"
+            "AOE: Fire, Energy"
         ],
         "resistance": [
             "Physical: 10%",
             "Fire: 100%",
             "Ice: -5%",
-            "Energy: 0%",
-            "Poison: 0%",
-            "Mana: 25%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Mana: 25%"
         ],
         "loots": [
             "Copper (309-618)",
@@ -632,14 +494,8 @@
             "AOE: Fire"
         ],
         "resistance": [
-            "Physical: 0%",
             "Fire: 100%",
-            "Ice: -5%",
-            "Energy: 0%",
-            "Poison: 0%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Ice: -5%"
         ],
         "loots": [
             "Copper (360-720)",
@@ -652,7 +508,7 @@
         ]
     },
     {
-        "name": "Giant Slug",
+        "name": "Gastropod",
         "stats": [
             "Attack: Energy",
             "Health: 4840",
@@ -662,13 +518,8 @@
         ],
         "resistance": [
             "Physical: -5%",
-            "Fire: 0%",
-            "Ice: 0%",
             "Energy: 100%",
-            "Poison: 10%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Poison: 10%"
         ],
         "loots": [
             "Copper (412-823)",
@@ -688,14 +539,7 @@
             "AOE: Physical"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: 0%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 0%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "None" 
         ],
         "loots": [
             "Copper (412-823)",
@@ -718,13 +562,7 @@
         ],
         "resistance": [
             "Physical: 100%",
-            "Fire: 0%",
-            "Ice: 0%",
-            "Energy: 100%",
-            "Poison: 0%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Energy: 100%"
         ],
         "loots": [
             "Copper (437-874)",
@@ -744,14 +582,8 @@
             "AOE: Ice"
         ],
         "resistance": [
-            "Physical: 0%",
             "Fire: -5%",
-            "Ice: 100%",
-            "Energy: 0%",
-            "Poison: 0%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Ice: 100%"
         ],
         "loots": [
             "Copper (515-1029)",
@@ -775,14 +607,7 @@
             "AOE: Physical"
         ],
         "resistance": [
-            "Physical: 10%",
-            "Fire: 0%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 0%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Physical: 10%"
         ],
         "loots": [
             "Copper (772-1543)",
@@ -801,17 +626,11 @@
             "Health: 10285",
             "Experience: 41698",
             "Skills: None",
-            "AOE: DeathPoison"
+            "AOE: Death, Poison"
         ],
         "resistance": [
             "Physical: 10%",
-            "Fire: 0%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 100%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Poison: 100%"
         ],
         "loots": [
             "Copper (875-1749)",
@@ -828,17 +647,13 @@
             "Health: 10285",
             "Experience: 41943",
             "Skills: Heal",
-            "AOE: FireIce"
+            "AOE: Fire, Ice"
         ],
         "resistance": [
-            "Physical: 0%",
             "Fire: 5%",
             "Ice: 5%",
             "Energy: 5%",
-            "Poison: 0%",
-            "Mana: 25%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Mana: 25%"
         ],
         "loots": [
             "Copper (875-1749)",
@@ -859,14 +674,7 @@
             "AOE: None"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: -5%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 0%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Fire: -5%"
         ],
         "loots": [
             "Copper (926-1852)",
@@ -884,17 +692,13 @@
             "Health: 11495",
             "Experience: 47500",
             "Skills: Heal",
-            "AOE: FireEnergy"
+            "AOE: Fire, Energy"
         ],
         "resistance": [
             "Physical: 25%",
             "Fire: 100%",
             "Ice: -5%",
-            "Energy: 0%",
-            "Poison: 0%",
-            "Mana: 25%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Mana: 25%"
         ],
         "loots": [
             "Copper (978-1955)",
@@ -916,14 +720,7 @@
             "AOE: Physical"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: 25%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 0%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Fire: 25%"
         ],
         "loots": [
             "Copper (978-1955)",
@@ -945,14 +742,7 @@
             "AOE: None"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: -5%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 0%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Fire: -5%"
         ],
         "loots": [
             "Copper (1029-2057)",
@@ -971,14 +761,7 @@
             "AOE: None"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: 0%",
-            "Ice: 0%",
-            "Energy: -5%",
-            "Poison: 0%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Energy: -5%"
         ],
         "loots": [
             "Copper (1029-2057)",
@@ -996,14 +779,7 @@
             "AOE: Physical"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: 0%",
-            "Ice: 0%",
-            "Energy: -5%",
-            "Poison: 0%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Energy: -5%"
         ],
         "loots": [
             "Copper (1080-2160)",
@@ -1023,14 +799,7 @@
             "AOE: Poison"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: 0%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 100%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Poison: 100%"
         ],
         "loots": [
             "Copper (1132-2263)",
@@ -1051,14 +820,8 @@
             "AOE: Mana"
         ],
         "resistance": [
-            "Physical: 0%",
             "Fire: -5%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 0%",
-            "Mana: 25%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Mana: 25%"
         ],
         "loots": [
             "Copper (1132-2263)",
@@ -1078,14 +841,7 @@
             "AOE: None"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: 0%",
-            "Ice: 0%",
-            "Energy: -5%",
-            "Poison: 0%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Energy: -5%"
         ],
         "loots": [
             "Copper (1132-2263)",
@@ -1102,17 +858,11 @@
             "Health: 13915",
             "Experience: 60761",
             "Skills: Heal",
-            "AOE: ManaDeath"
+            "AOE: Mana, Death"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: 0%",
-            "Ice: 0%",
             "Energy: -5%",
-            "Poison: 0%",
-            "Mana: 75%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Mana: 75%"
         ],
         "loots": [
             "Copper (1183-2366)",
@@ -1133,14 +883,7 @@
             "AOE: Physical"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: -5%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 0%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Fire: -5%"
         ],
         "loots": [
             "Copper (1183-2366)",
@@ -1161,14 +904,7 @@
             "AOE: Physical"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: -5%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 0%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Fire: -5%"
         ],
         "loots": [
             "Copper (1183-2366)",
@@ -1188,14 +924,7 @@
             "AOE: Physical"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: 0%",
-            "Ice: 0%",
-            "Energy: -5%",
-            "Poison: 0%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Energy: -5%"
         ],
         "loots": [
             "Copper (1183-2366)",
@@ -1214,14 +943,8 @@
             "AOE: Physical"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: 0%",
             "Ice: -5%",
-            "Energy: 0%",
-            "Poison: 100%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Poison: 100%"
         ],
         "loots": [
             "Copper (1543-3086)",
@@ -1240,14 +963,8 @@
             "AOE: None"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: 0%",
             "Ice: -5%",
-            "Energy: 0%",
-            "Poison: 100%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Poison: 100%"
         ],
         "loots": [
             "Copper (1543-3086)",
@@ -1267,14 +984,8 @@
             "AOE: Poison"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: 0%",
             "Ice: -5%",
-            "Energy: 0%",
-            "Poison: 100%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Poison: 100%"
         ],
         "loots": [
             "Copper (1543-3086)",
@@ -1293,14 +1004,7 @@
             "AOE: None"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: 0%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: -5%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Poison: -5%"
         ],
         "loots": [
             "Copper (1800-3600)",
@@ -1321,14 +1025,7 @@
             "AOE: Physical"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: 0%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: -5%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Poison: -5%"
         ],
         "loots": [
             "Copper (1800-3600)",
@@ -1350,14 +1047,7 @@
             "AOE: Death"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: 0%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 0%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "None" 
         ],
         "loots": [
             "Copper (1800-3600)",
@@ -1380,12 +1070,8 @@
         "resistance": [
             "Physical: 50%",
             "Fire: 100%",
-            "Ice: 0%",
-            "Energy: 0%",
             "Poison: 100%",
-            "Mana: 50%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Mana: 50%"
         ],
         "loots": [
             "Copper (2057-4114)",
@@ -1403,13 +1089,9 @@
         ],
         "resistance": [
             "Physical: 50%",
-            "Fire: 0%",
             "Ice: 100%",
-            "Energy: 0%",
             "Poison: 100%",
-            "Mana: 100%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Mana: 100%"
         ],
         "loots": [
             "Copper (2057-4114)"
@@ -1426,13 +1108,9 @@
         ],
         "resistance": [
             "Physical: 50%",
-            "Fire: 0%",
             "Ice: 100%",
-            "Energy: 0%",
             "Poison: 100%",
-            "Mana: 50%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Mana: 50%"
         ],
         "loots": [
             "Copper (2057-4114)",
@@ -1450,13 +1128,8 @@
         ],
         "resistance": [
             "Physical: 50%",
-            "Fire: 0%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 0%",
             "Mana: 50%",
-            "Death: 100%",
-            "Holy: 0%"
+            "Death: 100%"
         ],
         "loots": [
             "Copper (2315-4629)",
@@ -1474,13 +1147,8 @@
         ],
         "resistance": [
             "Physical: 50%",
-            "Fire: 0%",
-            "Ice: 0%",
             "Energy: 100%",
-            "Poison: 0%",
-            "Mana: 50%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Mana: 50%"
         ],
         "loots": [
             "Copper (2315-4629)",
@@ -1498,13 +1166,7 @@
         ],
         "resistance": [
             "Physical: 100%",
-            "Fire: 0%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 0%",
-            "Mana: 50%",
-            "Death: 0%",
-            "Holy: 0%"
+            "Mana: 50%"
         ],
         "loots": [
             "Copper (2315-4629)",
@@ -1524,14 +1186,7 @@
             "AOE: ManaEnergyPoison"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: 0%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 0%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "None" 
         ],
         "loots": [
             "Copper (425000-850000)",
@@ -1548,14 +1203,7 @@
             "AOE: Fire"
         ],
         "resistance": [
-            "Physical: 0%",
-            "Fire: 0%",
-            "Ice: 0%",
-            "Energy: 0%",
-            "Poison: 0%",
-            "Mana: 0%",
-            "Death: 0%",
-            "Holy: 0%"
+            "None" 
         ],
         "loots": [
             "Ban Hammer",
