@@ -9,7 +9,7 @@ module.exports = {
     category: 'Items',
     description: 'A command that will help you with materials in the game.',
     aliases: ['material', 'mats', 'mt'],
-    globalCooldown: '2m',
+    globalCooldown: '10s',
 
     slash: 'both',
 
