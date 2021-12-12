@@ -11,18 +11,17 @@ module.exports = {
     description: 'A command for info s about the game (This command content are mostly about skull systems).',
     aliases: ['info', 'inf'],
 
-    //slash: 'both',
-    testOnly: true,
+    slash: 'both',
 
     expectedArgs: '<info>',
-    /*options: [
+    options: [
         {
             name: 'info',
             description: 'The info name you want to check.',
             required: false,
             type: 3
         }
-    ],*/
+    ],
 
     callback: async ({ message, interaction, args, prefix, user }) => {
          const embed = getEmbed(user)
