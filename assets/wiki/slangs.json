@@ -53,5 +53,20 @@
         "slang": "h2",
         "name": "Hell2",
         "description": "It's a level 35 zone located in imps"
-    }
+    },
+    {
+        "slang": "sk",
+        "name": "Skull",
+        "description": "It's a skull can be found on the top of the players head indicating that player hit / kill another player."
+    },
+    {
+        "slang": "ys",
+        "name": "Yellow Skull",
+        "description": "It's a type of a skull that can be found on the top of the players head. Use `infos` command to learn more."
+    },
+    {
+        "slang": "rs",
+        "name": "Red Skull",
+        "description": "It's a type of a skull that can be found on the top of the players head. Use `infos` command to learn more."
+    } 
 ]
