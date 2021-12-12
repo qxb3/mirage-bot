@@ -65,6 +65,7 @@ module.exports = {
             embed.addFields([
                 { name: '❯ Name', value: mob.name },
                 { name: '❯ Level requirement', value: `Level ${mob.level_requirement}` },
+                { name: '❯ Experience', value: `${mob.experience} Exp` },
                 { name: '❯ Stats', value: formatter(mob.stats) },
                 { name: '❯ Resistance', value: formatter(mob.resistance) },
                 { name: '❯ Loots', value: formatter(mob.loots) }

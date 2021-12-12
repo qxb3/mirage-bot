@@ -2,10 +2,10 @@
     {
         "name": "Butterfly",
         "level_requirement": 5,
+        "experience": 5,
         "stats": [
             "Attack: Physical",
-            "Health: 5",
-            "Experience: 5",
+            "Health: 5", 
             "Skills: None",
             "AOE: None"
         ],
@@ -19,10 +19,10 @@
     {
         "name": "Rat",
         "level_requirement": 5,
+        "experience": 10,
         "stats": [
             "Attack: Physical",
             "Health: 25",
-            "Experience: 10",
             "Skills: None",
             "AOE: None"
         ],
@@ -36,10 +36,10 @@
     {
         "name": "Troll",
         "level_requirement": 5,
+        "experience": 50,
         "stats": [
             "Attack: Physical",
             "Health: 65",
-            "Experience: 50",
             "Skills: None",
             "AOE: None"
         ],
@@ -58,10 +58,10 @@
     {
         "name": "Troll Mage",
         "level_requirement": 5,
+        "experience": 70,
         "stats": [
             "Attack: Mana",
             "Health: 75",
-            "Experience: 70",
             "Skills: None",
             "AOE: None"
         ],
@@ -87,10 +87,10 @@
     {
         "name": "Troll Ranger",
         "level_requirement": 5,
+        "experience": 80,
         "stats": [
             "Attack: Physical",
             "Health: 85",
-            "Experience: 80",
             "Skills: None",
             "AOE: None"
         ],
@@ -112,10 +112,10 @@
     {
         "name": "Troll Knight",
         "level_requirement": 5,
+        "experience": 90,
         "stats": [
             "Attack: Physical",
             "Health: 95",
-            "Experience: 90",
             "Skills: None",
             "AOE: None"
         ],
@@ -138,10 +138,10 @@
     {
         "name": "Troll Warlord",
         "level_requirement": 5,
+        "experience": 200,
         "stats": [
             "Attack: Physical",
             "Health: 130",
-            "Experience: 200",
             "Skills: None",
             "AOE: Physical"
         ],
@@ -165,10 +165,10 @@
     {
         "name": "Cyclops",
         "level_requirement": 5,
+        "experience": 320,
         "stats": [
             "Attack: Physical",
             "Health: 225",
-            "Experience: 320",
             "Skills: None",
             "AOE: None"
         ],
@@ -188,10 +188,10 @@
     {
         "name": "Spider",
         "level_requirement": 5,
+        "experience": 400,
         "stats": [
             "Attack: Poison",
             "Health: 240",
-            "Experience: 400",
             "Skills: None",
             "AOE: Poison"
         ],
@@ -213,10 +213,10 @@
     {
         "name": "Widow",
         "level_requirement": 5,
+        "experience": 800,
         "stats": [
             "Attack: Poison",
             "Health: 390",
-            "Experience: 800",
             "Skills: None",
             "AOE: Poison"
         ],
@@ -237,10 +237,10 @@
     {
         "name": "Crab",
         "level_requirement": 5,
+        "experience": 540,
         "stats": [
             "Attack: Physical",
             "Health: 265",
-            "Experience: 540",
             "Skills: None",
             "AOE: None"
         ],
@@ -255,10 +255,10 @@
     {
         "name": "Deerstalker",
         "level_requirement": 5,
+        "experience": 600,
         "stats": [
             "Attack: Physical",
             "Health: 290",
-            "Experience: 600",
             "Skills: None",
             "AOE: None"
         ],
@@ -280,10 +280,10 @@
     {
         "name": "Slime",
         "level_requirement": 5,
+        "experience": 1269,
         "stats": [
             "Attack: Poison",
             "Health: 605",
-            "Experience: 1269",
             "Skills: None",
             "AOE: Poison"
         ],
@@ -305,10 +305,10 @@
     {
         "name": "Defiler",
         "level_requirement": 5,
+        "experience": 2545,
         "stats": [
             "Attack: Poison",
             "Health: 1210",
-            "Experience: 2545",
             "Skills: Heal",
             "AOE: Poison"
         ],
@@ -329,10 +329,10 @@
     {
         "name": "Firewyrm",
         "level_requirement": 10,
+        "experience": 1000,
         "stats": [
             "Attack: Fire",
             "Health: 480",
-            "Experience: 1000",
             "Skills: None",
             "AOE: Fire"
         ],
@@ -355,10 +355,10 @@
     {
         "name": "Felwalker",
         "level_requirement": 15,
+        "experience": 1909,
         "stats": [
             "Attack: Mana",
             "Health: 905",
-            "Experience: 1909",
             "Skills: None",
             "AOE: None"
         ],
@@ -381,10 +381,10 @@
     {
         "name": "Imp",
         "level_requirement": 25,
+        "experience": 3238,
         "stats": [
             "Attack: Physical",
             "Health: 1510",
-            "Experience: 3238",
             "Skills: None",
             "AOE: Physical"
         ],
@@ -404,10 +404,10 @@
     {
         "name": "Imp Ranger",
         "level_requirement": 25,
+        "experience": 3507,
         "stats": [
             "Attack: Fire",
             "Health: 1630",
-            "Experience: 3507",
             "Skills: None",
             "AOE: None"
         ],
@@ -429,10 +429,10 @@
     {
         "name": "Imp Knight",
         "level_requirement": 25,
+        "experience": 3796,
         "stats": [
             "Attack: Fire",
             "Health: 1750",
-            "Experience: 3796",
             "Skills: Heal",
             "AOE: Physical"
         ],
@@ -454,10 +454,10 @@
     {
         "name": "Imp Mage",
         "level_requirement": 25,
+        "experience": 3954,
         "stats": [
             "Attack: Mana",
             "Health: 1815",
-            "Experience: 3954",
             "Skills: None",
             "AOE: Mana"
         ],
@@ -481,10 +481,10 @@
     {
         "name": "Harbinger",
         "level_requirement": 25,
+        "experience": 8421,
         "stats": [
             "Attack: Fire",
             "Health: 3630",
-            "Experience: 8421",
             "Skills: None",
             "AOE: Fire, Energy"
         ],
@@ -508,10 +508,10 @@
     {
         "name": "Fire Slime",
         "level_requirement": 35,
+        "experience": 10250,
         "stats": [
             "Attack: Fire",
             "Health: 4235",
-            "Experience: 10250",
             "Skills: None",
             "AOE: Fire"
         ],
@@ -532,10 +532,10 @@
     {
         "name": "Gastropod",
         "level_requirement": 35,
+        "experience": 11870,
         "stats": [
             "Attack: Energy",
             "Health: 4840",
-            "Experience: 11870",
             "Skills: None",
             "AOE: Energy"
         ],
@@ -555,10 +555,10 @@
     {
         "name": "Minotaur",
         "level_requirement": 35,
+        "experience": 11870,
         "stats": [
             "Attack: Physical",
             "Health: 4840",
-            "Experience: 11870",
             "Skills: None",
             "AOE: Physical"
         ],
@@ -578,10 +578,10 @@
     {
         "name": "Ghost",
         "level_requirement": 45,
+        "experience": 12750,
         "stats": [
             "Attack: Energy",
             "Health: 5140",
-            "Experience: 12750",
             "Skills: None",
             "AOE: None"
         ],
@@ -600,10 +600,10 @@
     {
         "name": "Ice Slime",
         "level_requirement": 45,
+        "experience": 15789,
         "stats": [
             "Attack: Ice",
             "Health: 6050",
-            "Experience: 15789",
             "Skills: None",
             "AOE: Ice"
         ],
@@ -626,10 +626,10 @@
     {
         "name": "Behemoth",
         "level_requirement": 55,
+        "experience": 36477,
         "stats": [
             "Attack: Physical",
             "Health: 9075",
-            "Experience: 36477",
             "Skills: Heal",
             "AOE: Physical"
         ],
@@ -649,10 +649,10 @@
     {
         "name": "Revenant",
         "level_requirement": 55,
+        "experience": 41698,
         "stats": [
             "Attack: Death",
             "Health: 10285",
-            "Experience: 41698",
             "Skills: None",
             "AOE: Death, Poison"
         ],
@@ -671,10 +671,10 @@
     {
         "name": "Sorcerer",
         "level_requirement": 65,
+        "experience": 41963,
         "stats": [
             "Attack: Energy",
             "Health: 10285",
-            "Experience: 41943",
             "Skills: Heal",
             "AOE: Fire, Ice"
         ],
@@ -696,10 +696,10 @@
     {
         "name": "Demon",
         "level_requirement": 65,
+        "experience": 47500,
         "stats": [
             "Attack: Fire",
             "Health: 11495",
-            "Experience: 47500",
             "Skills: Heal",
             "AOE: Fire, Energy"
         ],
@@ -722,10 +722,10 @@
     {
         "name": "Hellhound",
         "level_requirement": 65,
+        "experience": 47711,
         "stats": [
             "Attack: Fire",
             "Health: 11495",
-            "Experience: 47711",
             "Skills: None",
             "AOE: Physical"
         ],
@@ -745,10 +745,10 @@
     {
         "name": "Shadow",
         "level_requirement": 65,
+        "experience": 60761,
         "stats": [
             "Attack: Death",
             "Health: 13915",
-            "Experience: 60761",
             "Skills: Heal",
             "AOE: Mana, Death"
         ],
@@ -768,10 +768,10 @@
     {
         "name": "Orc",
         "level_requirement": 75,
+        "experience": 44666,
         "stats": [
             "Attack: Physical",
             "Health: 10890",
-            "Experience: 44666",
             "Skills: Heal",
             "AOE: None"
         ],
@@ -790,10 +790,10 @@
     {
         "name": "Orc Worker",
         "level_requirement": 75,
+        "experience": 50714,
         "stats": [
             "Attack: Physical",
             "Health: 12100",
-            "Experience: 50714",
             "Skills: None",
             "AOE: None"
         ],
@@ -810,10 +810,10 @@
     {
         "name": "Orc Mage",
         "level_requirement": 75,
+        "experience": 56466,
         "stats": [
             "Attack: ManaDeath",
             "Health: 13310",
-            "Experience: 56466",
             "Skills: None",
             "AOE: Mana"
         ],
@@ -832,10 +832,10 @@
     {
         "name": "Orc Warrior",
         "level_requirement": 75,
+        "experience": 61093,
         "stats": [
             "Attack: Physical",
             "Health: 13915",
-            "Experience: 61093",
             "Skills: Heal",
             "AOE: Physical"
         ],
@@ -854,10 +854,10 @@
     {
         "name": "Thief",
         "level_requirement": 85,
+        "experience": 50857,
         "stats": [
             "Attack: Physical",
             "Health: 12100",
-            "Experience: 50857",
             "Skills: None",
             "AOE: None"
         ],
@@ -873,10 +873,10 @@
     {
         "name": "Bandit",
         "level_requirement": 85,
+        "experience": 53549,
         "stats": [
             "Attack: Physical",
             "Health: 12705",
-            "Experience: 53549",
             "Skills: None",
             "AOE: Physical"
         ],
@@ -894,10 +894,10 @@
     {
         "name": "Wasp",
         "level_requirement": 85,
+        "experience": 57200,
         "stats": [
             "Attack: Poison",
             "Health: 13310",
-            "Experience: 57200",
             "Skills: None",
             "AOE: Poison"
         ],
@@ -916,10 +916,10 @@
     {
         "name": "Hunter",
         "level_requirement": 85,
+        "experience": 56466,
         "stats": [
             "Attack: Physical",
             "Health: 13310",
-            "Experience: 56466",
             "Skills: None",
             "AOE: None"
         ],
@@ -937,10 +937,10 @@
     {
         "name": "Wild Soldier",
         "level_requirement": 85,
+        "experience": 61093,
         "stats": [
             "Attack: Physical",
             "Health: 13915",
-            "Experience: 61093",
             "Skills: Heal",
             "AOE: Physical"
         ],
@@ -957,10 +957,10 @@
     {
         "name": "Orc Berzerk",
         "level_requirement": 95,
+        "experience": 63250,
         "stats": [
             "Attack: Physical",
             "Health: 13915",
-            "Experience: 63250",
             "Skills: None",
             "AOE: Physical"
         ],
@@ -978,10 +978,10 @@
     {
         "name": "Shambler",
         "level_requirement": 95,
+        "experience": 83999,
         "stats": [
             "Attack: Physical",
             "Health: 18150",
-            "Experience: 83999",
             "Skills: Heal",
             "AOE: Physical"
         ],
@@ -999,10 +999,10 @@
     {
         "name": "Bloodseeker",
         "level_requirement": 95,
+        "experience": 83999,
         "stats": [
             "Attack: Physical",
             "Health: 18150",
-            "Experience: 83999",
             "Skills: Heal",
             "AOE: None"
         ],
@@ -1021,10 +1021,10 @@
     {
         "name": "Slimespitter",
         "level_requirement": 95,
+        "experience": 83999,
         "stats": [
             "Attack: Poison",
             "Health: 18150",
-            "Experience: 83999",
             "Skills: Heal",
             "AOE: Poison"
         ],
@@ -1042,10 +1042,10 @@
     {
         "name": "Priestess",
         "level_requirement": 100,
+        "experience": 101111,
         "stats": [
             "Attack: Ice",
             "Health: 21175",
-            "Experience: 101111",
             "Skills: None",
             "AOE: None"
         ],
@@ -1064,10 +1064,10 @@
     {
         "name": "Hero",
         "level_requirement": 100,
+        "experience": 101111,
         "stats": [
             "Attack: Energy",
             "Health: 21175",
-            "Experience: 101111",
             "Skills: Heal",
             "AOE: Physical"
         ],
@@ -1087,10 +1087,10 @@
     {
         "name": "Necromancer",
         "level_requirement": 100,
+        "experience": 101111,
         "stats": [
             "Attack: Death",
             "Health: 21175",
-            "Experience: 101111",
             "Skills: None",
             "AOE: Death"
         ],
@@ -1109,10 +1109,10 @@
     {
         "name": "Flame Fury",
         "level_requirement": 110,
+        "experience": 120000,
         "stats": [
             "Attack: Fire",
             "Health: 24200",
-            "Experience: 120000",
             "Skills: None",
             "AOE: None"
         ],
@@ -1134,10 +1134,10 @@
     {
         "name": "Mana Fury",
         "level_requirement": 110,
+        "experience": 120000,
         "stats": [
             "Attack: Mana",
             "Health: 24200",
-            "Experience: 120000",
             "Skills: None",
             "AOE: None"
         ],
@@ -1159,10 +1159,10 @@
     {
         "name": "Frost Fury",
         "level_requirement": 110,
+        "experience": 120000,
         "stats": [
             "Attack: Ice",
             "Health: 24200",
-            "Experience: 120000",
             "Skills: None",
             "AOE: None"
         ],
@@ -1183,10 +1183,10 @@
     {
         "name": "Void Goliath",
         "level_requirement": 120,
+        "experience": 139500,
         "stats": [
             "Attack: Death",
             "Health: 27225",
-            "Experience: 139500",
             "Skills: None",
             "AOE: None"
         ],
@@ -1204,10 +1204,10 @@
     {
         "name": "Astral Trueshot",
         "level_requirement": 120,
+        "experience": 139500,
         "stats": [
             "Attack: Energy",
             "Health: 27225",
-            "Experience: 139500",
             "Skills: None",
             "AOE: None"
         ],
@@ -1226,10 +1226,10 @@
     {
         "name": "Nether Slime",
         "level_requirement": 120,
+        "experience": 139500,
         "stats": [
             "Attack: Physical",
             "Health: 27225",
-            "Experience: 139500",
             "Skills: None",
             "AOE: None"
         ],
@@ -1248,12 +1248,12 @@
     {
         "name": "Angry Biscottsman",
         "level_requirement": 125,
+        "experience": 1000000,
         "stats": [
-            "Attack: PhysicalDeath",
+            "Attack: Physical, Death",
             "Health: 5000000",
-            "Experience: 1000000",
             "Skills: Heal",
-            "AOE: ManaEnergyPoison"
+            "AOE: Mana, Energy, Poison"
         ],
         "resistance": [
             "None"
@@ -1265,10 +1265,11 @@
     },
     {
         "name": "Das Bug",
+        "level_requirement": 1337,
+        "experience": 0,
         "stats": [
             "Attack: Fire",
             "Health: 1337",
-            "Experience: 0",
             "Skills: Ban Hugs, Exevo Gran, Mas Vis",
             "AOE: Fire"
         ],
