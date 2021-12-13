@@ -1,7 +1,7 @@
 [
     {
         "name": "Butterfly",
-        "level_requirement": 5,
+        "level_requirement": 0,
         "experience": 5,
         "stats": [
             "Attack: Physical",
@@ -18,7 +18,7 @@
     },
     {
         "name": "Rat",
-        "level_requirement": 5,
+        "level_requirement": 0,
         "experience": 10,
         "stats": [
             "Attack: Physical",
@@ -35,7 +35,7 @@
     },
     {
         "name": "Troll",
-        "level_requirement": 5,
+        "level_requirement": 0,
         "experience": 50,
         "stats": [
             "Attack: Physical",
@@ -57,7 +57,7 @@
     },
     {
         "name": "Troll Mage",
-        "level_requirement": 5,
+        "level_requirement": 0,
         "experience": 70,
         "stats": [
             "Attack: Mana",
@@ -86,7 +86,7 @@
     },
     {
         "name": "Troll Ranger",
-        "level_requirement": 5,
+        "level_requirement": 0,
         "experience": 80,
         "stats": [
             "Attack: Physical",
@@ -111,7 +111,7 @@
     },
     {
         "name": "Troll Knight",
-        "level_requirement": 5,
+        "level_requirement": 0,
         "experience": 90,
         "stats": [
             "Attack: Physical",
@@ -137,7 +137,7 @@
     },
     {
         "name": "Troll Warlord",
-        "level_requirement": 5,
+        "level_requirement": 0,
         "experience": 200,
         "stats": [
             "Attack: Physical",
@@ -164,7 +164,7 @@
     },
     {
         "name": "Cyclops",
-        "level_requirement": 5,
+        "level_requirement": 0,
         "experience": 320,
         "stats": [
             "Attack: Physical",
