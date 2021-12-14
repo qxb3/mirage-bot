@@ -40,7 +40,7 @@ module.exports = {
 
         //If user didn't give arguments
         if (args.length === 0) {
-            embed.setThumbnail('attachment://mage.png')
+            embed.setThumbnail('attachment://mind-games.png')
             embed.addFields([
                 { name: '❯ Categories', value: formatter(categories) },
                 usage
@@ -48,7 +48,7 @@ module.exports = {
 
             sendMessage(message, interaction, {
                 embeds: [ embed ],
-                files: [ 'assets/wiki/sprites/spells/thumbnails/mage.png' ]
+                files: [ 'assets/wiki/sprites/spells/mage/mind-games.png' ]
             })
             return
         }
@@ -98,14 +98,14 @@ module.exports = {
         }
 
         //If didn't match anything
-        embed.setThumbnail('attachment://mage.png')
+        embed.setThumbnail('attachment://mind-games.png')
         embed.setDescription('The spell you typed did not match to any spells.')
         embed.addFields([ usage ])
         embed.setColor('RED')
 
         sendMessage(message, interaction, {
             embeds: [ embed ],
-            files: [ `assets/wiki/sprites/spells/thumbnails/mage.png` ]
+            files: [ 'assets/wiki/sprites/spells/mage/mind-games.png' ]
         })
     }
 }

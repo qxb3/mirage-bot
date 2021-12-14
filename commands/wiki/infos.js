@@ -54,31 +54,14 @@ module.exports = {
         }
 
         const input = args.join(' ')
-        const isInfo = didyoumean(input, infosJson.map(data => data.name), { threshold: 0.6 })
-
-        //Check if the user input is a num
-        for (let i = 0; i < infosJson.length; i++) {
-            if (parseInt(input, 10) === i) {
-                const info = infosJson[i]
-                embed.setThumbnail(`attachment://rules.png`)
-                embed.addFields([
-                    { name: '❯ Name', value: info.name },
-                    { name: '❯ Description', value: info.description }
-                ])
-
-                sendMessage(message, interaction, {
-                    embeds: [ embed ],
-                    files: [ `assets/icons/rules.png` ]
-                })
-                return
-            }
-        }
+        const isInfo = didyoumean(input, infosJson.map(data => data.name), { threshold: 0.6 }) 
 
         //If the user input is info
         if (isInfo) {
             const info = infosJson.find(data => data.name === isInfo)
+            const sprite = info.name.replace(/'/, '').replaceAll(' ', '-').toLowerCase() + '.png' 
 
-            embed.setThumbnail(`attachment://rules.png`)
+            embed.setThumbnail(`attachment://${sprite}`)
             embed.addFields([
                 { name: '❯ Name', value: info.name },
                 { name: '❯ Description', value: info.description }
@@ -86,7 +69,7 @@ module.exports = {
 
             sendMessage(message, interaction, {
                 embeds: [ embed ],
-                files: [ `assets/icons/rules.png` ]
+                files: [ `assets/wiki/sprites/infos/${sprite}` ]
             })
             return
         }
