@@ -787,6 +787,19 @@
         "type": "Gloves"
     },
     {
+        "name": "Soldier Gloves",
+        "level_requirement": 40,
+        "stats": [
+            "Armour: 4",
+            "Minumum stat: 5",
+            "Maximum stat: 15"
+        ],
+        "monsters": [
+            "Minotaur"
+        ],
+        "type": "Gloves"
+    },
+    {
         "name": "Nernai Gloves",
         "level_requirement": 40,
         "stats": [
