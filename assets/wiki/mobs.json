@@ -1231,7 +1231,7 @@
             "Attack: Physical",
             "Health: 27225",
             "Skills: None",
-            "AOE: None"
+            "AOE: Physical"
         ],
         "resistance": [
             "Physical: 100%",
