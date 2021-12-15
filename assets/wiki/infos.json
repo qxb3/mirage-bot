@@ -17,7 +17,7 @@
     },
     {
         "name": "Red Skull",
-        "description": "Killing more than 10 players in 7 days will result in you becoming an outlaw. Outlaws are marked with a red skull, And this skull will persist until you have 7 or fewer unjust kills tracked against your character.\nDying with a red skull will cause you to lose 15% of your experience."
+        "description": "Killing more than 10 players in 7 days will result in you becoming an outlaw. Outlaws are marked with a red skull, And this skull will persist until you have 10 or fewer unjust kills tracked against your character.\nDying with a red skull will cause you to lose 15% of your experience."
     },
     {
         "name": "Black Skull",
