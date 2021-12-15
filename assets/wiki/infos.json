@@ -1,37 +1,34 @@
 [
     {
         "name": "Death By Player",
-        "aliases": ["1"],
-        "description": "Being killed by another player will now cause you to lose a minimum of 2.5% experience."
+        "description": "Being killed by another player will now cause you to lose a minimum of 2.5% of your experience."
     },
     {
         "name": "Skull",
-        "aliases": ["2"],
         "description": "You have attacked a player.\nThe skull last 1 minute if the player didn't die.\nThe skull last 10 minutes if the player dies."
     },
     {
         "name": "White Skull",
-        "aliases": ["3"],
-        "description": "You have attacked a player without skull.\nDying with a white skull will cause you to lose 7.5% experience."
+        "description": "You have attacked a player without skull.\nDying with a white skull will cause you to lose 7.5% of your experience."
     },
     {
         "name": "Yellow Skull",
-        "aliases": ["4"],
-        "description": "You have attacked a player with a white or red skull.\nBeing killed with a yellow skull by the player you attacked will cause you to lose 5% experience, This has changed so you now do not lose exp with a yellow skull if you are not killed by the person you attacked to give you the skull in the first place."
+        "description": "You have attacked a player with a white or red skull.\nBeing killed with a yellow skull by the player you attacked will cause you to lose 5% of your experience, This has changed so you now do not lose exp with a yellow skull if you are not killed by the person you attacked to give you the skull in the first place."
     },
     {
         "name": "Red Skull",
-        "aliases": ["5"],
-        "description": "Killing more than 7 players in 7 days will result in you becoming an outlaw. Outlaws are marked with a red skull, And this skull will persist until you have 7 or fewer unjust kills tracked against your character.\nDying with a red skull will cause you to lose 15% experience."
+        "description": "Killing more than 7 players in 7 days will result in you becoming an outlaw. Outlaws are marked with a red skull, And this skull will persist until you have 7 or fewer unjust kills tracked against your character.\nDying with a red skull will cause you to lose 15% of your experience."
+    },
+    {
+        "name": "Black Skull",
+        "description": "Killing more than 20 players in 7 days will result in you becoming an outlaw. Outlaws are marked with a black skull, And this skull will persist until you have 20 or fewer unjust kills tracked against your character.\nDying with a black skull will cause you to lose 50% of your experience."
     },
     {
         "name": "Party Kill",
-        "aliases": ["6"],
         "description": "Killing party member's does not count as an unjust killing.\nKilling party member's does not count as an unjust killing."
     },
     {
         "name": "Monster kill",
-        "aliases": ["7"],
         "description": "If you die to a monster and do not have a skull you will not lose any experience."
     }
 ]
