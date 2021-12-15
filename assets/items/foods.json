@@ -80,7 +80,7 @@
         "name": "Candy Cane",
         "effect": "+3 Nourishments",
         "monsters": [
-            "Unobtainable - Only two of them on the game (Lakipaska and Freedomplz) liam sell it to them for 1g"
+            "Drops on all monsters during christmas season."
         ]
     },
     {
@@ -134,7 +134,7 @@
         "name": "Magic Candy",
         "effect": "+100 Nourishments",
         "monsters": [
-            "?"
+            "Drops on all monsters during christmas season."
         ]
     }
 ]
