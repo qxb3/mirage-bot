@@ -80,11 +80,15 @@ module.exports = {
             const sprite = equipment.name.replace(/'/, '').replaceAll(' ', '-').toLowerCase() + '.png'
             const type = equipment.type.toLowerCase()
 
+            let stats = `• Armour: ${equipment.stats.armour}\n` +
+                        `• Maximum stat: ${equipment.stats.maximum_stat}\n` +
+                        `• Minimum stat: ${equipment.stats.minimum_stat}`
+
             embed.setThumbnail(`attachment://${sprite}`)
             embed.addFields(
                 { name: '❯ Name', value: equipment.name },
                 { name: '❯ Level requirement', value: `Level ${equipment.level_requirement}` },
-                { name: '❯ Stats', value: formatter(equipment.stats) },
+                { name: '❯ Stats', value: stats },
                 { name: '❯ Monsters', value: formatter(equipment.monsters) }
             )
             sendMessage(message, interaction, {

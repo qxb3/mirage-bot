@@ -2,11 +2,11 @@
     {
         "name": "Granite Helmet",
         "level_requirement": 80,
-        "stats": [
-            "Armour: 8",
-            "Minumum stat: 9",
-            "Maximum stat: 27"
-        ],
+        "stats": {
+            "armour": 8,
+            "maximum_stat": 27,
+            "minimum_stat": 9
+        },
         "monsters": [
             "Mana fury"
         ],
@@ -15,11 +15,11 @@
     {
         "name": "Crystal Mask",
         "level_requirement": 80,
-        "stats": [
-            "Armour: 3",
-            "Minumum stat: 9",
-            "Maximum stat: 27"
-        ],
+        "stats": {
+            "armour": 3,
+            "maximum_stat": 27,
+            "minimum_stat": 9
+        },
         "monsters": [
             "Frost fury"
         ],
@@ -28,11 +28,11 @@
     {
         "name": "Sentinel Helmet",
         "level_requirement": 80,
-        "stats": [
-            "Armour: 5",
-            "Minumum stat: 9",
-            "Maximum stat: 27"
-        ],
+        "stats": {
+            "armour": 5,
+            "maximum_stat": 27,
+            "minimum_stat": 9
+        },
         "monsters": [
             "?"
         ],
@@ -41,11 +41,11 @@
     {
         "name": "Granite Gloves",
         "level_requirement": 80,
-        "stats": [
-            "Armour: 8",
-            "Minumum stat: 9",
-            "Maximum stat: 27"
-        ],
+        "stats": {
+            "armour": 8,
+            "maximum_stat": 27,
+            "minimum_stat": 9
+        },
         "monsters": [
             "?"
         ],
@@ -54,11 +54,11 @@
     {
         "name": "Crystal Gloves",
         "level_requirement": 80,
-        "stats": [
-            "Armour: 3",
-            "Minumum stat: 9",
-            "Maximum stat: 27"
-        ],
+        "stats": {
+            "armour": 3,
+            "maximum_stat": 27,
+            "minimum_stat": 9
+        },
         "monsters": [
             "?"
         ],
@@ -67,11 +67,11 @@
     {
         "name": "Sentinel Gloves",
         "level_requirement": 80,
-        "stats": [
-            "Armour: 5",
-            "Minumum stat: 9",
-            "Maximum stat: 27"
-        ],
+        "stats": {
+            "armour": 5,
+            "maximum_stat": 27,
+            "minimum_stat": 9
+        },
         "monsters": [
             "?"
         ],
@@ -80,11 +80,11 @@
     {
         "name": "Granite Armour",
         "level_requirement": 80,
-        "stats": [
-            "Armour: 8",
-            "Minumum stat: 9",
-            "Maximum stat: 27"
-        ],
+        "stats": {
+            "armour": 8,
+            "maximum_stat": 27,
+            "minimum_stat": 9
+        },
         "monsters": [
             "?"
         ],
@@ -93,11 +93,11 @@
     {
         "name": "Crystal Cape",
         "level_requirement": 80,
-        "stats": [
-            "Armour: 3",
-            "Minumum stat: 9",
-            "Maximum stat: 27"
-        ],
+        "stats": {
+            "armour": 3,
+            "maximum_stat": 27,
+            "minimum_stat": 9
+        },
         "monsters": [
             "?"
         ],
@@ -106,11 +106,11 @@
     {
         "name": "Sentinel Armour",
         "level_requirement": 80,
-        "stats": [
-            "Armour: 5",
-            "Minumum stat: 9",
-            "Maximum stat: 27"
-        ],
+        "stats": {
+            "armour": 5,
+            "maximum_stat": 27,
+            "minimum_stat": 9
+        },
         "monsters": [
             "?"
         ],
@@ -119,11 +119,11 @@
     {
         "name": "Granite Boots",
         "level_requirement": 80,
-        "stats": [
-            "Armour: 8",
-            "Minumum stat: 9",
-            "Maximum stat: 27"
-        ],
+        "stats": {
+            "armour": 8,
+            "maximum_stat": 27,
+            "minimum_stat": 9
+        },
         "monsters": [
             "?"
         ],
@@ -132,11 +132,11 @@
     {
         "name": "Crystal Boots",
         "level_requirement": 80,
-        "stats": [
-            "Armour: 3",
-            "Minumum stat: 9",
-            "Maximum stat: 27"
-        ],
+        "stats": {
+            "armour": 3,
+            "maximum_stat": 27,
+            "minimum_stat": 9
+        },
         "monsters": [
             "?"
         ],
@@ -145,11 +145,11 @@
     {
         "name": "Sentinel Boots",
         "level_requirement": 80,
-        "stats": [
-            "Armour: 5",
-            "Minumum stat: 9",
-            "Maximum stat: 27"
-        ],
+        "stats": {
+            "armour": 5,
+            "maximum_stat": 27,
+            "minimum_stat": 9
+        },
         "monsters": [
             "?"
         ],
@@ -158,11 +158,11 @@
     {
         "name": "Amber Ring",
         "level_requirement": 70,
-        "stats": [
-            "Armour: 0",
-            "Minumum stat: 9",
-            "Maximum stat: 18"
-        ],
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 18,
+            "minimum_stat": 9
+        },
         "monsters": [
             "Hero"
         ],
@@ -171,11 +171,11 @@
     {
         "name": "Hellborn Amulet",
         "level_requirement": 70,
-        "stats": [
-            "Armour: 0",
-            "Minumum stat: 8",
-            "Maximum stat: 16"
-        ],
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 16,
+            "minimum_stat": 8
+        },
         "monsters": [
             "Mana fury"
         ],
@@ -184,11 +184,11 @@
     {
         "name": "Emerald Helmet",
         "level_requirement": 70,
-        "stats": [
-            "Armour: 7",
-            "Minumum stat: 8",
-            "Maximum stat: 24"
-        ],
+        "stats": {
+            "armour": 7,
+            "maximum_stat": 24,
+            "minimum_stat": 8
+        },
         "monsters": [
             "Priestess"
         ],
@@ -197,11 +197,11 @@
     {
         "name": "Arnisium Hat",
         "level_requirement": 70,
-        "stats": [
-            "Armour: 3",
-            "Minumum stat: 8",
-            "Maximum stat: 24"
-        ],
+        "stats": {
+            "armour": 3,
+            "maximum_stat": 24,
+            "minimum_stat": 8
+        },
         "monsters": [
             "Slimespitter"
         ],
@@ -210,11 +210,11 @@
     {
         "name": "Spiked Helmet",
         "level_requirement": 70,
-        "stats": [
-            "Armour: 4",
-            "Minumum stat: 8",
-            "Maximum stat: 24"
-        ],
+        "stats": {
+            "armour": 4,
+            "maximum_stat": 24,
+            "minimum_stat": 8
+        },
         "monsters": [
             "Bloodseeker"
         ],
@@ -223,11 +223,11 @@
     {
         "name": "Emerald Gloves",
         "level_requirement": 70,
-        "stats": [
-            "Armour: 7",
-            "Minumum stat: 8",
-            "Maximum stat: 24"
-        ],
+        "stats": {
+            "armour": 7,
+            "maximum_stat": 24,
+            "minimum_stat": 8
+        },
         "monsters": [
             "Bloodseeker"
         ],
@@ -236,11 +236,11 @@
     {
         "name": "Arnisium Gloves",
         "level_requirement": 70,
-        "stats": [
-            "Armour: 3",
-            "Minumum stat: 8",
-            "Maximum stat: 24"
-        ],
+        "stats": {
+            "armour": 3,
+            "maximum_stat": 24,
+            "minimum_stat": 8
+        },
         "monsters": [
             "Shambler"
         ],
@@ -249,11 +249,11 @@
     {
         "name": "Spiked Gloves",
         "level_requirement": 70,
-        "stats": [
-            "Armour: 4",
-            "Minumum stat: 8",
-            "Maximum stat: 24"
-        ],
+        "stats": {
+            "armour": 4,
+            "maximum_stat": 24,
+            "minimum_stat": 8
+        },
         "monsters": [
             "Slimespitter"
         ],
@@ -262,11 +262,11 @@
     {
         "name": "Emerald Armour",
         "level_requirement": 70,
-        "stats": [
-            "Armour: 7",
-            "Minumum stat: 8",
-            "Maximum stat: 24"
-        ],
+        "stats": {
+            "armour": 7,
+            "maximum_stat": 24,
+            "minimum_stat": 8
+        },
         "monsters": [
             "Shambler"
         ],
@@ -275,11 +275,11 @@
     {
         "name": "Arnisium Vest",
         "level_requirement": 70,
-        "stats": [
-            "Armour: 3",
-            "Minumum stat: 8",
-            "Maximum stat: 24"
-        ],
+        "stats": {
+            "armour": 3,
+            "maximum_stat": 24,
+            "minimum_stat": 8
+        },
         "monsters": [
             "Unobtainable"
         ],
@@ -288,11 +288,11 @@
     {
         "name": "Spiked Armour",
         "level_requirement": 70,
-        "stats": [
-            "Armour: 4",
-            "Minumum stat: 8",
-            "Maximum stat: 24"
-        ],
+        "stats": {
+            "armour": 4,
+            "maximum_stat": 24,
+            "minimum_stat": 8
+        },
         "monsters": [
             "Orc Berzerk"
         ],
@@ -301,11 +301,11 @@
     {
         "name": "Emerald Boots",
         "level_requirement": 70,
-        "stats": [
-            "Armour: 7",
-            "Minumum stat: 8",
-            "Maximum stat: 24"
-        ],
+        "stats": {
+            "armour": 7,
+            "maximum_stat": 24,
+            "minimum_stat": 8
+        },
         "monsters": [
             "?"
         ],
@@ -314,11 +314,11 @@
     {
         "name": "Arnisium Boots",
         "level_requirement": 70,
-        "stats": [
-            "Armour: 3",
-            "Minumum stat: 8",
-            "Maximum stat: 24"
-        ],
+        "stats": {
+            "armour": 3,
+            "maximum_stat": 24,
+            "minimum_stat": 8
+        },
         "monsters": [
             "Orc Berzerk"
         ],
@@ -327,11 +327,11 @@
     {
         "name": "Spiked Boots",
         "level_requirement": 70,
-        "stats": [
-            "Armour: 4",
-            "Minumum stat: 8",
-            "Maximum stat: 24"
-        ],
+        "stats": {
+            "armour": 4,
+            "maximum_stat": 24,
+            "minimum_stat": 8
+        },
         "monsters": [
             "Necromancer"
         ],
@@ -340,11 +340,11 @@
     {
         "name": "Mana Stone",
         "level_requirement": 60,
-        "stats": [
-            "Armour: 0",
-            "Minumum stat: 8",
-            "Maximum stat: 16"
-        ],
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 16,
+            "minimum_stat": 8
+        },
         "monsters": [
             "Orc Warrior"
         ],
@@ -353,11 +353,11 @@
     {
         "name": "Demon Tooth",
         "level_requirement": 60,
-        "stats": [
-            "Armour: 0",
-            "Minumum stat: 7",
-            "Maximum stat: 14"
-        ],
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 14,
+            "minimum_stat": 7
+        },
         "monsters": [
             "Bandit"
         ],
@@ -366,11 +366,11 @@
     {
         "name": "Platinum Helmet",
         "level_requirement": 60,
-        "stats": [
-            "Armour: 6",
-            "Minumum stat: 7",
-            "Maximum stat: 21"
-        ],
+        "stats": {
+            "armour": 6,
+            "maximum_stat": 21,
+            "minimum_stat": 7
+        },
         "monsters": [
             "Wild Soldier"
         ],
@@ -379,11 +379,11 @@
     {
         "name": "Indigo Hat",
         "level_requirement": 60,
-        "stats": [
-            "Armour: 3",
-            "Minumum stat: 7",
-            "Maximum stat: 21"
-        ],
+        "stats": {
+            "armour": 3,
+            "maximum_stat": 21,
+            "minimum_stat": 7
+        },
         "monsters": [
             "Bandit"
         ],
@@ -392,11 +392,11 @@
     {
         "name": "Pearl Helmet",
         "level_requirement": 60,
-        "stats": [
-            "Armour: 4",
-            "Minumum stat: 7",
-            "Maximum stat: 21"
-        ],
+        "stats": {
+            "armour": 4,
+            "maximum_stat": 21,
+            "minimum_stat": 7
+        },
         "monsters": [
             "Orc Worker"
         ],
@@ -405,11 +405,11 @@
     {
         "name": "Platinum Gloves",
         "level_requirement": 60,
-        "stats": [
-            "Armour: 6",
-            "Minumum stat: 7",
-            "Maximum stat: 21"
-        ],
+        "stats": {
+            "armour": 6,
+            "maximum_stat": 21,
+            "minimum_stat": 7
+        },
         "monsters": [
             "Orc Worker"
         ],
@@ -418,11 +418,11 @@
     {
         "name": "Indigo Gloves",
         "level_requirement": 60,
-        "stats": [
-            "Armour: 3",
-            "Minumum stat: 7",
-            "Maximum stat: 21"
-        ],
+        "stats": {
+            "armour": 3,
+            "maximum_stat": 21,
+            "minimum_stat": 7
+        },
         "monsters": [
             "?"
         ],
@@ -431,11 +431,11 @@
     {
         "name": "Pearl Gloves",
         "level_requirement": 60,
-        "stats": [
-            "Armour: 4",
-            "Minumum stat: 7",
-            "Maximum stat: 21"
-        ],
+        "stats": {
+            "armour": 4,
+            "maximum_stat": 21,
+            "minimum_stat": 7
+        },
         "monsters": [
             "Thief"
         ],
@@ -444,11 +444,11 @@
     {
         "name": "Platinum Armour",
         "level_requirement": 60,
-        "stats": [
-            "Armour: 6",
-            "Minumum stat: 7",
-            "Maximum stat: 21"
-        ],
+        "stats": {
+            "armour": 6,
+            "maximum_stat": 21,
+            "minimum_stat": 7
+        },
         "monsters": [
             "Shadow"
         ],
@@ -457,11 +457,11 @@
     {
         "name": "Indigo Cape",
         "level_requirement": 60,
-        "stats": [
-            "Armour: 3",
-            "Minumum stat: 7",
-            "Maximum stat: 21"
-        ],
+        "stats": {
+            "armour": 3,
+            "maximum_stat": 21,
+            "minimum_stat": 7
+        },
         "monsters": [
             "Hunter"
         ],
@@ -470,11 +470,11 @@
     {
         "name": "Pearl Armour",
         "level_requirement": 60,
-        "stats": [
-            "Armour: 4",
-            "Minumum stat: 7",
-            "Maximum stat: 21"
-        ],
+        "stats": {
+            "armour": 4,
+            "maximum_stat": 21,
+            "minimum_stat": 7
+        },
         "monsters": [
             "Shadow"
         ],
@@ -483,11 +483,11 @@
     {
         "name": "Platinum Boots",
         "level_requirement": 60,
-        "stats": [
-            "Armour: 6",
-            "Minumum stat: 7",
-            "Maximum stat: 21"
-        ],
+        "stats": {
+            "armour": 6,
+            "maximum_stat": 21,
+            "minimum_stat": 7
+        },
         "monsters": [
             "Giant Wasp"
         ],
@@ -496,11 +496,11 @@
     {
         "name": "Indigo Sandals",
         "level_requirement": 60,
-        "stats": [
-            "Armour: 3",
-            "Minumum stat: 7",
-            "Maximum stat: 21"
-        ],
+        "stats": {
+            "armour": 3,
+            "maximum_stat": 21,
+            "minimum_stat": 7
+        },
         "monsters": [
             "Giant Wasp",
             "Shadow"
@@ -510,11 +510,11 @@
     {
         "name": "Pearl Boots",
         "level_requirement": 60,
-        "stats": [
-            "Armour: 4",
-            "Minumum stat: 7",
-            "Maximum stat: 21"
-        ],
+        "stats": {
+            "armour": 4,
+            "maximum_stat": 21,
+            "minimum_stat": 7
+        },
         "monsters": [
             "Orc Mage"
         ],
@@ -523,11 +523,11 @@
     {
         "name": "Crystal Ring",
         "level_requirement": 50,
-        "stats": [
-            "Armour: 0",
-            "Minumum stat: 7",
-            "Maximum stat: 14"
-        ],
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 14,
+            "minimum_stat": 7
+        },
         "monsters": [
             "Orc"
         ],
@@ -536,11 +536,11 @@
     {
         "name": "Power Amulet",
         "level_requirement": 50,
-        "stats": [
-            "Armour: 0",
-            "Minumum stat: 6",
-            "Maximum stat: 12"
-        ],
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 12,
+            "minimum_stat": 6
+        },
         "monsters": [
             "Hellhound"
         ],
@@ -549,11 +549,11 @@
     {
         "name": "Silver Helmet",
         "level_requirement": 50,
-        "stats": [
-            "Armour: 5",
-            "Minumum stat: 6",
-            "Maximum stat: 18"
-        ],
+        "stats": {
+            "armour": 5,
+            "maximum_stat": 18,
+            "minimum_stat": 6
+        },
         "monsters": [
             "Sorcerer"
         ],
@@ -562,11 +562,11 @@
     {
         "name": "Wizard Hood",
         "level_requirement": 50,
-        "stats": [
-            "Armour: 2",
-            "Minumum stat: 6",
-            "Maximum stat: 18"
-        ],
+        "stats": {
+            "armour": 2,
+            "maximum_stat": 18,
+            "minimum_stat": 6
+        },
         "monsters": [
             "Revenant"
         ],
@@ -575,11 +575,11 @@
     {
         "name": "Elven Hat",
         "level_requirement": 50,
-        "stats": [
-            "Armour: 3",
-            "Minumum stat: 6",
-            "Maximum stat: 18"
-        ],
+        "stats": {
+            "armour": 3,
+            "maximum_stat": 18,
+            "minimum_stat": 6
+        },
         "monsters": [
             "Revenant"
         ],
@@ -588,11 +588,11 @@
     {
         "name": "Silver Gloves",
         "level_requirement": 50,
-        "stats": [
-            "Armour: 5",
-            "Minumum stat: 6",
-            "Maximum stat: 18"
-        ],
+        "stats": {
+            "armour": 5,
+            "maximum_stat": 18,
+            "minimum_stat": 6
+        },
         "monsters": [
             "Hellhound"
         ],
@@ -601,11 +601,11 @@
     {
         "name": "Caster Gloves",
         "level_requirement": 50,
-        "stats": [
-            "Armour: 2",
-            "Minumum stat: 6",
-            "Maximum stat: 18"
-        ],
+        "stats": {
+            "armour": 2,
+            "maximum_stat": 18,
+            "minimum_stat": 6
+        },
         "monsters": [
             "Orc"
         ],
@@ -614,11 +614,11 @@
     {
         "name": "Elven Gloves",
         "level_requirement": 50,
-        "stats": [
-            "Armour: 3",
-            "Minumum stat: 6",
-            "Maximum stat: 18"
-        ],
+        "stats": {
+            "armour": 3,
+            "maximum_stat": 18,
+            "minimum_stat": 6
+        },
         "monsters": [
             "Sorcerer"
         ],
@@ -627,11 +627,11 @@
     {
         "name": "Silver Armour",
         "level_requirement": 50,
-        "stats": [
-            "Armour: 5",
-            "Minumum stat: 6",
-            "Maximum stat: 18"
-        ],
+        "stats": {
+            "armour": 5,
+            "maximum_stat": 18,
+            "minimum_stat": 6
+        },
         "monsters": [
             "Revenant"
         ],
@@ -640,11 +640,11 @@
     {
         "name": "Caster Robe",
         "level_requirement": 50,
-        "stats": [
-            "Armour: 2",
-            "Minumum stat: 6",
-            "Maximum stat: 18"
-        ],
+        "stats": {
+            "armour": 2,
+            "maximum_stat": 18,
+            "minimum_stat": 6
+        },
         "monsters": [
             "Hellhound"
         ],
@@ -653,11 +653,11 @@
     {
         "name": "Elven Shirt",
         "level_requirement": 50,
-        "stats": [
-            "Armour: 3",
-            "Minumum stat: 6",
-            "Maximum stat: 18"
-        ],
+        "stats": {
+            "armour": 3,
+            "maximum_stat": 18,
+            "minimum_stat": 6
+        },
         "monsters": [
             "Behemoth"
         ],
@@ -666,11 +666,11 @@
     {
         "name": "Silver Boots",
         "level_requirement": 50,
-        "stats": [
-            "Armour: 5",
-            "Minumum stat: 6",
-            "Maximum stat: 18"
-        ],
+        "stats": {
+            "armour": 5,
+            "maximum_stat": 18,
+            "minimum_stat": 6
+        },
         "monsters": [
             "Orc"
         ],
@@ -679,11 +679,11 @@
     {
         "name": "Caster Boots",
         "level_requirement": 50,
-        "stats": [
-            "Armour: 2",
-            "Minumum stat: 6",
-            "Maximum stat: 18"
-        ],
+        "stats": {
+            "armour": 2,
+            "maximum_stat": 18,
+            "minimum_stat": 6
+        },
         "monsters": [
             "Behemoth"
         ],
@@ -692,11 +692,11 @@
     {
         "name": "Elven Boots",
         "level_requirement": 50,
-        "stats": [
-            "Armour: 3",
-            "Minumum stat: 6",
-            "Maximum stat: 18"
-        ],
+        "stats": {
+            "armour": 3,
+            "maximum_stat": 18,
+            "minimum_stat": 6
+        },
         "monsters": [
             "Hellhound"
         ],
@@ -705,11 +705,11 @@
     {
         "name": "Elven Ring",
         "level_requirement": 40,
-        "stats": [
-            "Armour: 0",
-            "Minumum stat: 6",
-            "Maximum stat: 12"
-        ],
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 12,
+            "minimum_stat": 6
+        },
         "monsters": [
             "Ghost"
         ],
@@ -718,11 +718,11 @@
     {
         "name": "Heroic Amulet",
         "level_requirement": 40,
-        "stats": [
-            "Armour: 0",
-            "Minumum stat: 5",
-            "Maximum stat: 10"
-        ],
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 10,
+            "minimum_stat": 5
+        },
         "monsters": [
             "Ice Slime"
         ],
@@ -731,11 +731,11 @@
     {
         "name": "Chain Helmet",
         "level_requirement": 40,
-        "stats": [
-            "Armour: 4",
-            "Minumum stat: 5",
-            "Maximum stat: 15"
-        ],
+        "stats": {
+            "armour": 4,
+            "maximum_stat": 15,
+            "minimum_stat": 5
+        },
         "monsters": [
             "Ghost"
         ],
@@ -744,11 +744,11 @@
     {
         "name": "Nernai Hat",
         "level_requirement": 40,
-        "stats": [
-            "Armour: 2",
-            "Minumum stat: 5",
-            "Maximum stat: 15"
-        ],
+        "stats": {
+            "armour": 2,
+            "maximum_stat": 15,
+            "minimum_stat": 5
+        },
         "monsters": [
             "Fire Slime",
             "Giant Slug"
@@ -758,11 +758,11 @@
     {
         "name": "Soldier Helmet",
         "level_requirement": 40,
-        "stats": [
-            "Armour: 3",
-            "Minumum stat: 5",
-            "Maximum stat: 15"
-        ],
+        "stats": {
+            "armour": 3,
+            "maximum_stat": 15,
+            "minimum_stat": 5
+        },
         "monsters": [
             "Fire Slime"
         ],
@@ -771,11 +771,11 @@
     {
         "name": "Chain Gloves",
         "level_requirement": 40,
-        "stats": [
-            "Armour: 4",
-            "Minumum stat: 5",
-            "Maximum stat: 15"
-        ],
+        "stats": {
+            "armour": 4,
+            "maximum_stat": 15,
+            "minimum_stat": 5
+        },
         "monsters": [
             "Fire Slime"
         ],
@@ -784,11 +784,11 @@
     {
         "name": "Soldier Gloves",
         "level_requirement": 40,
-        "stats": [
-            "Armour: 4",
-            "Minumum stat: 5",
-            "Maximum stat: 15"
-        ],
+        "stats": {
+            "armour": 4,
+            "maximum_stat": 15,
+            "minimum_stat": 5
+        },
         "monsters": [
             "Minotaur"
         ],
@@ -797,11 +797,11 @@
     {
         "name": "Nernai Gloves",
         "level_requirement": 40,
-        "stats": [
-            "Armour: 2",
-            "Minumum stat: 5",
-            "Maximum stat: 15"
-        ],
+        "stats": {
+            "armour": 2,
+            "maximum_stat": 15,
+            "minimum_stat": 5
+        },
         "monsters": [
             "Ice Slime"
         ],
@@ -810,11 +810,11 @@
     {
         "name": "Chain Armour",
         "level_requirement": 40,
-        "stats": [
-            "Armour: 4",
-            "Minumum stat: 5",
-            "Maximum stat: 15"
-        ],
+        "stats": {
+            "armour": 4,
+            "maximum_stat": 15,
+            "minimum_stat": 5
+        },
         "monsters": [
             "MinotaurGiant Slug"
         ],
@@ -823,11 +823,11 @@
     {
         "name": "Nernai Vest",
         "level_requirement": 40,
-        "stats": [
-            "Armour: 2",
-            "Minumum stat: 5",
-            "Maximum stat: 15"
-        ],
+        "stats": {
+            "armour": 2,
+            "maximum_stat": 15,
+            "minimum_stat": 5
+        },
         "monsters": [
             "Ghost"
         ],
@@ -836,11 +836,11 @@
     {
         "name": "Soldier Armour",
         "level_requirement": 40,
-        "stats": [
-            "Armour: 3",
-            "Minumum stat: 5",
-            "Maximum stat: 15"
-        ],
+        "stats": {
+            "armour": 3,
+            "maximum_stat": 15,
+            "minimum_stat": 5
+        },
         "monsters": [
             "Harbinger"
         ],
@@ -849,11 +849,11 @@
     {
         "name": "Chain Boots",
         "level_requirement": 40,
-        "stats": [
-            "Armour: 4",
-            "Minumum stat: 5",
-            "Maximum stat: 15"
-        ],
+        "stats": {
+            "armour": 4,
+            "maximum_stat": 15,
+            "minimum_stat": 5
+        },
         "monsters": [
             "Ice Slime"
         ],
@@ -862,11 +862,11 @@
     {
         "name": "Soldier Boots",
         "level_requirement": 40,
-        "stats": [
-            "Armour: 2",
-            "Minumum stat: 5",
-            "Maximum stat: 15"
-        ],
+        "stats": {
+            "armour": 2,
+            "maximum_stat": 15,
+            "minimum_stat": 5
+        },
         "monsters": [
             "Ghost"
         ],
@@ -875,11 +875,11 @@
     {
         "name": "Nernai Boots",
         "level_requirement": 40,
-        "stats": [
-            "Armour: 2",
-            "Minumum stat: 5",
-            "Maximum stat: 15"
-        ],
+        "stats": {
+            "armour": 2,
+            "maximum_stat": 15,
+            "minimum_stat": 5
+        },
         "monsters": [
             "Minotaur"
         ],
@@ -888,11 +888,11 @@
     {
         "name": "Burning Ring",
         "level_requirement": 30,
-        "stats": [
-            "Armour: 0",
-            "Minumum stat: 5",
-            "Maximum stat: 10"
-        ],
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 10,
+            "minimum_stat": 5
+        },
         "monsters": [
             "Harbinger"
         ],
@@ -901,11 +901,11 @@
     {
         "name": "Jeweled Necklace",
         "level_requirement": 30,
-        "stats": [
-            "Armour: 0",
-            "Minumum stat: 4",
-            "Maximum stat: 8"
-        ],
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 8,
+            "minimum_stat": 4
+        },
         "monsters": [
             "Imp Mage"
         ],
@@ -914,11 +914,11 @@
     {
         "name": "Plate Helmet",
         "level_requirement": 30,
-        "stats": [
-            "Armour: 3",
-            "Minumum stat: 4",
-            "Maximum stat: 12"
-        ],
+        "stats": {
+            "armour": 3,
+            "maximum_stat": 12,
+            "minimum_stat": 4
+        },
         "monsters": [
             "Imp Ranger"
         ],
@@ -927,11 +927,11 @@
     {
         "name": "Sulphur Mask",
         "level_requirement": 30,
-        "stats": [
-            "Armour: 2",
-            "Minumum stat: 4",
-            "Maximum stat: 12"
-        ],
+        "stats": {
+            "armour": 2,
+            "maximum_stat": 12,
+            "minimum_stat": 4
+        },
         "monsters": [
             "Imp"
         ],
@@ -940,11 +940,11 @@
     {
         "name": "Tin Helmet",
         "level_requirement": 30,
-        "stats": [
-            "Armour: 2",
-            "Minumum stat: 4",
-            "Maximum stat: 12"
-        ],
+        "stats": {
+            "armour": 2,
+            "maximum_stat": 12,
+            "minimum_stat": 4
+        },
         "monsters": [
             "Imp Mage"
         ],
@@ -953,11 +953,11 @@
     {
         "name": "Plate Gloves",
         "level_requirement": 30,
-        "stats": [
-            "Armour: 3",
-            "Minumum stat: 4",
-            "Maximum stat: 12"
-        ],
+        "stats": {
+            "armour": 3,
+            "maximum_stat": 12,
+            "minimum_stat": 4
+        },
         "monsters": [
             "Imp"
         ],
@@ -966,11 +966,11 @@
     {
         "name": "Sulphur Gloves",
         "level_requirement": 30,
-        "stats": [
-            "Armour: 2",
-            "Minumum stat: 4",
-            "Maximum stat: 12"
-        ],
+        "stats": {
+            "armour": 2,
+            "maximum_stat": 12,
+            "minimum_stat": 4
+        },
         "monsters": [
             "Imp Knight"
         ],
@@ -979,11 +979,11 @@
     {
         "name": "Tin Gloves",
         "level_requirement": 30,
-        "stats": [
-            "Armour: 2",
-            "Minumum stat: 4",
-            "Maximum stat: 12"
-        ],
+        "stats": {
+            "armour": 2,
+            "maximum_stat": 12,
+            "minimum_stat": 4
+        },
         "monsters": [
             "Imp Knight"
         ],
@@ -992,11 +992,11 @@
     {
         "name": "Plate Armour",
         "level_requirement": 30,
-        "stats": [
-            "Armour: 3",
-            "Minumum stat: 4",
-            "Maximum stat: 12"
-        ],
+        "stats": {
+            "armour": 3,
+            "maximum_stat": 12,
+            "minimum_stat": 4
+        },
         "monsters": [
             "Imp Knight"
         ],
@@ -1005,11 +1005,11 @@
     {
         "name": "Sulphur Robe",
         "level_requirement": 30,
-        "stats": [
-            "Armour: 2",
-            "Minumum stat: 4",
-            "Maximum stat: 12"
-        ],
+        "stats": {
+            "armour": 2,
+            "maximum_stat": 12,
+            "minimum_stat": 4
+        },
         "monsters": [
             "Imp Mage"
         ],
@@ -1018,11 +1018,11 @@
     {
         "name": "Tin Armour",
         "level_requirement": 30,
-        "stats": [
-            "Armour: 2",
-            "Minumum stat: 4",
-            "Maximum stat: 12"
-        ],
+        "stats": {
+            "armour": 2,
+            "maximum_stat": 12,
+            "minimum_stat": 4
+        },
         "monsters": [
             "Imp Ranger"
         ],
@@ -1031,11 +1031,11 @@
     {
         "name": "Plate Boots",
         "level_requirement": 30,
-        "stats": [
-            "Armour: 3",
-            "Minumum stat: 4",
-            "Maximum stat: 12"
-        ],
+        "stats": {
+            "armour": 3,
+            "maximum_stat": 12,
+            "minimum_stat": 4
+        },
         "monsters": [
             "Imp Mage"
         ],
@@ -1044,11 +1044,11 @@
     {
         "name": "Sulphur Shoes",
         "level_requirement": 30,
-        "stats": [
-            "Armour: 2",
-            "Minumum stat: 4",
-            "Maximum stat: 12"
-        ],
+        "stats": {
+            "armour": 2,
+            "maximum_stat": 12,
+            "minimum_stat": 4
+        },
         "monsters": [
             "Imp Ranger"
         ],
@@ -1057,11 +1057,11 @@
     {
         "name": "Tin Boots",
         "level_requirement": 30,
-        "stats": [
-            "Armour: 2",
-            "Minumum stat: 4",
-            "Maximum stat: 12"
-        ],
+        "stats": {
+            "armour": 2,
+            "maximum_stat": 12,
+            "minimum_stat": 4
+        },
         "monsters": [
             "Imp"
         ],
@@ -1070,11 +1070,11 @@
     {
         "name": "Gold Ring",
         "level_requirement": 20,
-        "stats": [
-            "Armour: 0",
-            "Minumum stat: 4",
-            "Maximum stat: 8"
-        ],
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 8,
+            "minimum_stat": 4
+        },
         "monsters": [
             "Imp"
         ],
@@ -1083,11 +1083,11 @@
     {
         "name": "Dragon Necklace",
         "level_requirement": 20,
-        "stats": [
-            "Armour: 0",
-            "Minumum stat: 3",
-            "Maximum stat: 6"
-        ],
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 6,
+            "minimum_stat": 3
+        },
         "monsters": [
             "Slime"
         ],
@@ -1096,11 +1096,11 @@
     {
         "name": "Copper Helmet",
         "level_requirement": 20,
-        "stats": [
-            "Armour: 2",
-            "Minumum stat: 3",
-            "Maximum stat: 9"
-        ],
+        "stats": {
+            "armour": 2,
+            "maximum_stat": 9,
+            "minimum_stat": 3
+        },
         "monsters": [
             "Firewyrm"
         ],
@@ -1109,11 +1109,11 @@
     {
         "name": "Flaming Hood",
         "level_requirement": 20,
-        "stats": [
-            "Armour: 1",
-            "Minumum stat: 3",
-            "Maximum stat: 9"
-        ],
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 9,
+            "minimum_stat": 3
+        },
         "monsters": [
             "Defiler"
         ],
@@ -1122,11 +1122,11 @@
     {
         "name": "Heroic Hat",
         "level_requirement": 20,
-        "stats": [
-            "Armour: 2",
-            "Minumum stat: 3",
-            "Maximum stat: 9"
-        ],
+        "stats": {
+            "armour": 2,
+            "maximum_stat": 9,
+            "minimum_stat": 3
+        },
         "monsters": [
             "Defiler"
         ],
@@ -1135,11 +1135,11 @@
     {
         "name": "Copper Gloves",
         "level_requirement": 20,
-        "stats": [
-            "Armour: 2",
-            "Minumum stat: 3",
-            "Maximum stat: 9"
-        ],
+        "stats": {
+            "armour": 2,
+            "maximum_stat": 9,
+            "minimum_stat": 3
+        },
         "monsters": [
             "Defiler"
         ],
@@ -1148,11 +1148,11 @@
     {
         "name": "Flaming Gloves",
         "level_requirement": 20,
-        "stats": [
-            "Armour: 1",
-            "Minumum stat: 3",
-            "Maximum stat: 9"
-        ],
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 9,
+            "minimum_stat": 3
+        },
         "monsters": [
             "Slime"
         ],
@@ -1161,11 +1161,11 @@
     {
         "name": "Heroic Gloves",
         "level_requirement": 20,
-        "stats": [
-            "Armour: 2",
-            "Minumum stat: 3",
-            "Maximum stat: 9"
-        ],
+        "stats": {
+            "armour": 2,
+            "maximum_stat": 9,
+            "minimum_stat": 3
+        },
         "monsters": [
             "Felwalker"
         ],
@@ -1174,11 +1174,11 @@
     {
         "name": "Copper Armour",
         "level_requirement": 20,
-        "stats": [
-            "Armour: 2",
-            "Minumum stat: 3",
-            "Maximum stat: 9"
-        ],
+        "stats": {
+            "armour": 2,
+            "maximum_stat": 9,
+            "minimum_stat": 3
+        },
         "monsters": [
             "Slime"
         ],
@@ -1187,11 +1187,11 @@
     {
         "name": "Heroic Cloak",
         "level_requirement": 20,
-        "stats": [
-            "Armour: 2",
-            "Minumum stat: 3",
-            "Maximum stat: 9"
-        ],
+        "stats": {
+            "armour": 2,
+            "maximum_stat": 9,
+            "minimum_stat": 3
+        },
         "monsters": [
             "Firewyrm"
         ],
@@ -1200,11 +1200,11 @@
     {
         "name": "Flaming Cape",
         "level_requirement": 20,
-        "stats": [
-            "Armour: 1",
-            "Minumum stat: 3",
-            "Maximum stat: 9"
-        ],
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 9,
+            "minimum_stat": 3
+        },
         "monsters": [
             "Felwalker"
         ],
@@ -1213,11 +1213,11 @@
     {
         "name": "Heroic Boots",
         "level_requirement": 20,
-        "stats": [
-            "Armour: 2",
-            "Minumum stat: 3",
-            "Maximum stat: 9"
-        ],
+        "stats": {
+            "armour": 2,
+            "maximum_stat": 9,
+            "minimum_stat": 3
+        },
         "monsters": [
             "Slime"
         ],
@@ -1226,11 +1226,11 @@
     {
         "name": "Copper Boots",
         "level_requirement": 20,
-        "stats": [
-            "Armour: 2",
-            "Minumum stat: 3",
-            "Maximum stat: 9"
-        ],
+        "stats": {
+            "armour": 2,
+            "maximum_stat": 9,
+            "minimum_stat": 3
+        },
         "monsters": [
             "Felwalker"
         ],
@@ -1239,11 +1239,11 @@
     {
         "name": "Flaming Boots",
         "level_requirement": 20,
-        "stats": [
-            "Armour: 1",
-            "Minumum stat: 3",
-            "Maximum stat: 9"
-        ],
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 9,
+            "minimum_stat": 3
+        },
         "monsters": [
             "Firewyrm"
         ],
@@ -1252,11 +1252,11 @@
     {
         "name": "Dragon Ring",
         "level_requirement": 10,
-        "stats": [
-            "Armour: 0",
-            "Minumum stat: 3",
-            "Maximum stat: 6"
-        ],
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 6,
+            "minimum_stat": 3
+        },
         "monsters": [
             "Slime"
         ],
@@ -1265,11 +1265,11 @@
     {
         "name": "Ancient Necklace",
         "level_requirement": 10,
-        "stats": [
-            "Armour: 0",
-            "Minumum stat: 2",
-            "Maximum stat: 4"
-        ],
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 4,
+            "minimum_stat": 2
+        },
         "monsters": [
             "Firewyrm"
         ],
@@ -1278,11 +1278,11 @@
     {
         "name": "Iron Helmet",
         "level_requirement": 10,
-        "stats": [
-            "Armour: 1",
-            "Minumum stat: 2",
-            "Maximum stat: 6"
-        ],
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 6,
+            "minimum_stat": 2
+        },
         "monsters": [
             "Widow"
         ],
@@ -1291,11 +1291,11 @@
     {
         "name": "Linothorax Helmet",
         "level_requirement": 10,
-        "stats": [
-            "Armour: 1",
-            "Minumum stat: 2",
-            "Maximum stat: 6"
-        ],
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 6,
+            "minimum_stat": 2
+        },
         "monsters": [
             "Spider"
         ],
@@ -1304,11 +1304,11 @@
     {
         "name": "Traveller's Hat",
         "level_requirement": 10,
-        "stats": [
-            "Armour: 1",
-            "Minumum stat: 2",
-            "Maximum stat: 6"
-        ],
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 6,
+            "minimum_stat": 2
+        },
         "monsters": [
             "Cyclops"
         ],
@@ -1317,11 +1317,11 @@
     {
         "name": "Traveller's Gloves",
         "level_requirement": 10,
-        "stats": [
-            "Armour: 1",
-            "Minumum stat: 2",
-            "Maximum stat: 6"
-        ],
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 6,
+            "minimum_stat": 2
+        },
         "monsters": [
             "Spider"
         ],
@@ -1330,11 +1330,11 @@
     {
         "name": "Linothorax Gloves",
         "level_requirement": 10,
-        "stats": [
-            "Armour: 1",
-            "Minumum stat: 2",
-            "Maximum stat: 6"
-        ],
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 6,
+            "minimum_stat": 2
+        },
         "monsters": [
             "Cyclops"
         ],
@@ -1343,11 +1343,11 @@
     {
         "name": "Iron Gloves",
         "level_requirement": 10,
-        "stats": [
-            "Armour: 1",
-            "Minumum stat: 2",
-            "Maximum stat: 6"
-        ],
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 6,
+            "minimum_stat": 2
+        },
         "monsters": [
             "Spider"
         ],
@@ -1356,11 +1356,11 @@
     {
         "name": "Traveller's Gown",
         "level_requirement": 10,
-        "stats": [
-            "Armour: 1",
-            "Minumum stat: 2",
-            "Maximum stat: 6"
-        ],
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 6,
+            "minimum_stat": 2
+        },
         "monsters": [
             "Deerstalker"
         ],
@@ -1369,11 +1369,11 @@
     {
         "name": "Linothorax Chest",
         "level_requirement": 10,
-        "stats": [
-            "Armour: 1",
-            "Minumum stat: 2",
-            "Maximum stat: 6"
-        ],
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 6,
+            "minimum_stat": 2
+        },
         "monsters": [
             "Widow"
         ],
@@ -1382,11 +1382,11 @@
     {
         "name": "Iron Armour",
         "level_requirement": 10,
-        "stats": [
-            "Armour: 2",
-            "Minumum stat: 2",
-            "Maximum stat: 6"
-        ],
+        "stats": {
+            "armour": 2,
+            "maximum_stat": 6,
+            "minimum_stat": 2
+        },
         "monsters": [
             "Cyclops"
         ],
@@ -1395,11 +1395,11 @@
     {
         "name": "Linothorax Boots",
         "level_requirement": 10,
-        "stats": [
-            "Armour: 1",
-            "Minumum stat: 2",
-            "Maximum stat: 6"
-        ],
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 6,
+            "minimum_stat": 2
+        },
         "monsters": [
             "Deerstalker"
         ],
@@ -1408,11 +1408,11 @@
     {
         "name": "Traveller's Boots",
         "level_requirement": 10,
-        "stats": [
-            "Armour: 1",
-            "Minumum stat: 2",
-            "Maximum stat: 6"
-        ],
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 6,
+            "minimum_stat": 2
+        },
         "monsters": [
             "Widow"
         ],
@@ -1421,11 +1421,11 @@
     {
         "name": "Iron Boots",
         "level_requirement": 10,
-        "stats": [
-            "Armour: 1",
-            "Minumum stat: 2",
-            "Maximum stat: 6"
-        ],
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 6,
+            "minimum_stat": 2
+        },
         "monsters": [
             "Deerstalker"
         ],
@@ -1434,11 +1434,11 @@
     {
         "name": "Plain Ring",
         "level_requirement": 5,
-        "stats": [
-            "Armour: 0",
-            "Minumum stat: 2",
-            "Maximum stat: 4"
-        ],
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 4,
+            "minimum_stat": 2
+        },
         "monsters": [
             "Cyclops",
             "Spider",
@@ -1449,11 +1449,11 @@
     {
         "name": "Tarnished Necklace",
         "level_requirement": 5,
-        "stats": [
-            "Armour: 0",
-            "Minumum stat: 1",
-            "Maximum stat: 2"
-        ],
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 2,
+            "minimum_stat": 1
+        },
         "monsters": [
             "Troll Warlord"
         ],
@@ -1462,11 +1462,11 @@
     {
         "name": "Sturdy Helmet",
         "level_requirement": 5,
-        "stats": [
-            "Armour: 1",
-            "Minumum stat: 1",
-            "Maximum stat: 3"
-        ],
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 3,
+            "minimum_stat": 1
+        },
         "monsters": [
             "Troll Knight"
         ],
@@ -1475,11 +1475,11 @@
     {
         "name": "Ranger Cap",
         "level_requirement": 5,
-        "stats": [
-            "Armour: 1",
-            "Minumum stat: 1",
-            "Maximum stat: 3"
-        ],
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 3,
+            "minimum_stat": 1
+        },
         "monsters": [
             "Troll Ranger"
         ],
@@ -1488,11 +1488,11 @@
     {
         "name": "Novice Cap",
         "level_requirement": 5,
-        "stats": [
-            "Armour: 1",
-            "Minumum stat: 1",
-            "Maximum stat: 3"
-        ],
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 3,
+            "minimum_stat": 1
+        },
         "monsters": [
             "Troll Mage",
             "Troll Warlord"
@@ -1502,11 +1502,11 @@
     {
         "name": "Ragged Gloves",
         "level_requirement": 5,
-        "stats": [
-            "Armour: 1",
-            "Minumum stat: 1",
-            "Maximum stat: 3"
-        ],
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 3,
+            "minimum_stat": 1
+        },
         "monsters": [
             "Troll Mage"
         ],
@@ -1515,11 +1515,11 @@
     {
         "name": "Sturdy Gloves",
         "level_requirement": 5,
-        "stats": [
-            "Armour: 1",
-            "Minumum stat: 1",
-            "Maximum stat: 3"
-        ],
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 3,
+            "minimum_stat": 1
+        },
         "monsters": [
             "Troll Knight"
         ],
@@ -1528,11 +1528,11 @@
     {
         "name": "Ranger Gloves",
         "level_requirement": 5,
-        "stats": [
-            "Armour: 1",
-            "Minumum stat: 1",
-            "Maximum stat: 3"
-        ],
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 3,
+            "minimum_stat": 1
+        },
         "monsters": [
             "Troll Ranger"
         ],
@@ -1541,11 +1541,11 @@
     {
         "name": "Ragged Cloak",
         "level_requirement": 5,
-        "stats": [
-            "Armour: 1",
-            "Minumum stat: 1",
-            "Maximum stat: 3"
-        ],
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 3,
+            "minimum_stat": 1
+        },
         "monsters": [
             "Troll Mage"
         ],
@@ -1554,11 +1554,11 @@
     {
         "name": "Leather Vest",
         "level_requirement": 5,
-        "stats": [
-            "Armour: 1",
-            "Minumum stat: 1",
-            "Maximum stat: 3"
-        ],
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 3,
+            "minimum_stat": 1
+        },
         "monsters": [
             "Troll Ranger"
         ],
@@ -1567,11 +1567,11 @@
     {
         "name": "Belted Armour",
         "level_requirement": 5,
-        "stats": [
-            "Armour: 1",
-            "Minumum stat: 1",
-            "Maximum stat: 3"
-        ],
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 3,
+            "minimum_stat": 1
+        },
         "monsters": [
             "Troll Knight"
         ],
@@ -1580,11 +1580,11 @@
     {
         "name": "Sturdy Boots",
         "level_requirement": 5,
-        "stats": [
-            "Armour: 1",
-            "Minumum stat: 1",
-            "Maximum stat: 3"
-        ],
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 3,
+            "minimum_stat": 1
+        },
         "monsters": [
             "Troll Knight"
         ],
@@ -1593,11 +1593,11 @@
     {
         "name": "Steady Boots",
         "level_requirement": 5,
-        "stats": [
-            "Armour: 1",
-            "Minumum stat: 1",
-            "Maximum stat: 3"
-        ],
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 3,
+            "minimum_stat": 1
+        },
         "monsters": [
             "Troll Ranger"
         ],
@@ -1606,11 +1606,11 @@
     {
         "name": "Ragged Shoes",
         "level_requirement": 5,
-        "stats": [
-            "Armour: 1",
-            "Minumum stat: 1",
-            "Maximum stat: 3"
-        ],
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 3,
+            "minimum_stat": 1
+        },
         "monsters": [
             "Troll Mage"
         ],
@@ -1619,11 +1619,11 @@
     {
         "name": "Broken Ring",
         "level_requirement": 0,
-        "stats": [
-            "Armour: 0",
-            "Minumum stat: 1",
-            "Maximum stat: 2"
-        ],
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 2,
+            "minimum_stat": 1
+        },
         "monsters": [
             "Troll Mage",
             "Troll Ranger",
@@ -1634,11 +1634,11 @@
     {
         "name": "Liam's Blessing",
         "level_requirement": 0,
-        "stats": [
-            "Armour: 0",
-            "Minumum stat: 0",
-            "Maximum stat: 0"
-        ],
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
         "monsters": [
             "Das Bug"
         ],
@@ -1647,11 +1647,11 @@
     {
         "name": "Bandana",
         "level_requirement": 0,
-        "stats": [
-            "Armour: 1",
-            "Minumum stat: 0",
-            "Maximum stat: 0"
-        ],
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
         "monsters": [
             "Troll",
             "Troll Mage"
@@ -1661,11 +1661,11 @@
     {
         "name": "Old Gloves",
         "level_requirement": 0,
-        "stats": [
-            "Armour: 1",
-            "Minumum stat: 0",
-            "Maximum stat: 0"
-        ],
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
         "monsters": [
             "Troll"
         ],
@@ -1674,11 +1674,11 @@
     {
         "name": "Cloth Shirt",
         "level_requirement": 0,
-        "stats": [
-            "Armour: 1",
-            "Minumum stat: 0",
-            "Maximum stat: 0"
-        ],
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
         "monsters": [
             "TrollTroll Warlord"
         ],
@@ -1687,11 +1687,11 @@
     {
         "name": "Sandals",
         "level_requirement": 0,
-        "stats": [
-            "Armour: 1",
-            "Minumum stat: 0",
-            "Maximum stat: 0"
-        ],
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
         "monsters": [
             "Troll"
         ],
