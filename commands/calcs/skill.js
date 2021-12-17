@@ -1,14 +1,14 @@
 const sendMessage = require('@utils/send-message')
 const formatter = require('@utils/formatter')
-const calculate = require('@utils/calculate')
+const calculateSkill = require('@utils/calculate-skill')
 const getEmbed = require('@utils/get-embed')
 
 const didyoumean = require('didyoumean2').default
 
 module.exports = {
-    category: 'Wiki',
-    description: 'A command that will help you calculating skills / level etc...',
-    aliases: ['calc', 'cls', 'clc'],
+    category: 'Calcs',
+    description: 'A command that will help you calculating skills.',
+    aliases: ['skills'],
 
     slash: 'both',
 
@@ -117,7 +117,7 @@ module.exports = {
         }
 
         if (vocation) { 
-            const calc = calculate(vocation, from, to, percent)
+            const calc = calculateSkill(vocation, from, to, percent)
             
             embed.setThumbnail('attachment://rules.png')
             embed.setTitle(`${calc.skill_type} (Time): ${calc.time_hits}\n` +
