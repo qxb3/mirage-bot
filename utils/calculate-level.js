@@ -1,4 +1,4 @@
-module.exports = (from, to, expMin, percent) => {
+module.exports = (from, to, mobExp, percent) => {
     let exp = 0
     for (let i = from; i < to; i++) {
         exp += expToLvl(i + 1)
@@ -7,15 +7,15 @@ module.exports = (from, to, expMin, percent) => {
     }
 
     let time = 0
-    if (exp > 0 && expMin > 0) {
-        time = exp / (expMin / 60)
+    if (exp > 0 && mobExp > 0) {
+        time = exp / (mobExp / 60)
     }
 
     const timeLevel = formatTime(time)
 
     return {
         exp,
-        time_level: timeLevel
+        time: timeLevel
     }
 }
 

@@ -1,25 +1,16 @@
 const sendMessage = require('@utils/send-message')
-const formatter = require('@utils/formatter')
-const calculateSkill = require('@utils/calculate-skill')
+const calculateLevel = require('@utils/calculate-level')
 const getEmbed = require('@utils/get-embed')
-
-const didyoumean = require('didyoumean2').default
 
 module.exports = {
     category: 'Calcs',
-    description: 'A command that will help you calculating skills.',
-    aliases: ['skills'],
+    description: 'A command that will help you calculating level.',
+    aliases: ['levels', 'lvl'],
 
     slash: 'both',
 
-    expectedArgs: '<vocation> <from> <to> <percent>',
-    options: [
-        {
-            name: 'vocation',
-            description: 'The vocation.',
-            required: true,
-            type: 'STRING'
-        },
+    expectedArgs: '<from> <to> <mob-exp> <level-percent>',
+    options: [ 
         {
             name: 'from',
             description: 'The starting point of the skill.',
@@ -33,7 +24,13 @@ module.exports = {
             type: 'INTEGER'
         },
         {
-            name: 'percent',
+            name: 'mob-exp',
+            description: 'The exp of the mob.',
+            required: true,
+            type: 'STRING'
+        },
+        {
+            name: 'level-percent',
             description: 'The current percentage of the skill.',
             required: true,
             type: 'INTEGER'
@@ -41,7 +38,6 @@ module.exports = {
     ],
 
     callback: async ({ message, interaction, args, prefix, user }) => {
-        const vocations = ['Knight', 'Ranger', 'Mage']
         const embed = getEmbed(user)
 
         if (interaction) {
@@ -50,24 +46,8 @@ module.exports = {
 
         const usage = {
             name: '❯ Usage',
-            value: `${prefix}skill <vocation> <from> <to> <percent> - To perform a calculation.\n` +
-                   `${prefix}skill - To list all the calculation types.`
-        }
-
-        //If user didn't put arguments
-        if (args.length === 0) {
-            embed.setThumbnail('attachment://rules.png')
-            embed.addFields([
-                { name: '❯ Vocations', value: formatter(vocations) },
-                usage
-            ])
-            
-            sendMessage(message, interaction, {
-                embeds: [ embed ],
-                files: [ 'assets/icons/rules.png' ]
-            })
-            return
-        }
+            value: `${prefix}level <from> <to> <mob-exp> <level-percent> - To perform a calculation.`
+        } 
 
         //If the user typed didn't meet the args requirements
         if (args.length !== 4) {
@@ -83,9 +63,9 @@ module.exports = {
             return
         }
 
-        const vocation = didyoumean(args[0], vocations, { threshold: 0.6 })
-        const from = parseInt(args[1],)
-        const to = parseInt(args[2])
+        const from = parseInt(args[0])
+        const to = parseInt(args[1])
+        const mobExp = parseInt(args[2])
         const percent = parseInt(args[3].replaceAll('%', ''))
 
         //If from is greater than to which does not make sense
@@ -116,25 +96,11 @@ module.exports = {
             return
         }
 
-        if (vocation) { 
-            const calc = calculateSkill(vocation, from, to, percent)
-            
-            embed.setThumbnail('attachment://rules.png')
-            embed.setTitle(`${calc.skill_type} (Time): ${calc.time_hits}\n` +
-                           `Defence (Time): ${calc.time_defence}`)
+        const calc = calculateLevel(from, to, mobExp, percent)
 
-            sendMessage(message, interaction, {
-                embeds: [ embed ],
-                files: [ 'assets/icons/rules.png' ]
-            })
-            return
-        }
-
-        //If didn't match anything
         embed.setThumbnail('attachment://rules.png')
-        embed.setDescription('The vocation you typed did not match to any vocations.')
-        embed.addFields([ usage ])
-        embed.setColor('RED')
+        embed.setTitle(`Exp required: ${calc.exp}\n` +
+            `Time: ${calc.time}`)
 
         sendMessage(message, interaction, {
             embeds: [ embed ],
