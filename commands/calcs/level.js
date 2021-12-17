@@ -27,13 +27,13 @@ module.exports = {
             name: 'mob-exp',
             description: 'The exp of the mob.',
             required: true,
-            type: 'STRING'
+            type: 'INTEGER'
         },
         {
             name: 'level-percent',
             description: 'The current percentage of the skill.',
             required: true,
-            type: 'INTEGER'
+            type: 'FLOAT'
         }
     ],
 
@@ -66,7 +66,7 @@ module.exports = {
         const from = parseInt(args[0])
         const to = parseInt(args[1])
         const mobExp = parseInt(args[2])
-        const percent = parseInt(args[3].replaceAll('%', ''))
+        const percent = parseFloat(args[3].replaceAll('%', ''))
 
         //If from is greater than to which does not make sense
         if (from > to) {
@@ -99,8 +99,8 @@ module.exports = {
         const calc = calculateLevel(from, to, mobExp, percent)
 
         embed.setThumbnail('attachment://rules.png')
-        embed.setTitle(`Exp required: ${calc.exp}\n` +
-            `Time: ${calc.time}`)
+        embed.addField('❯ Level calculation', `Exp required: ${parseInt(calc.exp)}\n` +
+                                              `Time: ${calc.time}`)
 
         sendMessage(message, interaction, {
             embeds: [ embed ],

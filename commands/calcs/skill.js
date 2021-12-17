@@ -12,7 +12,7 @@ module.exports = {
 
     slash: 'both',
 
-    expectedArgs: '<vocation> <from> <to> <percent>',
+    expectedArgs: '<vocation> <from> <to> <skill-percent>',
     options: [
         {
             name: 'vocation',
@@ -33,10 +33,10 @@ module.exports = {
             type: 'INTEGER'
         },
         {
-            name: 'percent',
+            name: 'skill-percent',
             description: 'The current percentage of the skill.',
             required: true,
-            type: 'INTEGER'
+            type: 'FLOAT'
         }
     ],
 
@@ -86,7 +86,7 @@ module.exports = {
         const vocation = didyoumean(args[0], vocations, { threshold: 0.6 })
         const from = parseInt(args[1],)
         const to = parseInt(args[2])
-        const percent = parseInt(args[3].replaceAll('%', ''))
+        const percent = parseFloat(args[3].replaceAll('%', ''))
 
         //If from is greater than to which does not make sense
         if (from > to) {
@@ -120,8 +120,8 @@ module.exports = {
             const calc = calculateSkill(vocation, from, to, percent)
             
             embed.setThumbnail('attachment://rules.png')
-            embed.setTitle(`${calc.skill_type} (Time): ${calc.time_hits}\n` +
-                           `Defence (Time): ${calc.time_defence}`)
+            embed.addField('❯ Skill calculation', `${calc.skill_type} (Time): ${calc.time_hits}\n` +
+                                                  `Defence (Time): ${calc.time_defence}`)
 
             sendMessage(message, interaction, {
                 embeds: [ embed ],
