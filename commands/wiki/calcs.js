@@ -86,12 +86,26 @@ module.exports = {
         const vocation = didyoumean(args[0], vocations, { threshold: 0.6 })
         const from = parseInt(args[1],)
         const to = parseInt(args[2])
-        const percent = parseInt(args[3])
+        const percent = parseInt(args[3].replaceAll('%', ''))
 
         //If from is greater than to which does not make sense
         if (from > to) {
             embed.setThumbnail('attachment://rules.png')
             embed.setDescription('The argument: `from` cannot be higher than argument: `to` ||It does not make sense bro wtf.||')
+            embed.addFields([ usage ])
+            embed.setColor('RED')
+
+            sendMessage(message, interaction, {
+                embeds: [ embed ],
+                files: [ 'assets/icons/rules.png' ]
+            })
+            return
+        }
+
+        //If the percent is higher than 100%
+        if (percent > 100) {
+            embed.setThumbnail('attachment://rules.png')
+            embed.setDescription('The argument: `percent` cannot be higher than 100%')
             embed.addFields([ usage ])
             embed.setColor('RED')
 
