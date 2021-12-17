@@ -33,7 +33,7 @@ module.exports = {
             name: 'level-percent',
             description: 'The current percentage of the skill.',
             required: true,
-            type: 'FLOAT'
+            type: 'NUMBER'
         }
     ],
 
