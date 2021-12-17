@@ -1,12 +1,12 @@
 [
     {
         "name": "Midnight",
-        "level_requirement": "90 Melee",
-        "stats": [
-            "Attack: 12",
-            "Minumum stat: 9",
-            "Maximum stat: 27"
-        ],
+        "skill_requirement": "90 Melee",
+        "stats": {
+            "armour": 12,
+            "maximum_stat": 27,
+            "minimum_stat": 9
+        },
         "monsters": [
             "Nether slime"
         ],
@@ -14,12 +14,12 @@
     },
     {
         "name": "Purity",
-        "level_requirement": "90 Magic",
-        "stats": [
-            "Attack: 12",
-            "Minumum stat: 9",
-            "Maximum stat: 27"
-        ],
+        "skill_requirement": "90 Magic",
+        "stats": {
+            "armour": 12,
+            "maximum_stat": 27,
+            "minimum_stat": 9
+        },
         "monsters": [
             "Nether slime"
         ],
@@ -27,12 +27,12 @@
     },
     {
         "name": "Daylight",
-        "level_requirement": "90 Magic",
-        "stats": [
-            "Attack: 12",
-            "Minumum stat: 9",
-            "Maximum stat: 27"
-        ],
+        "skill_requirement": "90 Magic",
+        "stats": {
+            "armour": 12,
+            "maximum_stat": 27,
+            "minimum_stat": 9
+        },
         "monsters": [
             "Nether slime"
         ],
@@ -40,12 +40,12 @@
     },
     {
         "name": "Ironbark",
-        "level_requirement": "90 Distance",
-        "stats": [
-            "Attack: 12",
-            "Minumum stat: 9",
-            "Maximum stat: 27"
-        ],
+        "skill_requirement": "90 Distance",
+        "stats": {
+            "armour": 12,
+            "maximum_stat": 27,
+            "minimum_stat": 9
+        },
         "monsters": [
             "Nether slime"
         ],
@@ -53,25 +53,25 @@
     },
     {
         "name": "Mythril Arrows",
-        "level_requirement": "90",
-        "stats": [
-            "Attack: 0",
-            "Minumum stat: 40",
-            "Maximum stat: 40"
-        ],
+        "skill_requirement": "90 Distance",
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 40,
+            "minimum_stat": 40
+        },
         "monsters": [
             "Priestess"
         ],
-        "type": "Ammunition"
+        "type": "Arrow"
     },
     {
         "name": "Banisher",
-        "level_requirement": "80 Melee",
-        "stats": [
-            "Attack: 11",
-            "Minumum stat: 8",
-            "Maximum stat: 24"
-        ],
+        "skill_requirement": "80 Melee",
+        "stats": {
+            "armour": 11,
+            "maximum_stat": 24,
+            "minimum_stat": 8
+        },
         "monsters": [
             "Hero"
         ],
@@ -79,12 +79,12 @@
     },
     {
         "name": "Punisher",
-        "level_requirement": "80 Melee",
-        "stats": [
-            "Attack: 11",
-            "Minumum stat: 8",
-            "Maximum stat: 24"
-        ],
+        "skill_requirement": "80 Melee",
+        "stats": {
+            "armour": 11,
+            "maximum_stat": 24,
+            "minimum_stat": 8
+        },
         "monsters": [
             "Frosty fury",
             "Flame fury"
@@ -93,12 +93,12 @@
     },
     {
         "name": "Retribution",
-        "level_requirement": "80 Melee",
-        "stats": [
-            "Attack: 12",
-            "Minumum stat: 16",
-            "Maximum stat: 48"
-        ],
+        "skill_requirement": "80 Melee",
+        "stats": {
+            "armour": 12,
+            "maximum_stat": 48,
+            "minimum_stat": 16
+        },
         "monsters": [
             "Mana fury"
         ],
@@ -106,12 +106,12 @@
     },
     {
         "name": "Truth",
-        "level_requirement": "80 Magic",
-        "stats": [
-            "Attack: 11",
-            "Minumum stat: 8",
-            "Maximum stat: 24"
-        ],
+        "skill_requirement": "80 Magic",
+        "stats": {
+            "armour": 11,
+            "maximum_stat": 24,
+            "minimum_stat": 8
+        },
         "monsters": [
             "Necromancer"
         ],
@@ -119,12 +119,12 @@
     },
     {
         "name": "Ice Tome",
-        "level_requirement": "80 Magic",
-        "stats": [
-            "Attack: 0",
-            "Minumum stat: 11",
-            "Maximum stat: 33"
-        ],
+        "skill_requirement": "80 Magic",
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 33,
+            "minimum_stat": 11
+        },
         "monsters": [
             "?"
         ],
@@ -132,12 +132,12 @@
     },
     {
         "name": "Shade",
-        "level_requirement": "80 Magic",
-        "stats": [
-            "Attack: 11",
-            "Minumum stat: 8",
-            "Maximum stat: 24"
-        ],
+        "skill_requirement": "80 Magic",
+        "stats": {
+            "armour": 11,
+            "maximum_stat": 24,
+            "minimum_stat": 8
+        },
         "monsters": [
             "Necromancer"
         ],
@@ -145,12 +145,12 @@
     },
     {
         "name": "Tempest",
-        "level_requirement": "80 Distance",
-        "stats": [
-            "Attack: 11",
-            "Minumum stat: 8",
-            "Maximum stat: 24"
-        ],
+        "skill_requirement": "80 Distance",
+        "stats": {
+            "armour": 11,
+            "maximum_stat": 24,
+            "minimum_stat": 8
+        },
         "monsters": [
             "Priestess"
         ],
@@ -158,12 +158,12 @@
     },
     {
         "name": "Granite Shield",
-        "level_requirement": "80 Defence",
-        "stats": [
-            "Attack: 0",
-            "Minumum stat: 8",
-            "Maximum stat: 24"
-        ],
+        "skill_requirement": "80 Defence",
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 24,
+            "minimum_stat": 8
+        },
         "monsters": [
             "Frosty fury"
         ],
@@ -171,38 +171,38 @@
     },
     {
         "name": "Spiked Arrows",
-        "level_requirement": "80",
-        "stats": [
-            "Attack: 0",
-            "Minumum stat: 35",
-            "Maximum stat: 35"
-        ],
+        "skill_requirement": "80 Distance",
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 35,
+            "minimum_stat": 35
+        },
         "monsters": [
             "Bloodseeker"
         ],
-        "type": "Ammunition"
+        "type": "Arrow"
     },
     {
         "name": "Chaos Arrows",
-        "level_requirement": "75",
-        "stats": [
-            "Attack: 0",
-            "Minumum stat: 200",
-            "Maximum stat: 200"
-        ],
+        "skill_requirement": "75 Distance",
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 200,
+            "minimum_stat": 200
+        },
         "monsters": [
             "100 to conjure"
         ],
-        "type": "Ammunition"
+        "type": "Arrow"
     },
     {
         "name": "Vindicator",
-        "level_requirement": "70 Melee",
-        "stats": [
-            "Attack: 10",
-            "Minumum stat: 7",
-            "Maximum stat: 21"
-        ],
+        "skill_requirement": "70 Melee",
+        "stats": {
+            "armour": 10,
+            "maximum_stat": 21,
+            "minimum_stat": 7
+        },
         "monsters": [
             "Orc Warrior"
         ],
@@ -210,12 +210,12 @@
     },
     {
         "name": "Chaos Mace",
-        "level_requirement": "70 Melee",
-        "stats": [
-            "Attack: 10",
-            "Minumum stat: 7",
-            "Maximum stat: 21"
-        ],
+        "skill_requirement": "70 Melee",
+        "stats": {
+            "armour": 10,
+            "maximum_stat": 21,
+            "minimum_stat": 7
+        },
         "monsters": [
             "Bandit"
         ],
@@ -223,12 +223,12 @@
     },
     {
         "name": "Ancient Axe",
-        "level_requirement": "70 Melee",
-        "stats": [
-            "Attack: 11",
-            "Minumum stat: 14",
-            "Maximum stat: 42"
-        ],
+        "skill_requirement": "70 Melee",
+        "stats": {
+            "armour": 11,
+            "maximum_stat": 42,
+            "minimum_stat": 14
+        },
         "monsters": [
             "Orc Berzerk"
         ],
@@ -236,12 +236,12 @@
     },
     {
         "name": "Mana Staff",
-        "level_requirement": "70 Magic",
-        "stats": [
-            "Attack: 10",
-            "Minumum stat: 7",
-            "Maximum stat: 21"
-        ],
+        "skill_requirement": "70 Magic",
+        "stats": {
+            "armour": 10,
+            "maximum_stat": 21,
+            "minimum_stat": 7
+        },
         "monsters": [
             "Orc Mage"
         ],
@@ -249,12 +249,12 @@
     },
     {
         "name": "Poison Tome",
-        "level_requirement": "70 Magic",
-        "stats": [
-            "Attack: 0",
-            "Minumum stat: 10",
-            "Maximum stat: 30"
-        ],
+        "skill_requirement": "70 Magic",
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 30,
+            "minimum_stat": 10
+        },
         "monsters": [
             "Hero"
         ],
@@ -262,12 +262,12 @@
     },
     {
         "name": "Holy Rod",
-        "level_requirement": "70 Magic",
-        "stats": [
-            "Attack: 10",
-            "Minumum stat: 7",
-            "Maximum stat: 21"
-        ],
+        "skill_requirement": "70 Magic",
+        "stats": {
+            "armour": 10,
+            "maximum_stat": 21,
+            "minimum_stat": 7
+        },
         "monsters": [
             "Orc Mage"
         ],
@@ -275,12 +275,12 @@
     },
     {
         "name": "Pearl Bow",
-        "level_requirement": "70 Distance",
-        "stats": [
-            "Attack: 10",
-            "Minumum stat: 7",
-            "Maximum stat: 21"
-        ],
+        "skill_requirement": "70 Distance",
+        "stats": {
+            "armour": 10,
+            "maximum_stat": 21,
+            "minimum_stat": 7
+        },
         "monsters": [
             "Hunter"
         ],
@@ -288,12 +288,12 @@
     },
     {
         "name": "Emerald Shield",
-        "level_requirement": "70 Defence",
-        "stats": [
-            "Attack: 0",
-            "Minumum stat: 7",
-            "Maximum stat: 21"
-        ],
+        "skill_requirement": "70 Defence",
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 21,
+            "minimum_stat": 7
+        },
         "monsters": [
             "Wild Soldier"
         ],
@@ -301,25 +301,25 @@
     },
     {
         "name": "Pearl Arrows",
-        "level_requirement": "70",
-        "stats": [
-            "Attack: 0",
-            "Minumum stat: 30",
-            "Maximum stat: 30"
-        ],
+        "skill_requirement": "70 Distance",
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 30,
+            "minimum_stat": 30
+        },
         "monsters": [
             "Hunter"
         ],
-        "type": "Ammunition"
+        "type": "Arrow"
     },
     {
         "name": "Ban Hammer",
-        "level_requirement": "666 Melee",
-        "stats": [
-            "Attack: 1000",
-            "Minumum stat: 0",
-            "Maximum stat: 0"
-        ],
+        "skill_requirement": "666 Melee",
+        "stats": {
+            "armour": 1000,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
         "monsters": [
             "Das Bug"
         ],
@@ -327,12 +327,12 @@
     },
     {
         "name": "Talon",
-        "level_requirement": "60 Melee",
-        "stats": [
-            "Attack: 9",
-            "Minumum stat: 6",
-            "Maximum stat: 18"
-        ],
+        "skill_requirement": "60 Melee",
+        "stats": {
+            "armour": 9,
+            "maximum_stat": 18,
+            "minimum_stat": 6
+        },
         "monsters": [
             "Hellhound"
         ],
@@ -340,12 +340,12 @@
     },
     {
         "name": "Hell's Teeth",
-        "level_requirement": "60 Melee",
-        "stats": [
-            "Attack: 9",
-            "Minumum stat: 6",
-            "Maximum stat: 18"
-        ],
+        "skill_requirement": "60 Melee",
+        "stats": {
+            "armour": 9,
+            "maximum_stat": 18,
+            "minimum_stat": 6
+        },
         "monsters": [
             "Demon"
         ],
@@ -353,12 +353,12 @@
     },
     {
         "name": "Warlord Axe",
-        "level_requirement": "60 Melee",
-        "stats": [
-            "Attack: 10",
-            "Minumum stat: 12",
-            "Maximum stat: 36"
-        ],
+        "skill_requirement": "60 Melee",
+        "stats": {
+            "armour": 10,
+            "maximum_stat": 36,
+            "minimum_stat": 12
+        },
         "monsters": [
             "Orc"
         ],
@@ -366,12 +366,12 @@
     },
     {
         "name": "Nightmare Staff",
-        "level_requirement": "60 Magic",
-        "stats": [
-            "Attack: 9",
-            "Minumum stat: 6",
-            "Maximum stat: 18"
-        ],
+        "skill_requirement": "60 Magic",
+        "stats": {
+            "armour": 9,
+            "maximum_stat": 18,
+            "minimum_stat": 6
+        },
         "monsters": [
             "Demon"
         ],
@@ -379,12 +379,12 @@
     },
     {
         "name": "Mana Tome",
-        "level_requirement": "60 Magic",
-        "stats": [
-            "Attack: 0",
-            "Minumum stat: 9",
-            "Maximum stat: 27"
-        ],
+        "skill_requirement": "60 Magic",
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 27,
+            "minimum_stat": 9
+        },
         "monsters": [
             "Orc Warrior"
         ],
@@ -392,12 +392,12 @@
     },
     {
         "name": "Life Rod",
-        "level_requirement": "60 Magic",
-        "stats": [
-            "Attack: 9",
-            "Minumum stat: 6",
-            "Maximum stat: 18"
-        ],
+        "skill_requirement": "60 Magic",
+        "stats": {
+            "armour": 9,
+            "maximum_stat": 18,
+            "minimum_stat": 6
+        },
         "monsters": [
             "Demon"
         ],
@@ -405,12 +405,12 @@
     },
     {
         "name": "Demon Bow",
-        "level_requirement": "60 Distance",
-        "stats": [
-            "Attack: 9",
-            "Minumum stat: 6",
-            "Maximum stat: 18"
-        ],
+        "skill_requirement": "60 Distance",
+        "stats": {
+            "armour": 9,
+            "maximum_stat": 18,
+            "minimum_stat": 6
+        },
         "monsters": [
             "Demon"
         ],
@@ -418,12 +418,12 @@
     },
     {
         "name": "Platinum Shield",
-        "level_requirement": "60 Defence",
-        "stats": [
-            "Attack: 0",
-            "Minumum stat: 6",
-            "Maximum stat: 18"
-        ],
+        "skill_requirement": "60 Defence",
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 18,
+            "minimum_stat": 6
+        },
         "monsters": [
             "Shadow"
         ],
@@ -431,25 +431,25 @@
     },
     {
         "name": "Elven Arrows",
-        "level_requirement": "60",
-        "stats": [
-            "Attack: 0",
-            "Minumum stat: 25",
-            "Maximum stat: 25"
-        ],
+        "skill_requirement": "60 Distance",
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 25,
+            "minimum_stat": 25
+        },
         "monsters": [
             "Arrows store"
         ],
-        "type": "Ammunition"
+        "type": "Arrow"
     },
     {
         "name": "Paladin Sword",
-        "level_requirement": "50 Melee",
-        "stats": [
-            "Attack: 8",
-            "Minumum stat: 5",
-            "Maximum stat: 15"
-        ],
+        "skill_requirement": "50 Melee",
+        "stats": {
+            "armour": 8,
+            "maximum_stat": 15,
+            "minimum_stat": 5
+        },
         "monsters": [
             "Behemoth"
         ],
@@ -457,12 +457,12 @@
     },
     {
         "name": "Paladin Hammer",
-        "level_requirement": "50 Melee",
-        "stats": [
-            "Attack: 8",
-            "Minumum stat: 5",
-            "Maximum stat: 15"
-        ],
+        "skill_requirement": "50 Melee",
+        "stats": {
+            "armour": 8,
+            "maximum_stat": 15,
+            "minimum_stat": 5
+        },
         "monsters": [
             "Minotaur"
         ],
@@ -470,12 +470,12 @@
     },
     {
         "name": "Forest Axe",
-        "level_requirement": "50 Melee",
-        "stats": [
-            "Attack: 9",
-            "Minumum stat: 10",
-            "Maximum stat: 30"
-        ],
+        "skill_requirement": "50 Melee",
+        "stats": {
+            "armour": 9,
+            "maximum_stat": 30,
+            "minimum_stat": 10
+        },
         "monsters": [
             "Behemoth"
         ],
@@ -483,12 +483,12 @@
     },
     {
         "name": "Golden Staff",
-        "level_requirement": "50 Magic",
-        "stats": [
-            "Attack: 8",
-            "Minumum stat: 5",
-            "Maximum stat: 15"
-        ],
+        "skill_requirement": "50 Magic",
+        "stats": {
+            "armour": 8,
+            "maximum_stat": 15,
+            "minimum_stat": 5
+        },
         "monsters": [
             "Ice Slime"
         ],
@@ -496,12 +496,12 @@
     },
     {
         "name": "Spirit Tome",
-        "level_requirement": "50 Magic",
-        "stats": [
-            "Attack: 0",
-            "Minumum stat: 8",
-            "Maximum stat: 24"
-        ],
+        "skill_requirement": "50 Magic",
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 24,
+            "minimum_stat": 8
+        },
         "monsters": [
             "Sorcerer"
         ],
@@ -509,12 +509,12 @@
     },
     {
         "name": "Emerald Rod",
-        "level_requirement": "50 Magic",
-        "stats": [
-            "Attack: 8",
-            "Minumum stat: 5",
-            "Maximum stat: 15"
-        ],
+        "skill_requirement": "50 Magic",
+        "stats": {
+            "armour": 8,
+            "maximum_stat": 15,
+            "minimum_stat": 5
+        },
         "monsters": [
             "Ice Slime"
         ],
@@ -522,12 +522,12 @@
     },
     {
         "name": "Orcish Bow",
-        "level_requirement": "50 Distance",
-        "stats": [
-            "Attack: 8",
-            "Minumum stat: 5",
-            "Maximum stat: 15"
-        ],
+        "skill_requirement": "50 Distance",
+        "stats": {
+            "armour": 8,
+            "maximum_stat": 15,
+            "minimum_stat": 5
+        },
         "monsters": [
             "Fire Slime"
         ],
@@ -535,12 +535,12 @@
     },
     {
         "name": "Silver Shield",
-        "level_requirement": "50 Defence",
-        "stats": [
-            "Attack: 0",
-            "Minumum stat: 5",
-            "Maximum stat: 15"
-        ],
+        "skill_requirement": "50 Defence",
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 15,
+            "minimum_stat": 5
+        },
         "monsters": [
             "Behemoth"
         ],
@@ -548,25 +548,25 @@
     },
     {
         "name": "Iron Arrows",
-        "level_requirement": "50",
-        "stats": [
-            "Attack: 0",
-            "Minumum stat: 20",
-            "Maximum stat: 20"
-        ],
+        "skill_requirement": "50 Distance",
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 20,
+            "minimum_stat": 20
+        },
         "monsters": [
             "Imp Ranger"
         ],
-        "type": "Ammunition"
+        "type": "Arrow"
     },
     {
         "name": "Elven Sword",
-        "level_requirement": "40 Melee",
-        "stats": [
-            "Attack: 7",
-            "Minumum stat: 4",
-            "Maximum stat: 12"
-        ],
+        "skill_requirement": "40 Melee",
+        "stats": {
+            "armour": 7,
+            "maximum_stat": 12,
+            "minimum_stat": 4
+        },
         "monsters": [
             "Harbinger"
         ],
@@ -574,12 +574,12 @@
     },
     {
         "name": "Giant Smasher",
-        "level_requirement": "40 Melee",
-        "stats": [
-            "Attack: 7",
-            "Minumum stat: 4",
-            "Maximum stat: 12"
-        ],
+        "skill_requirement": "40 Melee",
+        "stats": {
+            "armour": 7,
+            "maximum_stat": 12,
+            "minimum_stat": 4
+        },
         "monsters": [
             "Imp Knight"
         ],
@@ -587,12 +587,12 @@
     },
     {
         "name": "Imperial Axe",
-        "level_requirement": "40 Melee",
-        "stats": [
-            "Attack: 8",
-            "Minumum stat: 8",
-            "Maximum stat: 24"
-        ],
+        "skill_requirement": "40 Melee",
+        "stats": {
+            "armour": 8,
+            "maximum_stat": 24,
+            "minimum_stat": 8
+        },
         "monsters": [
             "Harbinger"
         ],
@@ -600,12 +600,12 @@
     },
     {
         "name": "Fire Staff",
-        "level_requirement": "40 Magic",
-        "stats": [
-            "Attack: 7",
-            "Minumum stat: 4",
-            "Maximum stat: 12"
-        ],
+        "skill_requirement": "40 Magic",
+        "stats": {
+            "armour": 7,
+            "maximum_stat": 12,
+            "minimum_stat": 4
+        },
         "monsters": [
             "Imp Mage"
         ],
@@ -613,12 +613,12 @@
     },
     {
         "name": "Forest Tome",
-        "level_requirement": "40 Magic",
-        "stats": [
-            "Attack: 0",
-            "Minumum stat: 7",
-            "Maximum stat: 21"
-        ],
+        "skill_requirement": "40 Magic",
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 21,
+            "minimum_stat": 7
+        },
         "monsters": [
             "Ice Slime"
         ],
@@ -626,12 +626,12 @@
     },
     {
         "name": "Dead Rod",
-        "level_requirement": "40 Magic",
-        "stats": [
-            "Attack: 7",
-            "Minumum stat: 4",
-            "Maximum stat: 12"
-        ],
+        "skill_requirement": "40 Magic",
+        "stats": {
+            "armour": 7,
+            "maximum_stat": 12,
+            "minimum_stat": 4
+        },
         "monsters": [
             "Imp Mage"
         ],
@@ -639,12 +639,12 @@
     },
     {
         "name": "Skeletal Bow",
-        "level_requirement": "40 Distance",
-        "stats": [
-            "Attack: 7",
-            "Minumum stat: 4",
-            "Maximum stat: 12"
-        ],
+        "skill_requirement": "40 Distance",
+        "stats": {
+            "armour": 7,
+            "maximum_stat": 12,
+            "minimum_stat": 4
+        },
         "monsters": [
             "Imp Ranger"
         ],
@@ -652,12 +652,12 @@
     },
     {
         "name": "Soldier Shield",
-        "level_requirement": "40 Defence",
-        "stats": [
-            "Attack: 0",
-            "Minumum stat: 4",
-            "Maximum stat: 12"
-        ],
+        "skill_requirement": "40 Defence",
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 12,
+            "minimum_stat": 4
+        },
         "monsters": [
             "Imp Knight",
             "Minotaur",
@@ -667,25 +667,25 @@
     },
     {
         "name": "Tin Arrows",
-        "level_requirement": "40",
-        "stats": [
-            "Attack: 0",
-            "Minumum stat: 15",
-            "Maximum stat: 15"
-        ],
+        "skill_requirement": "40 Distance",
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 15,
+            "minimum_stat": 15
+        },
         "monsters": [
             "Arrows store"
         ],
-        "type": "Ammunition"
+        "type": "Arrow"
     },
     {
         "name": "Knight Sword",
-        "level_requirement": "30 Melee",
-        "stats": [
-            "Attack: 6",
-            "Minumum stat: 3",
-            "Maximum stat: 9"
-        ],
+        "skill_requirement": "30 Melee",
+        "stats": {
+            "armour": 6,
+            "maximum_stat": 9,
+            "minimum_stat": 3
+        },
         "monsters": [
             "Felwalker"
         ],
@@ -693,12 +693,12 @@
     },
     {
         "name": "Heavy Mace",
-        "level_requirement": "30 Melee",
-        "stats": [
-            "Attack: 6",
-            "Minumum stat: 3",
-            "Maximum stat: 9"
-        ],
+        "skill_requirement": "30 Melee",
+        "stats": {
+            "armour": 6,
+            "maximum_stat": 9,
+            "minimum_stat": 3
+        },
         "monsters": [
             "Defiler"
         ],
@@ -706,12 +706,12 @@
     },
     {
         "name": "Executioner",
-        "level_requirement": "30 Melee",
-        "stats": [
-            "Attack: 7",
-            "Minumum stat: 6",
-            "Maximum stat: 18"
-        ],
+        "skill_requirement": "30 Melee",
+        "stats": {
+            "armour": 7,
+            "maximum_stat": 18,
+            "minimum_stat": 6
+        },
         "monsters": [
             "Slime"
         ],
@@ -719,12 +719,12 @@
     },
     {
         "name": "Spirit Staff",
-        "level_requirement": "30 Magic",
-        "stats": [
-            "Attack: 6",
-            "Minumum stat: 3",
-            "Maximum stat: 9"
-        ],
+        "skill_requirement": "30 Magic",
+        "stats": {
+            "armour": 6,
+            "maximum_stat": 9,
+            "minimum_stat": 3
+        },
         "monsters": [
             "Felwalker"
         ],
@@ -732,12 +732,12 @@
     },
     {
         "name": "Molten Tome",
-        "level_requirement": "30 Magic",
-        "stats": [
-            "Attack: 0",
-            "Minumum stat: 6",
-            "Maximum stat: 18"
-        ],
+        "skill_requirement": "30 Magic",
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 18,
+            "minimum_stat": 6
+        },
         "monsters": [
             "Harbinger"
         ],
@@ -745,12 +745,12 @@
     },
     {
         "name": "Jungle Rod",
-        "level_requirement": "30 Magic",
-        "stats": [
-            "Attack: 6",
-            "Minumum stat: 3",
-            "Maximum stat: 9"
-        ],
+        "skill_requirement": "30 Magic",
+        "stats": {
+            "armour": 6,
+            "maximum_stat": 9,
+            "minimum_stat": 3
+        },
         "monsters": [
             "Felwalker"
         ],
@@ -758,12 +758,12 @@
     },
     {
         "name": "Elven Bow",
-        "level_requirement": "30 Distance",
-        "stats": [
-            "Attack: 6",
-            "Minumum stat: 3",
-            "Maximum stat: 9"
-        ],
+        "skill_requirement": "30 Distance",
+        "stats": {
+            "armour": 6,
+            "maximum_stat": 9,
+            "minimum_stat": 3
+        },
         "monsters": [
             "Defiler"
         ],
@@ -771,12 +771,12 @@
     },
     {
         "name": "Plate Shield",
-        "level_requirement": "30 Defence",
-        "stats": [
-            "Attack: 0",
-            "Minumum stat: 3",
-            "Maximum stat: 9"
-        ],
+        "skill_requirement": "30 Defence",
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 9,
+            "minimum_stat": 3
+        },
         "monsters": [
             "Firewyrm"
         ],
@@ -784,25 +784,25 @@
     },
     {
         "name": "Flint Arrows",
-        "level_requirement": "30",
-        "stats": [
-            "Attack: 0",
-            "Minumum stat: 10",
-            "Maximum stat: 10"
-        ],
+        "skill_requirement": "30 Distance",
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 10,
+            "minimum_stat": 10
+        },
         "monsters": [
             "Deerstalker"
         ],
-        "type": "Ammunition"
+        "type": "Arrow"
     },
     {
         "name": "Spiked Sword",
-        "level_requirement": "20 Melee",
-        "stats": [
-            "Attack: 5",
-            "Minumum stat: 2",
-            "Maximum stat: 6"
-        ],
+        "skill_requirement": "20 Melee",
+        "stats": {
+            "armour": 5,
+            "maximum_stat": 6,
+            "minimum_stat": 2
+        },
         "monsters": [
             "Spider"
         ],
@@ -810,12 +810,12 @@
     },
     {
         "name": "Morning Star",
-        "level_requirement": "20 Melee",
-        "stats": [
-            "Attack: 5",
-            "Minumum stat: 2",
-            "Maximum stat: 6"
-        ],
+        "skill_requirement": "20 Melee",
+        "stats": {
+            "armour": 5,
+            "maximum_stat": 6,
+            "minimum_stat": 2
+        },
         "monsters": [
             "Cyclops"
         ],
@@ -823,12 +823,12 @@
     },
     {
         "name": "Harvest Scythe",
-        "level_requirement": "20 Melee",
-        "stats": [
-            "Attack: 6",
-            "Minumum stat: 4",
-            "Maximum stat: 12"
-        ],
+        "skill_requirement": "20 Melee",
+        "stats": {
+            "armour": 6,
+            "maximum_stat": 12,
+            "minimum_stat": 4
+        },
         "monsters": [
             "Spider"
         ],
@@ -836,12 +836,12 @@
     },
     {
         "name": "Crystal Staff",
-        "level_requirement": "20 Magic",
-        "stats": [
-            "Attack: 5",
-            "Minumum stat: 2",
-            "Maximum stat: 6"
-        ],
+        "skill_requirement": "20 Magic",
+        "stats": {
+            "armour": 5,
+            "maximum_stat": 6,
+            "minimum_stat": 2
+        },
         "monsters": [
             "Widow"
         ],
@@ -849,12 +849,12 @@
     },
     {
         "name": "Fire Tome",
-        "level_requirement": "20 Magic",
-        "stats": [
-            "Attack: 0",
-            "Minumum stat: 5",
-            "Maximum stat: 15"
-        ],
+        "skill_requirement": "20 Magic",
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 15,
+            "minimum_stat": 5
+        },
         "monsters": [
             "Firewyrm"
         ],
@@ -862,12 +862,12 @@
     },
     {
         "name": "Earth Rod",
-        "level_requirement": "20 Magic",
-        "stats": [
-            "Attack: 5",
-            "Minumum stat: 2",
-            "Maximum stat: 6"
-        ],
+        "skill_requirement": "20 Magic",
+        "stats": {
+            "armour": 5,
+            "maximum_stat": 6,
+            "minimum_stat": 2
+        },
         "monsters": [
             "Widow"
         ],
@@ -875,12 +875,12 @@
     },
     {
         "name": "Soldier Bow",
-        "level_requirement": "20 Distance",
-        "stats": [
-            "Attack: 5",
-            "Minumum stat: 2",
-            "Maximum stat: 6"
-        ],
+        "skill_requirement": "20 Distance",
+        "stats": {
+            "armour": 5,
+            "maximum_stat": 6,
+            "minimum_stat": 2
+        },
         "monsters": [
             "Deerstalker"
         ],
@@ -888,12 +888,12 @@
     },
     {
         "name": "Copper Shield",
-        "level_requirement": "20 Defence",
-        "stats": [
-            "Attack: 0",
-            "Minumum stat: 2",
-            "Maximum stat: 6"
-        ],
+        "skill_requirement": "20 Defence",
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 6,
+            "minimum_stat": 2
+        },
         "monsters": [
             "Troll Warlord"
         ],
@@ -901,25 +901,25 @@
     },
     {
         "name": "Stone Arrows",
-        "level_requirement": "20",
-        "stats": [
-            "Attack: 0",
-            "Minumum stat: 5",
-            "Maximum stat: 5"
-        ],
+        "skill_requirement": "20 Distance",
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 5,
+            "minimum_stat": 5
+        },
         "monsters": [
             "Arrows store"
         ],
-        "type": "Ammunition"
+        "type": "Arrow"
     },
     {
         "name": "Primitive Sword",
-        "level_requirement": "15 Melee",
-        "stats": [
-            "Attack: 4",
-            "Minumum stat: 1",
-            "Maximum stat: 3"
-        ],
+        "skill_requirement": "15 Melee",
+        "stats": {
+            "armour": 4,
+            "maximum_stat": 3,
+            "minimum_stat": 1
+        },
         "monsters": [
             "Troll Knight"
         ],
@@ -927,12 +927,12 @@
     },
     {
         "name": "Iron Sceptre",
-        "level_requirement": "15 Melee",
-        "stats": [
-            "Attack: 4",
-            "Minumum stat: 1",
-            "Maximum stat: 3"
-        ],
+        "skill_requirement": "15 Melee",
+        "stats": {
+            "armour": 4,
+            "maximum_stat": 3,
+            "minimum_stat": 1
+        },
         "monsters": [
             "Troll Warlord"
         ],
@@ -940,12 +940,12 @@
     },
     {
         "name": "Steel Axe",
-        "level_requirement": "15 Melee",
-        "stats": [
-            "Attack: 5",
-            "Minumum stat: 2",
-            "Maximum stat: 6"
-        ],
+        "skill_requirement": "15 Melee",
+        "stats": {
+            "armour": 5,
+            "maximum_stat": 6,
+            "minimum_stat": 2
+        },
         "monsters": [
             "Troll Warlord"
         ],
@@ -953,12 +953,12 @@
     },
     {
         "name": "Amber Staff",
-        "level_requirement": "15 Magic",
-        "stats": [
-            "Attack: 4",
-            "Minumum stat: 1",
-            "Maximum stat: 3"
-        ],
+        "skill_requirement": "15 Magic",
+        "stats": {
+            "armour": 4,
+            "maximum_stat": 3,
+            "minimum_stat": 1
+        },
         "monsters": [
             "Troll Mage"
         ],
@@ -966,12 +966,12 @@
     },
     {
         "name": "Old Spellbook",
-        "level_requirement": "15 Magic",
-        "stats": [
-            "Attack: 0",
-            "Minumum stat: 4",
-            "Maximum stat: 12"
-        ],
+        "skill_requirement": "15 Magic",
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 12,
+            "minimum_stat": 4
+        },
         "monsters": [
             "Troll Warlord"
         ],
@@ -979,12 +979,12 @@
     },
     {
         "name": "Nature Rod",
-        "level_requirement": "15 Magic",
-        "stats": [
-            "Attack: 4",
-            "Minumum stat: 1",
-            "Maximum stat: 3"
-        ],
+        "skill_requirement": "15 Magic",
+        "stats": {
+            "armour": 4,
+            "maximum_stat": 3,
+            "minimum_stat": 1
+        },
         "monsters": [
             "Troll Mage"
         ],
@@ -992,12 +992,12 @@
     },
     {
         "name": "Primitive Bow",
-        "level_requirement": "15 Distance",
-        "stats": [
-            "Attack: 4",
-            "Minumum stat: 1",
-            "Maximum stat: 3"
-        ],
+        "skill_requirement": "15 Distance",
+        "stats": {
+            "armour": 4,
+            "maximum_stat": 3,
+            "minimum_stat": 1
+        },
         "monsters": [
             "Troll Ranger"
         ],
@@ -1005,12 +1005,12 @@
     },
     {
         "name": "Reinforced Shield",
-        "level_requirement": "15 Defence",
-        "stats": [
-            "Attack: 0",
-            "Minumum stat: 1",
-            "Maximum stat: 3"
-        ],
+        "skill_requirement": "15 Defence",
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 3,
+            "minimum_stat": 1
+        },
         "monsters": [
             "Troll Knight"
         ],
@@ -1018,12 +1018,12 @@
     },
     {
         "name": "Spiked Club",
-        "level_requirement": "0 Melee",
-        "stats": [
-            "Attack: 3",
-            "Minumum stat: 0",
-            "Maximum stat: 0"
-        ],
+        "skill_requirement": "0 Melee",
+        "stats": {
+            "armour": 3,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
         "monsters": [
             "Unobtainable - The only way you can get these is by creating a new character"
         ],
@@ -1031,12 +1031,12 @@
     },
     {
         "name": "Training Club",
-        "level_requirement": "0 Melee",
-        "stats": [
-            "Attack: 1",
-            "Minumum stat: 0",
-            "Maximum stat: 0"
-        ],
+        "skill_requirement": "0 Melee",
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
         "monsters": [
             "Unobtainable - The only way you can get these is by creating a new character"
         ],
@@ -1044,12 +1044,12 @@
     },
     {
         "name": "Duck Smasher",
-        "level_requirement": "0 Melee",
-        "stats": [
-            "Attack: 1",
-            "Minumum stat: 0",
-            "Maximum stat: 0"
-        ],
+        "skill_requirement": "0 Melee",
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
         "monsters": [
             "Unobtainable - Was given out once by liam during an event called 'Ducket list'"
         ],
@@ -1057,25 +1057,25 @@
     },
     {
         "name": "Zero's Reaver",
-        "level_requirement": "0 Melee",
-        "stats": [
-            "Attack: 7",
-            "Minumum stat: 0",
-            "Maximum stat: 0"
-        ],
+        "skill_requirement": "0 Melee",
+        "stats": {
+            "armour": 7,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
         "monsters": [
-            "Unobtainable - It's given by liam to a first knight to hit level 50"
+            "Unobtainable - It's given by liam to a first knight to hit skill 50"
         ],
         "type": "Axe"
     },
     {
         "name": "Warped Staff",
-        "level_requirement": "0 Magic",
-        "stats": [
-            "Attack: 3",
-            "Minumum stat: 0",
-            "Maximum stat: 0"
-        ],
+        "skill_requirement": "0 Magic",
+        "stats": {
+            "armour": 3,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
         "monsters": [
             "Unobtainable - The only way you can get these is by creating a new character"
         ],
@@ -1083,12 +1083,12 @@
     },
     {
         "name": "Training Staff",
-        "level_requirement": "0 Magic",
-        "stats": [
-            "Attack: 1",
-            "Minumum stat: 0",
-            "Maximum stat: 0"
-        ],
+        "skill_requirement": "0 Magic",
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
         "monsters": [
             "Weapons store"
         ],
@@ -1096,25 +1096,25 @@
     },
     {
         "name": "Godman's Staff",
-        "level_requirement": "0 Magic",
-        "stats": [
-            "Attack: 6",
-            "Minumum stat: 0",
-            "Maximum stat: 0"
-        ],
+        "skill_requirement": "0 Magic",
+        "stats": {
+            "armour": 6,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
         "monsters": [
-            "Unobtainable - It's given by liam to a first mage to hit level 50"
+            "Unobtainable - It's given by liam to a first mage to hit skill 50"
         ],
         "type": "Staff"
     },
     {
         "name": "Novice's Notes",
-        "level_requirement": "0 Magic",
-        "stats": [
-            "Attack: 0",
-            "Minumum stat: 3",
-            "Maximum stat: 9"
-        ],
+        "skill_requirement": "0 Magic",
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 9,
+            "minimum_stat": 3
+        },
         "monsters": [
             "Troll Mage"
         ],
@@ -1122,12 +1122,12 @@
     },
     {
         "name": "Cracked Rod",
-        "level_requirement": "0 Magic",
-        "stats": [
-            "Attack: 3",
-            "Minumum stat: 0",
-            "Maximum stat: 0"
-        ],
+        "skill_requirement": "0 Magic",
+        "stats": {
+            "armour": 3,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
         "monsters": [
             "Weapons store"
         ],
@@ -1135,12 +1135,12 @@
     },
     {
         "name": "Wooden Bow",
-        "level_requirement": "0 Distance",
-        "stats": [
-            "Attack: 3",
-            "Minumum stat: 0",
-            "Maximum stat: 0"
-        ],
+        "skill_requirement": "0 Distance",
+        "stats": {
+            "armour": 3,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
         "monsters": [
             "Unobtainable - The only way you can get these is by creating a new character"
         ],
@@ -1148,12 +1148,12 @@
     },
     {
         "name": "Training Bow",
-        "level_requirement": "0 Distance",
-        "stats": [
-            "Attack: 1",
-            "Minumum stat: 0",
-            "Maximum stat: 0"
-        ],
+        "skill_requirement": "0 Distance",
+        "stats": {
+            "armour": 1,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
         "monsters": [
             "Weapons store"
         ],
@@ -1161,25 +1161,25 @@
     },
     {
         "name": "Lupin's Bow",
-        "level_requirement": "0 Distance",
-        "stats": [
-            "Attack: 6",
-            "Minumum stat: 0",
-            "Maximum stat: 0"
-        ],
+        "skill_requirement": "0 Distance",
+        "stats": {
+            "armour": 6,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
         "monsters": [
-            "Unobtainable - It's given by liam to a first ranger to hit level 50"
+            "Unobtainable - It's given by liam to a first ranger to hit skill 50"
         ],
         "type": "Bow"
     },
     {
         "name": "Wooden Shield",
-        "level_requirement": "0 Defence",
-        "stats": [
-            "Attack: 0",
-            "Minumum stat: 0",
-            "Maximum stat: 0"
-        ],
+        "skill_requirement": "0 Defence",
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
         "monsters": [
             "Unobtainable - The only way you can get these is by creating a new character"
         ],
@@ -1187,15 +1187,15 @@
     },
     {
         "name": "Wooden Arrows",
-        "level_requirement": "0",
-        "stats": [
-            "Attack: 0",
-            "Minumum stat: 0",
-            "Maximum stat: 0"
-        ],
+        "skill_requirement": "0 Distance",
+        "stats": {
+            "armour": 0,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
         "monsters": [
             "Troll Ranger"
         ],
-        "type": "Ammunition"
+        "type": "Arrow"
     }
 ]

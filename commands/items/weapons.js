@@ -23,7 +23,7 @@ module.exports = {
     ],
 
     callback: async ({ message, interaction, args, prefix, user }) => { 
-        const categories = ['Sword', 'Axe', 'Mace', 'Shield', 'Bow', 'Ammunition', 'Staff', 'Rod', 'Spellbook']
+        const categories = ['Sword', 'Axe', 'Mace', 'Shield', 'Bow', 'Arrow', 'Staff', 'Rod', 'Spellbook']
         const embed = getEmbed(user)
 
         if (interaction) {
@@ -80,11 +80,15 @@ module.exports = {
             const sprite = weapon.name.replace(/'/, '').replaceAll(' ', '-').toLowerCase() + '.png'
             const type = weapon.type.toLowerCase()
 
+            const stats = `• Armour: ${weapon.stats.armour}\n` +
+                          `• Maximum stat: ${weapon.stats.maximum_stat}\n` +
+                          `• Minimum stat: ${weapon.stats.minimum_stat}`
+
             embed.setThumbnail(`attachment://${sprite}`)
             embed.addFields(
                 { name: '❯ Name', value: weapon.name },
-                { name: '❯ Level requirement', value: weapon.level_requirement },
-                { name: '❯ Stats', value: formatter(weapon.stats) },
+                { name: '❯ Skill requirement', value: weapon.skill_requirement },
+                { name: '❯ Stats', value: stats },
                 { name: '❯ Monsters', value: formatter(weapon.monsters) }
             )
             sendMessage(message, interaction, {
