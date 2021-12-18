@@ -632,7 +632,7 @@
             "Attack: Physical",
             "Health: 9075",
             "Skills: Heal",
-            "AOE: Physical"
+            "AOE: Physical, Mana"
         ],
         "resistance": [
             "Physical: 10%"
