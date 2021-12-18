@@ -80,7 +80,7 @@ module.exports = {
             const sprite = weapon.name.replace(/'/, '').replaceAll(' ', '-').toLowerCase() + '.png'
             const type = weapon.type.toLowerCase()
 
-            const stats = `• Armour: ${weapon.stats.armour}\n` +
+            const stats = `• Attack: ${weapon.stats.attack}\n` +
                           `• Maximum stat: ${weapon.stats.maximum_stat}\n` +
                           `• Minimum stat: ${weapon.stats.minimum_stat}`
 
