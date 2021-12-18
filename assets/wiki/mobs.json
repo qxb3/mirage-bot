@@ -1277,7 +1277,8 @@
             "Amber Ring",
             "Metal Plate",
             "Human Ear",
-            "Pie"
+            "Pie",
+            "Metal Plate"
         ]
     },
     {
@@ -1332,7 +1333,9 @@
             "Emerald Boots",
             "Arnisium Vest",
             "Sentinel Armour",
-            "Hellborn Amulet"
+            "Hellborn Amulet",
+            "Molten Core",
+            "Mandible"
         ]
     },
     {
@@ -1361,7 +1364,9 @@
             "Granite Armour",
             "Crystal Boots",
             "Sentinel Gloves",
-            "Crystal Mask"
+            "Crystal Mask",
+            "Ectoplasm",
+            "Mandible"
         ]
     },
     {
@@ -1389,7 +1394,9 @@
             "Granite Shield",
             "Granite Gloves",
             "Punisher",
-            "Sentinel Armour"
+            "Sentinel Armour",
+            "Ice Shard",
+            "Mandible"
         ]
     },
     {
