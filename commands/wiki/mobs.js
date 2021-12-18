@@ -61,13 +61,18 @@ module.exports = {
             const mob = mobsJson.find(data => data.name === isMob)
             const sprite = mob.name.replace(/'/, '').replaceAll(' ', '-').toLowerCase() + '.png'
 
+            const stats = `• Attack: ${mob.stats.attack}\n` +
+                          `• Health: ${mob.stats.health}\n` +
+                          `• Skills: ${mob.stats.skills.join(', ')}\n` +
+                          `• Aoe's: ${mob.stats.aoe.join(', ')}`
+
             embed.setThumbnail(`attachment://${sprite}`)
             embed.addFields([
                 { name: '❯ Name', value: mob.name },
                 { name: '❯ Level requirement', value: `Level ${mob.level_requirement}` },
                 { name: '❯ Experience', value: `${mob.experience} Exp` },
-                { name: '❯ Stats', value: formatter(mob.stats) },
-                { name: '❯ Resistance', value: formatter(mob.resistance) },
+                { name: '❯ Stats', value: stats },
+                { name: '❯ Resistance', value: formatter(mob.resistances) },
                 { name: '❯ Loots', value: formatter(mob.loots) }
             ])
 

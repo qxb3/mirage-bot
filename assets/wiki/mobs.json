@@ -3,13 +3,17 @@
         "name": "Butterfly",
         "level_requirement": 0,
         "experience": 5,
-        "stats": [
-            "Attack: Physical",
-            "Health: 5", 
-            "Skills: None",
-            "AOE: None"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Physical",
+            "health": 5,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "None"
+            ]
+        },
+        "resistances": [
             "None"
         ],
         "loots": [
@@ -20,13 +24,17 @@
         "name": "Rat",
         "level_requirement": 0,
         "experience": 10,
-        "stats": [
-            "Attack: Physical",
-            "Health: 25",
-            "Skills: None",
-            "AOE: None"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Physical",
+            "health": 25,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "None"
+            ]
+        },
+        "resistances": [
             "None"
         ],
         "loots": [
@@ -37,13 +45,17 @@
         "name": "Troll",
         "level_requirement": 0,
         "experience": 50,
-        "stats": [
-            "Attack: Physical",
-            "Health: 65",
-            "Skills: None",
-            "AOE: None"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Physical",
+            "health": 65,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "None"
+            ]
+        },
+        "resistances": [
             "Fire: -5%"
         ],
         "loots": [
@@ -59,13 +71,17 @@
         "name": "Troll Mage",
         "level_requirement": 0,
         "experience": 70,
-        "stats": [
-            "Attack: Mana",
-            "Health: 75",
-            "Skills: None",
-            "AOE: None"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Mana",
+            "health": 75,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "None"
+            ]
+        },
+        "resistances": [
             "Fire: -5%",
             "Mana: 25%"
         ],
@@ -88,13 +104,17 @@
         "name": "Troll Ranger",
         "level_requirement": 0,
         "experience": 80,
-        "stats": [
-            "Attack: Physical",
-            "Health: 85",
-            "Skills: None",
-            "AOE: None"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Physical",
+            "health": 85,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "None"
+            ]
+        },
+        "resistances": [
             "Fire: -5%"
         ],
         "loots": [
@@ -113,13 +133,17 @@
         "name": "Troll Knight",
         "level_requirement": 0,
         "experience": 90,
-        "stats": [
-            "Attack: Physical",
-            "Health: 95",
-            "Skills: None",
-            "AOE: None"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Physical",
+            "health": 95,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "None"
+            ]
+        },
+        "resistances": [
             "Fire: -5%"
         ],
         "loots": [
@@ -139,13 +163,17 @@
         "name": "Troll Warlord",
         "level_requirement": 0,
         "experience": 200,
-        "stats": [
-            "Attack: Physical",
-            "Health: 130",
-            "Skills: None",
-            "AOE: Physical"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Physical",
+            "health": 130,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "Physical"
+            ]
+        },
+        "resistances": [
             "Physical: 10%",
             "Fire: -5%"
         ],
@@ -166,13 +194,17 @@
         "name": "Cyclops",
         "level_requirement": 0,
         "experience": 320,
-        "stats": [
-            "Attack: Physical",
-            "Health: 225",
-            "Skills: None",
-            "AOE: None"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Physical",
+            "health": 225,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "None"
+            ]
+        },
+        "resistances": [
             "None"
         ],
         "loots": [
@@ -189,13 +221,17 @@
         "name": "Spider",
         "level_requirement": 5,
         "experience": 400,
-        "stats": [
-            "Attack: Poison",
-            "Health: 240",
-            "Skills: None",
-            "AOE: Poison"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Poison",
+            "health": 240,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "Poison"
+            ]
+        },
+        "resistances": [
             "Poison: 100%"
         ],
         "loots": [
@@ -214,13 +250,17 @@
         "name": "Widow",
         "level_requirement": 5,
         "experience": 800,
-        "stats": [
-            "Attack: Poison",
-            "Health: 390",
-            "Skills: None",
-            "AOE: Poison"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Poison",
+            "health": 390,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "Poison"
+            ]
+        },
+        "resistances": [
             "Poison: 100%"
         ],
         "loots": [
@@ -238,13 +278,17 @@
         "name": "Crab",
         "level_requirement": 5,
         "experience": 540,
-        "stats": [
-            "Attack: Physical",
-            "Health: 265",
-            "Skills: None",
-            "AOE: None"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Physical",
+            "health": 265,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "None"
+            ]
+        },
+        "resistances": [
             "None"
         ],
         "loots": [
@@ -256,13 +300,17 @@
         "name": "Deerstalker",
         "level_requirement": 5,
         "experience": 600,
-        "stats": [
-            "Attack: Physical",
-            "Health: 290",
-            "Skills: None",
-            "AOE: None"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Physical",
+            "health": 290,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "None"
+            ]
+        },
+        "resistances": [
             "None"
         ],
         "loots": [
@@ -281,13 +329,17 @@
         "name": "Slime",
         "level_requirement": 5,
         "experience": 1269,
-        "stats": [
-            "Attack: Poison",
-            "Health: 605",
-            "Skills: None",
-            "AOE: Poison"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Poison",
+            "health": 605,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "Poison"
+            ]
+        },
+        "resistances": [
             "Fire: -5%",
             "Poison: 100%"
         ],
@@ -306,13 +358,17 @@
         "name": "Defiler",
         "level_requirement": 5,
         "experience": 2545,
-        "stats": [
-            "Attack: Poison",
-            "Health: 1210",
-            "Skills: Heal",
-            "AOE: Poison"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Poison",
+            "health": 1210,
+            "skills": [
+                "Heal"
+            ],
+            "aoe": [
+                "Poison"
+            ]
+        },
+        "resistances": [
             "Fire: -5%",
             "Poison: 100%"
         ],
@@ -330,13 +386,17 @@
         "name": "Firewyrm",
         "level_requirement": 10,
         "experience": 1000,
-        "stats": [
-            "Attack: Fire",
-            "Health: 480",
-            "Skills: None",
-            "AOE: Fire"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Fire",
+            "health": 480,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "Fire"
+            ]
+        },
+        "resistances": [
             "Fire: 100%",
             "Ice: -5%"
         ],
@@ -356,13 +416,17 @@
         "name": "Felwalker",
         "level_requirement": 15,
         "experience": 1909,
-        "stats": [
-            "Attack: Mana",
-            "Health: 905",
-            "Skills: None",
-            "AOE: None"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Mana",
+            "health": 905,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "None"
+            ]
+        },
+        "resistances": [
             "Mana: 25%"
         ],
         "loots": [
@@ -382,13 +446,17 @@
         "name": "Imp",
         "level_requirement": 25,
         "experience": 3238,
-        "stats": [
-            "Attack: Physical",
-            "Health: 1510",
-            "Skills: None",
-            "AOE: Physical"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Physical",
+            "health": 1510,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "Physical"
+            ]
+        },
+        "resistances": [
             "None"
         ],
         "loots": [
@@ -405,13 +473,17 @@
         "name": "Imp Ranger",
         "level_requirement": 25,
         "experience": 3507,
-        "stats": [
-            "Attack: Fire",
-            "Health: 1630",
-            "Skills: None",
-            "AOE: None"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Fire",
+            "health": 1630,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "None"
+            ]
+        },
+        "resistances": [
             "None"
         ],
         "loots": [
@@ -430,13 +502,17 @@
         "name": "Imp Knight",
         "level_requirement": 25,
         "experience": 3796,
-        "stats": [
-            "Attack: Fire",
-            "Health: 1750",
-            "Skills: Heal",
-            "AOE: Physical"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Fire",
+            "health": 1750,
+            "skills": [
+                "Heal"
+            ],
+            "aoe": [
+                "Physical"
+            ]
+        },
+        "resistances": [
             "Physical: 10%"
         ],
         "loots": [
@@ -455,13 +531,17 @@
         "name": "Imp Mage",
         "level_requirement": 25,
         "experience": 3954,
-        "stats": [
-            "Attack: Mana",
-            "Health: 1815",
-            "Skills: None",
-            "AOE: Mana"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Mana",
+            "health": 1815,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "Mana"
+            ]
+        },
+        "resistances": [
             "Mana: 25%",
             "Death: 10%"
         ],
@@ -482,13 +562,18 @@
         "name": "Harbinger",
         "level_requirement": 25,
         "experience": 8421,
-        "stats": [
-            "Attack: Fire",
-            "Health: 3630",
-            "Skills: None",
-            "AOE: Fire, Energy"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Fire",
+            "health": 3630,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "Fire",
+                "Energy"
+            ]
+        },
+        "resistances": [
             "Physical: 10%",
             "Fire: 100%",
             "Ice: -5%",
@@ -509,13 +594,17 @@
         "name": "Fire Slime",
         "level_requirement": 35,
         "experience": 10250,
-        "stats": [
-            "Attack: Fire",
-            "Health: 4235",
-            "Skills: None",
-            "AOE: Fire"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Fire",
+            "health": 4235,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "Fire"
+            ]
+        },
+        "resistances": [
             "Fire: 100%",
             "Ice: -5%"
         ],
@@ -533,13 +622,17 @@
         "name": "Gastropod",
         "level_requirement": 35,
         "experience": 11870,
-        "stats": [
-            "Attack: Energy",
-            "Health: 4840",
-            "Skills: None",
-            "AOE: Energy"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Energy",
+            "health": 4840,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "Energy"
+            ]
+        },
+        "resistances": [
             "Physical: -5%",
             "Energy: 100%",
             "Poison: 10%"
@@ -556,13 +649,17 @@
         "name": "Minotaur",
         "level_requirement": 35,
         "experience": 11870,
-        "stats": [
-            "Attack: Physical",
-            "Health: 4840",
-            "Skills: None",
-            "AOE: Physical"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Physical",
+            "health": 4840,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "Physical"
+            ]
+        },
+        "resistances": [
             "None"
         ],
         "loots": [
@@ -580,13 +677,17 @@
         "name": "Ghost",
         "level_requirement": 45,
         "experience": 12750,
-        "stats": [
-            "Attack: Energy",
-            "Health: 5140",
-            "Skills: None",
-            "AOE: None"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Energy",
+            "health": 5140,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "None"
+            ]
+        },
+        "resistances": [
             "Physical: 100%",
             "Energy: 100%"
         ],
@@ -602,13 +703,17 @@
         "name": "Ice Slime",
         "level_requirement": 45,
         "experience": 15789,
-        "stats": [
-            "Attack: Ice",
-            "Health: 6050",
-            "Skills: None",
-            "AOE: Ice"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Ice",
+            "health": 6050,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "Ice"
+            ]
+        },
+        "resistances": [
             "Fire: -5%",
             "Ice: 100%"
         ],
@@ -628,13 +733,18 @@
         "name": "Behemoth",
         "level_requirement": 55,
         "experience": 36477,
-        "stats": [
-            "Attack: Physical",
-            "Health: 9075",
-            "Skills: Heal",
-            "AOE: Physical, Mana"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Physical",
+            "health": 9075,
+            "skills": [
+                "Heal"
+            ],
+            "aoe": [
+                "Physical",
+                "Mana"
+            ]
+        },
+        "resistances": [
             "Physical: 10%"
         ],
         "loots": [
@@ -652,13 +762,18 @@
         "name": "Revenant",
         "level_requirement": 55,
         "experience": 41698,
-        "stats": [
-            "Attack: Death",
-            "Health: 10285",
-            "Skills: None",
-            "AOE: Death, Poison"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Death",
+            "health": 10285,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "Death",
+                "Poison"
+            ]
+        },
+        "resistances": [
             "Physical: 10%",
             "Poison: 100%"
         ],
@@ -674,13 +789,18 @@
         "name": "Sorcerer",
         "level_requirement": 65,
         "experience": 41963,
-        "stats": [
-            "Attack: Energy",
-            "Health: 10285",
-            "Skills: Heal",
-            "AOE: Fire, Ice"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Energy",
+            "health": 10285,
+            "skills": [
+                "Heal"
+            ],
+            "aoe": [
+                "Fire",
+                "Ice"
+            ]
+        },
+        "resistances": [
             "Fire: 5%",
             "Ice: 5%",
             "Energy: 5%",
@@ -699,13 +819,18 @@
         "name": "Demon",
         "level_requirement": 65,
         "experience": 47500,
-        "stats": [
-            "Attack: Fire",
-            "Health: 11495",
-            "Skills: Heal",
-            "AOE: Fire, Energy"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Fire",
+            "health": 11495,
+            "skills": [
+                "Heal"
+            ],
+            "aoe": [
+                "Fire",
+                "Energy"
+            ]
+        },
+        "resistances": [
             "Physical: 25%",
             "Fire: 100%",
             "Ice: -5%",
@@ -725,13 +850,17 @@
         "name": "Hellhound",
         "level_requirement": 65,
         "experience": 47711,
-        "stats": [
-            "Attack: Fire",
-            "Health: 11495",
-            "Skills: None",
-            "AOE: Physical"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Fire",
+            "health": 11495,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "Physical"
+            ]
+        },
+        "resistances": [
             "Fire: 25%"
         ],
         "loots": [
@@ -748,13 +877,18 @@
         "name": "Shadow",
         "level_requirement": 65,
         "experience": 60761,
-        "stats": [
-            "Attack: Death",
-            "Health: 13915",
-            "Skills: Heal",
-            "AOE: Mana, Death"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Death",
+            "health": 13915,
+            "skills": [
+                "Heal"
+            ],
+            "aoe": [
+                "Mana",
+                "Death"
+            ]
+        },
+        "resistances": [
             "Energy: -5%",
             "Mana: 75%"
         ],
@@ -771,13 +905,17 @@
         "name": "Orc",
         "level_requirement": 75,
         "experience": 44666,
-        "stats": [
-            "Attack: Physical",
-            "Health: 10890",
-            "Skills: Heal",
-            "AOE: None"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Physical",
+            "health": 10890,
+            "skills": [
+                "Heal"
+            ],
+            "aoe": [
+                "None"
+            ]
+        },
+        "resistances": [
             "Fire: -5%"
         ],
         "loots": [
@@ -793,13 +931,17 @@
         "name": "Orc Worker",
         "level_requirement": 75,
         "experience": 50714,
-        "stats": [
-            "Attack: Physical",
-            "Health: 12100",
-            "Skills: None",
-            "AOE: None"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Physical",
+            "health": 12100,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "None"
+            ]
+        },
+        "resistances": [
             "Fire: -5%"
         ],
         "loots": [
@@ -813,13 +955,17 @@
         "name": "Orc Mage",
         "level_requirement": 75,
         "experience": 56466,
-        "stats": [
-            "Attack: ManaDeath",
-            "Health: 13310",
-            "Skills: None",
-            "AOE: Mana"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "ManaDeath",
+            "health": 13310,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "Mana"
+            ]
+        },
+        "resistances": [
             "Fire: -5%",
             "Mana: 25%"
         ],
@@ -835,13 +981,17 @@
         "name": "Orc Warrior",
         "level_requirement": 75,
         "experience": 61093,
-        "stats": [
-            "Attack: Physical",
-            "Health: 13915",
-            "Skills: Heal",
-            "AOE: Physical"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Physical",
+            "health": 13915,
+            "skills": [
+                "Heal"
+            ],
+            "aoe": [
+                "Physical"
+            ]
+        },
+        "resistances": [
             "Fire: -5%"
         ],
         "loots": [
@@ -857,13 +1007,17 @@
         "name": "Thief",
         "level_requirement": 85,
         "experience": 50857,
-        "stats": [
-            "Attack: Physical",
-            "Health: 12100",
-            "Skills: None",
-            "AOE: None"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Physical",
+            "health": 12100,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "None"
+            ]
+        },
+        "resistances": [
             "Energy: -5%"
         ],
         "loots": [
@@ -876,13 +1030,17 @@
         "name": "Bandit",
         "level_requirement": 85,
         "experience": 53549,
-        "stats": [
-            "Attack: Physical",
-            "Health: 12705",
-            "Skills: None",
-            "AOE: Physical"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Physical",
+            "health": 12705,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "Physical"
+            ]
+        },
+        "resistances": [
             "Energy: -5%"
         ],
         "loots": [
@@ -897,13 +1055,17 @@
         "name": "Wasp",
         "level_requirement": 85,
         "experience": 57200,
-        "stats": [
-            "Attack: Poison",
-            "Health: 13310",
-            "Skills: None",
-            "AOE: Poison"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Poison",
+            "health": 13310,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "Poison"
+            ]
+        },
+        "resistances": [
             "Poison: 100%"
         ],
         "loots": [
@@ -919,13 +1081,17 @@
         "name": "Hunter",
         "level_requirement": 85,
         "experience": 56466,
-        "stats": [
-            "Attack: Physical",
-            "Health: 13310",
-            "Skills: None",
-            "AOE: None"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Physical",
+            "health": 13310,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "None"
+            ]
+        },
+        "resistances": [
             "Energy: -5%"
         ],
         "loots": [
@@ -940,13 +1106,17 @@
         "name": "Wild Soldier",
         "level_requirement": 85,
         "experience": 61093,
-        "stats": [
-            "Attack: Physical",
-            "Health: 13915",
-            "Skills: Heal",
-            "AOE: Physical"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Physical",
+            "health": 13915,
+            "skills": [
+                "Heal"
+            ],
+            "aoe": [
+                "Physical"
+            ]
+        },
+        "resistances": [
             "Energy: -5%"
         ],
         "loots": [
@@ -960,13 +1130,17 @@
         "name": "Orc Berzerk",
         "level_requirement": 95,
         "experience": 63250,
-        "stats": [
-            "Attack: Physical",
-            "Health: 13915",
-            "Skills: None",
-            "AOE: Physical"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Physical",
+            "health": 13915,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "Physical"
+            ]
+        },
+        "resistances": [
             "Fire: -5%"
         ],
         "loots": [
@@ -981,13 +1155,17 @@
         "name": "Shambler",
         "level_requirement": 95,
         "experience": 83999,
-        "stats": [
-            "Attack: Physical",
-            "Health: 18150",
-            "Skills: Heal",
-            "AOE: Physical"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Physical",
+            "health": 18150,
+            "skills": [
+                "Heal"
+            ],
+            "aoe": [
+                "Physical"
+            ]
+        },
+        "resistances": [
             "Ice: -5%",
             "Poison: 100%"
         ],
@@ -1002,13 +1180,17 @@
         "name": "Bloodseeker",
         "level_requirement": 95,
         "experience": 83999,
-        "stats": [
-            "Attack: Physical",
-            "Health: 18150",
-            "Skills: Heal",
-            "AOE: None"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Physical",
+            "health": 18150,
+            "skills": [
+                "Heal"
+            ],
+            "aoe": [
+                "None"
+            ]
+        },
+        "resistances": [
             "Ice: -5%",
             "Poison: 100%"
         ],
@@ -1024,13 +1206,17 @@
         "name": "Slimespitter",
         "level_requirement": 95,
         "experience": 83999,
-        "stats": [
-            "Attack: Poison",
-            "Health: 18150",
-            "Skills: Heal",
-            "AOE: Poison"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Poison",
+            "health": 18150,
+            "skills": [
+                "Heal"
+            ],
+            "aoe": [
+                "Poison"
+            ]
+        },
+        "resistances": [
             "Ice: -5%",
             "Poison: 100%"
         ],
@@ -1045,13 +1231,17 @@
         "name": "Priestess",
         "level_requirement": 100,
         "experience": 101111,
-        "stats": [
-            "Attack: Ice",
-            "Health: 21175",
-            "Skills: None",
-            "AOE: None"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Ice",
+            "health": 21175,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "None"
+            ]
+        },
+        "resistances": [
             "Poison: -5%"
         ],
         "loots": [
@@ -1067,13 +1257,17 @@
         "name": "Hero",
         "level_requirement": 100,
         "experience": 101111,
-        "stats": [
-            "Attack: Energy",
-            "Health: 21175",
-            "Skills: Heal",
-            "AOE: Physical"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Energy",
+            "health": 21175,
+            "skills": [
+                "Heal"
+            ],
+            "aoe": [
+                "Physical"
+            ]
+        },
+        "resistances": [
             "Poison: -5%"
         ],
         "loots": [
@@ -1090,13 +1284,17 @@
         "name": "Necromancer",
         "level_requirement": 100,
         "experience": 101111,
-        "stats": [
-            "Attack: Death",
-            "Health: 21175",
-            "Skills: None",
-            "AOE: Death"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Death",
+            "health": 21175,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "Death"
+            ]
+        },
+        "resistances": [
             "None"
         ],
         "loots": [
@@ -1112,13 +1310,17 @@
         "name": "Flame Fury",
         "level_requirement": 110,
         "experience": 120000,
-        "stats": [
-            "Attack: Fire",
-            "Health: 24200",
-            "Skills: None",
-            "AOE: None"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Fire",
+            "health": 24200,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "None"
+            ]
+        },
+        "resistances": [
             "Physical: 50%",
             "Fire: 100%",
             "Poison: 100%",
@@ -1137,13 +1339,17 @@
         "name": "Mana Fury",
         "level_requirement": 110,
         "experience": 120000,
-        "stats": [
-            "Attack: Mana",
-            "Health: 24200",
-            "Skills: None",
-            "AOE: None"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Mana",
+            "health": 24200,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "None"
+            ]
+        },
+        "resistances": [
             "Physical: 50%",
             "Ice: 100%",
             "Poison: 100%",
@@ -1162,13 +1368,17 @@
         "name": "Frost Fury",
         "level_requirement": 110,
         "experience": 120000,
-        "stats": [
-            "Attack: Ice",
-            "Health: 24200",
-            "Skills: None",
-            "AOE: None"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Ice",
+            "health": 24200,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "None"
+            ]
+        },
+        "resistances": [
             "Physical: 50%",
             "Ice: 100%",
             "Poison: 100%",
@@ -1186,13 +1396,17 @@
         "name": "Void Goliath",
         "level_requirement": 120,
         "experience": 139500,
-        "stats": [
-            "Attack: Death",
-            "Health: 27225",
-            "Skills: None",
-            "AOE: None"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Death",
+            "health": 27225,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "None"
+            ]
+        },
+        "resistances": [
             "Physical: 50%",
             "Mana: 50%",
             "Death: 100%"
@@ -1207,13 +1421,17 @@
         "name": "Astral Trueshot",
         "level_requirement": 120,
         "experience": 139500,
-        "stats": [
-            "Attack: Energy",
-            "Health: 27225",
-            "Skills: None",
-            "AOE: None"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Energy",
+            "health": 27225,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "None"
+            ]
+        },
+        "resistances": [
             "Physical: 50%",
             "Energy: 100%",
             "Mana: 50%"
@@ -1229,13 +1447,17 @@
         "name": "Nether Slime",
         "level_requirement": 120,
         "experience": 139500,
-        "stats": [
-            "Attack: Physical",
-            "Health: 27225",
-            "Skills: None",
-            "AOE: Physical"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Physical",
+            "health": 27225,
+            "skills": [
+                "None"
+            ],
+            "aoe": [
+                "Physical"
+            ]
+        },
+        "resistances": [
             "Physical: 100%",
             "Mana: 50%"
         ],
@@ -1251,13 +1473,19 @@
         "name": "Angry Biscottsman",
         "level_requirement": 125,
         "experience": 1000000,
-        "stats": [
-            "Attack: Physical, Death",
-            "Health: 5000000",
-            "Skills: Heal",
-            "AOE: Mana, Energy, Poison"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Physical, Death",
+            "health": 5000000,
+            "skills": [
+                "Heal"
+            ],
+            "aoe": [
+                "Mana",
+                "Energy",
+                "Poison"
+            ]
+        },
+        "resistances": [
             "None"
         ],
         "loots": [
@@ -1269,13 +1497,19 @@
         "name": "Das Bug",
         "level_requirement": 1337,
         "experience": 0,
-        "stats": [
-            "Attack: Fire",
-            "Health: 1337",
-            "Skills: Ban Hugs, Exevo Gran, Mas Vis",
-            "AOE: Fire"
-        ],
-        "resistance": [
+        "stats": {
+            "attack": "Fire",
+            "health": 1337,
+            "skills": [
+                "Ban Hugs",
+                "Exevo Gran",
+                "Mas Vis"
+            ],
+            "aoe": [
+                "Fire"
+            ]
+        },
+        "resistances": [
             "None"
         ],
         "loots": [
