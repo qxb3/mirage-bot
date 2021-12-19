@@ -702,7 +702,7 @@
     {
         "name": "Ice Slime",
         "level_requirement": 45,
-        "experience": 15789,
+        "experience": 20267,
         "stats": {
             "attack": "Ice",
             "health": 6050,
