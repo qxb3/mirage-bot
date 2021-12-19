@@ -876,7 +876,7 @@
     {
         "name": "Shadow",
         "level_requirement": 65,
-        "experience": 60761,
+        "experience": 42840,
         "stats": {
             "attack": "Death",
             "health": 13915,
@@ -1300,7 +1300,8 @@
         ],
         "loots": [
             "Copper (1800-3600)",
-            "TruthShade",
+            "Truth",
+            "Shade",
             "Spiked Boots",
             "Broken Staff",
             "Human Ear",
