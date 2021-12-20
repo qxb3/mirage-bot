@@ -357,7 +357,7 @@
     {
         "name": "Defiler",
         "level_requirement": 5,
-        "experience": 2545,
+        "experience": 2500,
         "stats": {
             "attack": "Poison",
             "health": 1210,
@@ -761,7 +761,7 @@
     {
         "name": "Revenant",
         "level_requirement": 55,
-        "experience": 41698,
+        "experience": 41830,
         "stats": {
             "attack": "Death",
             "health": 10285,
@@ -782,7 +782,8 @@
             "Wizard Hood",
             "Elven Hat",
             "Silver Armour",
-            "SkullBone"
+            "Skull",
+            "Bone"
         ]
     },
     {
@@ -875,7 +876,7 @@
     },
     {
         "name": "Shadow",
-        "level_requirement": 65,
+        "level_requirement": 55,
         "experience": 42840,
         "stats": {
             "attack": "Death",
