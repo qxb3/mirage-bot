@@ -732,7 +732,7 @@
     {
         "name": "Behemoth",
         "level_requirement": 55,
-        "experience": 36477,
+        "experience": 37207,
         "stats": {
             "attack": "Physical",
             "health": 9075,
