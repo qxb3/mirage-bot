@@ -29,6 +29,7 @@ module.exports = {
         if (args.length === 0) {
             const embed = new MessageEmbed()
                 .setTitle('Commands')
+                .setDescription('Join our discord server if you have more questions and get updated with the bot: https://discord.gg/FnSBheNj')
                 .setThumbnail('attachment://help.png')
                 .setColor('GREEN')
 
