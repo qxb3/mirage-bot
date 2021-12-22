@@ -21,7 +21,7 @@
     },
     {
         "name": "Black Skull",
-        "description": "Killing more than 20 players in 7 days will result in you becoming an outlaw. Outlaws are marked with a black skull, And this skull will persist until you have 20 or fewer unjust kills tracked against your character.\nDying with a black skull will cause you to lose 30% of your experience."
+        "description": "Killing more than 20 players in 7 days will result in you becoming an outlaw. Outlaws are marked with a black skull, And this skull will persist until you have 20 or fewer unjust kills tracked against your character.\nDying with a black skull will cause you to lose 30% of your experience\nEvery kill past 20 increases experience loss on death by 1%, there is no cap on the maximum."
     },
     {
         "name": "Party Kill",
