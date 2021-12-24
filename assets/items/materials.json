@@ -37,7 +37,7 @@
         "monsters": [
             "Cyclops",
             "Deerstalker",
-            "Felwalker"
+            "Cyclops Mystic"
         ]
     },
     {
@@ -72,7 +72,7 @@
         "price": "150",
         "monsters": [
             "Deerstalker",
-            "Felwalker"
+            "Cyclops Mystic"
         ]
     },
     {
@@ -95,7 +95,7 @@
         "name": "Ponytail",
         "price": "200",
         "monsters": [
-            "Felwalker"
+            "Cyclops Mystic"
         ]
     },
     {

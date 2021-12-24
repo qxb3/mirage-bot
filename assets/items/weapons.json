@@ -687,7 +687,7 @@
             "minimum_stat": 3
         },
         "monsters": [
-            "Felwalker"
+            "Cyclops Mystic"
         ],
         "type": "Sword"
     },
@@ -726,7 +726,7 @@
             "minimum_stat": 3
         },
         "monsters": [
-            "Felwalker"
+            "Cyclops Mystic"
         ],
         "type": "Staff"
     },
@@ -752,7 +752,7 @@
             "minimum_stat": 3
         },
         "monsters": [
-            "Felwalker"
+            "Cyclops Mystic"
         ],
         "type": "Rod"
     },
