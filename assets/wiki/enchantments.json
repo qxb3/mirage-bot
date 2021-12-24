@@ -17,10 +17,10 @@
         "location": "Cyclops",
         "materials_required": [
             "Helmet: Blue ear (Drops from: Imps)",
-            "Chest: Broken staff (Drops from: Orc mage, Sorcerer, TrollMage)",
-            "Boots: Razor Claws (Drops from: Hellbound)",
+            "Chest: Broken staff (Drops from: Orc mage, Sorcerer, Troll Mage)",
+            "Boots: Razor Claws (Drops from: Hellhound)",
             "Gloves: Minotaur horn (Drops from: Minotaur)",
-            "Weapon: Ice shards (Dropped from: Ghost)"
+            "Weapon: Ice shards (Dropped from: Ice Slime)"
         ]
     },
     {
@@ -28,11 +28,11 @@
         "enchanter": "Marshlands",
         "location": "Slime",
         "materials_required": [
-            "Helmet: Red goo (Drops from: FireSlime)",
+            "Helmet: Red goo (Drops from: Fire Slime)",
             "Chest: Red tail (Drops from: Harbringer)",
             "Boots: Skull (Drops from: Revenant)",
-            "Gloves: Red scales (Drops from: FireWyrms)",
-            "Weapon: Molten core (Drops from: FireWyrms, FireSlime, Demon)"
+            "Gloves: Red scales (Drops from: Firewyrms)",
+            "Weapon: Molten core (Drops from: Firewyrms, Fire Slime, Demon)"
         ]
     },
     {
@@ -50,23 +50,23 @@
     {
         "name": "Mana",
         "enchanter": "Squidge",
-        "location": "Inferno (H2)",
+        "location": "Inferno",
         "materials_required": [
             "Helmet: Bone (Drops from: Revenant)",
             "Chest: Hoof (Drops from: Imps)",
-            "Boots: Green leather (Drops from: OrcMage)",
-            "Gloves: Ponytail (Drops from: Felwalker)"
+            "Boots: Green leather (Drops from: Orc Mage)",
+            "Gloves: Ponytail (Drops from: Cyclops Mystic)"
         ]
     },
     {
         "name": "Physical",
         "enchanter": "Harvey",
-        "location": "Inferno (H2)",
+        "location": "Inferno",
         "materials_required": [
             "Helmet: Metal plate (Drops from: Imp Knight, TrollWarlord, Orc)",
             "Chest: Behemoth horn (Drops from: Behemoth)",
             "Boots: Blue goo (Drops from: Ice Slime)",
-            "Gloves: Giant eye (Drops from: Cycs, Deerstalkers, Felwalkers)"
+            "Gloves: Giant eye (Drops from: Cyclops, Deerstalkers, Cyclops Mystic)"
         ]
     }
 ]
