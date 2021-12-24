@@ -58,25 +58,27 @@ module.exports = {
         instance.commandHandler.commands.forEach((command) => { 
             command.names.forEach((name) => { 
                 if (ignoreCase.equals(args.join(' '), name)) {
-                    code = 0
+                    if (command.category !== 'BotOwner') {
+                        code = 0
 
-                    const aliases = command.names.join(', ')
-                    const syntax = command.syntax ? command.syntax : ''
-                    const embed = new MessageEmbed()
-                        .setThumbnail('attachment://info_blue.png')
-                        .addFields(
-                            { name: '❯ Command Name', value: name.charAt(0).toUpperCase() + name.slice(1) },
-                            { name: '❯ Category', value: command.category },
-                            { name: '❯ Description', value: command.description },
-                            { name: '❯ Aliases', value: aliases },
-                            { name: '❯ Usage', value: `${prefix + name} ${syntax}` }
-                        )
-                        .setColor('GREEN')
+                        const aliases = command.names.join(', ')
+                        const syntax = command.syntax ? command.syntax : ''
+                        const embed = new MessageEmbed()
+                            .setThumbnail('attachment://info_blue.png')
+                            .addFields(
+                                { name: '❯ Command Name', value: name.charAt(0).toUpperCase() + name.slice(1) },
+                                { name: '❯ Category', value: command.category },
+                                { name: '❯ Description', value: command.description },
+                                { name: '❯ Aliases', value: aliases },
+                                { name: '❯ Usage', value: `${prefix + name} ${syntax}` }
+                            )
+                            .setColor('GREEN')
 
-                    sendMessage(message, interaction, {
-                        embeds: [ embed ],
-                        files: [ 'assets/icons/info_blue.png' ]
-                    })
+                        sendMessage(message, interaction, {
+                            embeds: [ embed ],
+                            files: [ 'assets/icons/info_blue.png' ]
+                        })
+                    } 
                 }
             })
         })
