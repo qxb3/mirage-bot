@@ -2,7 +2,7 @@ const { MessageEmbed } = require('discord.js')
 
 module.exports = (user) => {
     const embed = new MessageEmbed()
-        .setAuthor(user.tag, user.displayAvatarURL())
+        .setAuthor(user.username, user.avatarURL({ dynamic: true }))
         .setColor('GREEN')
 
     return embed
