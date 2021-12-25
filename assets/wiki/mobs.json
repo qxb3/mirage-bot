@@ -1525,27 +1525,5 @@
             "Ban Hammer",
             "Liam's Blessing"
         ]
-    },
-    {
-        "name": "Holy Jesus",
-        "level_requirement": 99999,
-        "experience": 99999,
-        "stats": {
-            "attack": "Holy",
-            "health": 99999,
-            "skills": [
-                "Resurrection",
-                "Summon a fish"
-            ],
-            "aoe": [
-                "Holy"
-            ]
-        },
-        "resistances": [
-            "None"
-        ],
-        "loots": [
-            "Ticket to heaven"
-        ]
-    }
+    } 
 ]
