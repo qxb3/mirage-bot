@@ -63,7 +63,7 @@ module.exports = {
             }
 
             args.shift()
-            await sendToDb(message.guild, channel.id, args.join(' ') || '')
+            await sendToDb(guild, channel.id, args.join(' ') || '')
             message.reply(`Autogz are now set to <#${channel.id}>`)
         }
 
@@ -78,7 +78,7 @@ module.exports = {
             }
 
             args.shift()
-            await sendToDb(interaction.guild, channel.id, args.join(' ') || '')
+            await sendToDb(guild, channel.id, args.join(' ') || '')
             interaction.reply({
                 content:  `Autogz are now set to <#${channel.id}>`,
                 ephemeral: true

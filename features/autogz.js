@@ -7,13 +7,15 @@ module.exports = (client) => {
 
         if (data.channel_id === message.channelId) {
             const attachment = message.attachments.first()
-            if (attachment?.contentType === 'image/jpeg') {
-                await message.react('🇬')
-                await message.react('🇿')
+            if (attachment?.contentType.startsWith('image')) {
+                setTimeout(async () => {
+                    await message.react('🇬')
+                    await message.react('🇿')
 
-                if (data.message) {
-                    await message.reply(data.message)
-                }
+                    if (data.message) {
+                        await message.reply(data.message)
+                    }
+                }, 250)  
             }
         }
     })
