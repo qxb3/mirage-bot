@@ -8,8 +8,8 @@ module.exports = (client) => {
         if (data.channel_id === message.channelId) {
             const attachment = message.attachments.first()
             if (attachment?.contentType === 'image/jpeg') {
-                message?.react('🇬')
-                message?.react('🇿')
+                await message?.react('🇬')
+                await message?.react('🇿')
 
                 if (data.message) {
                     message?.reply(data.message)
