@@ -621,7 +621,7 @@
     {
         "name": "Gastropod",
         "level_requirement": 35,
-        "experience": 11870,
+        "experience": 14036,
         "stats": {
             "attack": "Energy",
             "health": 4840,
