@@ -16,7 +16,7 @@ module.exports = (client) => {
                     if (data.message) {
                         await message?.reply(data.message)
                     }
-                }, 350)
+                }, 500)
             } 
         } 
     })
