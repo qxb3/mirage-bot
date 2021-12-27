@@ -83,7 +83,12 @@ module.exports = {
             }
 
             args.shift()
-            await sendToDb(guild, channel.id, args.join(' ') || '')
+            const messages = args.join(' ').split(',').filter(e => e.trim())
+            for (let i = 0; i < messages.length; i++) {
+                messages[i] = messages[i].trim()
+            }
+
+            await sendToDb(guild, channel.id, messages)
             interaction.reply({
                 content:  `Autogz are now set to <#${channel.id}>`,
                 ephemeral: true
