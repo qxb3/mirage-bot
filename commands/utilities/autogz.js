@@ -8,7 +8,7 @@ module.exports = {
     slash: 'both',
     guildOnly: true,
 
-    expectedArgs: '[channel] [message]',
+    expectedArgs: '[channel] [messages]',
     options: [
         {
             name: 'channel',
