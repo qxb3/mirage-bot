@@ -1,4 +1,5 @@
 const autoGzSchema = require('@models/autogz-schema')
+const randomNumber = require('@utils/random-number')
 
 module.exports = (client) => {
     client.on('messageCreate', async (message) => {
@@ -13,8 +14,13 @@ module.exports = (client) => {
                     await message?.react('🇬')
                     await message?.react('🇿')
 
-                    if (data.message) {
-                        await message?.reply(data.message)
+                    const random = randomNumber(0, data.messages.length-1)
+                    const randomMessage = data.messages[random]
+                        ?.replace(/{mention}/g, `<@${message?.author.id}>`)
+                        ?.replace(/{server}/g, message.guild.name)
+
+                    if (randomMessage) {
+                        await message?.reply(randomMessage)
                     }
                 }, 500)
             } 

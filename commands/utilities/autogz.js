@@ -17,8 +17,8 @@ module.exports = {
             type: 'CHANNEL'
         },
         {
-            name: 'message',
-            description: 'A optional message to the player.',
+            name: 'messages',
+            description: 'A optional messages to the player. use `,` to add new message',
             required: false,
             type: 'STRING'
         }
@@ -42,14 +42,14 @@ module.exports = {
             }
         }
 
-        const sendToDb = async (guild, channelId, message) => {
+        const sendToDb = async (guild, channelId, messages) => {
             await autoGzSchema.findOneAndUpdate({
                 _id: guild.id
             }, {
                 _id: guild.id,
                 guild_name: guild.name,
                 channel_id: channelId,
-                message: message
+                messages: messages
             }, {
                 upsert: true
             })
@@ -63,7 +63,12 @@ module.exports = {
             }
 
             args.shift()
-            await sendToDb(guild, channel.id, args.join(' ') || '')
+            const messages = args.join(' ').split(',').filter(e => e.trim())
+            for (let i = 0; i < messages.length; i++) {
+                messages[i] = messages[i].trim()
+            }
+
+            await sendToDb(guild, channel.id, messages)
             message.reply(`Autogz are now set to <#${channel.id}>`)
         }
 

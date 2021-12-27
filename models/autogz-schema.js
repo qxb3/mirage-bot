@@ -9,7 +9,10 @@ const autoGzSchema = new mongoose.Schema({
     _id: requiredString,
     guild_name: requiredString,
     channel_id: requiredString,
-    message: requiredString
+    messages: {
+        type: [ String ],
+        required: true
+    }
 })
 
 module.exports = mongoose.models['autogz'] || mongoose.model('autogz', autoGzSchema)
