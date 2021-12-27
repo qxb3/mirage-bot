@@ -22,7 +22,7 @@ module.exports = (client) => {
                     if (randomMessage) {
                         await message?.reply(randomMessage)
                     }
-                }, 500)
+                }, 1000)
             } 
         } 
     })
