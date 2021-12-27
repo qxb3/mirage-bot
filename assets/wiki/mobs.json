@@ -561,7 +561,7 @@
     {
         "name": "Harbinger",
         "level_requirement": 25,
-        "experience": 8421,
+        "experience": 9982,
         "stats": {
             "attack": "Fire",
             "health": 3630,
@@ -593,7 +593,7 @@
     {
         "name": "Fire Slime",
         "level_requirement": 35,
-        "experience": 10250,
+        "experience": 12493,
         "stats": {
             "attack": "Fire",
             "health": 4235,
@@ -648,7 +648,7 @@
     {
         "name": "Minotaur",
         "level_requirement": 35,
-        "experience": 11870,
+        "experience": 15488,
         "stats": {
             "attack": "Physical",
             "health": 4840,
