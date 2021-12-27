@@ -5,7 +5,7 @@ const { Client, Intents } = require('discord.js')
 const path = require('path')
 const WokCommands = require('wokcommands')
 
-const setBotActivity = require('./utils/set-bot-activity')
+//const setBotPresence = require('@utils/set-bot-presence')
 
 const client = new Client({
     intents: [
@@ -16,7 +16,11 @@ const client = new Client({
 })
 
 client.on('ready', async () => {
-    setBotActivity(client) 
+    //setBotPresence(client)
+    client.user.setActivity({
+        name: 'Mirage Realms',
+        type: 'PLAYING'
+    })
 
     new WokCommands(client, {
         commandDir: path.join(__dirname, './commands'), 
