@@ -63,7 +63,7 @@ module.exports = {
             }
 
             args.shift()
-            const messages = args.join(' ').split('||').filter(element => element) 
+            const messages = args.join(' ').split('|').filter(element => element) 
             for (let i = 0; i < messages.length; i++) {
                 messages[i] = messages[i].trim()
             }
@@ -83,7 +83,7 @@ module.exports = {
             }
 
             args.shift()
-            const messages = args.join(' ').split('||').filter(element => element)
+            const messages = args.join(' ').split('|').filter(element => element)
             for (let i = 0; i < messages.length; i++) {
                 messages[i] = messages[i].trim()
             }
