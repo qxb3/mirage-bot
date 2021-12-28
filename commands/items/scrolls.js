@@ -64,7 +64,8 @@ module.exports = {
             embed.setThumbnail(`attachment://${sprite}`)
             embed.addFields([
                 { name: '❯ Name', value: scroll.full_name },
-                { name: '❯ Prices', value: formatter(scroll.prices) },
+                { name: '❯ Real Life Prices', value: formatter(scroll.real_prices) },
+                { name: '❯ In Game Price', value: `${scroll.ingame_price} Gold` },
                 { name: '❯ Effects', value: formatter(scroll.effects) },
             ])
             embed.setFooter('NOTE: Prices might not be accurate.')
