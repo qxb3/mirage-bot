@@ -1,6 +1,7 @@
 [
     {
-        "name": "Experience Scroll",
+        "name": "Experience",
+        "full_name": "Experience Scroll",
         "prices": [
             "x1 - 2.0£",
             "x3 - 5.8£",
@@ -12,7 +13,8 @@
         ]
     },
     {
-        "name": "Currency Scroll",
+        "name": "Currency",
+        "full_name": "Currency Scrill",
         "prices": [
             "x1 - 2.0£",
             "x3 - 5.8£",
@@ -24,7 +26,8 @@
         ]
     },
     {
-        "name": "Skill Scroll",
+        "name": "Skill",
+        "full_name": "Skill Scroll",
         "prices": [
             "x1 - 2.0£",
             "x3 - 5.8£",
@@ -36,7 +39,8 @@
         ]
     },
     {
-        "name": "Drop Rate Scroll",
+        "name": "Drop Rate",
+        "full_name": "Drop Rate Scroll",
         "prices": [
             "x1 - 2.0£",
             "x3 - 5.8£",
@@ -48,7 +52,8 @@
         ]
     },
     {
-        "name": "Potion Scroll",
+        "name": "Potion",
+        "full_name": "Potion Scroll",
         "prices": [
             "x1 - 2.0£",
             "x3 - 5.8£",
@@ -60,7 +65,8 @@
         ]
     },
     {
-        "name": "Rename Scroll",
+        "name": "Rename",
+        "full_name": "Rename Scroll",
         "prices": [
             "15.0£"
         ],
@@ -69,7 +75,8 @@
         ]
     },
     {
-        "name": "Gender Scroll",
+        "name": "Gender",
+        "full_name": "Gender Scroll",
         "prices": [
             "5.0£"
         ],
@@ -78,7 +85,8 @@
         ]
     },
     {
-        "name": "Hero Slot Scroll",
+        "name": "Hero Slot",
+        "full_name": "Hero Slot Scroll",
         "prices": [
             "5.0£"
         ],
@@ -87,7 +95,8 @@
         ]
     },
     {
-        "name": "Supporter Scroll",
+        "name": "Supporter",
+        "full_name": "Supporter Scroll",
         "prices": [
             "x1 - 2.0£",
             "x3 - 5.8£",

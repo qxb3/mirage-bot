@@ -38,7 +38,7 @@ module.exports = {
 
         //If user didn't give arguments
         if (args.length === 0) {
-            const scrolls = formatter(scrollsJson.map(data => data.name))
+            const scrolls = formatter(scrollsJson.map(data => data.full_name))
 
             embed.setThumbnail('attachment://experience-scroll.png')
             embed.addFields([
@@ -54,16 +54,16 @@ module.exports = {
         }
 
         const input = args.join(' ')
-        const isScroll = didyoumean(input, scrollsJson.map(data => data.name), { threshold: 0.6 })
+        const isScroll = didyoumean(input, scrollsJson.map(data => data.name), { threshold: 0.4 })
 
         //If the user input is scroll
         if (isScroll) {
             const scroll = scrollsJson.find(data => data.name === isScroll)
-            const sprite = scroll.name.replace(/'/, '').replaceAll(' ', '-').toLowerCase() + '.png'
+            const sprite = scroll.name.replace(/'/, '').replaceAll(' ', '-').toLowerCase() + '-scroll.png'
 
             embed.setThumbnail(`attachment://${sprite}`)
             embed.addFields([
-                { name: '❯ Name', value: scroll.name },
+                { name: '❯ Name', value: scroll.full_name },
                 { name: '❯ Prices', value: formatter(scroll.prices) },
                 { name: '❯ Effects', value: formatter(scroll.effects) },
             ])
