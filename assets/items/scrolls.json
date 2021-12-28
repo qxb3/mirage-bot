@@ -1,54 +1,99 @@
 [
     {
         "name": "Experience Scroll",
+        "prices": [
+            "x1 - 2.0£",
+            "x3 - 5.8£",
+            "x5 - 10.0£",
+            "x20 - 20.0£"
+        ],
         "effects": [
             "125% Experience"
         ]
     },
     {
         "name": "Currency Scroll",
+        "prices": [
+            "x1 - 2.0£",
+            "x3 - 5.8£",
+            "x5 - 10.0£",
+            "x20 - 20.0£"
+        ],
         "effects": [
             "125% Drops"
         ]
     },
     {
         "name": "Skill Scroll",
+        "prices": [
+            "x1 - 2.0£",
+            "x3 - 5.8£",
+            "x5 - 10.0£",
+            "x20 - 20.0£"
+        ],
         "effects": [
             "125% Training"
         ]
     },
     {
         "name": "Drop Rate Scroll",
+        "prices": [
+            "x1 - 2.0£",
+            "x3 - 5.8£",
+            "x5 - 9.70£",
+            "x20 - 20.0£"
+        ],
         "effects": [
             "125% Drop Rate"
         ]
     },
     {
         "name": "Potion Scroll",
+        "prices": [
+            "x1 - 2.0£",
+            "x3 - 5.8£",
+            "x5 - 9.70£",
+            "x20 - 20.0£"
+        ],
         "effects": [
             "150% Potions"
         ]
     },
     {
         "name": "Rename Scroll",
+        "prices": [
+            "15.0£"
+        ],
         "effects": [
             "Name Change"
         ]
     },
     {
         "name": "Gender Scroll",
+        "prices": [
+            "5.0£"
+        ],
         "effects": [
             "Gender Change"
         ]
     },
     {
         "name": "Hero Slot Scroll",
+        "prices": [
+            "5.0£"
+        ],
         "effects": [
             "Add additional hero slot"
         ]
     },
     {
         "name": "Supporter Scroll",
+        "prices": [
+            "x1 - 2.0£",
+            "x3 - 5.8£",
+            "x5 - 9.70£",
+            "x20 - 20.0£"
+        ],
         "effects": [
             "+100 Extra bank slots",
             "+50 More friend slots",

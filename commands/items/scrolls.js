@@ -64,8 +64,10 @@ module.exports = {
             embed.setThumbnail(`attachment://${sprite}`)
             embed.addFields([
                 { name: '❯ Name', value: scroll.name },
+                { name: '❯ Prices', value: formatter(scroll.prices) },
                 { name: '❯ Effects', value: formatter(scroll.effects) },
             ])
+            embed.setFooter('NOTE: Prices might not be accurate.')
 
             sendMessage(message, interaction, {
                 embeds: [ embed ],
