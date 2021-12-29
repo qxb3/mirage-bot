@@ -1,5 +1,5 @@
 module.exports = {
-    category: 'BotOwner',
+    category: 'Owner',
     description: 'Just a replacement to commands.',
 
     callback: () => { 

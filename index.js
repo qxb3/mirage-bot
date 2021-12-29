@@ -16,7 +16,7 @@ const client = new Client({
 })
 
 client.on('ready', async () => {
-    //setBotPresence(client) 
+    //setBotPresence(client)
     client.user.setActivity({
         name: 'Mirage Realms',
         type: 'PLAYING'
@@ -26,7 +26,7 @@ client.on('ready', async () => {
         commandDir: path.join(__dirname, './commands'), 
         featuresDir: path.join(__dirname, './features'),
         mongoUri: process.env.MONGO_URI,
-        testServers: ['811195710065082378'],
+        testServers: ['917358098241445909'],
         botOwners: ['591150858830479381'], 
         disabledDefaultCommands: [
             'channelonly', 'command', 'language',

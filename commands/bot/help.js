@@ -35,7 +35,7 @@ module.exports = {
 
             const categories = fs.readdirSync('./commands')
             for (let i = categories.length - 1; i >= 0; i--)  {
-                if (categories[i] != 'bot-owner') {
+                if (categories[i] != 'owner') {
                     const categoryCommands = fs.readdirSync(`./commands/${categories[i]}`)
 
                     const name = categories[i].charAt(0).toUpperCase() + categories[i].slice(1)
@@ -58,7 +58,7 @@ module.exports = {
         instance.commandHandler.commands.forEach((command) => { 
             command.names.forEach((name) => { 
                 if (ignoreCase.equals(args.join(' '), name)) {
-                    if (command.category !== 'BotOwner') {
+                    if (command.category !== 'Owner') {
                         code = 0
 
                         const aliases = command.names.join(', ')

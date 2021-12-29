@@ -3,7 +3,7 @@ const logSchema = require('@models/log-schema')
 const ignoreCase = require('ignore-case')
 
 module.exports = {
-    category: 'BotOwner',
+    category: 'Bot',
     description: 'Get the bot logs.',
     aliases: ['log'],
 

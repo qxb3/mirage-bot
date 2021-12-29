@@ -2,7 +2,7 @@ const { MessageEmbed } = require('discord.js')
 const sendMessage = require('../../utils/send-message')
 
 module.exports = {
-    category: 'BotOwner',
+    category: 'Owner',
     description: 'Get servers bot joined to.',
     aliases: ['server'],
 
