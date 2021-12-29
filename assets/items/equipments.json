@@ -8,7 +8,7 @@
             "minimum_stat": 9
         },
         "monsters": [
-            "Mana fury"
+            "Mana Fury"
         ],
         "type": "Helmet"
     },
@@ -21,7 +21,7 @@
             "minimum_stat": 9
         },
         "monsters": [
-            "Frost fury"
+            "Frost Fury"
         ],
         "type": "Helmet"
     },
@@ -34,7 +34,7 @@
             "minimum_stat": 9
         },
         "monsters": [
-            "?"
+            "Astral Trueshot"
         ],
         "type": "Helmet"
     },
@@ -47,7 +47,7 @@
             "minimum_stat": 9
         },
         "monsters": [
-            "?"
+            "Frost Fury"
         ],
         "type": "Gloves"
     },
@@ -60,7 +60,7 @@
             "minimum_stat": 9
         },
         "monsters": [
-            "?"
+            "Astral Trueshot"
         ],
         "type": "Gloves"
     },
@@ -73,7 +73,7 @@
             "minimum_stat": 9
         },
         "monsters": [
-            "?"
+            "Mana Fury"
         ],
         "type": "Gloves"
     },
@@ -86,7 +86,7 @@
             "minimum_stat": 9
         },
         "monsters": [
-            "?"
+            "Mana Fury"
         ],
         "type": "Chest"
     },
@@ -112,7 +112,7 @@
             "minimum_stat": 9
         },
         "monsters": [
-            "?"
+            "Flame Fury"
         ],
         "type": "Chest"
     },
@@ -125,7 +125,7 @@
             "minimum_stat": 9
         },
         "monsters": [
-            "?"
+            "Astral Trueshot"
         ],
         "type": "Boots"
     },
@@ -138,7 +138,7 @@
             "minimum_stat": 9
         },
         "monsters": [
-            "?"
+            "Mana Fury"
         ],
         "type": "Boots"
     },
@@ -151,7 +151,7 @@
             "minimum_stat": 9
         },
         "monsters": [
-            "?"
+            "Void Goliath"
         ],
         "type": "Boots"
     },
@@ -177,7 +177,7 @@
             "minimum_stat": 8
         },
         "monsters": [
-            "Mana fury"
+            "Mana Fury"
         ],
         "type": "Necklace"
     },
