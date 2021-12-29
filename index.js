@@ -16,7 +16,7 @@ const client = new Client({
 })
 
 client.on('ready', async () => {
-    //setBotPresence(client)
+    //setBotPresence(client) 
     client.user.setActivity({
         name: 'Mirage Realms',
         type: 'PLAYING'
