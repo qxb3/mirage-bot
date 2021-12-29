@@ -99,7 +99,7 @@
             "minimum_stat": 9
         },
         "monsters": [
-            ""
+            "Astral Trueshot"
         ],
         "type": "Chest"
     },
@@ -424,7 +424,7 @@
             "minimum_stat": 7
         },
         "monsters": [
-            "?"
+            "Hunter"
         ],
         "type": "Gloves"
     },
