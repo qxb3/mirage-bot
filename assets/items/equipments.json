@@ -99,7 +99,7 @@
             "minimum_stat": 9
         },
         "monsters": [
-            "?"
+            ""
         ],
         "type": "Chest"
     },
@@ -307,7 +307,7 @@
             "minimum_stat": 8
         },
         "monsters": [
-            "?"
+            "Flame Fury"
         ],
         "type": "Boots"
     },
