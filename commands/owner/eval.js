@@ -13,7 +13,8 @@ module.exports = {
     callback: async ({ message, args, prefix, instance, client }) => {
         const input = args.join(' ') || 'None'
         try {
-            const output = eval(await clean(input, client))
+            let output = eval(input)
+            output = await clean(output, client)
 
             if (output.length > 1024) output = 'The output is too large!'
             const embed = new MessageEmbed() 
