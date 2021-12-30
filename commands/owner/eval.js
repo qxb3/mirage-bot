@@ -10,9 +10,7 @@ module.exports = {
     guildOnly: true,
     hidden: true,
 
-    callback: async ({ message, args }) => {
-        if (message.channel.id !== '925857146439073822' || message.channel.id !== '917358099076120579') return
-
+    callback: async ({ message, args, prefix, instance }) => {
         const embed = new MessageEmbed()
             .setTimestamp()
             .setColor('GREEN')
@@ -37,8 +35,8 @@ module.exports = {
 
         if (output.length > 1024) output = 'The output is too large!'
         embed.addFields([
-            { name: ':inbox_tray:INPUT', value: quote(input) },
-            { name: ':outbox_tray:OUTPUT', value: quote(output) }
+            { name: 'INPUT:inbox_tray:', value: quote(input) },
+            { name: 'OUTPUT:outbox_tray:', value: quote(output) }
         ])
 
         await message.channel.send({
