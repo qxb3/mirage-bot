@@ -10,7 +10,7 @@ module.exports = {
     guildOnly: true,
     hidden: true,
 
-    callback: async ({ message, args, prefix, instance }) => {
+    callback: async ({ message, args, prefix, instance, client }) => {
         const embed = new MessageEmbed()
             .setTimestamp()
             .setColor('GREEN')
