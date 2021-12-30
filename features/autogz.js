@@ -5,7 +5,7 @@ module.exports = (client) => {
     client.on('messageCreate', async (message) => {
         const attachment = message?.attachments.first()
 
-        if (attachment?.contentType.startsWith('image')) {
+        if (attachment?.contentType.startsWith('image') || attachment?.contentType.startsWith('video')) {
             const data = await autoGzSchema.findOne({ _id: message.guild.id })
             if (!data) return
 
