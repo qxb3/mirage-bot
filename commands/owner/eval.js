@@ -10,7 +10,7 @@ module.exports = {
     guildOnly: true,
     hidden: true,
 
-    callback: async ({ message, args, prefix, instance, client }) => {
+    callback: async ({ message, args, prefix, guild, instance, client }) => {
         const input = args.join(' ') || 'None'
         try {
             let output = eval(input)
