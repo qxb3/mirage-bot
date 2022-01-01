@@ -42,7 +42,7 @@ module.exports = {
 
             embed.setThumbnail('attachment://meat.png')
             embed.addFields([
-                { name: '❯ Materials', value: foods },
+                { name: '❯ Foods', value: foods },
                 usage
             ])
 
