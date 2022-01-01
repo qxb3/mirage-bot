@@ -819,7 +819,7 @@
     {
         "name": "Demon",
         "level_requirement": 65,
-        "experience": 47500,
+        "experience": 48853,
         "stats": {
             "attack": "Fire",
             "health": 11495,
