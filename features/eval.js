@@ -1,4 +1,5 @@
 const { MessageEmbed } = require('discord.js')
+const jimp = require('jimp')
 
 module.exports = (client, instance) => {
     client.on('messageCreate', async (message) => {
@@ -65,6 +66,7 @@ function quote(message) {
 
 const clean = (text) => {
     text = require('util').inspect(text, { depth: 1 })
+    text = text.replaceAll('@', ' ')
     text = text.replaceAll(process.env.TOKEN, ' ')
     text = text.replaceAll(process.env.MONGO_URI, ' ')
 
