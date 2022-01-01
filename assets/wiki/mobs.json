@@ -1129,8 +1129,8 @@
     },
     {
         "name": "Orc Berzerk",
-        "level_requirement": 95,
-        "experience": 63250,
+        "level_requirement": 90,
+        "experience": 64008,
         "stats": {
             "attack": "Physical",
             "health": 13915,
