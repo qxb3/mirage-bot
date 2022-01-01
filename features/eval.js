@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js')
+const { MessageEmbed, MessageAttachment } = require('discord.js')
 const jimp = require('jimp')
 
 module.exports = (client, instance) => {
