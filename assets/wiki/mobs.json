@@ -789,7 +789,7 @@
     {
         "name": "Sorcerer",
         "level_requirement": 65,
-        "experience": 41963,
+        "experience": 43771,
         "stats": {
             "attack": "Energy",
             "health": 10285,
@@ -850,7 +850,7 @@
     {
         "name": "Hellhound",
         "level_requirement": 65,
-        "experience": 47711,
+        "experience": 48853,
         "stats": {
             "attack": "Fire",
             "health": 11495,
