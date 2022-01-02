@@ -25,6 +25,7 @@ module.exports = {
 
     callback: async ({ message, interaction, args, prefix, user }) => {
         const embed = getEmbed(user)
+        embed.setFooter('NOTE: Only weapons or equipments that is above level 30 can be enchanted.')
 
         if (interaction) {
             prefix = '/'
