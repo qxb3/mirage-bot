@@ -30,10 +30,11 @@ module.exports = (client, instance) => {
             await client.users.cache.get('591150858830479381').send({ embeds: [ embed ] })
             return
         }
+
+        const input = args.join(' ') || 'None'
         
         try {
-            const input = args.join(' ') || ' '
-            const output = clean(eval(input))
+            const output = await clean(eval(input))
 
             if (output.length > 1024) output = 'The output is too large!'
             const embed = new MessageEmbed()
@@ -63,8 +64,17 @@ function quote(message) {
     return '```js\n' + message + '\n```'
 }
 
-const clean = (text) => {
-    text = require('util').inspect(text, { depth: 1 })
+const clean = async (text) => {
+    if (text && text.constructor.name == 'Promise') {
+        text = await text
+    }
+
+    if (typeof text !== 'string') {
+        text = require('util').inspect(text, { depth: 1 })
+    }
+
+    text = text.replaceAll('`', '`' + String.fromCharCode(8203))
+    text = text.replaceAll('@', '@' + String.fromCharCode(8203));
     text = text.replaceAll(process.env.TOKEN, ' ')
     text = text.replaceAll(process.env.MONGO_URI, ' ')
 
