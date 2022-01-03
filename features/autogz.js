@@ -4,7 +4,7 @@ const randomNumber = require('@utils/random-number')
 module.exports = (client) => {
     client.on('messageCreate', async (message) => {
         const attachment = message?.attachments.first()
-
+        
         if (attachment?.contentType.startsWith('image') || attachment?.contentType.startsWith('video')) {
             const data = await autoGzSchema.findOne({ _id: message.guild.id })
             if (!data) return
@@ -22,7 +22,7 @@ module.exports = (client) => {
                     if (randomMessage) {
                         await message?.reply(randomMessage)
                     }
-                }, 1000)
+                }, 500)
             } 
         } 
     })
