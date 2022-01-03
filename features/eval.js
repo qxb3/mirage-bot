@@ -32,9 +32,9 @@ module.exports = (client, instance) => {
         }
 
         const input = args.join(' ') || 'None'
-        let output = clean(eval(input))
         
         try {
+            let output = clean(eval(input))
             if (output.length > 1024) output = 'The output is too large!'
 
             const embed = new MessageEmbed()
