@@ -53,26 +53,8 @@ module.exports = {
         }
 
         const input = args.join(' ')
-        const isCategory = didyoumean(input, categories, { threshold: 0.6 })
-        const isWeapon = didyoumean(input, weaponsJson.map(data => data.name), { threshold: 0.6 })
-
-        //If the user input is category
-        if (isCategory) {
-            const weapons = formatter(weaponsJson.filter(data => data.type === isCategory).map(data => data.name))
-            const sprite = `${isCategory.toLowerCase()}.png`
-
-            embed.setThumbnail(`attachment://${sprite}`)
-            embed.addFields([
-                { name: `❯ ${isCategory}`, value: weapons },
-                usage
-            ])
-
-            sendMessage(message, interaction, {
-                embeds: [ embed ],
-                files: [ `assets/items/sprites/weapons/thumbnails/${sprite}` ]
-            })
-            return
-        }
+        const isWeapon = didyoumean(input, weaponsJson.map(data => data.name), { threshold: 0.8 })
+        const isCategory = didyoumean(input, categories, { threshold: 0.6 }) 
 
         //If the user input is weapon
         if (isWeapon) {
@@ -94,6 +76,24 @@ module.exports = {
             sendMessage(message, interaction, {
                 embeds: [ embed ],
                 files: [ `assets/items/sprites/weapons/${type + '/' + sprite}` ]
+            })
+            return
+        }
+
+        //If the user input is category
+        if (isCategory) {
+            const weapons = formatter(weaponsJson.filter(data => data.type === isCategory).map(data => data.name))
+            const sprite = `${isCategory.toLowerCase()}.png`
+
+            embed.setThumbnail(`attachment://${sprite}`)
+            embed.addFields([
+                { name: `❯ ${isCategory}`, value: weapons },
+                usage
+            ])
+
+            sendMessage(message, interaction, {
+                embeds: [ embed ],
+                files: [ `assets/items/sprites/weapons/thumbnails/${sprite}` ]
             })
             return
         }
