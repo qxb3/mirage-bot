@@ -32,11 +32,11 @@ module.exports = (client, instance) => {
         }
 
         const input = args.join(' ') || 'None'
+        let output = clean(eval(input))
         
         try {
-            const output = await clean(eval(input))
-
             if (output.length > 1024) output = 'The output is too large!'
+
             const embed = new MessageEmbed()
                 .addFields([
                     { name: 'INPUT:inbox_tray:', value: quote(input) },
@@ -64,10 +64,10 @@ function quote(message) {
     return '```js\n' + message + '\n```'
 }
 
-const clean = async (text) => {
-    if (text && text.constructor.name == 'Promise') {
+const clean = (text) => {
+    /*if (text && text.constructor.name == 'Promise') {
         text = await text
-    }
+    }*/
 
     if (typeof text !== 'string') {
         text = require('util').inspect(text, { depth: 1 })
