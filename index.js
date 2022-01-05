@@ -13,32 +13,11 @@ const client = new Client({
     ]
 })
 
-function setBotActivity(client) {
+client.on('ready', () => {
     client.user.setActivity({
         name: 'Mirage Realms',
         type: 'PLAYING'
     })
-}
-
-function updateStats(client) {
-    if (process.env.PRODUCTION === 'false') return
-
-    const guild = client.guilds.cache.get('811195710065082378')
-    const guilds = client.guilds.cache
-    setInterval(() => {
-        let users = 0
-        guilds.forEach((guild) => {
-            users += guild.memberCount
-        })
-
-        guild.channels.cache.at(0).setName(`Servers: ${client.guilds.cache.size}`)
-        guild.channels.cache.at(1).setName(`Users: ${users}`)
-    }, 1000 * 30)
-}
-
-client.on('ready', () => {
-    setBotActivity(client)
-    updateStats(client)
 
     new WokCommands(client, {
         commandDir: path.join(__dirname, './commands'), 
