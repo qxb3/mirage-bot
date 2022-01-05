@@ -24,7 +24,6 @@ function updateStats(client) {
     if (process.env.PRODUCTION === 'false') return
 
     const guild = client.guilds.cache.get('811195710065082378')
-    const category = guild.channels.cache.get('928086783261024266')
     const guilds = client.guilds.cache
     setInterval(() => {
         let users = 0
@@ -32,8 +31,8 @@ function updateStats(client) {
             users += guild.memberCount
         })
 
-        category.children.at(0).setName(`Servers: ${client.guilds.cache.size}`)
-        category.children.at(1).setName(`Users: ${users}`)
+        guild.channels.at(0).setName(`Servers: ${client.guilds.cache.size}`)
+        guild.channels.at(1).setName(`Users: ${users}`)
     }, 1000 * 30)
 }
 
