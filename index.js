@@ -31,8 +31,8 @@ function updateStats(client) {
             users += guild.memberCount
         })
 
-        guild.channels.at(0).setName(`Servers: ${client.guilds.cache.size}`)
-        guild.channels.at(1).setName(`Users: ${users}`)
+        guild.channels.cache.at(0).setName(`Servers: ${client.guilds.cache.size}`)
+        guild.channels.cache.at(1).setName(`Users: ${users}`)
     }, 1000 * 30)
 }
 
