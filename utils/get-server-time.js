@@ -18,6 +18,14 @@ function convertTime12to24(time12h) {
     hours = '00';
   }
 
+  if (hours.length === 2) {
+    hours = `0${hours}`
+  }
+
+  if (minutes.length === 2) {
+    minutes = `0${minutes}`
+  }
+
   if (modifier === 'PM') {
     hours = parseInt(hours, 10) + 12;
   }
