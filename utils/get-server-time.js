@@ -18,11 +18,11 @@ function convertTime12to24(time12h) {
     hours = '00';
   }
 
-  if (hours.length === 2) {
+  if (hours.length === 1) {
     hours = `0${hours}`
   }
 
-  if (minutes.length === 2) {
+  if (minutes.length === 1) {
     minutes = `0${minutes}`
   }
 
