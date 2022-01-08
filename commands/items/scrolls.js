@@ -68,7 +68,7 @@ module.exports = {
                 { name: '❯ In Game Price', value: `${scroll.ingame_price} Gold` },
                 { name: '❯ Effects', value: formatter(scroll.effects) },
             ])
-            embed.setFooter('NOTE: Prices might not be accurate.')
+            embed.setFooter({ text: 'NOTE: Prices might not be accurate.' })
 
             sendMessage(message, interaction, {
                 embeds: [ embed ],

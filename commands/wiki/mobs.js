@@ -76,7 +76,7 @@ module.exports = {
                 { name: '❯ Resistance', value: formatter(mob.resistances) },
                 { name: '❯ Loots', value: formatter(mob.loots) }
             ])
-            embed.setFooter('NOTE: This mob info might not be accurate.')
+            embed.setFooter({ text: 'NOTE: This mob info might not be accurate.' })
 
             sendMessage(message, interaction, {
                 embeds: [ embed ],
