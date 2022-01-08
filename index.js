@@ -13,12 +13,29 @@ const client = new Client({
     ]
 })
 
-client.on('ready', () => {
-    client.user.setActivity({
-        name: 'Mirage Realms',
-        type: 'PLAYING'
-    })
+function setBotActivity() {
+    let index = 0
+    setInterval(() => {
+        let users = 0
+        client.guilds.cache.forEach((guild) => users += guild.memberCount)
+        const activities = [
+            { name: 'Mirage Realms', type: 'PLAYING' },
+            { name: 'Noobs get killed by imps', type: 'WATCHING' },
+            { name: `?help on ${client.guilds.cache.size} servers`, type: 'WATCHING' },
+            { name: `?help on ${users} users`, type: 'WATCHING' }
+        ]
 
+        client.user.setActivity(activities[index])
+        index++
+        if (index >= activities.length) {
+            index = 0
+        }
+    }, 1000 * 60) 
+}
+
+client.on('ready', () => {
+    setBotActivity()
+    
     new WokCommands(client, {
         commandDir: path.join(__dirname, './commands'), 
         featuresDir: path.join(__dirname, './features'),
