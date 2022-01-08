@@ -64,17 +64,18 @@ module.exports = {
             const stats = `• Attack: ${mob.stats.attack}\n` +
                           `• Health: ${mob.stats.health}\n` +
                           `• Skills: ${mob.stats.skills.join(', ')}\n` +
-                          `• Aoe's: ${mob.stats.aoe.join(', ')}`
+                          `• Aoe's: ${mob.stats.aoes.join(', ')}`
 
             embed.setThumbnail(`attachment://${sprite}`)
             embed.addFields([
                 { name: '❯ Name', value: mob.name },
                 { name: '❯ Level requirement', value: `Level ${mob.level_requirement}` },
-                { name: '❯ Experience', value: `${mob.experience} Exp` },
+                { name: '❯ Experience', value: `**Without Event:** ${mob.normal_experience} Exp\n**With Event:** ${mob.event_experience} Exp` },
                 { name: '❯ Stats', value: stats },
                 { name: '❯ Resistance', value: formatter(mob.resistances) },
                 { name: '❯ Loots', value: formatter(mob.loots) }
             ])
+            embed.setFooter('NOTE: This mob info might not be accurate.')
 
             sendMessage(message, interaction, {
                 embeds: [ embed ],
