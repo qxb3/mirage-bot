@@ -1,4 +1,5 @@
 const { MessageAttachment } = require('discord.js')
+
 const logSchema = require('@models/log-schema')
 const ignoreCase = require('ignore-case')
 
@@ -7,89 +8,77 @@ module.exports = {
     description: 'Get the bot logs.',
     aliases: ['log'],
 
-    slash: true,
     testOnly: true,
     ownerOnly: true,
     
     expectedArgs: '<guild-id>',
-    options: [
-        {
-            name: 'guild-id',
-            description: 'The guild id of the server you want to check',
-            requred: false,
-            type: 3
-        }
-    ],
 
-    callback: async ({ interaction, args }) => {
+    callback: async ({ message, args }) => {
         //List the servers that has logs
         if (!args[0]) {
-            await interaction.reply({ content: `Fetching servers that has logs`, ephemeral: true, fetchReply: true }).then(async () => {
-                await logSchema.find({}, (err, data) => {
-                    if (err) throw err
+            await message.reply(`Fetching servers that has logs`).then(async (reply) => {
+                const data = await logSchema.find({})
+                if (data) {
+                    let servers = ''
+                    data.forEach(server => {
+                        servers += `Name: ${server.guildName}\n` +
+                            `GuildID: ${server.guildId}\n` +
+                            `Logs: ${server.logs.length}\n\n` 
+                    }) 
 
-                    if (data) {
-                        let servers = ''
-                        data.forEach(server => {
-                            servers += `Name: ${server.guildName}\n` +
-                                `GuildID: ${server.guildId}\n` +
-                                `Logs: ${server.logs.length}\n\n` 
-                        }) 
+                    reply.edit('`❯ Server logs\n' + servers + '❯ Usage\n/logs <server-id>\n/logs all`')
+                    return
+                }
 
-                        interaction.editReply({ content: '`❯ Server logs\n' + servers + '❯ Usage\n/logs <server-id>\n/logs all`', ephemeral: true })
-                    } else {
-                        interaction.editReply({ content: 'No logs found', ephemeral: true })
-                    }
-                }).clone().catch(err => console.error(err))
+                reply.edit('No logs found.')
             })
             return
         }
 
         //List the logs on all server
         if (ignoreCase.equals(args[0], 'all')) {
-            await interaction.reply({ content: `Fetching servers that has logs`, ephemeral: true, fetchReply: true }).then(async () => {
-                await logSchema.find({}, (err, data) => {
-                    if (err) throw err
+            await message.reply(`Fetching servers that has logs`).then(async (reply) => {
+                const data = await logSchema.find({})
+                if (data) {
+                    let logs = ''
+                    data.forEach(server => {
+                        logs += `Name: ${server.guildName}\n` +
+                            `GuildID: ${server.guildId}\n`
 
-                    if (data)  {
-                        let logs = ''
-                        data.forEach(server => {
-                            logs += `Name: ${server.guildName}\n` +
-                                    `GuildID: ${server.guildId}\n`
-
-                            server.logs.forEach(log => {
-                                logs += log.date + ' : User: ' + log.user + ' used command: ' + log.command + '\n'
-                            })
-                            logs += '\n\n\n'
+                        server.logs.forEach(log => {
+                            logs += log.date + ' : User: ' + log.user + ' used command: ' + log.command + '\n'
                         })
+                        logs += '\n\n\n'
+                    })
 
-                        const attachment = new MessageAttachment(Buffer.from(logs, 'utf-8'), `logs.txt`)
-                        interaction.editReply({ ephemeral: true, files: [ attachment ] })
-                    } else {
-                        interaction.editReply({ content: 'No logs found', ephemeral: true })
-                    }
-                }).clone().catch(err => console.error(err))
+                    const attachment = new MessageAttachment(Buffer.from(logs, 'utf-8'), `logs.txt`)
+                    reply.edit({ files: [ attachment ] })
+                    return
+                }
+
+                reply.edit('No logs found.')
             })
             return
         }
 
         //Get the logs on a specific server
-        await interaction.reply({ content: `Fetching logs from ${args[0]}`, ephemeral: true, fetchReply: true }).then(async () => {
-            await logSchema.findOne({ _id: args[0] }, (err, data) => {
-                if (err) throw err
+        await message.reply(`Fetching logs from ${args[0]}`).then(async (reply) => {
+            const data = await logSchema.findOne({ _id: args.join(' ') })
 
-                if (data) {
-                    let logs = ''
-                    data.logs.forEach(log => {
-                        logs += log.date + ' : User: ' + log.user + ' used command: ' + log.command + '\n'
-                    })
+            if (data) {
+                let logs = ''
+                data.logs.forEach(log => {
+                    logs += log.date + ' : User: ' + log.user + ' used command: ' + log.command + '\n'
+                })
 
-                    const attachment = new MessageAttachment(Buffer.from(logs, 'utf-8'), `${data.guildName}-logs.txt`)
-                    interaction.editReply({ ephemeral: true, files: [ attachment ] })
-                } else {
-                    interaction.editReply({ content: 'Server not found', ephemeral: true, })
-                } 
-            }).clone().catch(err => console.error(err)) 
+                const attachment = new MessageAttachment(Buffer.from(logs, 'utf-8'), `${data.guildName}-logs.txt`)
+                reply.edit({ files: [ attachment ] })
+                return
+            }
+
+            reply.edit('No logs found on this server.')
         })
-    }
+    },
+
+    error: () => {}
 }

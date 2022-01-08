@@ -6,11 +6,10 @@ module.exports = {
     description: 'Get servers bot joined to.',
     aliases: ['server'],
 
-    slash: true,
     testOnly: true,
     ownerOnly: true,
 
-    callback: async ({ message, interaction, client }) => {
+    callback: async ({ message, client }) => {
         const servers = []
         client.guilds.cache.forEach(guild => {
             servers.push({
@@ -25,11 +24,8 @@ module.exports = {
             .addFields(servers)
             .setColor('GREEN')
 
-        sendMessage(message, interaction, {
-            embeds: [
-                embed
-            ],
-            ephemeral: true
-        })
-    }
+        message.reply({ embeds: [ embed ] }) 
+    },
+
+    error: () => {}
 }
