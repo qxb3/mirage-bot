@@ -1055,7 +1055,7 @@
     {
         "name": "Wasp",
         "level_requirement": 85,
-        "experience": 57200,
+        "experience": 59895,
         "stats": {
             "attack": "Poison",
             "health": 13310,
@@ -1072,6 +1072,7 @@
         "loots": [
             "Copper (1132-2263)",
             "Indigo Sandals",
+            "Indigo Cape",
             "Platinum Boots",
             "Green Goo",
             "Wasp Stinger",
