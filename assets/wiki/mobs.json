@@ -2,8 +2,7 @@
     {
         "name": "Butterfly",
         "level_requirement": 0,
-        "normal_experience": 5,
-        "event_experience": 6,
+        "experience": 5,
         "stats": {
             "attack": "Physical",
             "health": 5,
@@ -24,8 +23,7 @@
     {
         "name": "Rat",
         "level_requirement": 0,
-        "normal_experience": 10,
-        "event_experience": 12,
+        "experience": 10,
         "stats": {
             "attack": "Physical",
             "health": 25,
@@ -46,8 +44,7 @@
     {
         "name": "Troll",
         "level_requirement": 0,
-        "normal_experience": 50,
-        "event_experience": 62,
+        "experience": 50,
         "stats": {
             "attack": "Physical",
             "health": 65,
@@ -73,8 +70,7 @@
     {
         "name": "Troll Mage",
         "level_requirement": 0,
-        "normal_experience": 70,
-        "event_experience": 87,
+        "experience": 70,
         "stats": {
             "attack": "Mana",
             "health": 75,
@@ -107,8 +103,7 @@
     {
         "name": "Troll Ranger",
         "level_requirement": 0,
-        "normal_experience": 80,
-        "event_experience": 100,
+        "experience": 80,
         "stats": {
             "attack": "Physical",
             "health": 85,
@@ -137,8 +132,7 @@
     {
         "name": "Troll Knight",
         "level_requirement": 0,
-        "normal_experience": 90,
-        "event_experience": 112,
+        "experience": 90,
         "stats": {
             "attack": "Physical",
             "health": 95,
@@ -168,8 +162,7 @@
     {
         "name": "Troll Warlord",
         "level_requirement": 0,
-        "normal_experience": 200,
-        "event_experience": 250,
+        "experience": 200,
         "stats": {
             "attack": "Physical",
             "health": 130,
@@ -200,8 +193,7 @@
     {
         "name": "Cyclops",
         "level_requirement": 0,
-        "normal_experience": 320,
-        "event_experience": 400,
+        "experience": 320,
         "stats": {
             "attack": "Physical",
             "health": 225,
@@ -228,8 +220,7 @@
     {
         "name": "Spider",
         "level_requirement": 5,
-        "normal_experience": 400,
-        "event_experience": 500,
+        "experience": 400,
         "stats": {
             "attack": "Poison",
             "health": 240,
@@ -258,8 +249,7 @@
     {
         "name": "Widow",
         "level_requirement": 5,
-        "normal_experience": 800,
-        "event_experience": 1000,
+        "experience": 800,
         "stats": {
             "attack": "Poison",
             "health": 390,
@@ -287,8 +277,7 @@
     {
         "name": "Crab",
         "level_requirement": 5,
-        "normal_experience": 540,
-        "event_experience": 675,
+        "experience": 540,
         "stats": {
             "attack": "Physical",
             "health": 265,
@@ -310,8 +299,7 @@
     {
         "name": "Deerstalker",
         "level_requirement": 5,
-        "normal_experience": 600,
-        "event_experience": 750,
+        "experience": 600,
         "stats": {
             "attack": "Physical",
             "health": 290,
@@ -340,8 +328,7 @@
     {
         "name": "Slime",
         "level_requirement": 5,
-        "normal_experience": 1269,
-        "event_experience": 1586,
+        "experience": 1269,
         "stats": {
             "attack": "Poison",
             "health": 605,
@@ -370,8 +357,7 @@
     {
         "name": "Defiler",
         "level_requirement": 5,
-        "normal_experience": 2500,
-        "event_experience": 3125,
+        "experience": 2500,
         "stats": {
             "attack": "Poison",
             "health": 1210,
@@ -399,8 +385,7 @@
     {
         "name": "Firewyrm",
         "level_requirement": 10,
-        "normal_experience": 1000,
-        "event_experience": 1250,
+        "experience": 1000,
         "stats": {
             "attack": "Fire",
             "health": 480,
@@ -430,8 +415,7 @@
     {
         "name": "Cyclops Mystic",
         "level_requirement": 15,
-        "normal_experience": 1909,
-        "event_experience": 2386,
+        "experience": 1909,
         "stats": {
             "attack": "Mana",
             "health": 905,
@@ -461,8 +445,7 @@
     {
         "name": "Imp",
         "level_requirement": 25,
-        "normal_experience": 3238,
-        "event_experience": 4047,
+        "experience": 3238,
         "stats": {
             "attack": "Physical",
             "health": 1510,
@@ -489,8 +472,7 @@
     {
         "name": "Imp Ranger",
         "level_requirement": 25,
-        "normal_experience": 3507,
-        "event_experience": 4383,
+        "experience": 3507,
         "stats": {
             "attack": "Fire",
             "health": 1630,
@@ -519,8 +501,7 @@
     {
         "name": "Imp Knight",
         "level_requirement": 25,
-        "normal_experience": 3796,
-        "event_experience": 4745,
+        "experience": 3796,
         "stats": {
             "attack": "Fire",
             "health": 1750,
@@ -549,8 +530,7 @@
     {
         "name": "Imp Mage",
         "level_requirement": 25,
-        "normal_experience": 3954,
-        "event_experience": 4942,
+        "experience": 3954,
         "stats": {
             "attack": "Mana",
             "health": 1815,
@@ -581,8 +561,7 @@
     {
         "name": "Harbinger",
         "level_requirement": 25,
-        "normal_experience": 9982,
-        "event_experience": 12477,
+        "experience": 9982,
         "stats": {
             "attack": "Fire",
             "health": 3630,
@@ -614,8 +593,7 @@
     {
         "name": "Fire Slime",
         "level_requirement": 35,
-        "normal_experience": 12493,
-        "event_experience": 15616,
+        "experience": 12493,
         "stats": {
             "attack": "Fire",
             "health": 4235,
@@ -643,8 +621,7 @@
     {
         "name": "Gastropod",
         "level_requirement": 35,
-        "normal_experience": 14036,
-        "event_experience": 17545,
+        "experience": 14036,
         "stats": {
             "attack": "Energy",
             "health": 4840,
@@ -671,8 +648,7 @@
     {
         "name": "Minotaur",
         "level_requirement": 35,
-        "normal_experience": 15488,
-        "event_experience": 19360,
+        "experience": 15488,
         "stats": {
             "attack": "Physical",
             "health": 4840,
@@ -700,8 +676,7 @@
     {
         "name": "Ghost",
         "level_requirement": 45,
-        "normal_experience": 12750,
-        "event_experience": 15937,
+        "experience": 12750,
         "stats": {
             "attack": "Energy",
             "health": 5140,
@@ -727,8 +702,7 @@
     {
         "name": "Ice Slime",
         "level_requirement": 45,
-        "normal_experience": 20267,
-        "event_experience": 25333,
+        "experience": 20267,
         "stats": {
             "attack": "Ice",
             "health": 6050,
@@ -758,8 +732,7 @@
     {
         "name": "Behemoth",
         "level_requirement": 55,
-        "normal_experience": 37207,
-        "event_experience": 46508,
+        "experience": 37207,
         "stats": {
             "attack": "Physical",
             "health": 9075,
@@ -788,8 +761,7 @@
     {
         "name": "Revenant",
         "level_requirement": 55,
-        "normal_experience": 41830,
-        "event_experience": 52287,
+        "experience": 41830,
         "stats": {
             "attack": "Death",
             "health": 10285,
@@ -817,8 +789,7 @@
     {
         "name": "Sorcerer",
         "level_requirement": 65,
-        "normal_experience": 43771,
-        "event_experience": 54713,
+        "experience": 43771,
         "stats": {
             "attack": "Energy",
             "health": 10285,
@@ -848,8 +819,7 @@
     {
         "name": "Demon",
         "level_requirement": 65,
-        "normal_experience": 48853,
-        "event_experience": 61066,
+        "experience": 48853,
         "stats": {
             "attack": "Fire",
             "health": 11495,
@@ -880,8 +850,7 @@
     {
         "name": "Hellhound",
         "level_requirement": 65,
-        "normal_experience": 48853,
-        "event_experience": 61066,
+        "experience": 48853,
         "stats": {
             "attack": "Fire",
             "health": 11495,
@@ -908,8 +877,7 @@
     {
         "name": "Shadow",
         "level_requirement": 55,
-        "normal_experience": 42840,
-        "event_experience": 53550,
+        "experience": 42840,
         "stats": {
             "attack": "Death",
             "health": 13915,
@@ -937,8 +905,7 @@
     {
         "name": "Orc",
         "level_requirement": 75,
-        "normal_experience": 44666,
-        "event_experience": 55832,
+        "experience": 44666,
         "stats": {
             "attack": "Physical",
             "health": 10890,
@@ -964,8 +931,7 @@
     {
         "name": "Orc Worker",
         "level_requirement": 75,
-        "normal_experience": 50714,
-        "event_experience": 63392,
+        "experience": 50714,
         "stats": {
             "attack": "Physical",
             "health": 12100,
@@ -989,8 +955,7 @@
     {
         "name": "Orc Mage",
         "level_requirement": 75,
-        "normal_experience": 56466,
-        "event_experience": 70582,
+        "experience": 56466,
         "stats": {
             "attack": "ManaDeath",
             "health": 13310,
@@ -1016,8 +981,7 @@
     {
         "name": "Orc Warrior",
         "level_requirement": 75,
-        "normal_experience": 61093,
-        "event_experience": 76366,
+        "experience": 61093,
         "stats": {
             "attack": "Physical",
             "health": 13915,
@@ -1043,8 +1007,7 @@
     {
         "name": "Thief",
         "level_requirement": 85,
-        "normal_experience": 50857,
-        "event_experience": 63571,
+        "experience": 50857,
         "stats": {
             "attack": "Physical",
             "health": 12100,
@@ -1067,8 +1030,7 @@
     {
         "name": "Bandit",
         "level_requirement": 85,
-        "normal_experience": 53549,
-        "event_experience": 66936,
+        "experience": 53549,
         "stats": {
             "attack": "Physical",
             "health": 12705,
@@ -1093,8 +1055,7 @@
     {
         "name": "Wasp",
         "level_requirement": 85,
-        "normal_experience": 57200,
-        "event_experience": 71500,
+        "experience": 57200,
         "stats": {
             "attack": "Poison",
             "health": 13310,
@@ -1112,7 +1073,6 @@
             "Copper (1132-2263)",
             "Indigo Sandals",
             "Platinum Boots",
-            "Indigo Cape",
             "Green Goo",
             "Wasp Stinger",
             "Wasp Wing"
@@ -1121,8 +1081,7 @@
     {
         "name": "Hunter",
         "level_requirement": 85,
-        "normal_experience": 56466,
-        "event_experience": 70582,
+        "experience": 56466,
         "stats": {
             "attack": "Physical",
             "health": 13310,
@@ -1147,8 +1106,7 @@
     {
         "name": "Wild Soldier",
         "level_requirement": 85,
-        "normal_experience": 61093,
-        "event_experience": 76366,
+        "experience": 61093,
         "stats": {
             "attack": "Physical",
             "health": 13915,
@@ -1172,8 +1130,7 @@
     {
         "name": "Orc Berzerk",
         "level_requirement": 90,
-        "normal_experience": 64008,
-        "event_experience": 80010,
+        "experience": 64008,
         "stats": {
             "attack": "Physical",
             "health": 13915,
@@ -1198,8 +1155,7 @@
     {
         "name": "Shambler",
         "level_requirement": 95,
-        "normal_experience": 83999,
-        "event_experience": 104998,
+        "experience": 83999,
         "stats": {
             "attack": "Physical",
             "health": 18150,
@@ -1224,8 +1180,7 @@
     {
         "name": "Bloodseeker",
         "level_requirement": 95,
-        "normal_experience": 83999,
-        "event_experience": 104998,
+        "experience": 83999,
         "stats": {
             "attack": "Physical",
             "health": 18150,
@@ -1251,8 +1206,7 @@
     {
         "name": "Slimespitter",
         "level_requirement": 95,
-        "normal_experience": 83999,
-        "event_experience": 104998,
+        "experience": 83999,
         "stats": {
             "attack": "Poison",
             "health": 18150,
@@ -1277,8 +1231,7 @@
     {
         "name": "Priestess",
         "level_requirement": 100,
-        "normal_experience": 101111,
-        "event_experience": 126388,
+        "experience": 101111,
         "stats": {
             "attack": "Ice",
             "health": 21175,
@@ -1304,8 +1257,7 @@
     {
         "name": "Hero",
         "level_requirement": 100,
-        "normal_experience": 101111,
-        "event_experience": 126388,
+        "experience": 101111,
         "stats": {
             "attack": "Energy",
             "health": 21175,
@@ -1333,8 +1285,7 @@
     {
         "name": "Necromancer",
         "level_requirement": 100,
-        "normal_experience": 101111,
-        "event_experience": 126388,
+        "experience": 101111,
         "stats": {
             "attack": "Death",
             "health": 21175,
@@ -1361,8 +1312,7 @@
     {
         "name": "Flame Fury",
         "level_requirement": 110,
-        "normal_experience": 120000,
-        "event_experience": 150000,
+        "experience": 120000,
         "stats": {
             "attack": "Fire",
             "health": 24200,
@@ -1393,8 +1343,7 @@
     {
         "name": "Mana Fury",
         "level_requirement": 110,
-        "normal_experience": 120000,
-        "event_experience": 150000,
+        "experience": 120000,
         "stats": {
             "attack": "Mana",
             "health": 24200,
@@ -1425,8 +1374,7 @@
     {
         "name": "Frost Fury",
         "level_requirement": 110,
-        "normal_experience": 120000,
-        "event_experience": 150000,
+        "experience": 120000,
         "stats": {
             "attack": "Ice",
             "health": 24200,
@@ -1456,8 +1404,7 @@
     {
         "name": "Void Goliath",
         "level_requirement": 120,
-        "normal_experience": 139500,
-        "event_experience": 174375,
+        "experience": 139500,
         "stats": {
             "attack": "Death",
             "health": 27225,
@@ -1482,8 +1429,7 @@
     {
         "name": "Astral Trueshot",
         "level_requirement": 120,
-        "normal_experience": 139500,
-        "event_experience": 174375,
+        "experience": 139500,
         "stats": {
             "attack": "Energy",
             "health": 27225,
@@ -1509,8 +1455,7 @@
     {
         "name": "Nether Slime",
         "level_requirement": 120,
-        "normal_experience": 139500,
-        "event_experience": 174375,
+        "experience": 139500,
         "stats": {
             "attack": "Physical",
             "health": 27225,
@@ -1536,8 +1481,7 @@
     {
         "name": "Angry Biscottsman",
         "level_requirement": 125,
-        "normal_experience": 1000000,
-        "event_experience": 1250000,
+        "experience": 1000000,
         "stats": {
             "attack": "Physical, Death",
             "health": 5000000,
@@ -1561,8 +1505,7 @@
     {
         "name": "Das Bug",
         "level_requirement": 1337,
-        "normal_experience": 0,
-        "event_experience": 0,
+        "experience": 0,
         "stats": {
             "attack": "Fire",
             "health": 1337,
@@ -1582,5 +1525,5 @@
             "Ban Hammer",
             "Liam's Blessing"
         ]
-    }
+    } 
 ]

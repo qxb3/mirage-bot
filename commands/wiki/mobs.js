@@ -61,6 +61,7 @@ module.exports = {
             const mob = mobsJson.find(data => data.name === isMob)
             const sprite = mob.name.replace(/'/, '').replaceAll(' ', '-').toLowerCase() + '.png'
 
+            const experience = `**Without Event**: ${mob.experience} Exp\n**With Event**: ${parseInt(1.25 * mob.experience)} Exp`
             const stats = `• Attack: ${mob.stats.attack}\n` +
                           `• Health: ${mob.stats.health}\n` +
                           `• Skills: ${mob.stats.skills.join(', ')}\n` +
@@ -70,7 +71,7 @@ module.exports = {
             embed.addFields([
                 { name: '❯ Name', value: mob.name },
                 { name: '❯ Level requirement', value: `Level ${mob.level_requirement}` },
-                { name: '❯ Experience', value: `**Without Event:** ${mob.normal_experience} Exp\n**With Event:** ${mob.event_experience} Exp` },
+                { name: '❯ Experience', value: experience },
                 { name: '❯ Stats', value: stats },
                 { name: '❯ Resistance', value: formatter(mob.resistances) },
                 { name: '❯ Loots', value: formatter(mob.loots) }
