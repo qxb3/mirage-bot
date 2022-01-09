@@ -49,7 +49,7 @@ function setBotActivity() {
         if (index >= activities.length) {
             index = 0
         }
-    }, 1000 * 60)
+    }, 1000 * 60) 
 }
 
 client.login(process.env.TOKEN)
