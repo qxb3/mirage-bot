@@ -32,7 +32,7 @@ class EvalUtils {
 
     static list() {
         return 'sendMessage(client, guildId, channelId, message)\n' +
-               'replyMessags(client, guildId, channelId, messageId, message)\n' +
+               'replyMessage(client, guildId, channelId, messageId, message)\n' +
                'getServersSize(client)\n' +
                'getUsersSize(client)\n' +
                'getTotalUsersSize(client)'
