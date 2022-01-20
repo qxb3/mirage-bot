@@ -3,7 +3,7 @@ require('dotenv').config()
 const { Client, Intents } = require('discord.js')
 
 const path = require('path')
-const WokCommands = require('wokcommands')
+const WokCommands = require('wokcommands') 
 
 const client = new Client({
     intents: [
