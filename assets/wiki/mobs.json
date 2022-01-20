@@ -676,7 +676,7 @@
     {
         "name": "Ghost",
         "level_requirement": 45,
-        "experience": 12750,
+        "experience": 16705,
         "stats": {
             "attack": "Energy",
             "health": 5140,
