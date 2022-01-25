@@ -1007,7 +1007,7 @@
     {
         "name": "Thief",
         "level_requirement": 85,
-        "experience": 50857,
+        "experience": 60500,
         "stats": {
             "attack": "Physical",
             "health": 12100,
@@ -1107,7 +1107,7 @@
     {
         "name": "Wild Soldier",
         "level_requirement": 85,
-        "experience": 61093,
+        "experience": 64008,
         "stats": {
             "attack": "Physical",
             "health": 13915,
