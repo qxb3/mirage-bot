@@ -61,7 +61,7 @@ module.exports = {
                 { name: '❯ Vocations', value: formatter(vocations) },
                 usage
             ])
-            
+
             sendMessage(message, interaction, {
                 embeds: [ embed ],
                 files: [ 'assets/icons/rules.png' ]
@@ -116,12 +116,13 @@ module.exports = {
             return
         }
 
-        if (vocation) { 
+        if (vocation) {
             const calc = calculateSkill(vocation, from, to, percent)
-            
+
             embed.setThumbnail('attachment://rules.png')
-            embed.addField('❯ Skill calculation', `${calc.skill_type} (Time): ${calc.time_hits}\n` +
-                                                  `Defence (Time): ${calc.time_defence}`)
+            embed.addField('❯ Skill calculation',
+                              `${calc.skill_type} (Time): ${calc.time_hits}\n` +
+                              `Defence (Time): ${calc.time_defence}`)
 
             sendMessage(message, interaction, {
                 embeds: [ embed ],

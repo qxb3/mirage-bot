@@ -61,9 +61,9 @@ module.exports = {
             const mob = mobsJson.find(data => data.name === isMob)
             const sprite = mob.name.replace(/'/, '').replaceAll(' ', '-').toLowerCase() + '.png'
 
-            const experience = `**Without Event**: ${mob.experience} Exp\n**With Event**: ${parseInt(1.25 * mob.experience)} Exp`
+            const experience = `**Normal**: ${mob.experience.toLocaleString()} Exp\n**Event**: ${parseInt(1.25 * mob.experience).toLocaleString()} Exp`
             const stats = `• Attack: ${mob.stats.attack}\n` +
-                          `• Health: ${mob.stats.health}\n` +
+                          `• Health: ${mob.stats.health.toLocaleString()}\n` +
                           `• Skills: ${mob.stats.skills.join(', ')}\n` +
                           `• Aoe's: ${mob.stats.aoes.join(', ')}`
 

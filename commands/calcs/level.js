@@ -10,7 +10,7 @@ module.exports = {
     slash: 'both',
 
     expectedArgs: '<from> <to> <mob-exp> <level-percent>',
-    options: [ 
+    options: [
         {
             name: 'from',
             description: 'The starting point of the skill.',
@@ -47,7 +47,7 @@ module.exports = {
         const usage = {
             name: '❯ Usage',
             value: `${prefix}level <from> <to> <mob-exp> <level-percent> - To perform a calculation.`
-        } 
+        }
 
         //If the user typed didn't meet the args requirements
         if (args.length !== 4) {
@@ -66,7 +66,7 @@ module.exports = {
         const from = parseInt(args[0])
         const to = parseInt(args[1])
         const mobExp = parseInt(args[2])
-        const percent = parseFloat(args[3].replaceAll('%', ''))
+        const percent = parseFloat(args[3].replace(/%/g, ''))
 
         //If from is greater than to which does not make sense
         if (from > to) {
@@ -99,8 +99,9 @@ module.exports = {
         const calc = calculateLevel(from, to, mobExp, percent)
 
         embed.setThumbnail('attachment://rules.png')
-        embed.addField('❯ Level calculation', `Exp required: ${parseInt(calc.exp)}\n` +
-                                              `Time: ${calc.time}`)
+        embed.addField('❯ Level calculation',
+                          `Exp required: ${calc.exp.toLocaleString()}\n` +
+                          `Time: ${calc.time}`)
 
         sendMessage(message, interaction, {
             embeds: [ embed ],

@@ -22,7 +22,7 @@ module.exports = {
         }
     ],
 
-    callback: async ({ message, interaction, args, prefix, user }) => { 
+    callback: async ({ message, interaction, args, prefix, user }) => {
         const categories = ['Sword', 'Axe', 'Mace', 'Shield', 'Bow', 'Arrow', 'Staff', 'Rod', 'Spellbook']
         const embed = getEmbed(user)
 
@@ -107,6 +107,6 @@ module.exports = {
         sendMessage(message, interaction, {
             embeds: [ embed ],
             files: [ `assets/items/sprites/weapons/thumbnails/sword.png` ]
-        }) 
+        })
     }
 }
