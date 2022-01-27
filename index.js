@@ -3,7 +3,7 @@ require('dotenv').config()
 const { Client, Intents } = require('discord.js')
 
 const path = require('path')
-const WokCommands = require('wokcommands') 
+const WokCommands = require('wokcommands')
 
 const client = new Client({
     intents: [
@@ -17,7 +17,7 @@ client.once('ready', () => {
     setBotActivity()
 
     new WokCommands(client, {
-        commandDir: path.join(__dirname, './commands'), 
+        commandDir: path.join(__dirname, './commands'),
         featuresDir: path.join(__dirname, './features'),
         mongoUri: process.env.MONGO_URI,
         testServers: ['811195710065082378', '917358098241445909'],
