@@ -21,7 +21,7 @@ client.once('ready', () => {
         featuresDir: path.join(__dirname, './features'),
         mongoUri: process.env.MONGO_URI,
         testServers: ['811195710065082378', '917358098241445909'],
-        botOwners: ['591150858830479381'], 
+        botOwners: ['591150858830479381'],
         disabledDefaultCommands: [
 
             'channelonly', 'command', 'language',
@@ -49,7 +49,7 @@ function setBotActivity() {
         if (index >= activities.length) {
             index = 0
         }
-    }, 1000 * 60) 
+    }, 1000 * 60)
 }
 
 client.login(process.env.TOKEN)
