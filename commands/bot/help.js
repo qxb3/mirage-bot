@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js')
+const { MessageEmbed, MessageActionRow, MessageButton } = require('discord.js')
 
 const ignoreCase = require('ignore-case')
 const fs = require('fs')
@@ -25,6 +25,14 @@ module.exports = {
             prefix = '/'
         }
 
+        const row = new MessageActionRow()
+            .addComponents(
+                new MessageButton()
+                    .setLabel('Support Server')
+                    .setURL('https://discord.gg/7PKhEk4NAe')
+                    .setStyle('LINK')
+            )
+
         //List the commands
         if (args.length === 0) {
             const embed = new MessageEmbed()
@@ -49,14 +57,15 @@ module.exports = {
             sendMessage(message, interaction, {
                 embeds: [ embed
                 ],
-                files: [ 'assets/icons/help.png' ]
+                files: [ 'assets/icons/help.png' ],
+                components: [ row ]
             })
             return
         }
 
         let code = 1
-        instance.commandHandler.commands.forEach((command) => { 
-            command.names.forEach((name) => { 
+        instance.commandHandler.commands.forEach((command) => {
+            command.names.forEach((name) => {
                 if (ignoreCase.equals(args.join(' '), name)) {
                     if (command.category !== 'Owner') {
                         code = 0
@@ -76,15 +85,16 @@ module.exports = {
 
                         sendMessage(message, interaction, {
                             embeds: [ embed ],
-                            files: [ 'assets/icons/info_blue.png' ]
+                            files: [ 'assets/icons/info_blue.png' ],
+                            components: [ row ]
                         })
-                    } 
+                    }
                 }
             })
         })
 
         //If the command name user typed did not exist
-        if (code == 1) { 
+        if (code == 1) {
             const embed = new MessageEmbed()
                 .setThumbnail('attachment://error.png')
                 .setDescription('Make sure the command name you typed is correct.')
