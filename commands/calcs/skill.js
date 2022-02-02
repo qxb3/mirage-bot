@@ -1,7 +1,7 @@
-const sendMessage = require('@utils/send-message')
-const formatter = require('@utils/formatter')
-const calculateSkill = require('@utils/calculate-skill')
-const getEmbed = require('@utils/get-embed')
+const { sendMessage, formatter } = require('@utils/utils')
+const { calculateSkill } = require('@utils/calcs')
+const { createEmbed } = require('@utils/responses')
+const { BrandingColors } = require('@utils/constants')
 
 const didyoumean = require('didyoumean2').default
 
@@ -9,7 +9,6 @@ module.exports = {
     category: 'Calcs',
     description: 'A command that will help you calculating skills.',
     aliases: ['skills'],
-
     slash: 'both',
 
     expectedArgs: '<vocation> <from> <to> <skill-percent>',
@@ -41,8 +40,7 @@ module.exports = {
     ],
 
     callback: async ({ message, interaction, args, prefix, user }) => {
-        const vocations = ['Knight', 'Ranger', 'Mage']
-        const embed = getEmbed(user)
+        const embed = createEmbed({ user })
 
         if (interaction) {
             prefix = '/'
@@ -54,6 +52,8 @@ module.exports = {
                    `${prefix}skill - To list all the calculation types.`
         }
 
+        const vocations = ['Knight', 'Ranger', 'Mage']
+
         //If user didn't put arguments
         if (args.length === 0) {
             embed.setThumbnail('attachment://rules.png')
@@ -62,7 +62,7 @@ module.exports = {
                 usage
             ])
 
-            sendMessage(message, interaction, {
+            await sendMessage(message, interaction, {
                 embeds: [ embed ],
                 files: [ 'assets/icons/rules.png' ]
             })
@@ -74,9 +74,9 @@ module.exports = {
             embed.setThumbnail('attachment://rules.png')
             embed.setDescription('You need to fill up the missing fields.'),
             embed.addFields([ usage ])
-            embed.setColor('RED')
+            embed.setColor(BrandingColors.Error)
 
-            sendMessage(message, interaction, {
+            await sendMessage(message, interaction, {
                 embeds: [ embed ],
                 files: [ 'assets/icons/rules.png' ]
             })
@@ -91,9 +91,9 @@ module.exports = {
         //If from is greater than to which does not make sense
         if (from > to) {
             embed.setThumbnail('attachment://rules.png')
-            embed.setDescription('The argument: `from` cannot be higher than argument: `to` ||It does not make sense bro wtf.||')
+            embed.setDescription('The argument: **from** cannot be higher than argument: **to**')
             embed.addFields([ usage ])
-            embed.setColor('RED')
+            embed.setColor(BrandingColors.Error)
 
             sendMessage(message, interaction, {
                 embeds: [ embed ],
@@ -105,11 +105,11 @@ module.exports = {
         //If the percent is higher than 100%
         if (percent > 100) {
             embed.setThumbnail('attachment://rules.png')
-            embed.setDescription('The argument: `percent` cannot be higher than 100%')
+            embed.setDescription('The argument: **percent** cannot be higher than 100%')
             embed.addFields([ usage ])
-            embed.setColor('RED')
+            embed.setColor(BrandingColors.Error)
 
-            sendMessage(message, interaction, {
+            await sendMessage(message, interaction, {
                 embeds: [ embed ],
                 files: [ 'assets/icons/rules.png' ]
             })
@@ -124,7 +124,7 @@ module.exports = {
                               `${calc.skill_type} (Time): ${calc.time_hits}\n` +
                               `Defence (Time): ${calc.time_defence}`)
 
-            sendMessage(message, interaction, {
+            await sendMessage(message, interaction, {
                 embeds: [ embed ],
                 files: [ 'assets/icons/rules.png' ]
             })
@@ -135,9 +135,9 @@ module.exports = {
         embed.setThumbnail('attachment://rules.png')
         embed.setDescription('The vocation you typed did not match to any vocations.')
         embed.addFields([ usage ])
-        embed.setColor('RED')
+        embed.setColor(BrandingColors.Error)
 
-        sendMessage(message, interaction, {
+        await sendMessage(message, interaction, {
             embeds: [ embed ],
             files: [ 'assets/icons/rules.png' ]
         })
