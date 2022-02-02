@@ -1,6 +1,8 @@
-const { MessageEmbed, MessageActionRow, MessageButton } = require('discord.js')
+const { MessageActionRow, MessageButton } = require('discord.js')
 
-const sendMessage = require('@utils/send-message')
+const { sendMessage } = require('@utils/utils')
+const { createEmbed } = require('@utils/responses')
+const { BrandingColors } = require('@utils/constants')
 
 module.exports = {
     category: 'Bot',
@@ -25,7 +27,7 @@ module.exports = {
                     .setStyle('LINK')
             )
 
-        const embed = new MessageEmbed()
+        const embed = createEmbed({ color: BrandingColors.Secondary })
             .setTitle('About')
             .setThumbnail('attachment://mirage.png')
             .setDescription('MirageHelper is a open source discord bot for mirage realms Made by qxb3#4312 (ZeVEn in game).')
@@ -35,9 +37,8 @@ module.exports = {
                 { name: '❯ Special thanks', value: '• Anonym - I used his wiki for the items, weapons and other stuff!\nHis wiki: http://mr.golitsyn.com/' },
                 { name: '❯ Source code', value: 'https://github.com/qxb3/mirage-bot' }
             ])
-            .setColor('YELLOW')
 
-        sendMessage(message, interaction, {
+        await sendMessage(message, interaction, {
             embeds: [ embed ],
             components: [ row1, row2 ],
             files: [ 'assets/icons/mirage.png' ]

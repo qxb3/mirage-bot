@@ -1,6 +1,6 @@
 const { MessageActionRow, MessageButton } = require('discord.js')
 
-const sendMessage = require('@utils/send-message')
+const { sendMessage } = require('@utils/utils')
 
 module.exports = {
     category: 'Bot',
@@ -18,7 +18,7 @@ module.exports = {
                     .setStyle('LINK')
             )
 
-        sendMessage(message, interaction, {
+        await sendMessage(message, interaction, {
             content: 'https://discordbotlist.com/bots/miragebot',
             components: [ row ]
         })

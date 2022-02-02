@@ -1,4 +1,6 @@
-const { MessageEmbed } = require('discord.js')
+const { sendMessage } = require('@utils/utils')
+const { createEmbed } = require('@utils/responses')
+const { BrandingColors } = require('@utils/constants')
 
 module.exports = {
     category: 'Bot',
@@ -16,8 +18,8 @@ module.exports = {
         }
     ],
 
-    callback: ({ user, guild, args, client, instance }) => {
-        const embed = new MessageEmbed()
+    callback: async ({ message, interaction, user, guild, args, client, instance }) => {
+        const embed = createEmbed({ color: BrandingColors.Error })
             .setTitle('BUG')
             .addFields([
                 { name: '❯ User', value: user.tag },
@@ -28,17 +30,15 @@ module.exports = {
             ])
             .setThumbnail(user.displayAvatarURL({ dynamic: true }))
             .setTimestamp()
-            .setColor('RED')
 
         instance._botOwner.forEach(async (id) => {
             const owner = client.users.cache.get(id)
             await owner.send({ embeds: [ embed ] })
         })
 
-        return {
+        await sendMessage(message, interaction, {
             content: 'Your bug report has been sent!',
-            ephemeral: true,
-            custom: true
-        }
+            ephemeral: true
+        })
     }
 }

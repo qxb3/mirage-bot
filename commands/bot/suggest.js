@@ -1,4 +1,5 @@
-const { MessageEmbed } = require('discord.js')
+const { sendMessage } = require('@utils/utils')
+const { createEmbed } = require('@utils/responses')
 
 module.exports = {
     category: 'Bot',
@@ -16,8 +17,8 @@ module.exports = {
         }
     ],
 
-    callback: ({ user, guild, args, client, instance }) => {
-        const embed = new MessageEmbed()
+    callback: async ({ user, guild, args, client, instance }) => {
+        const embed = createEmbed()
             .setTitle('SUGGESTION')
             .addFields([
                 { name: '❯ User', value: user.tag },
@@ -28,17 +29,15 @@ module.exports = {
             ])
             .setThumbnail(user.displayAvatarURL({ dynamic: true })) 
             .setTimestamp()
-            .setColor('GREEN')
 
         instance._botOwner.forEach(async (id) => {
             const owner = client.users.cache.get(id)
             await owner.send({ embeds: [ embed ] })
         })
 
-        return {
+        await sendMessage(message, interaraction, {
             content: 'Your suggestion has been sent!',
-            ephemeral: true,
-            custom: true
-        }
+            ephemeral: true
+        }, { reply: true })
     }
 }

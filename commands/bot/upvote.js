@@ -1,12 +1,11 @@
-const sendMessage = require('@utils/send-message')
+const { sendMessage } = require('@utils/utils')
 
 module.exports = {
     category: 'Bot',
     description: 'Upvoting the bot will help me a lot.',
-
     slash: 'both',
 
-    callback: ({ message, interaction }) => {
-        sendMessage(message, interaction, 'https://discordbotlist.com/bots/miragebot/upvote')
+    callback: async ({ message, interaction }) => {
+        await sendMessage(message, interaction, 'https://discordbotlist.com/bots/miragebot/upvote')
     }
 }
