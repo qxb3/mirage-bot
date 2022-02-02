@@ -1,7 +1,8 @@
 const weaponsJson = require('@assets/items/weapons.json')
-const sendMessage = require('@utils/send-message')
-const formatter = require('@utils/formatter')
-const getEmbed = require('@utils/get-embed')
+
+const { sendMessage, formatter } = require('@utils/utils')
+const { createEmbed } = require('@utils/responses')
+const { BrandingColors } = require('@utils/constants')
 
 const didyoumean = require('didyoumean2').default
 
@@ -23,8 +24,7 @@ module.exports = {
     ],
 
     callback: async ({ message, interaction, args, prefix, user }) => {
-        const categories = ['Sword', 'Axe', 'Mace', 'Shield', 'Bow', 'Arrow', 'Staff', 'Rod', 'Spellbook']
-        const embed = getEmbed(user)
+        const embed = createEmbed({ user })
 
         if (interaction) {
             prefix = '/'
@@ -37,6 +37,8 @@ module.exports = {
                    `${prefix}weapons - To list all the categories.`
         }
 
+        const categories = ['Sword', 'Axe', 'Mace', 'Shield', 'Bow', 'Arrow', 'Staff', 'Rod', 'Spellbook']
+
         //If user didn't give arguments
         if (args.length === 0) {
             embed.setThumbnail('attachment://sword.png')
@@ -45,7 +47,7 @@ module.exports = {
                 usage
             ])
 
-            sendMessage(message, interaction, {
+            await sendMessage(message, interaction, {
                 embeds: [ embed ],
                 files: [ 'assets/items/sprites/weapons/thumbnails/sword.png' ]
             })
@@ -73,7 +75,7 @@ module.exports = {
                 { name: '❯ Stats', value: stats },
                 { name: '❯ Monsters', value: formatter(weapon.monsters) }
             )
-            sendMessage(message, interaction, {
+            await sendMessage(message, interaction, {
                 embeds: [ embed ],
                 files: [ `assets/items/sprites/weapons/${type + '/' + sprite}` ]
             })
@@ -91,7 +93,7 @@ module.exports = {
                 usage
             ])
 
-            sendMessage(message, interaction, {
+            await sendMessage(message, interaction, {
                 embeds: [ embed ],
                 files: [ `assets/items/sprites/weapons/thumbnails/${sprite}` ]
             })
@@ -102,9 +104,9 @@ module.exports = {
         embed.setThumbnail('attachment://sword.png')
         embed.setDescription('The weapon you typed did not match to any weapons.')
         embed.addFields([ usage ])
-        embed.setColor('RED')
+        embed.setColor(BrandingColors.Error)
 
-        sendMessage(message, interaction, {
+        await sendMessage(message, interaction, {
             embeds: [ embed ],
             files: [ `assets/items/sprites/weapons/thumbnails/sword.png` ]
         })

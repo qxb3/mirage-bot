@@ -1,7 +1,8 @@
 const equipmentsJson = require('@assets/items/equipments.json')
-const sendMessage = require('@utils/send-message')
-const formatter = require('@utils/formatter')
-const getEmbed = require('@utils/get-embed')
+
+const { sendMessage, formatter } = require('@utils/utils')
+const { createEmbed } = require('@utils/responses')
+const { BrandingColors } = require('@utils/constants')
 
 const didyoumean = require('didyoumean2').default
 
@@ -9,7 +10,6 @@ module.exports = {
     category: 'Items',
     description: 'A command that will help you for equipments in the game',
     aliases: ['equipment', 'equips', 'equip', 'eq'],
-
     slash: 'both',
 
     expectedArgs: '<equipment>',
@@ -23,8 +23,7 @@ module.exports = {
     ],
 
     callback: async ({ message, interaction, args, prefix, user }) => {
-        const categories = ['Helmet', 'Chest', 'Gloves', 'Boots', 'Ring', 'Necklace']
-        const embed = getEmbed(user)
+        const embed = createEmbed({ user })
 
         if (interaction) {
             prefix = '/'
@@ -37,6 +36,8 @@ module.exports = {
                    `${prefix}equipments - To list all the categories.`
         }
 
+        const categories = ['Helmet', 'Chest', 'Gloves', 'Boots', 'Ring', 'Necklace']
+
         //If user didn't give arguments
         if (args.length === 0) {
             embed.setThumbnail('attachment://chest.png')
@@ -45,7 +46,7 @@ module.exports = {
                 usage
             ])
 
-            sendMessage(message, interaction, {
+            await sendMessage(message, interaction, {
                 embeds: [ embed ],
                 files: [ 'assets/items/sprites/equipments/thumbnails/chest.png' ]
             })
@@ -67,12 +68,12 @@ module.exports = {
                 usage
             ])
 
-            sendMessage(message, interaction, {
+            await sendMessage(message, interaction, {
                 embeds: [ embed ],
                 files: [ `assets/items/sprites/equipments/thumbnails/${sprite}` ]
             })
             return
-        } 
+        }
 
         //If the user input is equipment
         if (isEquipment) {
@@ -91,7 +92,8 @@ module.exports = {
                 { name: '❯ Stats', value: stats },
                 { name: '❯ Monsters', value: formatter(equipment.monsters) }
             )
-            sendMessage(message, interaction, {
+
+            await sendMessage(message, interaction, {
                 embeds: [ embed ],
                 files: [ `assets/items/sprites/equipments/${type + '/' + sprite}` ]
             })
@@ -102,9 +104,9 @@ module.exports = {
         embed.setThumbnail('attachment://chest.png')
         embed.setDescription('The equipment you typed did not match to any equipments.')
         embed.addFields([ usage ])
-        embed.setColor('RED')
+        embed.setColor(BrandingColors.Error)
 
-        sendMessage(message, interaction, {
+        await sendMessage(message, interaction, {
             embeds: [ embed ],
             files: [ 'assets/items/sprites/equipments/thumbnails/chest.png' ]
         })

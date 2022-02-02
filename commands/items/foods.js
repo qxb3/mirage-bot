@@ -1,8 +1,8 @@
 const foodsJson = require('@assets/items/foods.json')
 
-const sendMessage = require('@utils/send-message')
-const formatter = require('@utils/formatter')
-const getEmbed = require('@utils/get-embed')
+const { sendMessage, formatter } = require('@utils/utils')
+const { createEmbed } = require('@utils/responses')
+const { BrandingColors } = require('@utils/constants')
 
 const didyoumean = require('didyoumean2').default
 
@@ -10,7 +10,6 @@ module.exports = {
     category: 'Items',
     description: 'A command that will help you for the foods in the game.',
     aliases: ['food', 'fd'],
-
     slash: 'both',
 
     expectedArgs: '<food>',
@@ -24,7 +23,7 @@ module.exports = {
     ],
 
     callback: async ({ message, interaction, args, prefix, user }) => {
-        const embed = getEmbed(user)
+        const embed = createEmbed({ user })
 
         if (interaction) {
             prefix = '/'
@@ -46,7 +45,7 @@ module.exports = {
                 usage
             ])
 
-            sendMessage(message, interaction, {
+            await sendMessage(message, interaction, {
                 embeds: [ embed ],
                 files: [ 'assets/items/sprites/foods/meat.png' ]
             })
@@ -68,7 +67,7 @@ module.exports = {
                 { name: '❯ Monsters', value: formatter(food.monsters) },
             ])
 
-            sendMessage(message, interaction, {
+            await sendMessage(message, interaction, {
                 embeds: [ embed ],
                 files: [ `assets/items/sprites/foods/${sprite}` ]
             })
@@ -79,9 +78,9 @@ module.exports = {
         embed.setThumbnail('attachment://meat.png')
         embed.setDescription('The food you typed did not match to any foods.')
         embed.addFields([ usage ])
-        embed.setColor('RED')
+        embed.setColor(BrandingColors.Error)
 
-        sendMessage(message, interaction, {
+        await sendMessage(message, interaction, {
             embeds: [ embed ],
             files: [ 'assets/items/sprites/foods/meat.png' ]
         })
