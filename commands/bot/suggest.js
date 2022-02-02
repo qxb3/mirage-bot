@@ -17,7 +17,7 @@ module.exports = {
         }
     ],
 
-    callback: async ({ user, guild, args, client, instance }) => {
+    callback: async ({ message, interaction, user, guild, args, client, instance }) => {
         const embed = createEmbed()
             .setTitle('SUGGESTION')
             .addFields([
@@ -27,7 +27,7 @@ module.exports = {
                 { name: '❯ GuildID', value: guild.id },
                 { name: '❯ Suggestion', value: args.join(' ') }
             ])
-            .setThumbnail(user.displayAvatarURL({ dynamic: true })) 
+            .setThumbnail(user.displayAvatarURL({ dynamic: true }))
             .setTimestamp()
 
         instance._botOwner.forEach(async (id) => {
@@ -35,7 +35,7 @@ module.exports = {
             await owner.send({ embeds: [ embed ] })
         })
 
-        await sendMessage(message, interaraction, {
+        await sendMessage(message, interaction, {
             content: 'Your suggestion has been sent!',
             ephemeral: true
         }, { reply: true })
