@@ -10,7 +10,7 @@ module.exports = {
 
     testOnly: true,
     ownerOnly: true,
-    
+
     expectedArgs: '<guild-id>',
 
     callback: async ({ message, args }) => {
@@ -23,8 +23,8 @@ module.exports = {
                     data.forEach(server => {
                         servers += `Name: ${server.guildName}\n` +
                             `GuildID: ${server.guildId}\n` +
-                            `Logs: ${server.logs.length}\n\n` 
-                    }) 
+                            `Logs: ${server.logs.length}\n\n`
+                    })
 
                     reply.edit('`❯ Server logs\n' + servers + '❯ Usage\n/logs <server-id>\n/logs all`')
                     return

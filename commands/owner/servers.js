@@ -1,5 +1,6 @@
-const { MessageEmbed } = require('discord.js')
-const sendMessage = require('../../utils/send-message')
+const { sendMessage } = require('@utils/utils')
+const { createEmbed } = require('@utils/responses')
+const { BrandingColors } = require('@utils/constants')
 
 module.exports = {
     category: 'Owner',
@@ -19,12 +20,13 @@ module.exports = {
             })
         })
 
-        const embed = new MessageEmbed()
+        const embed = createEmbed()
             .setTitle('Servers')
             .addFields(servers)
-            .setColor('GREEN')
 
-        message.reply({ embeds: [ embed ] }) 
+        await sendMessage(message, _, {
+            embeds: [ embed ]
+        }, { reply: true })
     },
 
     error: () => {}
