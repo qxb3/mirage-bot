@@ -1,5 +1,5 @@
-const getServerTime = require('@utils/get-server-time')
-const getEmbed = require('@utils/get-embed')
+const { sendMessage, getServerTime } = require('@utils/utils')
+const { createEmbed } = require('@utils/responses')
 
 module.exports = {
     category: 'Utilities',
@@ -8,25 +8,16 @@ module.exports = {
 
     slash: 'both',
 
-    callback: ({ message, interaction, user }) => {
+    callback: async ({ message, interaction, user }) => {
         const servertime = getServerTime()
-        const embed = getEmbed(user)
+        const embed = createEmbed({ user })
             .setThumbnail('attachment://rules.png')
             .addField('❯ Server Time', `Time: ${servertime.converted}`)
             .setTimestamp()
 
-        if (message) {
-            message.channel.send({
-                embeds: [ embed ],
-                files: [ 'assets/icons/rules.png' ]
-            })
-        }
-
-        if (interaction) {
-            interaction.reply({
-                embeds: [ embed ],
-                files: [ 'assets/icons/rules.png' ]
-            })
-        }
+        await sendMessage(message, interaction, {
+            embeds: [ embed ],
+            files: [ 'assets/icons/rules.png' ]
+        })
     }
 }
