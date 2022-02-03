@@ -9,6 +9,7 @@ const { BrandingColors } = require('@utils/constants')
 module.exports = {
     category: 'Bot',
     description: 'A help command that will help you get started with the bot.',
+    aliases: ['commands'],
     slash: 'both',
 
     expectedArgs: '<command>',
