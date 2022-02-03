@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Mirage Realms",
+    "type": "PLAYING"
+  },
+  {
+    "name": "Mirage realms in abyss",
+    "type": "PLAYING"
+  },
+  {
+    "name": "Mirage realms olympics",
+    "type": "COMPETING"
+  },
+  {
+    "name": "Momblympics",
+    "type": "COMPETING"
+  },
+  {
+    "name": "Mirage monthly competition",
+    "type": "COMPETING"
+  },
+  {
+    "name": "Behemoth killing simulator",
+    "type": "PLAYING"
+  },
+  {
+    "name": "Revenant straight in his eyes",
+    "type": "WATCHING"
+  },
+  {
+    "name": "Join slackers!",
+    "type": "PLAYING"
+  },
+  {
+    "name": "Noobs get killed by imps",
+    "type": "WATCHING"
+  },
+  {
+    "name": "Noobs get rekt by slimes",
+    "type": "WATCHING"
+  },
+  {
+    "name": "?help on {server_size} servers",
+    "type": "WATCHING"
+  },
+  {
+    "name": "?help on {user_size} users",
+    "type": "WATCHING"
+  }
+]

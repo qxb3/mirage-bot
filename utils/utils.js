@@ -1,3 +1,4 @@
+const presences = require('@assets/presences.json')
 const moment = require('moment-timezone')
 
 const formatter = (array) => {
@@ -10,7 +11,7 @@ const randomNumber = (min, max) => {
 
 const getServerTime = () => {
     const getMilitaryTime = (standard) => {
-        const [time, modifier] = time12h.split(' ');
+        const [time, modifier] = standard.split(' ');
         let [hours, minutes] = time.split(':');
 
         if (hours === '12') hours = '00'
@@ -28,6 +29,18 @@ const getServerTime = () => {
         standard,
         military
     }
+}
+
+const setBotActivity = (client) => {
+    const serverSize = client.guilds.cache.size
+    const userSize = client.guilds.cache.map((guild) => guild.memberCount)[0]
+
+    let presence = presences[randomNumber(0, presences.length-1)]
+    presence.name = presence.name
+        .replace(/{server_size}/g, `${serverSize}`)
+        .replace(/{user_size}/g, `${userSize}`)
+
+    client.user.setActivity(presence)
 }
 
 const sendMessage = async (message, interaction, content, options) => {
@@ -54,5 +67,7 @@ module.exports = {
     formatter,
     randomNumber,
     getServerTime,
+    setBotActivity,
     sendMessage
 }
+

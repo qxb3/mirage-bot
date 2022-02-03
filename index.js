@@ -1,9 +1,11 @@
 require('module-alias/register')
 require('dotenv').config()
-const { Client, Intents } = require('discord.js')
 
-const path = require('path')
+const { Client, Intents } = require('discord.js')
 const WokCommands = require('wokcommands')
+
+const { setBotActivity } = require('@utils/utils')
+const path = require('path')
 
 const client = new Client({
     intents: [
@@ -14,7 +16,9 @@ const client = new Client({
 })
 
 client.once('ready', () => {
-    setBotActivity()
+    setInterval(() => {
+        setBotActivity(client)
+    }, 1000 * 60)
 
     new WokCommands(client, {
         commandDir: path.join(__dirname, './commands'),
@@ -23,7 +27,6 @@ client.once('ready', () => {
         testServers: ['811195710065082378', '917358098241445909'],
         botOwners: ['591150858830479381'],
         disabledDefaultCommands: [
-
             'channelonly', 'command', 'language',
             /*'prefix', */'requiredrole',
         ]
@@ -31,25 +34,5 @@ client.once('ready', () => {
     .setDefaultPrefix('?')
     .setCategorySettings([])
 })
-
-function setBotActivity() {
-    let index = 0
-    setInterval(() => {
-        let users = 0
-        client.guilds.cache.forEach((guild) => users += guild.memberCount)
-        const activities = [
-            { name: 'Mirage Realms', type: 'PLAYING' },
-            { name: 'Noobs get killed by imps', type: 'WATCHING' },
-            { name: `?help on ${client.guilds.cache.size} servers`, type: 'WATCHING' },
-            { name: `?help on ${users} users`, type: 'WATCHING' }
-        ]
-
-        client.user.setActivity(activities[index])
-        index++
-        if (index >= activities.length) {
-            index = 0
-        }
-    }, 1000 * 60)
-}
 
 client.login(process.env.TOKEN)
