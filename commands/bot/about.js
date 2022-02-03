@@ -28,14 +28,15 @@ module.exports = {
             )
 
         const embed = createEmbed({ color: BrandingColors.Secondary })
-            .setTitle('About')
+            .setTitle('MirageHelper')
             .setThumbnail('attachment://mirage.png')
             .setDescription('MirageHelper is a open source discord bot for mirage realms Made by qxb3#4312 (ZeVEn in game).')
             .addFields([
-                { name: '❯ Found a bug? Contact me in', value: '• Discord: qxb3#4312' },
-                { name: '❯ Discord Server', value: '• https://discord.gg/7PKhEk4NAe' },
-                { name: '❯ Special thanks', value: '• Anonym - I used his wiki for the items, weapons and other stuff!\nHis wiki: http://mr.golitsyn.com/' },
-                { name: '❯ Source code', value: 'https://github.com/qxb3/mirage-bot' }
+                { name: '❯ Version', value: 'v1.' },
+                { name: '❯ Found a bug? Contact me', value: '• Discord: [qxb3#4312](https://discord.com/users/591150858830479381)' },
+                { name: '❯ Discord Server', value: '• [MirageHelper Server](https://discord.gg/7PKhEk4NAe)' },
+                { name: '❯ Source code', value: '[mirage-bot](https://github.com/qxb3/mirage-bot)' },
+                { name: '❯ Special thanks', value: '• Anonym - I used his wiki for the items, weapons and other stuff!\nHis wiki: [Pirate Wiki](http://mr.golitsyn.com/)' }, 
             ])
 
         await sendMessage(message, interaction, {
