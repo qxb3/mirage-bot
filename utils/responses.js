@@ -1,12 +1,13 @@
 const { MessageEmbed } = require('discord.js')
 const { BrandingColors } = require('./constants')
 
-const createEmbed = ({ color = BrandingColors.Primary, user }) => {
+const createEmbed = (options) => {
+    const color = BrandingColors.Primary
     const embed = new MessageEmbed()
-        .setColor(color)
+        .setColor(options?.color || color)
 
-    if (user) {
-        embed.setAuthor({ name: user.tag, iconURL: user.displayAvatarURL({ dynamic: true }) })
+    if (options?.user) {
+        embed.setAuthor({ name: options.user.tag, iconURL: options.user.displayAvatarURL({ dynamic: true }) })
     }
 
     return embed

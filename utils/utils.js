@@ -9,7 +9,7 @@ const randomNumber = (min, max) => {
 }
 
 const getServerTime = () => {
-    const getMilitaryTime = (time) => {
+    const getMilitaryTime = (standard) => {
         const [time, modifier] = time12h.split(' ');
         let [hours, minutes] = time.split(':');
 
@@ -32,14 +32,14 @@ const getServerTime = () => {
 
 const sendMessage = async (message, interaction, content, options) => {
     if (message) {
-        if (options.reply === true) {
+        if (options?.reply === true) {
             return await message.reply(content)
         }
         return await message.channel.send(content)
     }
 
     if (interaction) {
-        if (options.fetchReply === true) {
+        if (options?.fetchReply === true) {
             return interaction.reply({
                 ...content,
                 fetchReply: true

@@ -18,6 +18,10 @@ const formatTime = (time) => {
 }
 
 const calculateLevel = (from, to, mobExp, percent) => {
+    const expToLvl = (level) => {
+        return 50.0 / 3.0 * (Math.pow(level, 3.0) - 6.0 * Math.pow(level, 2.0) + 17.0 * level - 12.0);
+    }
+
     let exp = 0
     for (let i = from; i < to; i++) {
         exp += expToLvl(i + 1)
