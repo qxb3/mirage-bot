@@ -1,8 +1,8 @@
 const enchantmentsJson = require('@assets/wiki/enchantments.json')
 
-const sendMessage = require('@utils/send-message')
-const formatter = require('@utils/formatter')
-const getEmbed = require('@utils/get-embed')
+const { sendMessage, formatter } = require('@utils/utils')
+const { createEmbed } = require('@utils/responses')
+const { BrandingColors } = require('@utils/constants')
 
 const didyoumean = require('didyoumean2').default
 
@@ -24,8 +24,8 @@ module.exports = {
     ],
 
     callback: async ({ message, interaction, args, prefix, user }) => {
-        const embed = getEmbed(user)
-        embed.setFooter('NOTE: Only weapons or equipments that is above level 30 can be enchanted.')
+        const embed = createEmbed({ user })
+        embed.setFooter({ text: 'NOTE: Only weapons or equipments that is above level 30 can be enchanted.' })
 
         if (interaction) {
             prefix = '/'
@@ -47,7 +47,7 @@ module.exports = {
                 usage
             ])
 
-            sendMessage(message, interaction, {
+            await sendMessage(message, interaction, {
                 embeds: [ embed ],
                 files: [ 'assets/wiki/sprites/enchantments/physical.png' ]
             })
@@ -70,7 +70,7 @@ module.exports = {
                 { name: '❯ Materials required', value: formatter(enchantment.materials_required) }
             ])
 
-            sendMessage(message, interaction, {
+            await sendMessage(message, interaction, {
                 embeds: [ embed ],
                 files: [ `assets/wiki/sprites/enchantments/${sprite}` ]
             })
@@ -81,11 +81,11 @@ module.exports = {
         embed.setThumbnail('attachment://physical.png')
         embed.setDescription('The enchantment you typed did not match to any enchantments.')
         embed.addFields([ usage ])
-        embed.setColor('RED')
+        embed.setColor(BrandingColors.Error)
 
-        sendMessage(message, interaction, {
+        await sendMessage(message, interaction, {
             embeds: [ embed ],
             files: [ 'assets/wiki/sprites/enchantments/physical.png' ]
-        }) 
+        })
     }
 }
