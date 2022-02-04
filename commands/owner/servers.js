@@ -24,7 +24,7 @@ module.exports = {
             .setTitle('Servers')
             .addFields(servers)
 
-        await sendMessage(message, _, {
+        await sendMessage(message, undefined, {
             embeds: [ embed ]
         }, { reply: true })
     },
