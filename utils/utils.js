@@ -33,8 +33,7 @@ const getServerTime = () => {
 
 const setBotActivity = (client) => {
     const serverSize = client.guilds.cache.size
-    const userSize = client.guilds.cache.map((guild) => guild.memberCount)[0]
-
+    const userSize = client.guilds.cache.map((guild) => guild.memberCount).reduce((prev, current) => prev + current)
     let presence = presences[randomNumber(0, presences.length-1)]
     presence.name = presence.name
         .replace(/{server_size}/g, `${serverSize}`)
