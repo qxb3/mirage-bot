@@ -12,7 +12,7 @@ module.exports = {
         const servertime = getServerTime()
         const embed = createEmbed({ user })
             .setThumbnail('attachment://rules.png')
-            .addField('❯ Server Time', `Time: ${servertime.converted}`)
+            .addField('❯ Server Time', `Time: ${servertime.military}`)
             .setTimestamp()
 
         await sendMessage(message, interaction, {
