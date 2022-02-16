@@ -1,7 +1,7 @@
 const { MessageAttachment } = require('discord.js')
 
 const logSchema = require('@models/log-schema')
-const ignoreCase = require('ignore-case')
+const { ignoreCase } = require('@utils/utils')
 
 module.exports = {
     category: 'Bot',
@@ -36,7 +36,7 @@ module.exports = {
         }
 
         //List the logs on all server
-        if (ignoreCase.equals(args[0], 'all')) {
+        if (ignoreCase(args[0], 'all')) {
             await message.reply(`Fetching servers that has logs`).then(async (reply) => {
                 const data = await logSchema.find({})
                 if (data) {

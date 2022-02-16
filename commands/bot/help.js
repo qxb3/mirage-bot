@@ -66,7 +66,7 @@ module.exports = {
         let code = 1
         instance.commandHandler.commands.forEach((command) => {
             command.names.forEach(async (name) => {
-                if (ignoreCase.equals(args.join(' '), name)) {
+                if (ignoreCase(args.join(' '), name)) {
                     if (command.category !== 'Owner') {
                         code = 0
 

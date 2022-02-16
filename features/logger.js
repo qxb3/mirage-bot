@@ -30,7 +30,7 @@ module.exports = async (client, instance) => {
             const content = message.content.substring(instance._defaultPrefix.length).split(' ')
             instance.commandHandler.commands.forEach(command => {
                 command.names.forEach(name => {
-                    if (ignoreCase.equals(content[0], name)) {
+                    if (ignoreCase(content[0], name)) {
                         const guildId = message.guild.id
                         const guildName = message.guild.name
                         const user = message.author.username + '#' + message.author.discriminator
@@ -39,7 +39,7 @@ module.exports = async (client, instance) => {
 
                         sendToDatabase(guildId, guildName, user, commandUsed, on)
                     }
-                }) 
+                })
             })
         }
     })
