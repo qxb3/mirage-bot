@@ -1,4 +1,4 @@
-const ignoreCase = require('ignore-case')
+const { ignoreCase } = require('@utils/utils')
 const date = require('date-and-time')
 
 const logSchema = require('@models/log-schema')

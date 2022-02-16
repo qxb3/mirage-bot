@@ -1,8 +1,7 @@
 const { MessageActionRow, MessageButton } = require('discord.js')
 
 const fs = require('fs')
-const ignoreCase = require('ignore-case')
-const { sendMessage } = require('@utils/utils')
+const { sendMessage, ignoreCase } = require('@utils/utils')
 const { createEmbed } = require('@utils/responses')
 const { BrandingColors } = require('@utils/constants')
 

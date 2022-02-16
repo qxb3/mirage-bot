@@ -9,6 +9,10 @@ const randomNumber = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1)) + min
 }
 
+const ignoreCase = (str1, str2) => {
+    return str1.toLowerCase() === str2.toLowerCase()
+}
+
 const getServerTime = () => {
     const getMilitaryTime = (standard) => {
         const [time, modifier] = standard.split(' ');
@@ -65,6 +69,7 @@ const sendMessage = async (message, interaction, content, options) => {
 module.exports = {
     formatter,
     randomNumber,
+    ignoreCase,
     getServerTime,
     setBotActivity,
     sendMessage
