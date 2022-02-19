@@ -46,6 +46,7 @@ module.exports = async (client, instance) => {
 
     client.on('interactionCreate', (interaction) => {
         if (!interaction.isCommand()) return
+        if (!interaction.inGuild()) return
 
         const guildId = interaction.guild.id
         const guildName = interaction.guild.name
