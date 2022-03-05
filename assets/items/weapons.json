@@ -1064,7 +1064,7 @@
             "minimum_stat": 0
         },
         "monsters": [
-            "Unobtainable - It's given by liam to a first knight to hit skill 50"
+            "Unobtainable - It's given by liam to a first knight to hit level 50"
         ],
         "type": "Axe"
     },
@@ -1103,7 +1103,7 @@
             "minimum_stat": 0
         },
         "monsters": [
-            "Unobtainable - It's given by liam to a first mage to hit skill 50"
+            "Unobtainable - It's given by liam to a first mage to hit level 50"
         ],
         "type": "Staff"
     },
@@ -1168,7 +1168,7 @@
             "minimum_stat": 0
         },
         "monsters": [
-            "Unobtainable - It's given by liam to a first ranger to hit skill 50"
+            "Unobtainable - It's given by liam to a first ranger to hit level 50"
         ],
         "type": "Bow"
     },
