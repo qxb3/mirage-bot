@@ -6,6 +6,6 @@ module.exports = {
     slash: 'both',
 
     callback: async ({ message, interaction }) => {
-        await sendMessage(message, interaction, 'https://discord.gg/7PKhEk4NAe')
+        await sendMessage(message, interaction, 'https://discord.gg/jmcWaC829X')
     }
 }
