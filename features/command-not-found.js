@@ -2,7 +2,8 @@ const didyoumean = require('didyoumean2').default
 
 module.exports = (client, instance) => {
     client.on('messageCreate', (message) => {
-        if (message.author.bot || !message.content.startsWith('?')) return
+        if (message.author.bot) return
+        if (!message.content.startsWith('?') || message.content.length < 2) return
 
         const { commands } = instance.commandHandler
 
