@@ -7,7 +7,7 @@ module.exports = (client, instance) => {
 
         const { commands } = instance.commandHandler
 
-        if (commands.map(command => command.names).flat().some(command => command === message.content.substring(1).split(' ').shift())) return
+        if (commands.map(command => command.names).flat().some(command => command === message.content.toLowerCase().substring(1).split(' ').shift())) return
 
         const cmds = commands.map(command => command.names[0])
         const matchedCommands = didyoumean(message.content.substring(1), cmds, { returnType: 'all-matches' })
