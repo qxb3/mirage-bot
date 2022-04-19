@@ -86,7 +86,7 @@ module.exports = {
         const vocation = didyoumean(args[0], vocations, { threshold: 0.6 })
         const from = parseInt(args[1],)
         const to = parseInt(args[2])
-        const percent = parseFloat(args[3].replaceAll('%', '')) || 0
+        const percent = parseFloat(args[3]?.replaceAll('%', '')) || 0
 
         //If from is greater than to which does not make sense
         if (from > to) {

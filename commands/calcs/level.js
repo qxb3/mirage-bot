@@ -66,7 +66,7 @@ module.exports = {
         const from = parseInt(args[0])
         const to = parseInt(args[1])
         const mobExp = parseInt(args[2])
-        const percent = parseFloat(args[3].replace(/%/g, '')) || 0
+        const percent = parseFloat(args[3]?.replace(/%/g, '')) || 0
 
         //If from is greater than to which does not make sense
         if (from > to) {
