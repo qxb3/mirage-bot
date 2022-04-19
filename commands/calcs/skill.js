@@ -70,7 +70,7 @@ module.exports = {
         }
 
         //If the user typed didn't meet the args requirements
-        if (args.length !== 4) {
+        if (args.length !== 3) {
             embed.setThumbnail('attachment://rules.png')
             embed.setDescription('You need to fill up the missing fields.'),
             embed.addFields([ usage ])
@@ -86,7 +86,7 @@ module.exports = {
         const vocation = didyoumean(args[0], vocations, { threshold: 0.6 })
         const from = parseInt(args[1],)
         const to = parseInt(args[2])
-        const percent = parseFloat(args[3].replaceAll('%', ''))
+        const percent = parseFloat(args[3].replaceAll('%', '')) || 0
 
         //If from is greater than to which does not make sense
         if (from > to) {
