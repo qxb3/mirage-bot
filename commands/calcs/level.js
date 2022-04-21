@@ -50,7 +50,7 @@ module.exports = {
         }
 
         //If the user typed didn't meet the args requirements
-        if (args.length !== 3) {
+        if (args.length < 3) {
             embed.setThumbnail('attachment://rules.png')
             embed.setDescription('You need to fill up the missing fields.'),
             embed.addFields([ usage ])
