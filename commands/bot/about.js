@@ -32,7 +32,7 @@ module.exports = {
             .setThumbnail('attachment://mirage.png')
             .setDescription('MirageHelper is a open source discord bot for mirage realms Made by qxb3#4312 (ZeVEn in game).')
             .addFields([
-                { name: '❯ Version', value: '1.4.6.' },
+                { name: '❯ Version', value: '1.4.9' },
                 { name: '❯ Found a bug? Contact me', value: '• Discord: [qxb3#4312](https://discord.com/users/591150858830479381)' },
                 { name: '❯ Discord Server', value: '• [MirageHelper Server](https://discord.gg/7PKhEk4NAe)' },
                 { name: '❯ Source code', value: '[mirage-bot](https://github.com/qxb3/mirage-bot)' },
