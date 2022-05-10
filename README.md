@@ -2,6 +2,11 @@
 
 A simple discord bot made for mirage realms
 
+# Important
+
+I rewrite the whole thing and the bot and the new repo
+are now in https://github.com/qxb3/mirage-helper
+
 # Getting started
 
 ## Prerequisites
